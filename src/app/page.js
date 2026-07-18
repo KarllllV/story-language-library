@@ -627,6 +627,228 @@ export default function HomePage() {
             }}
           />
 
+          <section
+            style={{
+              maxWidth: "680px",
+              margin: "0 auto 28px",
+              padding: "24px",
+              borderRadius: "22px",
+              background: "rgba(255,255,255,0.92)",
+              border: "1px solid #dbe3ee",
+              boxShadow: "0 14px 36px rgba(15,23,42,0.10)",
+              textAlign: "left",
+            }}
+          >
+            <div style={{ textAlign: "center", marginBottom: "18px" }}>
+              <h2
+                style={{
+                  margin: "0 0 7px",
+                  color: "#172033",
+                  fontSize: "25px",
+                  lineHeight: 1.2,
+                }}
+              >
+                ✉️ Contact Ing. Karl
+              </h2>
+
+              <p
+                style={{
+                  margin: 0,
+                  color: "#64748b",
+                  fontSize: "15px",
+                  lineHeight: 1.55,
+                }}
+              >
+                Send a question, suggestion or request for a new story.
+              </p>
+            </div>
+
+            <form
+              action="https://formspree.io/f/xpqvddgk"
+              method="POST"
+              style={{
+                display: "grid",
+                gap: "14px",
+              }}
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message from Story Language Library"
+              />
+
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+                  gap: "12px",
+                }}
+                className="contact-two-columns"
+              >
+                <label
+                  style={{
+                    display: "grid",
+                    gap: "6px",
+                    color: "#334155",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                  }}
+                >
+                  Your name
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Name"
+                    style={{
+                      width: "100%",
+                      padding: "12px 13px",
+                      border: "1px solid #cbd5e1",
+                      borderRadius: "11px",
+                      background: "white",
+                      color: "#172033",
+                      fontSize: "15px",
+                      boxSizing: "border-box",
+                      outline: "none",
+                    }}
+                  />
+                </label>
+
+                <label
+                  style={{
+                    display: "grid",
+                    gap: "6px",
+                    color: "#334155",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                  }}
+                >
+                  Your email
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="name@example.com"
+                    style={{
+                      width: "100%",
+                      padding: "12px 13px",
+                      border: "1px solid #cbd5e1",
+                      borderRadius: "11px",
+                      background: "white",
+                      color: "#172033",
+                      fontSize: "15px",
+                      boxSizing: "border-box",
+                      outline: "none",
+                    }}
+                  />
+                </label>
+              </div>
+
+              <label
+                style={{
+                  display: "grid",
+                  gap: "6px",
+                  color: "#334155",
+                  fontSize: "14px",
+                  fontWeight: "700",
+                }}
+              >
+                Type of message
+                <select
+                  name="requestType"
+                  defaultValue="Question"
+                  style={{
+                    width: "100%",
+                    padding: "12px 13px",
+                    border: "1px solid #cbd5e1",
+                    borderRadius: "11px",
+                    background: "white",
+                    color: "#172033",
+                    fontSize: "15px",
+                    boxSizing: "border-box",
+                    outline: "none",
+                  }}
+                >
+                  <option value="Question">Question</option>
+                  <option value="New story request">New story request</option>
+                  <option value="Technical problem">Technical problem</option>
+                  <option value="Cooperation">Cooperation</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+
+              <label
+                style={{
+                  display: "grid",
+                  gap: "6px",
+                  color: "#334155",
+                  fontSize: "14px",
+                  fontWeight: "700",
+                }}
+              >
+                Message
+                <textarea
+                  name="message"
+                  required
+                  rows={5}
+                  placeholder="Write your question or request here..."
+                  style={{
+                    width: "100%",
+                    padding: "12px 13px",
+                    border: "1px solid #cbd5e1",
+                    borderRadius: "11px",
+                    background: "white",
+                    color: "#172033",
+                    fontFamily: "Arial, sans-serif",
+                    fontSize: "15px",
+                    lineHeight: 1.5,
+                    resize: "vertical",
+                    boxSizing: "border-box",
+                    outline: "none",
+                  }}
+                />
+              </label>
+
+              <label
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "9px",
+                  color: "#64748b",
+                  fontSize: "12px",
+                  lineHeight: 1.45,
+                }}
+              >
+                <input
+                  type="checkbox"
+                  name="privacyConsent"
+                  value="Agreed"
+                  required
+                  style={{ marginTop: "2px" }}
+                />
+                I agree that my details may be used to answer this message.
+              </label>
+
+              <button
+                type="submit"
+                style={{
+                  width: "100%",
+                  padding: "13px 16px",
+                  border: "none",
+                  borderRadius: "11px",
+                  background: "#2563eb",
+                  color: "white",
+                  fontSize: "15px",
+                  fontWeight: "700",
+                  cursor: "pointer",
+                  boxShadow: "0 8px 20px rgba(37,99,235,0.22)",
+                }}
+              >
+                ✉️ Send message
+              </button>
+            </form>
+          </section>
+
           <p
             style={{
               margin: 0,
@@ -936,6 +1158,10 @@ export default function HomePage() {
       <style jsx global>{`
         @media (max-width: 900px) {
           main section section > div[style*="repeat(3"] {
+            grid-template-columns: 1fr !important;
+          }
+
+          .contact-two-columns {
             grid-template-columns: 1fr !important;
           }
         }
