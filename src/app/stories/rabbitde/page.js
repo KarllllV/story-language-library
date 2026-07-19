@@ -119,7 +119,7 @@ export default function Home() {
     loadVoices();
     window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
 
-    const storedWords = localStorage.getItem("savedEnglishWords");
+    const storedWords = localStorage.getItem("savedGermanWords");
     if (storedWords) {
       try {
         setSavedWords(JSON.parse(storedWords));
@@ -168,6 +168,47 @@ export default function Home() {
       );
     };
   }, []);
+
+
+  useEffect(() => {
+    function handleKeyboardShortcuts(event) {
+      const activeElement = document.activeElement;
+      const isTyping =
+        activeElement?.tagName === "INPUT" ||
+        activeElement?.tagName === "TEXTAREA" ||
+        activeElement?.tagName === "SELECT" ||
+        activeElement?.isContentEditable;
+
+      if (isTyping || selectedWord || event.repeat) return;
+
+      switch (event.code) {
+        case "Space":
+          event.preventDefault();
+          if (isReading && !isPaused) pauseReading();
+          else if (isPaused) continueReading();
+          break;
+        case "ArrowLeft":
+          event.preventDefault();
+          if (currentPageIndex > 0) changePage(currentPageIndex - 1);
+          break;
+        case "ArrowRight":
+          event.preventDefault();
+          if (currentPageIndex < rabbitStory.pages.length - 1) {
+            changePage(currentPageIndex + 1);
+          }
+          break;
+        case "Escape":
+          event.preventDefault();
+          stopReading();
+          break;
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyboardShortcuts);
+    return () => {
+      window.removeEventListener("keydown", handleKeyboardShortcuts);
+    };
+  }, [isReading, isPaused, currentPageIndex, selectedWord]);
 
   function saveProgress(
     pageIndex,
@@ -597,7 +638,7 @@ export default function Home() {
     setSavedWords(updatedWords);
 
     localStorage.setItem(
-      "savedEnglishWords",
+      "savedGermanWords",
       JSON.stringify(updatedWords)
     );
   }
@@ -610,7 +651,7 @@ export default function Home() {
     setSavedWords(updatedWords);
 
     localStorage.setItem(
-      "savedEnglishWords",
+      "savedGermanWords",
       JSON.stringify(updatedWords)
     );
   }

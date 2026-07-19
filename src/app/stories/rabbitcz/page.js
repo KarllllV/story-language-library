@@ -80,7 +80,7 @@ export default function Home() {
   const sentenceWords = useMemo(
     () => currentPage.czech.map((sentence) => splitWords(sentence)),
     [currentPage]
-  )
+  );
 
   useEffect(() => {
     function loadVoices() {
@@ -168,6 +168,61 @@ export default function Home() {
       );
     };
   }, []);
+
+  useEffect(() => {
+    function handleKeyboardShortcuts(event) {
+      const activeElement = document.activeElement;
+      const isTyping =
+        activeElement?.tagName === "INPUT" ||
+        activeElement?.tagName === "TEXTAREA" ||
+        activeElement?.tagName === "SELECT" ||
+        activeElement?.isContentEditable;
+
+      if (isTyping || selectedWord || event.repeat) return;
+
+      switch (event.code) {
+        case "Space":
+          event.preventDefault();
+
+          if (isReading && !isPaused) {
+            pauseReading();
+          } else if (isPaused) {
+            continueReading();
+          }
+          break;
+
+        case "ArrowLeft":
+          event.preventDefault();
+
+          if (currentPageIndex > 0) {
+            changePage(currentPageIndex - 1);
+          }
+          break;
+
+        case "ArrowRight":
+          event.preventDefault();
+
+          if (currentPageIndex < rabbitStory.pages.length - 1) {
+            changePage(currentPageIndex + 1);
+          }
+          break;
+
+        case "Escape":
+          event.preventDefault();
+          stopReading();
+          break;
+
+        default:
+          break;
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyboardShortcuts);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyboardShortcuts);
+    };
+  }, [isReading, isPaused, currentPageIndex, selectedWord]);
 
   function saveProgress(
     pageIndex,
@@ -758,7 +813,7 @@ export default function Home() {
                 }}
               >
                 {voices.length === 0 && (
-                  <option value="">No Český hlass found</option>
+                  <option value="">Nebyl nalezen žádný český hlas</option>
                 )}
 
                 {voices.map((voice) => (
