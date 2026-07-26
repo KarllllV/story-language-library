@@ -5,6 +5,19 @@ import { rabbitStory } from "@/data/rabbitstoryde";
 
 import { dictionary } from "@/data/dictionaryde";
 
+import {
+  getVocabularyWords,
+  migrateLegacyVocabulary,
+  removeVocabularyWord,
+  saveVocabularyWord,
+} from "@/lib/vocabularyStorage";
+
+import {
+  DEFAULT_APP_SETTINGS,
+  getAppSettings,
+  getFontSizeInPixels,
+} from "@/lib/settingsStorage";
+
 function normalizeWord(word) {
   return word
     .toLowerCase()
@@ -52,11 +65,26 @@ function estimatedWordDuration(word, speed) {
 
 export default function Home() {
   const [voices, setVoices] = useState([]);
-  const [selectedVoice, setSelectedVoice] = useState("");
-  const [readingSpeed, setReadingSpeed] = useState(0.85);
+  const [selectedVoice, setSelectedVoice] = useState(
+    DEFAULT_APP_SETTINGS.selectedVoice
+  );
+  const [readingSpeed, setReadingSpeed] = useState(
+    DEFAULT_APP_SETTINGS.readingSpeed
+  );
 
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
-  const [showTranslation, setShowTranslation] = useState(false);
+  const [showTranslation, setShowTranslation] = useState(
+    DEFAULT_APP_SETTINGS.showTranslations
+  );
+  const [fontSize, setFontSize] = useState(
+    DEFAULT_APP_SETTINGS.fontSize
+  );
+  const [autoContinue, setAutoContinue] = useState(
+    DEFAULT_APP_SETTINGS.autoContinue
+  );
+  const [highlightCurrentWord, setHighlightCurrentWord] = useState(
+    DEFAULT_APP_SETTINGS.highlightCurrentWord
+  );
 
   const [isReading, setIsReading] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -81,6 +109,12 @@ export default function Home() {
     () => currentPage.german.map((sentence) => splitWords(sentence)),
     [currentPage]
   );
+
+  const isSelectedWordSaved = selectedWord
+    ? savedWords.some(
+        (item) => item.word === selectedWord.word
+      )
+    : false;
 
   useEffect(() => {
     function loadVoices() {
@@ -119,14 +153,13 @@ export default function Home() {
     loadVoices();
     window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
 
-    const storedWords = localStorage.getItem("savedEnglishWords");
-    if (storedWords) {
-      try {
-        setSavedWords(JSON.parse(storedWords));
-      } catch {
-        setSavedWords([]);
-      }
-    }
+    const migratedWords = migrateLegacyVocabulary({
+      legacyKey: "savedGermanWords",
+      language: "de",
+      source: rabbitStory.title,
+    });
+
+    setSavedWords(migratedWords);
 
     const storedProgress = localStorage.getItem(
       `storyProgress:${rabbitStory.id}`
@@ -165,6 +198,133 @@ export default function Home() {
       window.speechSynthesis.removeEventListener(
         "voiceschanged",
         loadVoices
+      );
+    };
+  }, []);
+
+  useEffect(() => {
+    function applySettings(nextSettings = getAppSettings()) {
+      setReadingSpeed(
+        Number(
+          nextSettings.readingSpeed ??
+            DEFAULT_APP_SETTINGS.readingSpeed
+        )
+      );
+
+      setShowTranslation(
+        Boolean(
+          nextSettings.showTranslations ??
+            DEFAULT_APP_SETTINGS.showTranslations
+        )
+      );
+
+      setFontSize(
+        nextSettings.fontSize ||
+          DEFAULT_APP_SETTINGS.fontSize
+      );
+
+      setAutoContinue(
+        Boolean(
+          nextSettings.autoContinue ??
+            DEFAULT_APP_SETTINGS.autoContinue
+        )
+      );
+
+      setHighlightCurrentWord(
+        Boolean(
+          nextSettings.highlightCurrentWord ??
+            DEFAULT_APP_SETTINGS.highlightCurrentWord
+        )
+      );
+
+      if (
+        nextSettings.selectedVoice &&
+        voices.some(
+          (voice) =>
+            voice.name === nextSettings.selectedVoice
+        )
+      ) {
+        setSelectedVoice(nextSettings.selectedVoice);
+      }
+    }
+
+    function handleSettingsUpdated(event) {
+      applySettings(
+        event.detail || getAppSettings()
+      );
+    }
+
+    function handleStorage(event) {
+      if (
+        !event.key ||
+        event.key === "storyLanguageSettings"
+      ) {
+        applySettings();
+      }
+    }
+
+    function handleFocus() {
+      applySettings();
+    }
+
+    applySettings();
+
+    window.addEventListener(
+      "settings-updated",
+      handleSettingsUpdated
+    );
+    window.addEventListener(
+      "storage",
+      handleStorage
+    );
+    window.addEventListener(
+      "focus",
+      handleFocus
+    );
+
+    return () => {
+      window.removeEventListener(
+        "settings-updated",
+        handleSettingsUpdated
+      );
+      window.removeEventListener(
+        "storage",
+        handleStorage
+      );
+      window.removeEventListener(
+        "focus",
+        handleFocus
+      );
+    };
+  }, [voices]);
+
+  useEffect(() => {
+    function refreshSavedWords() {
+      setSavedWords(
+        getVocabularyWords({
+          language: "de",
+          source: rabbitStory.title,
+        })
+      );
+    }
+
+    window.addEventListener(
+      "vocabulary-updated",
+      refreshSavedWords
+    );
+    window.addEventListener(
+      "storage",
+      refreshSavedWords
+    );
+
+    return () => {
+      window.removeEventListener(
+        "vocabulary-updated",
+        refreshSavedWords
+      );
+      window.removeEventListener(
+        "storage",
+        refreshSavedWords
       );
     };
   }, []);
@@ -565,7 +725,7 @@ export default function Home() {
   function closeWordPopup() {
     setSelectedWord(null);
 
-    if (pausedRef.current) {
+    if (pausedRef.current && autoContinue) {
       window.setTimeout(() => {
         continueReading();
       }, 100);
@@ -586,32 +746,33 @@ export default function Home() {
   function saveSelectedWord() {
     if (!selectedWord) return;
 
-    const alreadySaved = savedWords.some(
-      (item) => item.word === selectedWord.word
-    );
+    saveVocabularyWord({
+      word: selectedWord.word,
+      translation: selectedWord.translation,
+      language: "de",
+      example: selectedWord.example || "",
+      source: rabbitStory.title,
+    });
 
-    if (alreadySaved) return;
-
-    const updatedWords = [...savedWords, selectedWord];
-
-    setSavedWords(updatedWords);
-
-    localStorage.setItem(
-      "savedEnglishWords",
-      JSON.stringify(updatedWords)
+    setSavedWords(
+      getVocabularyWords({
+        language: "de",
+        source: rabbitStory.title,
+      })
     );
   }
 
   function removeSavedWord(word) {
-    const updatedWords = savedWords.filter(
-      (savedWord) => savedWord.word !== word
-    );
+    removeVocabularyWord({
+      word,
+      language: "de",
+    });
 
-    setSavedWords(updatedWords);
-
-    localStorage.setItem(
-      "savedEnglishWords",
-      JSON.stringify(updatedWords)
+    setSavedWords(
+      getVocabularyWords({
+        language: "de",
+        source: rabbitStory.title,
+      })
     );
   }
 
@@ -652,7 +813,7 @@ export default function Home() {
       <div style={{ maxWidth: "860px", margin: "0 auto" }}>
         <header style={{ marginBottom: "24px" }}>
           <p style={{ margin: 0, color: "#64748b", fontSize: "16px" }}>
-            Learn German through stories
+            Učte se německy pomocí příběhů
           </p>
 
           <h1
@@ -662,7 +823,7 @@ export default function Home() {
               fontSize: "42px",
             }}
           >
-            📚 German Stories
+            📚 Německé příběhy
           </h1>
         </header>
 
@@ -694,7 +855,7 @@ export default function Home() {
                 fontWeight: "bold",
               }}
             >
-              {rabbitStory.level} • {rabbitStory.estimatedMinutes} minutes
+              {rabbitStory.level} • {rabbitStory.estimatedMinutes} minut
             </p>
 
             <h2
@@ -714,7 +875,7 @@ export default function Home() {
                 fontSize: "16px",
               }}
             >
-              Page {currentPageIndex + 1} of {rabbitStory.pages.length} •{" "}
+              Strana {currentPageIndex + 1} z {rabbitStory.pages.length} •{" "}
               {currentPage.title}
             </p>
 
@@ -736,7 +897,7 @@ export default function Home() {
                   fontWeight: "bold",
                 }}
               >
-                German voice
+                Německý hlas
               </label>
 
               <select
@@ -755,7 +916,7 @@ export default function Home() {
                 }}
               >
                 {voices.length === 0 && (
-                  <option value="">No German voices found</option>
+                  <option value="">No Německý hlass found</option>
                 )}
 
                 {voices.map((voice) => (
@@ -777,7 +938,7 @@ export default function Home() {
                   fontWeight: "bold",
                 }}
               >
-                Reading speed: {readingSpeed.toFixed(2)}×
+                Rychlost čtení: {readingSpeed.toFixed(2)}×
               </label>
 
               <input
@@ -805,7 +966,7 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                🔊 Test voice
+                🔊 Vyzkoušet hlas
               </button>
             </div>
 
@@ -832,7 +993,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Continue saved
+                  ▶ Pokračovat z uložené pozice
                 </button>
               )}
 
@@ -850,7 +1011,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Read this page
+                  ▶ Přečíst tuto stránku
                 </button>
               )}
 
@@ -868,7 +1029,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ⏸ Pause
+                  ⏸ Pozastavit
                 </button>
               )}
 
@@ -886,7 +1047,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Continue
+                  ▶ Pokračovat
                 </button>
               )}
 
@@ -904,7 +1065,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  💾 Save position
+                  💾 Uložit pozici
                 </button>
               )}
 
@@ -921,7 +1082,7 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                ■ Stop
+                ■ Zastavit
               </button>
 
               <button
@@ -937,7 +1098,7 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                🇨🇿 {showTranslation ? "Hide Czech" : "Show Czech"}
+                🇨🇿 {showTranslation ? "Skrýt češtinu" : "Zobrazit češtinu"}
               </button>
             </div>
 
@@ -957,7 +1118,7 @@ export default function Home() {
             <div
               style={{
                 color: "#334155",
-                fontSize: "21px",
+                fontSize: `${getFontSizeInPixels(fontSize)}px`,
                 lineHeight: 1.95,
               }}
             >
@@ -977,6 +1138,7 @@ export default function Home() {
                           border: "none",
                           borderRadius: "6px",
                           background:
+                            highlightCurrentWord &&
                             highlightedSentence === sentenceIndex &&
                             highlightedWord === wordIndex
                               ? "#fde68a"
@@ -984,6 +1146,7 @@ export default function Home() {
                           color: "#334155",
                           font: "inherit",
                           fontWeight:
+                            highlightCurrentWord &&
                             highlightedSentence === sentenceIndex &&
                             highlightedWord === wordIndex
                               ? "700"
@@ -1060,7 +1223,7 @@ export default function Home() {
                   justifySelf: "start",
                 }}
               >
-                ← Previous
+                ← Předchozí
               </button>
 
               <div
@@ -1076,7 +1239,7 @@ export default function Home() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Page {currentPageIndex + 1} / {rabbitStory.pages.length}
+                Strana {currentPageIndex + 1} / {rabbitStory.pages.length}
               </div>
 
               <button
@@ -1102,7 +1265,7 @@ export default function Home() {
                   justifySelf: "end",
                 }}
               >
-                Next →
+                Další →
               </button>
             </div>
           </div>
@@ -1116,9 +1279,35 @@ export default function Home() {
             boxShadow: "0 14px 40px rgba(15, 23, 42, 0.10)",
           }}
         >
-          <h2 style={{ margin: "0 0 18px", color: "#172033" }}>
-            ⭐ Saved Words
-          </h2>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "14px",
+              flexWrap: "wrap",
+              marginBottom: "18px",
+            }}
+          >
+            <h2 style={{ margin: 0, color: "#172033" }}>
+              ⭐ Uložená německá slovíčka
+            </h2>
+
+            <a
+              href="/slovnik"
+              style={{
+                padding: "9px 13px",
+                borderRadius: "9px",
+                background: "#ea580c",
+                color: "white",
+                fontSize: "13px",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              Otevřít celý slovníček →
+            </a>
+          </div>
 
           {savedWords.length === 0 ? (
             <p style={{ color: "#64748b" }}>
@@ -1202,7 +1391,7 @@ export default function Home() {
             <button
               type="button"
               onClick={closeWordPopup}
-              aria-label="Close"
+              aria-label="Zavřít"
               style={{
                 position: "absolute",
                 top: "7px",
@@ -1229,7 +1418,7 @@ export default function Home() {
                 letterSpacing: "0.08em",
               }}
             >
-              German word
+              Německé slovo
             </p>
 
             <h2
@@ -1291,19 +1480,26 @@ export default function Home() {
             <button
               type="button"
               onClick={saveSelectedWord}
+              disabled={isSelectedWordSaved}
               style={{
                 width: "100%",
                 padding: "9px 11px",
                 border: "none",
                 borderRadius: "8px",
-                background: "#f59e0b",
+                background: isSelectedWordSaved
+                  ? "#16a34a"
+                  : "#f59e0b",
                 color: "white",
                 fontSize: "13px",
                 fontWeight: "bold",
-                cursor: "pointer",
+                cursor: isSelectedWordSaved
+                  ? "default"
+                  : "pointer",
               }}
             >
-              ⭐ Uložit slovo
+              {isSelectedWordSaved
+                ? "✅ Uloženo ve slovníku"
+                : "⭐ Uložit slovo"}
             </button>
 
             {isPaused && (

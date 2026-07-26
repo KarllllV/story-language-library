@@ -37,7 +37,7 @@ const menu = [
     icon: "🏆",
     title: "Můj pokrok",
     text: "Sledujte počet naučených slov, dokončených příběhů a dalších aktivit.",
-    link: "/vyvoj",
+    link: "/pokrok",
     button: "Zobrazit pokrok",
     color: "#0891b2",
   },

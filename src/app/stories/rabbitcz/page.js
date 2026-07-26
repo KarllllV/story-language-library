@@ -5,6 +5,19 @@ import rabbitStory from "@/data/rabbitstorycz";
 
 import { dictionary } from "@/data/dictionarycz";
 
+import {
+  getVocabularyWords,
+  migrateLegacyVocabulary,
+  removeVocabularyWord,
+  saveVocabularyWord,
+} from "@/lib/vocabularyStorage";
+
+import {
+  DEFAULT_APP_SETTINGS,
+  getAppSettings,
+  getFontSizeInPixels,
+} from "@/lib/settingsStorage";
+
 function normalizeWord(word) {
   return word
     .toLowerCase()
@@ -52,11 +65,26 @@ function estimatedWordDuration(word, speed) {
 
 export default function Home() {
   const [voices, setVoices] = useState([]);
-  const [selectedVoice, setSelectedVoice] = useState("");
-  const [readingSpeed, setReadingSpeed] = useState(0.85);
+  const [selectedVoice, setSelectedVoice] = useState(
+    DEFAULT_APP_SETTINGS.selectedVoice
+  );
+  const [readingSpeed, setReadingSpeed] = useState(
+    DEFAULT_APP_SETTINGS.readingSpeed
+  );
 
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
-  const [showTranslation, setShowTranslation] = useState(false);
+  const [showTranslation, setShowTranslation] = useState(
+    DEFAULT_APP_SETTINGS.showTranslations
+  );
+  const [fontSize, setFontSize] = useState(
+    DEFAULT_APP_SETTINGS.fontSize
+  );
+  const [autoContinue, setAutoContinue] = useState(
+    DEFAULT_APP_SETTINGS.autoContinue
+  );
+  const [highlightCurrentWord, setHighlightCurrentWord] = useState(
+    DEFAULT_APP_SETTINGS.highlightCurrentWord
+  );
 
   const [isReading, setIsReading] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -119,14 +147,13 @@ export default function Home() {
     loadVoices();
     window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
 
-    const storedWords = localStorage.getItem("savedCzechWords");
-    if (storedWords) {
-      try {
-        setSavedWords(JSON.parse(storedWords));
-      } catch {
-        setSavedWords([]);
-      }
-    }
+    const migratedWords = migrateLegacyVocabulary({
+      legacyKey: "savedCzechWords",
+      language: "cs",
+      source: rabbitStory.title,
+    });
+
+    setSavedWords(migratedWords);
 
     const storedProgress = localStorage.getItem(
       `storyProgress:${rabbitStory.id}`
@@ -168,6 +195,102 @@ export default function Home() {
       );
     };
   }, []);
+
+  useEffect(() => {
+    function applySettings(nextSettings = getAppSettings()) {
+      setReadingSpeed(
+        Number(
+          nextSettings.readingSpeed ??
+            DEFAULT_APP_SETTINGS.readingSpeed
+        )
+      );
+
+      setShowTranslation(
+        Boolean(
+          nextSettings.showTranslations ??
+            DEFAULT_APP_SETTINGS.showTranslations
+        )
+      );
+
+      setFontSize(
+        nextSettings.fontSize ||
+          DEFAULT_APP_SETTINGS.fontSize
+      );
+
+      setAutoContinue(
+        Boolean(
+          nextSettings.autoContinue ??
+            DEFAULT_APP_SETTINGS.autoContinue
+        )
+      );
+
+      setHighlightCurrentWord(
+        Boolean(
+          nextSettings.highlightCurrentWord ??
+            DEFAULT_APP_SETTINGS.highlightCurrentWord
+        )
+      );
+
+      if (
+        nextSettings.selectedVoice &&
+        voices.some(
+          (voice) =>
+            voice.name === nextSettings.selectedVoice
+        )
+      ) {
+        setSelectedVoice(nextSettings.selectedVoice);
+      }
+    }
+
+    function handleSettingsUpdated(event) {
+      applySettings(
+        event.detail || getAppSettings()
+      );
+    }
+
+    function handleStorage(event) {
+      if (
+        !event.key ||
+        event.key === "storyLanguageSettings"
+      ) {
+        applySettings();
+      }
+    }
+
+    function handleFocus() {
+      applySettings();
+    }
+
+    applySettings();
+
+    window.addEventListener(
+      "settings-updated",
+      handleSettingsUpdated
+    );
+    window.addEventListener(
+      "storage",
+      handleStorage
+    );
+    window.addEventListener(
+      "focus",
+      handleFocus
+    );
+
+    return () => {
+      window.removeEventListener(
+        "settings-updated",
+        handleSettingsUpdated
+      );
+      window.removeEventListener(
+        "storage",
+        handleStorage
+      );
+      window.removeEventListener(
+        "focus",
+        handleFocus
+      );
+    };
+  }, [voices]);
 
   useEffect(() => {
     function handleKeyboardShortcuts(event) {
@@ -623,7 +746,7 @@ export default function Home() {
   function closeWordPopup() {
     setSelectedWord(null);
 
-    if (pausedRef.current) {
+    if (pausedRef.current && autoContinue) {
       window.setTimeout(() => {
         continueReading();
       }, 100);
@@ -644,32 +767,37 @@ export default function Home() {
   function saveSelectedWord() {
     if (!selectedWord) return;
 
-    const alreadySaved = savedWords.some(
-      (item) => item.word === selectedWord.word
-    );
+    const result = saveVocabularyWord({
+      word: selectedWord.word,
+      translation: selectedWord.translation,
+      language: "cs",
+      example: selectedWord.example || "",
+      exampleTranslation:
+        selectedWord.exampleTranslation || "",
+      source: rabbitStory.title,
+    });
 
-    if (alreadySaved) return;
+    if (!result.item) return;
 
-    const updatedWords = [...savedWords, selectedWord];
-
-    setSavedWords(updatedWords);
-
-    localStorage.setItem(
-      "savedCzechWords",
-      JSON.stringify(updatedWords)
+    setSavedWords(
+      getVocabularyWords({
+        language: "cs",
+        source: rabbitStory.title,
+      })
     );
   }
 
   function removeSavedWord(word) {
-    const updatedWords = savedWords.filter(
-      (savedWord) => savedWord.word !== word
-    );
+    removeVocabularyWord({
+      word,
+      language: "cs",
+    });
 
-    setSavedWords(updatedWords);
-
-    localStorage.setItem(
-      "savedCzechWords",
-      JSON.stringify(updatedWords)
+    setSavedWords(
+      getVocabularyWords({
+        language: "cs",
+        source: rabbitStory.title,
+      })
     );
   }
 
@@ -1015,7 +1143,7 @@ export default function Home() {
             <div
               style={{
                 color: "#334155",
-                fontSize: "21px",
+                fontSize: `${getFontSizeInPixels(fontSize)}px`,
                 lineHeight: 1.95,
               }}
             >
@@ -1035,6 +1163,7 @@ export default function Home() {
                           border: "none",
                           borderRadius: "6px",
                           background:
+                            highlightCurrentWord &&
                             highlightedSentence === sentenceIndex &&
                             highlightedWord === wordIndex
                               ? "#fde68a"
@@ -1042,6 +1171,7 @@ export default function Home() {
                           color: "#334155",
                           font: "inherit",
                           fontWeight:
+                            highlightCurrentWord &&
                             highlightedSentence === sentenceIndex &&
                             highlightedWord === wordIndex
                               ? "700"
