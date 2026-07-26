@@ -869,7 +869,7 @@ export default function HomePage() {
                     type="text"
                     name="name"
                     required
-                    placeholder="Name"
+                    placeholder="jméno"
                     style={{
                       width: "100%",
                       padding: "12px 13px",
@@ -898,7 +898,7 @@ export default function HomePage() {
                     type="email"
                     name="email"
                     required
-                    placeholder="name@example.com"
+                    placeholder="jméno@email.cz"
                     style={{
                       width: "100%",
                       padding: "12px 13px",
@@ -943,7 +943,7 @@ export default function HomePage() {
                   <option value="New story request">
                     Požadavek na nový příběh
                   </option>
-                  <option value="Technical problem">Technický problám</option>
+                  <option value="Technical problem">Technický problém</option>
                   <option value="Cooperation">Spolupráce</option>
                   <option value="Other">Další</option>
                 </select>
