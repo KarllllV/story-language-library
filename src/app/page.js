@@ -2,52 +2,56 @@
 
 import Link from "next/link";
 
-const storyGroups = [
+const originalStoryGroups = [
   {
     id: "rabbit",
-    title: "Oliver and the Secret Forest",
+    title: "Oliver a tajemný les",
     image: "/images/rabbitpic.png",
     emoji: "🐰",
-    pages: "10 pages",
+    pages: "10 stran",
+
     versions: [
       {
         id: "rabbit-en",
-        language: "English",
+        title: "Oliver a tajemný les",
+        language: "Angličtina",
         flag: "🇬🇧",
         level: "A1–A2",
         description:
-          "Learn English with Oliver. Listen to the story, click every word for a Czech translation and save vocabulary.",
+          "Učte se anglicky s Oliverem. Poslouchejte příběh, kliknutím na neznámé slovíčko zobrazte jeho český překlad a uložte si ho do svého slovníku.",
         href: "/stories/rabbit",
-        price: "FREE",
-        available: true,
-        free: true,
-        buttonLabel: "▶ Read for free",
-      },
-      {
-        id: "rabbit-de",
-        language: "Deutsch",
-        flag: "🇩🇪",
-        level: "A1–A2",
-        description:
-          "Lerne Deutsch mit Oliver. Höre die Geschichte, klicke auf Wörter und speichere neue Vokabeln.",
-        href: "/stories/rabbitde",
-        price: "FREE",
-        available: true,
-        free: true,
-        buttonLabel: "▶ Kostenlos lesen",
-      },
-      {
-        id: "rabbit-cs",
-        language: "Čeština",
-        flag: "🇨🇿",
-        level: "Pro děti",
-        description:
-          "Přečti si Oliverův příběh v češtině. Vhodné také jako srovnávací verze k angličtině a němčině.",
-        href: "/stories/rabbitcz",
-        price: "FREE",
+        price: "Zdarma",
         available: true,
         free: true,
         buttonLabel: "▶ Číst zdarma",
+      },
+      {
+        id: "rabbit-de",
+        title: "Oliver a tajemný les",
+        language: "Němčina",
+        flag: "🇩🇪",
+        level: "A1–A2",
+        description:
+          "Učte se německy s Oliverem. Poslouchejte příběh, kliknutím na neznámé slovíčko zobrazte jeho český překlad a uložte si ho do svého slovníku.",
+        href: "/stories/rabbitde",
+        price: "Zdarma",
+        available: true,
+        free: true,
+        buttonLabel: "▶ Číst zdarma",
+      },
+      {
+        id: "rabbit-cs",
+        title: "Оливер и таинственный лес",
+        language: "Чешский язык",
+        flag: "🇨🇿",
+        level: "A1–A2",
+        description:
+          "Изучайте чешский язык вместе с Оливером. Слушайте рассказ, нажимайте на незнакомые слова, чтобы увидеть их перевод на русский язык, и сохраняйте их в свой словарь.",
+        href: "/stories/rabbitcz",
+        price: "Бесплатно",
+        available: true,
+        free: true,
+        buttonLabel: "▶ Читать бесплатно",
       },
     ],
   },
@@ -403,8 +407,7 @@ const storyGroups = [
         language: "Čeština",
         flag: "🇨🇿",
         level: "A1–A2",
-        description:
-          "Mladý delfín hledá v oceánu kouzelnou modrou perlu.",
+        description: "Mladý delfín hledá v oceánu kouzelnou modrou perlu.",
         href: "/stories/dolphin-cs",
         price: "€0.99",
         available: false,
@@ -493,8 +496,7 @@ const storyGroups = [
         language: "Čeština",
         flag: "🇨🇿",
         level: "A2",
-        description:
-          "Malý tučňák cestuje přes led, aby spatřil polární záři.",
+        description: "Malý tučňák cestuje přes led, aby spatřil polární záři.",
         href: "/stories/penguin-cs",
         price: "€0.99",
         available: false,
@@ -549,19 +551,180 @@ const storyGroups = [
   },
 ];
 
-const features = [
-  "🔊 Natural voice",
-  "💬 Click words",
-  "⭐ Save vocabulary",
-  "💾 Continue later",
+const localizedStories = {
+  rabbit: {
+    titleCs: "Oliver a tajemný les",
+    titleRu: "Оливер и таинственный лес",
+    pagesCs: "10 stran",
+    pagesRu: "10 страниц",
+    descriptionCs:
+      "Oliver se vydává do tajemného lesa a zažívá nečekané dobrodružství.",
+    descriptionRu:
+      "Оливер отправляется в таинственный лес, где его ждёт неожиданное приключение.",
+  },
+  horse: {
+    titleCs: "Statečný kůň",
+    titleRu: "Храбрый конь",
+    pagesCs: "Více než 25 stran",
+    pagesRu: "Более 25 страниц",
+    descriptionCs:
+      "Delší dobrodružný příběh o odvaze, přátelství a statečném koni.",
+    descriptionRu: "Увлекательная история о смелости, дружбе и храбром коне.",
+  },
+  fox: {
+    titleCs: "Chytrá liška",
+    titleRu: "Хитрая лиса",
+    pagesCs: "18 stran",
+    pagesRu: "18 страниц",
+    descriptionCs:
+      "Chytrá liška pomáhá lesním zvířatům vyřešit záhadný problém.",
+    descriptionRu:
+      "Хитрая лиса помогает лесным животным решить загадочную проблему.",
+  },
+  bear: {
+    titleCs: "Medvěd a ztracená hvězda",
+    titleRu: "Медведь и потерянная звезда",
+    pagesCs: "20 stran",
+    pagesRu: "20 страниц",
+    descriptionCs:
+      "Laskavý medvěd hledá spadlou hvězdu a objeví nečekané přátelství.",
+    descriptionRu:
+      "Добрый медведь ищет упавшую звезду и обретает неожиданную дружбу.",
+  },
+  owl: {
+    titleCs: "Moudrá sova",
+    titleRu: "Мудрая сова",
+    pagesCs: "16 stran",
+    pagesRu: "16 страниц",
+    descriptionCs:
+      "Moudrá sova učí mladá zvířata, že trpělivost pomáhá řešit složité problémy.",
+    descriptionRu:
+      "Мудрая сова учит молодых животных решать сложные проблемы с помощью терпения.",
+  },
+  dog: {
+    titleCs: "Cesta malého pejska",
+    titleRu: "Путешествие маленькой собаки",
+    pagesCs: "22 stran",
+    pagesRu: "22 страницы",
+    descriptionCs:
+      "Malý pejsek se vydá na cestu a pozná, co skutečně znamená odvaha.",
+    descriptionRu:
+      "Маленькая собака отправляется в путешествие и узнаёт, что такое настоящая смелость.",
+  },
+  cat: {
+    titleCs: "Kočka v hodinové věži",
+    titleRu: "Кошка в часовой башне",
+    pagesCs: "24 stran",
+    pagesRu: "24 страницы",
+    descriptionCs:
+      "Zvědavá kočka vstoupí do staré hodinové věže a odhalí zapomenuté tajemství.",
+    descriptionRu:
+      "Любопытная кошка входит в старую часовую башню и раскрывает забытую тайну.",
+  },
+  dragon: {
+    titleCs: "Přátelský drak",
+    titleRu: "Дружелюбный дракон",
+    pagesCs: "28 stran",
+    pagesRu: "28 страниц",
+    descriptionCs: "Mladý drak si chce najít přátele, ale všichni se ho bojí.",
+    descriptionRu: "Молодой дракон хочет найти друзей, но все его боятся.",
+  },
+  dolphin: {
+    titleCs: "Delfín a modrá perla",
+    titleRu: "Дельфин и голубая жемчужина",
+    pagesCs: "21 stran",
+    pagesRu: "21 страница",
+    descriptionCs: "Mladý delfín hledá v oceánu kouzelnou modrou perlu.",
+    descriptionRu: "Молодой дельфин ищет в океане волшебную голубую жемчужину.",
+  },
+  elephant: {
+    titleCs: "Slon, který nezapomněl",
+    titleRu: "Слон, который всё помнил",
+    pagesCs: "19 stran",
+    pagesRu: "19 страниц",
+    descriptionCs:
+      "Starý slon využije své vzpomínky, aby provedl rodinu náročnou cestou.",
+    descriptionRu:
+      "Старый слон использует свои воспоминания, чтобы провести семью через трудное путешествие.",
+  },
+  penguin: {
+    titleCs: "Tučňák a polární záře",
+    titleRu: "Пингвин и северное сияние",
+    pagesCs: "23 stran",
+    pagesRu: "23 страницы",
+    descriptionCs: "Malý tučňák cestuje přes led, aby spatřil polární záři.",
+    descriptionRu:
+      "Маленький пингвин путешествует по льду, чтобы увидеть северное сияние.",
+  },
+  lion: {
+    titleCs: "Lev bez řevu",
+    titleRu: "Лев без рыка",
+    pagesCs: "26 stran",
+    pagesRu: "26 страниц",
+    descriptionCs:
+      "Mladý lev ztratí svůj řev a zjistí, že skutečná síla vychází zevnitř.",
+    descriptionRu:
+      "Молодой лев теряет свой рык и узнаёт, что настоящая сила находится внутри.",
+  },
+};
+
+const storyGroups = originalStoryGroups.map((group) => {
+  const text = localizedStories[group.id];
+
+  return {
+    ...group,
+    title: text.titleCs,
+    pages: text.pagesCs,
+    versions: group.versions.map((story) => {
+      const isRussianCard = story.id.endsWith("-cs");
+      const isGermanCard = story.id.endsWith("-de");
+
+      return {
+        ...story,
+        title: isRussianCard ? text.titleRu : text.titleCs,
+        pages: isRussianCard ? text.pagesRu : text.pagesCs,
+        language: isRussianCard
+          ? "Чешский язык"
+          : isGermanCard
+            ? "Němčina"
+            : "Angličtina",
+        description: isRussianCard
+          ? `${text.descriptionRu} Слушайте рассказ, нажимайте на незнакомые слова, чтобы увидеть их перевод на русский язык, и сохраняйте их в свой словарь.`
+          : `${text.descriptionCs} Poslouchejte příběh, kliknutím na neznámé slovíčko zobrazte jeho český překlad a uložte si ho do svého slovníku.`,
+        price: story.free
+          ? isRussianCard
+            ? "Бесплатно"
+            : "Zdarma"
+          : story.price,
+        buttonLabel: story.free
+          ? isRussianCard
+            ? "▶ Читать бесплатно"
+            : "▶ Číst zdarma"
+          : undefined,
+      };
+    }),
+  };
+});
+
+const featuresCs = [
+  "🔊 Přirozený hlas",
+  "💬 Klikání na slovíčka",
+  "⭐ Ukládání slovíček do slovníku",
+  "💾 Ukládání na později",
+];
+
+const featuresRu = [
+  "🔊 Естественный голос",
+  "💬 Нажимайте на слова",
+  "⭐ Сохраняйте слова в словарь",
+  "💾 Продолжайте позже",
 ];
 
 export default function HomePage() {
-  function showComingSoon(storyTitle, language, price) {
-    const paymentText =
-      price === "FREE"
-        ? "This language version is being prepared."
-        : `This version will cost ${price}. The payment system will be connected later.`;
+  function showComingSoon(storyTitle, language, price, isRussianCard) {
+    const paymentText = isRussianCard
+      ? `Эта история готовится. После запуска она будет стоить ${price}. Платёжная система будет добавлена позже.`
+      : `Tento příběh se připravuje. Po spuštění bude stát ${price}. Platební systém bude doplněn později.`;
 
     window.alert(`${storyTitle} — ${language}\n\n${paymentText}`);
   }
@@ -598,7 +761,7 @@ export default function HomePage() {
               fontWeight: "700",
             }}
           >
-            Learn through stories in three languages
+            Učte se cizí jazyky prostřednictvím příběhů
           </p>
 
           <h1
@@ -648,7 +811,7 @@ export default function HomePage() {
                   lineHeight: 1.2,
                 }}
               >
-                ✉️ Contact Ing. Karl
+                ✉️ kontaktuj Ing. Karl a jeho vývojové studio
               </h2>
 
               <p
@@ -659,7 +822,14 @@ export default function HomePage() {
                   lineHeight: 1.55,
                 }}
               >
-                Send a question, suggestion or request for a new story.
+                Máte nápad nebo vlastní přání? Pošlete mi svůj dotaz, připomínku
+                nebo námět na nový příběh. Na přání vám mohu vytvořit originální
+                příběh podle vašeho tématu, upravit jeho obtížnost, délku či
+                jazykovou verzi nebo doplnit funkce, které by vám při studiu
+                pomohly. Aplikace je stále ve vývoji, proto uvítám také vaše
+                zkušenosti a návrhy na její vylepšení. Vaše zpětná vazba může
+                ovlivnit její další podobu a pomoci vytvořit užitečnější nástroj
+                pro výuku cizích jazyků.
               </p>
             </div>
 
@@ -694,7 +864,7 @@ export default function HomePage() {
                     fontWeight: "700",
                   }}
                 >
-                  Your name
+                  Tvoje jméno
                   <input
                     type="text"
                     name="name"
@@ -723,7 +893,7 @@ export default function HomePage() {
                     fontWeight: "700",
                   }}
                 >
-                  Your email
+                  Tvůj email
                   <input
                     type="email"
                     name="email"
@@ -753,7 +923,7 @@ export default function HomePage() {
                   fontWeight: "700",
                 }}
               >
-                Type of message
+                Napiš mi tvoji zprávu
                 <select
                   name="requestType"
                   defaultValue="Question"
@@ -769,11 +939,13 @@ export default function HomePage() {
                     outline: "none",
                   }}
                 >
-                  <option value="Question">Question</option>
-                  <option value="New story request">New story request</option>
-                  <option value="Technical problem">Technical problem</option>
-                  <option value="Cooperation">Cooperation</option>
-                  <option value="Other">Other</option>
+                  <option value="Question">Otázka</option>
+                  <option value="New story request">
+                    Požadavek na nový příběh
+                  </option>
+                  <option value="Technical problem">Technický problám</option>
+                  <option value="Cooperation">Spolupráce</option>
+                  <option value="Other">Další</option>
                 </select>
               </label>
 
@@ -786,12 +958,12 @@ export default function HomePage() {
                   fontWeight: "700",
                 }}
               >
-                Message
+                Zpráva
                 <textarea
                   name="message"
                   required
                   rows={5}
-                  placeholder="Write your question or request here..."
+                  placeholder="napiš svoji zprávu nebo otázku sem..."
                   style={{
                     width: "100%",
                     padding: "12px 13px",
@@ -826,7 +998,8 @@ export default function HomePage() {
                   required
                   style={{ marginTop: "2px" }}
                 />
-                I agree that my details may be used to answer this message.
+                Souhlasím že moje informace budou použity k odpovědi na vaši
+                otázku nebo požadavek.
               </label>
 
               <button
@@ -844,7 +1017,7 @@ export default function HomePage() {
                   boxShadow: "0 8px 20px rgba(37,99,235,0.22)",
                 }}
               >
-                ✉️ Send message
+                ✉️ Odeslat zprávu
               </button>
             </form>
           </section>
@@ -857,8 +1030,17 @@ export default function HomePage() {
               lineHeight: 1.65,
             }}
           >
-            Choose the same story in English, German or Czech. Listen, read,
-            compare languages and save new vocabulary.
+            Vyberte si stejný příběh v angličtině, němčině nebo češtině.
+            Poslouchejte jeho výslovnost, čtěte, porovnávejte jednotlivé jazyky
+            a ukládejte si nová slovíčka. Aplikace vám může celý text nahlas
+            předčítat a zároveň zvýrazňuje právě čtená slova, takže můžete
+            poslouchat správnou výslovnost a současně sledovat text. Pokud
+            narazíte na slovíčko, kterému nerozumíte, jednoduše na něj klikněte
+            a ihned se zobrazí jeho překlad. Slovíčko si můžete znovu nechat
+            vyslovit nebo si ho uložit do vlastního slovníku, abyste se k němu
+            mohli později vrátit. Díky propojení příběhů, poslechu, překladu a
+            vlastního slovníku si můžete rozšiřovat slovní zásobu a učit se cizí
+            jazyky přirozeným, jednoduchým a zábavným způsobem.
           </p>
 
           <div
@@ -870,7 +1052,11 @@ export default function HomePage() {
               marginTop: "24px",
             }}
           >
-            {["🇬🇧 English to CZ", "🇩🇪 Deutsch to CZ", "🇨🇿 Czech to Russian"].map((item) => (
+            {[
+              "🇬🇧 Angličtina → čeština",
+              "🇩🇪 Němčina → čeština",
+              "🇨🇿 Čeština → ruština",
+            ].map((item) => (
               <span
                 key={item}
                 style={{
@@ -949,8 +1135,7 @@ export default function HomePage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns:
-                  "repeat(3, minmax(0, 1fr))",
+                gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
                 gap: "18px",
               }}
             >
@@ -1022,10 +1207,9 @@ export default function HomePage() {
                         right: "12px",
                         padding: "7px 10px",
                         borderRadius: "999px",
-                        background:
-                          story.price === "FREE"
-                            ? "rgba(22,163,74,0.94)"
-                            : "rgba(37,99,235,0.94)",
+                        background: story.free
+                          ? "rgba(22,163,74,0.94)"
+                          : "rgba(37,99,235,0.94)",
                         color: "white",
                         fontSize: "13px",
                         fontWeight: "700",
@@ -1044,7 +1228,7 @@ export default function HomePage() {
                         fontWeight: "700",
                       }}
                     >
-                      {story.level} • {group.pages}
+                      {story.level} • {story.pages}
                     </p>
 
                     <h3
@@ -1054,7 +1238,7 @@ export default function HomePage() {
                         lineHeight: 1.2,
                       }}
                     >
-                      {group.title}
+                      {story.title}
                     </h3>
 
                     <p
@@ -1081,9 +1265,11 @@ export default function HomePage() {
                         lineHeight: 1.7,
                       }}
                     >
-                      {features.map((feature) => (
-                        <div key={feature}>{feature}</div>
-                      ))}
+                      {(story.id.endsWith("-cs") ? featuresRu : featuresCs).map(
+                        (feature) => (
+                          <div key={feature}>{feature}</div>
+                        ),
+                      )}
                     </div>
 
                     {story.available ? (
@@ -1104,16 +1290,17 @@ export default function HomePage() {
                           boxSizing: "border-box",
                         }}
                       >
-                        {story.buttonLabel || "▶ Read for free"}
+                        {story.buttonLabel || "▶ Číst zdarma"}
                       </Link>
                     ) : (
                       <button
                         type="button"
                         onClick={() =>
                           showComingSoon(
-                            group.title,
+                            story.title,
                             story.language,
-                            story.price
+                            story.price,
+                            story.id.endsWith("-cs"),
                           )
                         }
                         style={{
@@ -1121,17 +1308,20 @@ export default function HomePage() {
                           padding: "12px 14px",
                           border: "none",
                           borderRadius: "10px",
-                          background:
-                            story.price === "FREE" ? "#64748b" : "#2563eb",
+                          background: story.free ? "#64748b" : "#2563eb",
                           color: "white",
                           fontSize: "14px",
                           fontWeight: "700",
                           cursor: "pointer",
                         }}
                       >
-                        {story.price === "FREE"
-                          ? "Coming soon"
-                          : `🔒 Read for ${story.price}`}
+                        {story.id.endsWith("-cs")
+                          ? story.free
+                            ? "Скоро"
+                            : `🔒 Читать за ${story.price}`
+                          : story.free
+                            ? "Již brzy"
+                            : `🔒 Číst za ${story.price}`}
                       </button>
                     )}
                   </div>
@@ -1151,7 +1341,7 @@ export default function HomePage() {
             fontSize: "14px",
           }}
         >
-          Story Language Library • English • Deutsch • Čeština
+          Story Language Library • Angličtina • Němčina • Čeština
         </footer>
       </section>
 
