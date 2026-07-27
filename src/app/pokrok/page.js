@@ -28,34 +28,97 @@ const STORY_CONFIG = {
   rabbit: {
     title: "Oliver a tajemný les – angličtina",
     href: "/stories/rabbit",
+    icon: "🐰",
   },
   rabbitde: {
     title: "Oliver a tajemný les – němčina",
     href: "/stories/rabbitde",
+    icon: "🐰",
   },
   rabbitcz: {
     title: "Oliver a tajemný les – čeština",
     href: "/stories/rabbitcz",
+    icon: "🐰",
   },
   horse: {
-    title: "Statečný kůň",
+    title: "Statečný kůň – angličtina",
     href: "/stories/horse",
+    icon: "🐴",
+  },
+  horsede: {
+    title: "Statečný kůň – němčina",
+    href: "/stories/horsede",
+    icon: "🐴",
+  },
+  horsecz: {
+    title: "Statečný kůň – čeština",
+    href: "/stories/horsecz",
+    icon: "🐴",
+  },
+  fox: {
+    title: "Chytrá liška a tajemství Stříbrného pramene – angličtina",
+    href: "/stories/fox",
+    icon: "🦊",
+  },
+  foxde: {
+    title: "Chytrá liška a tajemství Stříbrného pramene – němčina",
+    href: "/stories/foxde",
+    icon: "🦊",
+  },
+  foxcz: {
+    title: "Chytrá liška a tajemství Stříbrného pramene – čeština",
+    href: "/stories/foxcz",
+    icon: "🦊",
   },
   "oliver-secret-forest": {
     title: "Oliver a tajemný les – angličtina",
     href: "/stories/rabbit",
+    icon: "🐰",
   },
   "oliver-secret-forest-en": {
     title: "Oliver a tajemný les – angličtina",
     href: "/stories/rabbit",
+    icon: "🐰",
   },
   "oliver-secret-forest-de": {
     title: "Oliver a tajemný les – němčina",
     href: "/stories/rabbitde",
+    icon: "🐰",
   },
   "oliver-secret-forest-cz": {
     title: "Oliver a tajemný les – čeština",
     href: "/stories/rabbitcz",
+    icon: "🐰",
+  },
+  "brave-horse": {
+    title: "Statečný kůň – angličtina",
+    href: "/stories/horse",
+    icon: "🐴",
+  },
+  "das-tapfere-pferd": {
+    title: "Statečný kůň – němčina",
+    href: "/stories/horsede",
+    icon: "🐴",
+  },
+  "statecny-kun": {
+    title: "Statečný kůň – čeština",
+    href: "/stories/horsecz",
+    icon: "🐴",
+  },
+  "clever-fox-silver-spring": {
+    title: "Chytrá liška a tajemství Stříbrného pramene – angličtina",
+    href: "/stories/fox",
+    icon: "🦊",
+  },
+  "die-kluge-fuechsin-silberquelle": {
+    title: "Chytrá liška a tajemství Stříbrného pramene – němčina",
+    href: "/stories/foxde",
+    icon: "🦊",
+  },
+  "chytra-liska-stribrny-pramen": {
+    title: "Chytrá liška a tajemství Stříbrného pramene – čeština",
+    href: "/stories/foxcz",
+    icon: "🦊",
   },
 };
 
@@ -175,6 +238,7 @@ function readStoryProgress() {
       id: storyId,
       title: getStoryTitle(storyId, progress),
       href: getStoryHref(storyId, progress),
+      icon: STORY_CONFIG[storyId]?.icon || "📘",
       pageIndex: Number(progress.pageIndex || 0),
       sentenceIndex: Number(progress.sentenceIndex || 0),
       wordIndex: Number(progress.wordIndex || 0),
@@ -671,7 +735,7 @@ export default function ProgressPage() {
             <div className="progressStoryList">
               {data.stories.map((story) => (
                 <article key={story.id}>
-                  <div className="progressStoryIcon">📘</div>
+                  <div className="progressStoryIcon">{story.icon}</div>
 
                   <div className="progressStoryContent">
                     <h3>{story.title}</h3>

@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import rabbitStory from "@/data/rabbitstorycz";
+import foxStoryDe from "@/data/foxstoryde";
 
-import { dictionary } from "@/data/dictionarycz";
+import { dictionary } from "@/data/dictionaryde.js";
 
 import {
   getVocabularyWords,
@@ -54,8 +54,9 @@ function markStoryAsCompleted(storyId) {
 
 function normalizeWord(word) {
   return word
+    .normalize("NFC")
     .toLowerCase()
-    .replace(/[.,!?;:“”"'()[\]{}]/g, "")
+    .replace(/^[\p{P}\p{S}]+|[\p{P}\p{S}]+$/gu, "")
     .trim();
 }
 
@@ -97,7 +98,7 @@ function estimatedWordDuration(word, speed) {
   return Math.max(170, (base + punctuationExtra) / speed);
 }
 
-export default function Home() {
+export default function FoxStoryDePage() {
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(
     DEFAULT_APP_SETTINGS.selectedVoice
@@ -138,9 +139,9 @@ export default function Home() {
   const highlightTimerRef = useRef(null);
   const boundarySeenRef = useRef(false);
 
-  const currentPage = rabbitStory.pages[currentPageIndex];
+  const currentPage = foxStoryDe.pages[currentPageIndex];
   const sentenceWords = useMemo(
-    () => currentPage.czech.map((sentence) => splitWords(sentence)),
+    () => currentPage.german.map((sentence) => splitWords(sentence)),
     [currentPage]
   );
 
@@ -153,32 +154,37 @@ export default function Home() {
   useEffect(() => {
     function loadVoices() {
       const availableVoices = window.speechSynthesis.getVoices();
-      const czechVoices = availableVoices.filter((voice) =>
-        voice.lang.toLowerCase().startsWith("cs")
+      const languageVoices = availableVoices.filter((voice) =>
+        voice.lang.toLowerCase().startsWith("de")
       );
 
-      setVoices(czechVoices);
+      setVoices(languageVoices);
 
       setSelectedVoice((currentVoice) => {
-        if (currentVoice) return currentVoice;
+        if (
+          currentVoice &&
+          languageVoices.some((voice) => voice.name === currentVoice)
+        ) {
+          return currentVoice;
+        }
 
         const preferredVoice =
-          czechVoices.find((voice) =>
+          languageVoices.find((voice) =>
             voice.name.toLowerCase().includes("natural")
           ) ||
-          czechVoices.find((voice) =>
+          languageVoices.find((voice) =>
             voice.name.toLowerCase().includes("online")
           ) ||
-          czechVoices.find((voice) =>
-            voice.name.toLowerCase().includes("aria")
+          languageVoices.find((voice) =>
+            voice.name.toLowerCase().includes("katja")
           ) ||
-          czechVoices.find((voice) =>
-            voice.name.toLowerCase().includes("sonia")
+          languageVoices.find((voice) =>
+            voice.name.toLowerCase().includes("anna")
           ) ||
-          czechVoices.find((voice) =>
+          languageVoices.find((voice) =>
             voice.name.toLowerCase().includes("google")
           ) ||
-          czechVoices[0];
+          languageVoices[0];
 
         return preferredVoice ? preferredVoice.name : "";
       });
@@ -188,15 +194,15 @@ export default function Home() {
     window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
 
     const migratedWords = migrateLegacyVocabulary({
-      legacyKey: "savedCzechWords",
-      language: "cs",
-      source: rabbitStory.title,
+      legacyKey: "savedGermanWords",
+      language: "de",
+      source: foxStoryDe.title,
     });
 
     setSavedWords(migratedWords);
 
     const storedProgress = localStorage.getItem(
-      `storyProgress:${rabbitStory.id}`
+      `storyProgress:${foxStoryDe.id}`
     );
 
     if (storedProgress) {
@@ -212,12 +218,12 @@ export default function Home() {
           setCurrentPageIndex(
             Math.min(
               Math.max(parsed.pageIndex, 0),
-              rabbitStory.pages.length - 1
+              foxStoryDe.pages.length - 1
             )
           );
         }
       } catch {
-        localStorage.removeItem(`storyProgress:${rabbitStory.id}`);
+        localStorage.removeItem(`storyProgress:${foxStoryDe.id}`);
       }
     }
 
@@ -341,12 +347,12 @@ export default function Home() {
         activeElement?.tagName === "SELECT" ||
         activeElement?.isContentEditable;
 
-      if (isTyping || selectedWord || event.repeat) return;
+      if (isTyping || selectedWord) return;
 
       switch (event.code) {
         case "Space":
           event.preventDefault();
-
+          if (event.repeat) return;
           if (isReading && !isPaused) {
             pauseReading();
           } else if (isPaused) {
@@ -356,7 +362,6 @@ export default function Home() {
 
         case "ArrowLeft":
           event.preventDefault();
-
           if (currentPageIndex > 0) {
             changePage(currentPageIndex - 1);
           }
@@ -364,8 +369,7 @@ export default function Home() {
 
         case "ArrowRight":
           event.preventDefault();
-
-          if (currentPageIndex < rabbitStory.pages.length - 1) {
+          if (currentPageIndex < foxStoryDe.pages.length - 1) {
             changePage(currentPageIndex + 1);
           }
           break;
@@ -385,7 +389,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("keydown", handleKeyboardShortcuts);
     };
-  }, [isReading, isPaused, currentPageIndex, selectedWord]);
+  }, [isReading, isPaused, selectedWord, currentPageIndex]);
 
   function saveProgress(
     pageIndex,
@@ -401,14 +405,14 @@ export default function Home() {
     };
 
     localStorage.setItem(
-      `storyProgress:${rabbitStory.id}`,
+      `storyProgress:${foxStoryDe.id}`,
       JSON.stringify(progress)
     );
 
     setSavedProgress(progress);
 
     if (showMessage) {
-      setProgressMessage("Pozice byla uložena.");
+      setProgressMessage("Die Position wurde gespeichert.");
 
       window.setTimeout(() => {
         setProgressMessage("");
@@ -417,7 +421,7 @@ export default function Home() {
   }
 
   function clearSavedProgress() {
-    localStorage.removeItem(`storyProgress:${rabbitStory.id}`);
+    localStorage.removeItem(`storyProgress:${foxStoryDe.id}`);
     setSavedProgress(null);
   }
 
@@ -432,7 +436,7 @@ export default function Home() {
       speech.voice = chosenVoice;
       speech.lang = chosenVoice.lang;
     } else {
-      speech.lang = "cs-CZ";
+      speech.lang = "de-DE";
     }
 
     speech.rate = readingSpeed;
@@ -455,8 +459,8 @@ export default function Home() {
   ) {
     stopHighlightTimer();
 
-    const words = rabbitStory.pages[pageIndex].czech[sentenceIndex]
-      ? splitWords(rabbitStory.pages[pageIndex].czech[sentenceIndex])
+    const words = foxStoryDe.pages[pageIndex].german[sentenceIndex]
+      ? splitWords(foxStoryDe.pages[pageIndex].german[sentenceIndex])
       : [];
 
     function advance(wordIndex) {
@@ -489,17 +493,17 @@ export default function Home() {
   ) {
     if (sessionId !== sessionIdRef.current) return;
 
-    const page = rabbitStory.pages[pageIndex];
+    const page = foxStoryDe.pages[pageIndex];
 
     if (!page) {
       stopReading();
       return;
     }
 
-    if (sentenceIndex >= page.czech.length) {
+    if (sentenceIndex >= page.german.length) {
       stopHighlightTimer();
 
-      if (pageIndex < rabbitStory.pages.length - 1) {
+      if (pageIndex < foxStoryDe.pages.length - 1) {
         const nextPageIndex = pageIndex + 1;
 
         setCurrentPageIndex(nextPageIndex);
@@ -521,14 +525,14 @@ export default function Home() {
         setIsReading(false);
         setIsPaused(false);
         pausedRef.current = false;
-        markStoryAsCompleted(rabbitStory.id);
+        markStoryAsCompleted(foxStoryDe.id);
         clearSavedProgress();
       }
 
       return;
     }
 
-    const fullSentence = page.czech[sentenceIndex];
+    const fullSentence = page.german[sentenceIndex];
     const spokenText =
       startWordIndex > 0
         ? textFromWord(fullSentence, startWordIndex)
@@ -686,7 +690,7 @@ export default function Home() {
 
     const safePageIndex = Math.min(
       Math.max(savedProgress.pageIndex, 0),
-      rabbitStory.pages.length - 1
+      foxStoryDe.pages.length - 1
     );
 
     setCurrentPageIndex(safePageIndex);
@@ -741,7 +745,7 @@ export default function Home() {
 
   function testVoice() {
     const testSpeech = new SpeechSynthesisUtterance(
-      "Dobrý den. Toto je ukázka vybraného českého hlasu."
+      "Hallo. Dies ist eine Vorschau der ausgewählten deutschen Stimme."
     );
 
     configureSpeech(testSpeech);
@@ -775,12 +779,11 @@ export default function Home() {
     setSelectedWord({
       word: cleanWord,
       translation:
-        wordInformation?.translation || "Překlad zatím není ve slovníku.",
+        wordInformation?.translation || "Die Übersetzung ist noch nicht im Wörterbuch.",
       example:
-        wordInformation?.example || "Příkladová věta zatím není dostupná.",
+        wordInformation?.example || "Ein Beispielsatz ist noch nicht verfügbar.",
       exampleTranslation:
-        wordInformation?.exampleTranslation ||
-        "Ruský překlad příkladové věty zatím není dostupný.",
+        wordInformation?.exampleTranslation || "",
     });
   }
 
@@ -811,19 +814,19 @@ export default function Home() {
     const result = saveVocabularyWord({
       word: selectedWord.word,
       translation: selectedWord.translation,
-      language: "cs",
+      language: "de",
       example: selectedWord.example || "",
       exampleTranslation:
         selectedWord.exampleTranslation || "",
-      source: rabbitStory.title,
+      source: foxStoryDe.title,
     });
 
     if (!result.item) return;
 
     setSavedWords(
       getVocabularyWords({
-        language: "cs",
-        source: rabbitStory.title,
+        language: "de",
+        source: foxStoryDe.title,
       })
     );
   }
@@ -831,13 +834,13 @@ export default function Home() {
   function removeSavedWord(word) {
     removeVocabularyWord({
       word,
-      language: "cs",
+      language: "de",
     });
 
     setSavedWords(
       getVocabularyWords({
-        language: "cs",
-        source: rabbitStory.title,
+        language: "de",
+        source: foxStoryDe.title,
       })
     );
   }
@@ -845,7 +848,7 @@ export default function Home() {
   function changePage(nextIndex) {
     const safeIndex = Math.min(
       Math.max(nextIndex, 0),
-      rabbitStory.pages.length - 1
+      foxStoryDe.pages.length - 1
     );
 
     sessionIdRef.current += 1;
@@ -879,7 +882,7 @@ export default function Home() {
       <div style={{ maxWidth: "860px", margin: "0 auto" }}>
         <header style={{ marginBottom: "24px" }}>
           <p style={{ margin: 0, color: "#64748b", fontSize: "16px" }}>
-            Učte se česky pomocí příběhů
+            Deutsch durch Geschichten lernen
           </p>
 
           <h1
@@ -889,7 +892,7 @@ export default function Home() {
               fontSize: "42px",
             }}
           >
-            📚 České příběhy
+            📚 Deutsche Geschichten
           </h1>
         </header>
 
@@ -903,8 +906,8 @@ export default function Home() {
           }}
         >
           <img
-            src={rabbitStory.image}
-            alt={rabbitStory.title}
+            src={foxStoryDe.image}
+            alt={foxStoryDe.title}
             style={{
               display: "block",
               width: "100%",
@@ -921,7 +924,7 @@ export default function Home() {
                 fontWeight: "bold",
               }}
             >
-              {rabbitStory.level} • {rabbitStory.estimatedMinutes} minutes
+              {foxStoryDe.level} • {foxStoryDe.estimatedMinutes} Minuten
             </p>
 
             <h2
@@ -931,7 +934,7 @@ export default function Home() {
                 fontSize: "34px",
               }}
             >
-              {rabbitStory.title}
+              {foxStoryDe.title}
             </h2>
 
             <p
@@ -941,7 +944,7 @@ export default function Home() {
                 fontSize: "16px",
               }}
             >
-              Page {currentPageIndex + 1} of {rabbitStory.pages.length} •{" "}
+              Seite {currentPageIndex + 1} von {foxStoryDe.pages.length} •{" "}
               {currentPage.title}
             </p>
 
@@ -963,7 +966,7 @@ export default function Home() {
                   fontWeight: "bold",
                 }}
               >
-                Český hlas
+                Deutsche Stimme
               </label>
 
               <select
@@ -982,7 +985,7 @@ export default function Home() {
                 }}
               >
                 {voices.length === 0 && (
-                  <option value="">Nebyl nalezen žádný český hlas</option>
+                  <option value="">Keine deutschen Stimmen gefunden</option>
                 )}
 
                 {voices.map((voice) => (
@@ -1004,7 +1007,7 @@ export default function Home() {
                   fontWeight: "bold",
                 }}
               >
-                Rychlost čtení: {readingSpeed.toFixed(2)}×
+                Lesegeschwindigkeit: {readingSpeed.toFixed(2)}×
               </label>
 
               <input
@@ -1032,7 +1035,7 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                🔊 Vyzkoušet hlas
+                🔊 Stimme testen
               </button>
             </div>
 
@@ -1059,7 +1062,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Pokračovat z uložené pozice
+                  ▶ Gespeicherte Position fortsetzen
                 </button>
               )}
 
@@ -1077,7 +1080,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Přečíst tuto stránku
+                  ▶ Diese Seite vorlesen
                 </button>
               )}
 
@@ -1095,7 +1098,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ⏸ Pauza
+                  ⏸ Pause
                 </button>
               )}
 
@@ -1113,7 +1116,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Pokračovat
+                  ▶ Fortsetzen
                 </button>
               )}
 
@@ -1131,7 +1134,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  💾 Uložit pozici
+                  💾 Position speichern
                 </button>
               )}
 
@@ -1148,7 +1151,7 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                ■ Zastavit
+                ■ Stopp
               </button>
 
               <button
@@ -1164,7 +1167,7 @@ export default function Home() {
                   cursor: "pointer",
                 }}
               >
-                🇷🇺 {showTranslation ? "Skrýt ruštinu" : "Zobrazit ruštinu"}
+                🇨🇿 {showTranslation ? "Tschechisch ausblenden" : "Tschechisch anzeigen"}
               </button>
             </div>
 
@@ -1244,12 +1247,12 @@ export default function Home() {
                     color: "#172033",
                   }}
                 >
-                  🇷🇺 Ruský překlad
+                  🇨🇿 Tschechische Übersetzung
                 </h3>
 
-                {currentPage.russian.map((paragraph, index) => (
+                {currentPage.czech.map((paragraph, index) => (
                   <p
-                    key={`russian-${index}`}
+                    key={`czech-${index}`}
                     style={{
                       margin: "0 0 12px",
                       color: "#475569",
@@ -1289,7 +1292,7 @@ export default function Home() {
                   justifySelf: "start",
                 }}
               >
-                ← Předchozí
+                ← Zurück
               </button>
 
               <div
@@ -1305,13 +1308,13 @@ export default function Home() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Strana {currentPageIndex + 1} / {rabbitStory.pages.length}
+                Seite {currentPageIndex + 1} / {foxStoryDe.pages.length}
               </div>
 
               <button
                 type="button"
                 disabled={
-                  currentPageIndex === rabbitStory.pages.length - 1
+                  currentPageIndex === foxStoryDe.pages.length - 1
                 }
                 onClick={() => changePage(currentPageIndex + 1)}
                 style={{
@@ -1319,19 +1322,19 @@ export default function Home() {
                   border: "none",
                   borderRadius: "12px",
                   background:
-                    currentPageIndex === rabbitStory.pages.length - 1
+                    currentPageIndex === foxStoryDe.pages.length - 1
                       ? "#94a3b8"
                       : "#2563eb",
                   color: "white",
                   fontSize: "16px",
                   cursor:
-                    currentPageIndex === rabbitStory.pages.length - 1
+                    currentPageIndex === foxStoryDe.pages.length - 1
                       ? "not-allowed"
                       : "pointer",
                   justifySelf: "end",
                 }}
               >
-                Další →
+                Weiter →
               </button>
             </div>
           </div>
@@ -1346,12 +1349,12 @@ export default function Home() {
           }}
         >
           <h2 style={{ margin: "0 0 18px", color: "#172033" }}>
-            ⭐ Uložená slovíčka
+            ⭐ Gespeicherte Wörter
           </h2>
 
           {savedWords.length === 0 ? (
             <p style={{ color: "#64748b" }}>
-              Zatím nemáš uloženo žádné slovíčko.
+              Du hast noch keine Wörter gespeichert.
             </p>
           ) : (
             savedWords.map((item) => (
@@ -1431,7 +1434,7 @@ export default function Home() {
             <button
               type="button"
               onClick={closeWordPopup}
-              aria-label="Close"
+              aria-label="Schließen"
               style={{
                 position: "absolute",
                 top: "7px",
@@ -1458,7 +1461,7 @@ export default function Home() {
                 letterSpacing: "0.08em",
               }}
             >
-              České slovo
+              Deutsches Wort
             </p>
 
             <h2
@@ -1498,19 +1501,21 @@ export default function Home() {
               {selectedWord.example}
             </div>
 
-            <div
-              style={{
-                padding: "9px",
-                marginBottom: "10px",
-                borderRadius: "9px",
-                background: "#eff6ff",
-                color: "#334155",
-                fontSize: "12px",
-                lineHeight: 1.4,
-              }}
-            >
-              🇷🇺 {selectedWord.exampleTranslation}
-            </div>
+            {selectedWord.exampleTranslation && (
+              <div
+                style={{
+                  padding: "9px",
+                  margin: "-3px 0 10px",
+                  borderRadius: "9px",
+                  background: "#eff6ff",
+                  color: "#475569",
+                  fontSize: "12px",
+                  lineHeight: 1.4,
+                }}
+              >
+                {selectedWord.exampleTranslation}
+              </div>
+            )}
 
             <button
               type="button"
@@ -1528,7 +1533,7 @@ export default function Home() {
                 cursor: "pointer",
               }}
             >
-              🔊 Vyslovit slovo
+              🔊 Wort aussprechen
             </button>
 
             <button
@@ -1552,8 +1557,8 @@ export default function Home() {
               }}
             >
               {isSelectedWordSaved
-                ? "✅ Uloženo ve slovníku"
-                : "⭐ Uložit slovo"}
+                ? "✅ Im Wörterbuch gespeichert"
+                : "⭐ Wort speichern"}
             </button>
 
             {isPaused && (
@@ -1566,7 +1571,7 @@ export default function Home() {
                   textAlign: "center",
                 }}
               >
-                Po zavření bude čtení pokračovat.
+                Nach dem Schließen wird das Vorlesen fortgesetzt.
               </p>
             )}
           </div>

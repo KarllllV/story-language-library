@@ -18,6 +18,40 @@ import {
   getFontSizeInPixels,
 } from "@/lib/settingsStorage";
 
+const COMPLETED_STORIES_KEY = "completedStories";
+
+function markStoryAsCompleted(storyId) {
+  let completedStories = [];
+
+  try {
+    const storedValue = window.localStorage.getItem(
+      COMPLETED_STORIES_KEY
+    );
+    const parsedValue = storedValue ? JSON.parse(storedValue) : [];
+
+    if (Array.isArray(parsedValue)) {
+      completedStories = parsedValue;
+    } else if (parsedValue && typeof parsedValue === "object") {
+      completedStories = Object.values(parsedValue);
+    }
+  } catch {
+    completedStories = [];
+  }
+
+  if (completedStories.includes(storyId)) {
+    return;
+  }
+
+  try {
+    window.localStorage.setItem(
+      COMPLETED_STORIES_KEY,
+      JSON.stringify([...completedStories, storyId])
+    );
+  } catch {
+    // Nedostupné úložiště nesmí přerušit čtení příběhu.
+  }
+}
+
 function normalizeWord(word) {
   return word
     .toLowerCase()
@@ -485,6 +519,7 @@ export default function Home() {
         setIsReading(false);
         setIsPaused(false);
         pausedRef.current = false;
+        markStoryAsCompleted(rabbitStory.id);
         clearSavedProgress();
       }
 
