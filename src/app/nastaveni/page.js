@@ -21,22 +21,19 @@ const LANGUAGE_OPTIONS = {
     label: "Angličtina",
     flag: "🇬🇧",
     speechCode: "en-US",
-    preview:
-      "Welcome to language learning. Let us practise together.",
+    preview: "Welcome to language learning. Let us practise together.",
   },
   de: {
     label: "Němčina",
     flag: "🇩🇪",
     speechCode: "de-DE",
-    preview:
-      "Willkommen beim Sprachenlernen. Lassen Sie uns gemeinsam üben.",
+    preview: "Willkommen beim Sprachenlernen. Lassen Sie uns gemeinsam üben.",
   },
   cs: {
     label: "Čeština",
     flag: "🇨🇿",
     speechCode: "cs-CZ",
-    preview:
-      "Vítejte ve výuce jazyků. Pojďme společně procvičovat.",
+    preview: "Vítejte ve výuce jazyků. Pojďme společně procvičovat.",
   },
 };
 
@@ -60,8 +57,7 @@ function loadStoredSettings() {
 }
 
 export default function NastaveniPage() {
-  const [settings, setSettings] =
-    useState(DEFAULT_SETTINGS);
+  const [settings, setSettings] = useState(DEFAULT_SETTINGS);
   const [voices, setVoices] = useState([]);
   const [message, setMessage] = useState("");
   const [isLoaded, setIsLoaded] = useState(false);
@@ -73,45 +69,29 @@ export default function NastaveniPage() {
 
   useEffect(() => {
     function loadVoices() {
-      if (
-        typeof window === "undefined" ||
-        !("speechSynthesis" in window)
-      ) {
+      if (typeof window === "undefined" || !("speechSynthesis" in window)) {
         return;
       }
 
-      setVoices(
-        window.speechSynthesis.getVoices()
-      );
+      setVoices(window.speechSynthesis.getVoices());
     }
 
     loadVoices();
 
-    window.speechSynthesis?.addEventListener(
-      "voiceschanged",
-      loadVoices
-    );
+    window.speechSynthesis?.addEventListener("voiceschanged", loadVoices);
 
     return () => {
-      window.speechSynthesis?.removeEventListener(
-        "voiceschanged",
-        loadVoices
-      );
+      window.speechSynthesis?.removeEventListener("voiceschanged", loadVoices);
     };
   }, []);
 
   const availableVoices = useMemo(() => {
-    const language =
-      LANGUAGE_OPTIONS[settings.defaultLanguage];
+    const language = LANGUAGE_OPTIONS[settings.defaultLanguage];
 
-    const prefix = language.speechCode
-      .slice(0, 2)
-      .toLowerCase();
+    const prefix = language.speechCode.slice(0, 2).toLowerCase();
 
     return voices.filter((voice) =>
-      voice.lang
-        .toLowerCase()
-        .startsWith(prefix)
+      voice.lang.toLowerCase().startsWith(prefix),
     );
   }, [voices, settings.defaultLanguage]);
 
@@ -122,21 +102,14 @@ export default function NastaveniPage() {
 
     if (
       settings.selectedVoice &&
-      !availableVoices.some(
-        (voice) =>
-          voice.name === settings.selectedVoice
-      )
+      !availableVoices.some((voice) => voice.name === settings.selectedVoice)
     ) {
       setSettings((current) => ({
         ...current,
         selectedVoice: "",
       }));
     }
-  }, [
-    availableVoices,
-    isLoaded,
-    settings.selectedVoice,
-  ]);
+  }, [availableVoices, isLoaded, settings.selectedVoice]);
 
   function updateSetting(name, value) {
     setSettings((current) => ({
@@ -148,15 +121,12 @@ export default function NastaveniPage() {
   }
 
   function saveSettings() {
-    localStorage.setItem(
-      SETTINGS_KEY,
-      JSON.stringify(settings)
-    );
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 
     window.dispatchEvent(
       new CustomEvent("settings-updated", {
         detail: settings,
-      })
+      }),
     );
 
     setMessage("Nastavení bylo uloženo.");
@@ -168,7 +138,7 @@ export default function NastaveniPage() {
 
   function resetSettings() {
     const confirmed = window.confirm(
-      "Opravdu chcete obnovit výchozí nastavení?"
+      "Opravdu chcete obnovit výchozí nastavení?",
     );
 
     if (!confirmed) {
@@ -177,53 +147,35 @@ export default function NastaveniPage() {
 
     setSettings(DEFAULT_SETTINGS);
 
-    localStorage.setItem(
-      SETTINGS_KEY,
-      JSON.stringify(DEFAULT_SETTINGS)
-    );
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(DEFAULT_SETTINGS));
 
     window.dispatchEvent(
       new CustomEvent("settings-updated", {
         detail: DEFAULT_SETTINGS,
-      })
+      }),
     );
 
-    setMessage(
-      "Výchozí nastavení bylo obnoveno."
-    );
+    setMessage("Výchozí nastavení bylo obnoveno.");
   }
 
   function testVoice() {
-    if (
-      typeof window === "undefined" ||
-      !("speechSynthesis" in window)
-    ) {
-      setMessage(
-        "Tento prohlížeč nepodporuje hlasové předčítání."
-      );
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) {
+      setMessage("Tento prohlížeč nepodporuje hlasové předčítání.");
       return;
     }
 
-    const language =
-      LANGUAGE_OPTIONS[settings.defaultLanguage];
+    const language = LANGUAGE_OPTIONS[settings.defaultLanguage];
 
     window.speechSynthesis.cancel();
 
-    const utterance =
-      new SpeechSynthesisUtterance(
-        language.preview
-      );
+    const utterance = new SpeechSynthesisUtterance(language.preview);
 
     utterance.lang = language.speechCode;
-    utterance.rate = Number(
-      settings.readingSpeed
-    );
+    utterance.rate = Number(settings.readingSpeed);
 
     const selectedVoice =
-      availableVoices.find(
-        (voice) =>
-          voice.name === settings.selectedVoice
-      ) || availableVoices[0];
+      availableVoices.find((voice) => voice.name === settings.selectedVoice) ||
+      availableVoices[0];
 
     if (selectedVoice) {
       utterance.voice = selectedVoice;
@@ -236,10 +188,7 @@ export default function NastaveniPage() {
     <main className="settingsPage">
       <section className="settingsContainer">
         <div className="settingsTopbar">
-          <Link
-            href="/"
-            className="settingsBackLink"
-          >
+          <Link href="/" className="settingsBackLink">
             ← Zpět na hlavní stránku
           </Link>
 
@@ -253,15 +202,12 @@ export default function NastaveniPage() {
         </div>
 
         <header className="settingsHeader">
-          <div className="settingsHeaderIcon">
-            ⚙️
-          </div>
+          <div className="settingsHeaderIcon">⚙️</div>
 
           <h1>Nastavení</h1>
 
           <p>
-            Nastavte výchozí jazyk, hlas,
-            rychlost předčítání a chování
+            Nastavte výchozí jazyk, hlas, rychlost předčítání a chování
             interaktivních příběhů.
           </p>
         </header>
@@ -273,31 +219,18 @@ export default function NastaveniPage() {
               <div>
                 <h2>Výchozí jazyk</h2>
                 <p>
-                  Tento jazyk se nabídne jako
-                  první v příbězích a cvičeních.
+                  Tento jazyk se nabídne jako první v příbězích a cvičeních.
                 </p>
               </div>
             </div>
 
             <div className="settingsLanguageOptions">
-              {Object.entries(
-                LANGUAGE_OPTIONS
-              ).map(([key, language]) => (
+              {Object.entries(LANGUAGE_OPTIONS).map(([key, language]) => (
                 <button
                   key={key}
                   type="button"
-                  className={
-                    settings.defaultLanguage ===
-                    key
-                      ? "active"
-                      : ""
-                  }
-                  onClick={() =>
-                    updateSetting(
-                      "defaultLanguage",
-                      key
-                    )
-                  }
+                  className={settings.defaultLanguage === key ? "active" : ""}
+                  onClick={() => updateSetting("defaultLanguage", key)}
                 >
                   <span>{language.flag}</span>
                   {language.label}
@@ -311,10 +244,7 @@ export default function NastaveniPage() {
               <span>🔊</span>
               <div>
                 <h2>Hlas předčítání</h2>
-                <p>
-                  Vyberte hlas dostupný ve vašem
-                  prohlížeči.
-                </p>
+                <p>Vyberte hlas dostupný ve vašem prohlížeči.</p>
               </div>
             </div>
 
@@ -324,15 +254,10 @@ export default function NastaveniPage() {
               <select
                 value={settings.selectedVoice}
                 onChange={(event) =>
-                  updateSetting(
-                    "selectedVoice",
-                    event.target.value
-                  )
+                  updateSetting("selectedVoice", event.target.value)
                 }
               >
-                <option value="">
-                  Automaticky vybrat nejlepší hlas
-                </option>
+                <option value="">Automaticky vybrat nejlepší hlas</option>
 
                 {availableVoices.map((voice) => (
                   <option
@@ -347,9 +272,8 @@ export default function NastaveniPage() {
 
             {availableVoices.length === 0 && (
               <div className="settingsWarning">
-                Pro zvolený jazyk nebyl nalezen
-                žádný hlas. Windows může vyžadovat
-                instalaci jazykového hlasu.
+                Pro zvolený jazyk nebyl nalezen žádný hlas. Windows může
+                vyžadovat instalaci jazykového hlasu.
               </div>
             )}
 
@@ -367,20 +291,13 @@ export default function NastaveniPage() {
               <span>⏱️</span>
               <div>
                 <h2>Rychlost předčítání</h2>
-                <p>
-                  Upravte rychlost čtení příběhů
-                  a výslovnostních ukázek.
-                </p>
+                <p>Upravte rychlost čtení příběhů a výslovnostních ukázek.</p>
               </div>
             </div>
 
             <div className="settingsRangeHeader">
               <span>Pomalu</span>
-              <strong>
-                {Number(
-                  settings.readingSpeed
-                ).toFixed(1)}×
-              </strong>
+              <strong>{Number(settings.readingSpeed).toFixed(1)}×</strong>
               <span>Rychle</span>
             </div>
 
@@ -392,46 +309,28 @@ export default function NastaveniPage() {
               step="0.1"
               value={settings.readingSpeed}
               onChange={(event) =>
-                updateSetting(
-                  "readingSpeed",
-                  Number(event.target.value)
-                )
+                updateSetting("readingSpeed", Number(event.target.value))
               }
             />
 
             <div className="settingsPresetButtons">
               <button
                 type="button"
-                onClick={() =>
-                  updateSetting(
-                    "readingSpeed",
-                    0.7
-                  )
-                }
+                onClick={() => updateSetting("readingSpeed", 0.7)}
               >
                 0,7×
               </button>
 
               <button
                 type="button"
-                onClick={() =>
-                  updateSetting(
-                    "readingSpeed",
-                    0.9
-                  )
-                }
+                onClick={() => updateSetting("readingSpeed", 0.9)}
               >
                 0,9×
               </button>
 
               <button
                 type="button"
-                onClick={() =>
-                  updateSetting(
-                    "readingSpeed",
-                    1.1
-                  )
-                }
+                onClick={() => updateSetting("readingSpeed", 1.1)}
               >
                 1,1×
               </button>
@@ -443,27 +342,15 @@ export default function NastaveniPage() {
               <span>🔤</span>
               <div>
                 <h2>Velikost textu</h2>
-                <p>
-                  Nastavte velikost textu v
-                  interaktivních příbězích.
-                </p>
+                <p>Nastavte velikost textu v interaktivních příbězích.</p>
               </div>
             </div>
 
             <div className="settingsFontOptions">
               <button
                 type="button"
-                className={
-                  settings.fontSize === "small"
-                    ? "active"
-                    : ""
-                }
-                onClick={() =>
-                  updateSetting(
-                    "fontSize",
-                    "small"
-                  )
-                }
+                className={settings.fontSize === "small" ? "active" : ""}
+                onClick={() => updateSetting("fontSize", "small")}
               >
                 <span className="small">A</span>
                 Menší
@@ -471,17 +358,8 @@ export default function NastaveniPage() {
 
               <button
                 type="button"
-                className={
-                  settings.fontSize === "medium"
-                    ? "active"
-                    : ""
-                }
-                onClick={() =>
-                  updateSetting(
-                    "fontSize",
-                    "medium"
-                  )
-                }
+                className={settings.fontSize === "medium" ? "active" : ""}
+                onClick={() => updateSetting("fontSize", "medium")}
               >
                 <span className="medium">A</span>
                 Střední
@@ -489,17 +367,8 @@ export default function NastaveniPage() {
 
               <button
                 type="button"
-                className={
-                  settings.fontSize === "large"
-                    ? "active"
-                    : ""
-                }
-                onClick={() =>
-                  updateSetting(
-                    "fontSize",
-                    "large"
-                  )
-                }
+                className={settings.fontSize === "large" ? "active" : ""}
+                onClick={() => updateSetting("fontSize", "large")}
               >
                 <span className="large">A</span>
                 Větší
@@ -512,33 +381,22 @@ export default function NastaveniPage() {
               <span>📖</span>
               <div>
                 <h2>Chování příběhů</h2>
-                <p>
-                  Zapněte nebo vypněte pomocné
-                  funkce při čtení.
-                </p>
+                <p>Zapněte nebo vypněte pomocné funkce při čtení.</p>
               </div>
             </div>
 
             <div className="settingsSwitchList">
               <label>
                 <div>
-                  <strong>
-                    Automaticky pokračovat
-                  </strong>
-                  <span>
-                    Po zavření překladu pokračovat
-                    ve čtení.
-                  </span>
+                  <strong>Automaticky pokračovat</strong>
+                  <span>Po zavření překladu pokračovat ve čtení.</span>
                 </div>
 
                 <input
                   type="checkbox"
                   checked={settings.autoContinue}
                   onChange={(event) =>
-                    updateSetting(
-                      "autoContinue",
-                      event.target.checked
-                    )
+                    updateSetting("autoContinue", event.target.checked)
                   }
                 />
 
@@ -547,25 +405,15 @@ export default function NastaveniPage() {
 
               <label>
                 <div>
-                  <strong>
-                    Zobrazovat překlady
-                  </strong>
-                  <span>
-                    U příběhu zobrazit překlad
-                    celé věty.
-                  </span>
+                  <strong>Zobrazovat překlady</strong>
+                  <span>U příběhu zobrazit překlad celé věty.</span>
                 </div>
 
                 <input
                   type="checkbox"
-                  checked={
-                    settings.showTranslations
-                  }
+                  checked={settings.showTranslations}
                   onChange={(event) =>
-                    updateSetting(
-                      "showTranslations",
-                      event.target.checked
-                    )
+                    updateSetting("showTranslations", event.target.checked)
                   }
                 />
 
@@ -574,25 +422,15 @@ export default function NastaveniPage() {
 
               <label>
                 <div>
-                  <strong>
-                    Zvýraznit čtené slovo
-                  </strong>
-                  <span>
-                    Během předčítání barevně
-                    označit aktuální slovo.
-                  </span>
+                  <strong>Zvýraznit čtené slovo</strong>
+                  <span>Během předčítání barevně označit aktuální slovo.</span>
                 </div>
 
                 <input
                   type="checkbox"
-                  checked={
-                    settings.highlightCurrentWord
-                  }
+                  checked={settings.highlightCurrentWord}
                   onChange={(event) =>
-                    updateSetting(
-                      "highlightCurrentWord",
-                      event.target.checked
-                    )
+                    updateSetting("highlightCurrentWord", event.target.checked)
                   }
                 />
 
@@ -602,11 +440,7 @@ export default function NastaveniPage() {
           </section>
         </div>
 
-        {message && (
-          <div className="settingsMessage">
-            ✅ {message}
-          </div>
-        )}
+        {message && <div className="settingsMessage">✅ {message}</div>}
 
         <div className="settingsBottomActions">
           <button
@@ -625,19 +459,6 @@ export default function NastaveniPage() {
             💾 Uložit nastavení
           </button>
         </div>
-
-        <section className="settingsNotice">
-          <h2>Jak nastavení funguje?</h2>
-
-          <p>
-            Nastavení se ukládá do tohoto
-            prohlížeče. Aby rychlost, hlas a další
-            volby ovlivnily všechny příběhy, musí
-            jednotlivé čtecí stránky používat
-            společný klíč{" "}
-            <code>storyLanguageSettings</code>.
-          </p>
-        </section>
       </section>
     </main>
   );

@@ -12,7 +12,7 @@ const menu = [
   {
     icon: "🎤",
     title: "Hlasová konverzace",
-    text: "Mluvte česky s AI a procvičujte běžné situace z každodenního života.",
+    text: "Mluvte s AI a procvičujte běžné situace z každodenního života.",
     link: "/konverzace",
     button: "Začít konverzaci",
     color: "#16a34a",

@@ -13,7 +13,7 @@ export default function Footer() {
         boxSizing: "border-box",
         color: "#ffffff",
         background:
-          "linear-gradient(135deg, #172554 0%, #1e3a8a 50%, #2563eb 100%)",
+          "linear-gradient(135deg, #104c1f 0%, #14460b 50%, #0d4c21 100%)",
         boxShadow: "0 -12px 35px rgba(15, 23, 42, 0.18)",
       }}
     >
