@@ -40,7 +40,7 @@ export default function Footer() {
               fontWeight: "800",
             }}
           >
-            📚 Ing. Karl Language Learning
+            📚 Ing. Karl Story Language Library
           </h3>
 
           <p

@@ -110,6 +110,12 @@ export default function Home() {
     [currentPage]
   );
 
+  const isSelectedWordSaved = selectedWord
+    ? savedWords.some(
+        (item) => item.word === selectedWord.word
+      )
+    : false;
+
   useEffect(() => {
     function loadVoices() {
       const availableVoices = window.speechSynthesis.getVoices();
@@ -1474,19 +1480,26 @@ export default function Home() {
             <button
               type="button"
               onClick={saveSelectedWord}
+              disabled={isSelectedWordSaved}
               style={{
                 width: "100%",
                 padding: "9px 11px",
                 border: "none",
                 borderRadius: "8px",
-                background: "#f59e0b",
+                background: isSelectedWordSaved
+                  ? "#16a34a"
+                  : "#f59e0b",
                 color: "white",
                 fontSize: "13px",
                 fontWeight: "bold",
-                cursor: "pointer",
+                cursor: isSelectedWordSaved
+                  ? "default"
+                  : "pointer",
               }}
             >
-              ⭐ Uložit slovo
+              {isSelectedWordSaved
+                ? "✅ Uloženo ve slovníku"
+                : "⭐ Uložit slovo"}
             </button>
 
             {isPaused && (

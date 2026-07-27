@@ -3,11 +3,10 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="hero">
-
       <div className="heroLogoWrapper">
         <Image
           src="/images/newlogo.jpg"
-          alt="Ing. Karl Language Learning"
+          alt="Ing. Karl Story Language Library"
           width={640}
           height={640}
           className="heroLogo"
@@ -15,21 +14,25 @@ export default function Hero() {
         />
       </div>
 
-      <h1>
-        Učte se jazyky
-        <br />
-        zábavně a efektivně
-      </h1>
+      <div className="heroContent">
+        <p className="heroEyebrow">
+          Příběhy • konverzace • výslovnost
+        </p>
 
-      <p className="heroText">
-        Interaktivní příběhy, hlasová konverzace s AI,
-        trénink výslovnosti a vlastní slovníček.
-        <br />
-        Vše na jednom místě pro moderní výuku jazyků.
-      </p>
+        <h1 className="heroTitle">
+          Učte se cizí jazyky
+          {" "}
+          <span className="heroTitleHighlight">
+            přirozeně a s radostí
+          </span>
+        </h1>
 
-      {/* zbytek beze změny */}
-
+        <p className="heroText">
+          Čtěte interaktivní příběhy, mluvte s AI a zlepšujte svou
+          výslovnost. Nová slovíčka si jedním kliknutím přeložíte
+          a uložíte do vlastního slovníčku.
+        </p>
+      </div>
     </section>
   );
 }

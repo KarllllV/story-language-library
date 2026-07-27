@@ -746,6 +746,27 @@ export default function HomePage() {
           padding: "48px 20px 36px",
         }}
       >
+        <div
+          style={{
+            maxWidth: "820px",
+            margin: "0 auto 24px",
+          }}
+        >
+          <Link
+            href="/"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              color: "#2563eb",
+              fontSize: "14px",
+              fontWeight: "800",
+              textDecoration: "none",
+            }}
+          >
+            ← Zpět na hlavní stránku
+          </Link>
+        </div>
+
         <header
           style={{
             maxWidth: "820px",

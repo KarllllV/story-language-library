@@ -24,11 +24,39 @@ const LANGUAGE_LABELS = {
   },
 };
 
-const STORY_NAMES = {
-  rabbit: "Oliver a tajemný les",
-  rabbitde: "Oliver a tajemný les – němčina",
-  rabbitcz: "Oliver a tajemný les – čeština",
-  horse: "Statečný kůň",
+const STORY_CONFIG = {
+  rabbit: {
+    title: "Oliver a tajemný les – angličtina",
+    href: "/stories/rabbit",
+  },
+  rabbitde: {
+    title: "Oliver a tajemný les – němčina",
+    href: "/stories/rabbitde",
+  },
+  rabbitcz: {
+    title: "Oliver a tajemný les – čeština",
+    href: "/stories/rabbitcz",
+  },
+  horse: {
+    title: "Statečný kůň",
+    href: "/stories/horse",
+  },
+  "oliver-secret-forest": {
+    title: "Oliver a tajemný les – angličtina",
+    href: "/stories/rabbit",
+  },
+  "oliver-secret-forest-en": {
+    title: "Oliver a tajemný les – angličtina",
+    href: "/stories/rabbit",
+  },
+  "oliver-secret-forest-de": {
+    title: "Oliver a tajemný les – němčina",
+    href: "/stories/rabbitde",
+  },
+  "oliver-secret-forest-cz": {
+    title: "Oliver a tajemný les – čeština",
+    href: "/stories/rabbitcz",
+  },
 };
 
 function safelyParse(value, fallback) {
@@ -49,9 +77,7 @@ function normalizeVocabularyItem(item) {
   }
 
   return {
-    language: ["en", "de", "cs"].includes(item.language)
-      ? item.language
-      : "en",
+    language: ["en", "de", "cs"].includes(item.language) ? item.language : "en",
     learned: Boolean(item.learned),
     reviewCount: Number(item.reviewCount || 0),
     correctCount: Number(item.correctCount || 0),
@@ -60,42 +86,27 @@ function normalizeVocabularyItem(item) {
 }
 
 function readVocabulary() {
-  const parsed = safelyParse(
-    localStorage.getItem(VOCABULARY_KEY),
-    []
-  );
+  const parsed = safelyParse(localStorage.getItem(VOCABULARY_KEY), []);
 
   if (!Array.isArray(parsed)) {
     return [];
   }
 
-  return parsed
-    .map(normalizeVocabularyItem)
-    .filter(Boolean);
+  return parsed.map(normalizeVocabularyItem).filter(Boolean);
 }
 
 function readPronunciationStats() {
-  const parsed = safelyParse(
-    localStorage.getItem(PRONUNCIATION_KEY),
-    {}
-  );
+  const parsed = safelyParse(localStorage.getItem(PRONUNCIATION_KEY), {});
 
   return {
     attempts: Number(parsed.attempts || 0),
-    best: Number(
-      parsed.bestScore ?? parsed.best ?? 0
-    ),
-    successful: Number(
-      parsed.completed ?? parsed.successful ?? 0
-    ),
+    best: Number(parsed.bestScore ?? parsed.best ?? 0),
+    successful: Number(parsed.completed ?? parsed.successful ?? 0),
   };
 }
 
 function readConversationStats() {
-  const parsed = safelyParse(
-    localStorage.getItem(CONVERSATION_STATS_KEY),
-    {}
-  );
+  const parsed = safelyParse(localStorage.getItem(CONVERSATION_STATS_KEY), {});
 
   return {
     sessions: Number(parsed.sessions || 0),
@@ -105,10 +116,7 @@ function readConversationStats() {
 }
 
 function readCompletedStories() {
-  const parsed = safelyParse(
-    localStorage.getItem(COMPLETED_STORIES_KEY),
-    []
-  );
+  const parsed = safelyParse(localStorage.getItem(COMPLETED_STORIES_KEY), []);
 
   if (Array.isArray(parsed)) {
     return parsed;
@@ -121,40 +129,43 @@ function readCompletedStories() {
   return [];
 }
 
-function getStoryTitle(storyId) {
+function getStoryTitle(storyId, progress) {
   return (
-    STORY_NAMES[storyId] ||
+    progress?.storyTitle ||
+    progress?.title ||
+    STORY_CONFIG[storyId]?.title ||
     storyId
       .replace(/[-_]/g, " ")
-      .replace(/\b\w/g, (letter) =>
-        letter.toUpperCase()
-      )
+      .replace(/\b\w/g, (letter) => letter.toUpperCase())
   );
+}
+
+function getStoryHref(storyId, progress) {
+  const storedHref = progress?.href || progress?.storyHref || progress?.route;
+  const isKnownStoredHref = Object.values(STORY_CONFIG).some(
+    (story) => story.href === storedHref,
+  );
+
+  if (isKnownStoredHref) {
+    return storedHref;
+  }
+
+  return STORY_CONFIG[storyId]?.href || "/stories";
 }
 
 function readStoryProgress() {
   const stories = [];
 
-  for (
-    let index = 0;
-    index < localStorage.length;
-    index += 1
-  ) {
+  for (let index = 0; index < localStorage.length; index += 1) {
     const key = localStorage.key(index);
 
     if (!key?.startsWith("storyProgress:")) {
       continue;
     }
 
-    const storyId = key.replace(
-      "storyProgress:",
-      ""
-    );
+    const storyId = key.replace("storyProgress:", "");
 
-    const progress = safelyParse(
-      localStorage.getItem(key),
-      null
-    );
+    const progress = safelyParse(localStorage.getItem(key), null);
 
     if (!progress) {
       continue;
@@ -162,23 +173,18 @@ function readStoryProgress() {
 
     stories.push({
       id: storyId,
-      title: getStoryTitle(storyId),
+      title: getStoryTitle(storyId, progress),
+      href: getStoryHref(storyId, progress),
       pageIndex: Number(progress.pageIndex || 0),
-      sentenceIndex: Number(
-        progress.sentenceIndex || 0
-      ),
+      sentenceIndex: Number(progress.sentenceIndex || 0),
       wordIndex: Number(progress.wordIndex || 0),
       savedAt: progress.savedAt || null,
     });
   }
 
   return stories.sort((first, second) => {
-    const firstDate = first.savedAt
-      ? new Date(first.savedAt).getTime()
-      : 0;
-    const secondDate = second.savedAt
-      ? new Date(second.savedAt).getTime()
-      : 0;
+    const firstDate = first.savedAt ? new Date(first.savedAt).getTime() : 0;
+    const secondDate = second.savedAt ? new Date(second.savedAt).getTime() : 0;
 
     return secondDate - firstDate;
   });
@@ -278,98 +284,65 @@ export default function ProgressPage() {
       loadProgress();
     }
 
-    window.addEventListener(
-      "storage",
-      handleStorageChange
-    );
-    window.addEventListener(
-      "vocabulary-updated",
-      handleStorageChange
-    );
-    window.addEventListener(
-      "focus",
-      handleStorageChange
-    );
+    window.addEventListener("storage", handleStorageChange);
+    window.addEventListener("vocabulary-updated", handleStorageChange);
+    window.addEventListener("focus", handleStorageChange);
 
     return () => {
-      window.removeEventListener(
-        "storage",
-        handleStorageChange
-      );
-      window.removeEventListener(
-        "vocabulary-updated",
-        handleStorageChange
-      );
-      window.removeEventListener(
-        "focus",
-        handleStorageChange
-      );
+      window.removeEventListener("storage", handleStorageChange);
+      window.removeEventListener("vocabulary-updated", handleStorageChange);
+      window.removeEventListener("focus", handleStorageChange);
     };
   }, [loadProgress]);
 
   const statistics = useMemo(() => {
     const totalWords = data.vocabulary.length;
-    const learnedWords = data.vocabulary.filter(
-      (item) => item.learned
-    ).length;
+    const learnedWords = data.vocabulary.filter((item) => item.learned).length;
 
     const reviewedWords = data.vocabulary.filter(
-      (item) => item.reviewCount > 0
+      (item) => item.reviewCount > 0,
     ).length;
 
-    const vocabularyByLanguage = Object.keys(
-      LANGUAGE_LABELS
-    ).map((language) => {
-      const languageWords =
-        data.vocabulary.filter(
-          (item) =>
-            item.language === language
+    const vocabularyByLanguage = Object.keys(LANGUAGE_LABELS).map(
+      (language) => {
+        const languageWords = data.vocabulary.filter(
+          (item) => item.language === language,
         );
 
-      const learned =
-        languageWords.filter(
-          (item) => item.learned
-        ).length;
+        const learned = languageWords.filter((item) => item.learned).length;
 
-      const percentage =
-        languageWords.length > 0
-          ? Math.round(
-              (learned /
-                languageWords.length) *
-                100
-            )
-          : 0;
+        const percentage =
+          languageWords.length > 0
+            ? Math.round((learned / languageWords.length) * 100)
+            : 0;
 
-      return {
-        language,
-        total: languageWords.length,
-        learned,
-        percentage,
-      };
-    });
+        return {
+          language,
+          total: languageWords.length,
+          learned,
+          percentage,
+        };
+      },
+    );
 
     const vocabularyPoints = Math.min(
       35,
-      learnedWords * 3 +
-        reviewedWords * 0.5
+      learnedWords * 3 + reviewedWords * 0.5,
     );
 
     const pronunciationPoints = Math.min(
       25,
-      data.pronunciation.successful * 2 +
-        data.pronunciation.attempts * 0.25
+      data.pronunciation.successful * 2 + data.pronunciation.attempts * 0.25,
     );
 
     const storyPoints = Math.min(
       25,
-      data.completedStories.length * 12 +
-        data.stories.length * 3
+      data.completedStories.length * 12 + data.stories.length * 3,
     );
 
     const conversationPoints = Math.min(
       15,
-      data.conversation.messages * 0.4 +
-        data.conversation.corrections * 0.5
+      data.conversation.messages * 0.4 + data.conversation.corrections * 0.5,
     );
 
     const score = Math.min(
@@ -378,15 +351,14 @@ export default function ProgressPage() {
         vocabularyPoints +
           pronunciationPoints +
           storyPoints +
-          conversationPoints
-      )
+          conversationPoints,
+      ),
     );
 
     return {
       totalWords,
       learnedWords,
-      learningWords:
-        totalWords - learnedWords,
+      learningWords: totalWords - learnedWords,
       reviewedWords,
       vocabularyByLanguage,
       score,
@@ -399,114 +371,84 @@ export default function ProgressPage() {
       {
         icon: "📝",
         title: "První slovíčko",
-        description:
-          "Uložili jste své první slovíčko.",
-        unlocked:
-          statistics.totalWords >= 1,
+        description: "Uložili jste své první slovíčko.",
+        unlocked: statistics.totalWords >= 1,
       },
       {
         icon: "📚",
         title: "Sbírka deseti slov",
-        description:
-          "Máte ve slovníčku alespoň 10 slov.",
-        unlocked:
-          statistics.totalWords >= 10,
+        description: "Máte ve slovníčku alespoň 10 slov.",
+        unlocked: statistics.totalWords >= 10,
       },
       {
         icon: "🧠",
         title: "První naučené slovo",
-        description:
-          "Označili jste první slovo jako naučené.",
-        unlocked:
-          statistics.learnedWords >= 1,
+        description: "Označili jste první slovo jako naučené.",
+        unlocked: statistics.learnedWords >= 1,
       },
       {
         icon: "🎤",
         title: "První pokus o výslovnost",
-        description:
-          "Vyzkoušeli jste trénink výslovnosti.",
-        unlocked:
-          data.pronunciation.attempts >= 1,
+        description: "Vyzkoušeli jste trénink výslovnosti.",
+        unlocked: data.pronunciation.attempts >= 1,
       },
       {
         icon: "🏆",
         title: "Výslovnost nad 90 %",
-        description:
-          "Dosáhli jste výsledku alespoň 90 %.",
-        unlocked:
-          data.pronunciation.best >= 90,
+        description: "Dosáhli jste výsledku alespoň 90 %.",
+        unlocked: data.pronunciation.best >= 90,
       },
       {
         icon: "📖",
         title: "První rozečtený příběh",
-        description:
-          "Uložili jste si pozici v příběhu.",
+        description: "Uložili jste si pozici v příběhu.",
         unlocked: data.stories.length >= 1,
       },
       {
         icon: "✅",
         title: "Dokončený příběh",
-        description:
-          "Dokončili jste celý příběh.",
-        unlocked:
-          data.completedStories.length >= 1,
+        description: "Dokončili jste celý příběh.",
+        unlocked: data.completedStories.length >= 1,
       },
       {
         icon: "💬",
         title: "Deset odpovědí",
-        description:
-          "Odeslali jste 10 odpovědí v konverzaci.",
-        unlocked:
-          data.conversation.messages >= 10,
+        description: "Odeslali jste 10 odpovědí v konverzaci.",
+        unlocked: data.conversation.messages >= 10,
       },
     ],
-    [data, statistics]
+    [data, statistics],
   );
 
-  const unlockedAchievements =
-    achievements.filter(
-      (achievement) =>
-        achievement.unlocked
-    ).length;
+  const unlockedAchievements = achievements.filter(
+    (achievement) => achievement.unlocked,
+  ).length;
 
   function resetProgress() {
     const confirmed = window.confirm(
-      "Opravdu chcete vymazat všechny statistiky pokroku? Slovíčka ze slovníku zůstanou zachována, ale jejich stav naučení a procvičování bude vynulován."
+      "Opravdu chcete vymazat všechny statistiky pokroku? Slovíčka ze slovníku zůstanou zachována, ale jejich stav naučení a procvičování bude vynulován.",
     );
 
     if (!confirmed) {
       return;
     }
 
-    const vocabulary = readVocabulary().map(
-      (item) => ({
-        ...item,
-        learned: false,
-        reviewCount: 0,
-        correctCount: 0,
-      })
-    );
+    const vocabulary = readVocabulary().map((item) => ({
+      ...item,
+      learned: false,
+      reviewCount: 0,
+      correctCount: 0,
+    }));
 
-    localStorage.setItem(
-      VOCABULARY_KEY,
-      JSON.stringify(vocabulary)
-    );
+    localStorage.setItem(VOCABULARY_KEY, JSON.stringify(vocabulary));
 
     localStorage.removeItem(PRONUNCIATION_KEY);
-    localStorage.removeItem(
-      COMPLETED_STORIES_KEY
-    );
-    localStorage.removeItem(
-      CONVERSATION_STATS_KEY
-    );
+    localStorage.removeItem(COMPLETED_STORIES_KEY);
+    localStorage.removeItem(CONVERSATION_STATS_KEY);
 
     const progressKeys = [];
 
-    for (
-      let index = 0;
-      index < localStorage.length;
-      index += 1
-    ) {
+    for (let index = 0; index < localStorage.length; index += 1) {
       const key = localStorage.key(index);
 
       if (key?.startsWith("storyProgress:")) {
@@ -514,9 +456,7 @@ export default function ProgressPage() {
       }
     }
 
-    progressKeys.forEach((key) =>
-      localStorage.removeItem(key)
-    );
+    progressKeys.forEach((key) => localStorage.removeItem(key));
 
     setMessage("Statistiky pokroku byly vynulovány.");
     loadProgress();
@@ -530,10 +470,7 @@ export default function ProgressPage() {
     <main className="progressPage">
       <section className="progressContainer">
         <div className="progressTopbar">
-          <Link
-            href="/"
-            className="progressBackLink"
-          >
+          <Link href="/" className="progressBackLink">
             ← Zpět na hlavní stránku
           </Link>
 
@@ -547,15 +484,12 @@ export default function ProgressPage() {
         </div>
 
         <header className="progressHeader">
-          <div className="progressHeaderIcon">
-            🏆
-          </div>
+          <div className="progressHeaderIcon">🏆</div>
 
           <h1>Můj pokrok</h1>
 
           <p>
-            Sledujte slovíčka, výslovnost,
-            rozečtené příběhy a další studijní
+            Sledujte slovíčka, výslovnost, rozečtené příběhy a další studijní
             aktivity uložené v tomto prohlížeči.
           </p>
         </header>
@@ -571,29 +505,22 @@ export default function ProgressPage() {
             }}
           >
             <div>
-              <strong>
-                {statistics.score} %
-              </strong>
+              <strong>{statistics.score} %</strong>
               <span>celkový pokrok</span>
             </div>
           </div>
 
           <div className="progressHeroContent">
             <span className="progressLevelBadge">
-              {statistics.level.emoji}{" "}
-              {statistics.level.name}
+              {statistics.level.emoji} {statistics.level.name}
             </span>
 
-            <h2>
-              Pokračujte ve studiu každý den
-            </h2>
+            <h2>Pokračujte ve studiu každý den</h2>
 
             <p>
               Do další úrovně potřebujete dosáhnout
-              {` ${statistics.level.next} %`}.
-              Největší pokrok získáte procvičováním
-              slovíček, výslovnosti a dokončováním
-              příběhů.
+              {` ${statistics.level.next} %`}. Největší pokrok získáte
+              procvičováním slovíček, výslovnosti a dokončováním příběhů.
             </p>
 
             <div className="progressHeroBar">
@@ -609,49 +536,37 @@ export default function ProgressPage() {
         <section className="progressStatsGrid">
           <article>
             <span>📝</span>
-            <strong>
-              {statistics.totalWords}
-            </strong>
+            <strong>{statistics.totalWords}</strong>
             <p>Uložených slovíček</p>
           </article>
 
           <article>
             <span>✅</span>
-            <strong>
-              {statistics.learnedWords}
-            </strong>
+            <strong>{statistics.learnedWords}</strong>
             <p>Naučených slovíček</p>
           </article>
 
           <article>
             <span>🎤</span>
-            <strong>
-              {data.pronunciation.attempts}
-            </strong>
+            <strong>{data.pronunciation.attempts}</strong>
             <p>Pokusů o výslovnost</p>
           </article>
 
           <article>
             <span>🏆</span>
-            <strong>
-              {data.pronunciation.best} %
-            </strong>
+            <strong>{data.pronunciation.best} %</strong>
             <p>Nejlepší výslovnost</p>
           </article>
 
           <article>
             <span>📖</span>
-            <strong>
-              {data.stories.length}
-            </strong>
+            <strong>{data.stories.length}</strong>
             <p>Rozečtených příběhů</p>
           </article>
 
           <article>
             <span>💬</span>
-            <strong>
-              {data.conversation.messages}
-            </strong>
+            <strong>{data.conversation.messages}</strong>
             <p>Odpovědí v konverzaci</p>
           </article>
         </section>
@@ -662,57 +577,39 @@ export default function ProgressPage() {
               <div>
                 <h2>📚 Pokrok ve slovíčkách</h2>
                 <p>
-                  {statistics.learnedWords} z{" "}
-                  {statistics.totalWords} slov
-                  je označeno jako naučených.
+                  {statistics.learnedWords} z {statistics.totalWords} slov je
+                  označeno jako naučených.
                 </p>
               </div>
 
-              <Link href="/slovnik">
-                Otevřít slovníček →
-              </Link>
+              <Link href="/slovnik">Otevřít slovníček →</Link>
             </div>
 
             <div className="progressLanguageList">
-              {statistics.vocabularyByLanguage.map(
-                (item) => (
-                  <article
-                    key={item.language}
-                  >
-                    <div className="progressLanguageTop">
-                      <span>
-                        {
-                          LANGUAGE_LABELS[
-                            item.language
-                          ].flag
-                        }{" "}
-                        {
-                          LANGUAGE_LABELS[
-                            item.language
-                          ].label
-                        }
-                      </span>
+              {statistics.vocabularyByLanguage.map((item) => (
+                <article key={item.language}>
+                  <div className="progressLanguageTop">
+                    <span>
+                      {LANGUAGE_LABELS[item.language].flag}{" "}
+                      {LANGUAGE_LABELS[item.language].label}
+                    </span>
 
-                      <strong>
-                        {item.learned} /{" "}
-                        {item.total}
-                      </strong>
-                    </div>
+                    <strong>
+                      {item.learned} / {item.total}
+                    </strong>
+                  </div>
 
-                    <div className="progressSmallBar">
-                      <span
-                        style={{
-                          width: `${item.percentage}%`,
-                        }}
-                      />
-                    </div>
+                  <div className="progressSmallBar">
+                    <span
+                      style={{
+                        width: `${item.percentage}%`,
+                      }}
+                    />
+                  </div>
 
-                    <small>
-                      {item.percentage} % naučeno
-                    </small>
-                  </article>
-                )
-              )}
+                  <small>{item.percentage} % naučeno</small>
+                </article>
+              ))}
             </div>
           </section>
 
@@ -720,27 +617,17 @@ export default function ProgressPage() {
             <div className="progressPanelHeading">
               <div>
                 <h2>🗣️ Výslovnost</h2>
-                <p>
-                  Orientační výsledky z tréninku
-                  výslovnosti.
-                </p>
+                <p>Orientační výsledky z tréninku výslovnosti.</p>
               </div>
 
-              <Link href="/vyslovnost">
-                Procvičovat →
-              </Link>
+              <Link href="/vyslovnost">Procvičovat →</Link>
             </div>
 
             <div className="progressPronunciationCards">
               <article>
                 <span>🎙️</span>
                 <div>
-                  <strong>
-                    {
-                      data.pronunciation
-                        .attempts
-                    }
-                  </strong>
+                  <strong>{data.pronunciation.attempts}</strong>
                   <p>Celkem pokusů</p>
                 </div>
               </article>
@@ -748,12 +635,7 @@ export default function ProgressPage() {
               <article>
                 <span>✅</span>
                 <div>
-                  <strong>
-                    {
-                      data.pronunciation
-                        .successful
-                    }
-                  </strong>
+                  <strong>{data.pronunciation.successful}</strong>
                   <p>Úspěšných pokusů</p>
                 </div>
               </article>
@@ -761,9 +643,7 @@ export default function ProgressPage() {
               <article>
                 <span>⭐</span>
                 <div>
-                  <strong>
-                    {data.pronunciation.best} %
-                  </strong>
+                  <strong>{data.pronunciation.best} %</strong>
                   <p>Nejlepší výsledek</p>
                 </div>
               </article>
@@ -775,53 +655,31 @@ export default function ProgressPage() {
           <div className="progressPanelHeading">
             <div>
               <h2>📖 Rozečtené příběhy</h2>
-              <p>
-                Uložené pozice ze všech jazykových
-                verzí příběhů.
-              </p>
+              <p>Uložené pozice ze všech jazykových verzí příběhů.</p>
             </div>
 
-            <Link href="/stories">
-              Vybrat příběh →
-            </Link>
+            <Link href="/stories">Vybrat příběh →</Link>
           </div>
 
           {data.stories.length === 0 ? (
             <div className="progressEmptyState">
               <span>📭</span>
-              <h3>
-                Zatím nemáte uložený rozečtený
-                příběh
-              </h3>
-              <p>
-                Otevřete příběh, spusťte čtení
-                a uložte si pozici.
-              </p>
+              <h3>Zatím nemáte uložený rozečtený příběh</h3>
+              <p>Otevřete příběh, spusťte čtení a uložte si pozici.</p>
             </div>
           ) : (
             <div className="progressStoryList">
               {data.stories.map((story) => (
                 <article key={story.id}>
-                  <div className="progressStoryIcon">
-                    📘
-                  </div>
+                  <div className="progressStoryIcon">📘</div>
 
                   <div className="progressStoryContent">
                     <h3>{story.title}</h3>
-                    <p>
-                      Uložená strana:{" "}
-                      {story.pageIndex + 1}
-                    </p>
-                    <small>
-                      {formatDate(story.savedAt)}
-                    </small>
+                    <p>Uložená strana: {story.pageIndex + 1}</p>
+                    <small>{formatDate(story.savedAt)}</small>
                   </div>
 
-                  <Link
-                    href={`/stories/${story.id}`}
-                  >
-                    Pokračovat →
-                  </Link>
+                  <Link href={story.href}>Pokračovat →</Link>
                 </article>
               ))}
             </div>
@@ -833,65 +691,40 @@ export default function ProgressPage() {
             <div>
               <h2>🎖️ Úspěchy</h2>
               <p>
-                Odemčeno {unlockedAchievements} z{" "}
-                {achievements.length} odznaků.
+                Odemčeno {unlockedAchievements} z {achievements.length} odznaků.
               </p>
             </div>
           </div>
 
           <div className="progressAchievementsGrid">
-            {achievements.map(
-              (achievement) => (
-                <article
-                  key={achievement.title}
-                  className={
-                    achievement.unlocked
-                      ? "unlocked"
-                      : "locked"
-                  }
-                >
-                  <span>
-                    {achievement.unlocked
-                      ? achievement.icon
-                      : "🔒"}
-                  </span>
+            {achievements.map((achievement) => (
+              <article
+                key={achievement.title}
+                className={achievement.unlocked ? "unlocked" : "locked"}
+              >
+                <span>{achievement.unlocked ? achievement.icon : "🔒"}</span>
 
-                  <div>
-                    <h3>
-                      {achievement.title}
-                    </h3>
-                    <p>
-                      {
-                        achievement.description
-                      }
-                    </p>
-                  </div>
-                </article>
-              )
-            )}
+                <div>
+                  <h3>{achievement.title}</h3>
+                  <p>{achievement.description}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 
-        {message && (
-          <div className="progressMessage">
-            ✅ {message}
-          </div>
-        )}
+        {message && <div className="progressMessage">✅ {message}</div>}
 
         <section className="progressDangerZone">
           <div>
             <h2>Vynulovat statistiky</h2>
             <p>
-              Slovíčka zůstanou ve slovníku,
-              ale jejich stav naučení a ostatní
+              Slovíčka zůstanou ve slovníku, ale jejich stav naučení a ostatní
               výsledky budou vynulovány.
             </p>
           </div>
 
-          <button
-            type="button"
-            onClick={resetProgress}
-          >
+          <button type="button" onClick={resetProgress}>
             Vynulovat můj pokrok
           </button>
         </section>
