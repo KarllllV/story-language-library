@@ -479,8 +479,7 @@ export default function PronunciationPage() {
               lineHeight: 1.65,
             }}
           >
-            Vyberte jazyk a příběh, který máte odemčený. Procvičovat budete
-            pouze skutečné věty z jeho textu.
+            Vyberte si jazyk a příběh. Procvičovat budete skutečné věty přímo z jeho textu.
           </p>
         </header>
 

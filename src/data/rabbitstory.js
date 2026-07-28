@@ -1,9 +1,9 @@
 export const rabbitStory = {
   id: "oliver-secret-forest",
-  title: "Oliver and the Secret Forest",
-  subtitle: "A gentle adventure for English learners",
+  title: "Oliver a tajemný les",
+  subtitle: "Příjemné dobrodružství pro studenty angličtiny",
   level: "A1-A2",
-  author: "Original story created for English Stories",
+  author: "Originální příběh pro Story Language Library",
   image: "/images/rabbitpic.png",
   estimatedMinutes: 35,
   totalPages: 10,

@@ -886,10 +886,7 @@ export default function VocabularyPage() {
               <span>📭</span>
               <h3>Slovníček je zatím prázdný</h3>
               <p>
-                Přidejte první slovíčko pomocí
-                formuláře nahoře. Později sem
-                připojíme také ukládání přímo
-                z jednotlivých příběhů.
+                V příběhu klikněte na neznámé slovíčko a uložte si ho do svého slovníku.
               </p>
             </div>
           ) : (

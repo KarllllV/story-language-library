@@ -83,7 +83,7 @@ export const pronunciationStories = [
   {
     id: "rabbit-en",
     groupId: "rabbit",
-    title: "Oliver and the Secret Forest",
+    title: "Oliver a tajemný les",
     languageId: "en",
     languageLabel: "Angličtina",
     flag: "🇬🇧",
@@ -113,7 +113,7 @@ export const pronunciationStories = [
   {
     id: "fox-en",
     groupId: "fox",
-    title: "The Clever Fox and the Mystery of the Silver Spring",
+    title: "Chytrá liška a tajemství Stříbrného pramene",
     languageId: "en",
     languageLabel: "Angličtina",
     flag: "🇬🇧",
@@ -128,7 +128,7 @@ export const pronunciationStories = [
   {
     id: "rabbit-de",
     groupId: "rabbit",
-    title: "Oliver und der geheime Wald",
+    title: "Oliver a tajemný les",
     languageId: "de",
     languageLabel: "Němčina",
     flag: "🇩🇪",

@@ -1,9 +1,9 @@
 export const foxStory = {
   id: "clever-fox-silver-spring",
-  title: "The Clever Fox and the Mystery of the Silver Spring",
-  subtitle: "A long adventure about clever thinking, courage, friendship, and the power of truth",
+  title: "Chytrá liška a tajemství Stříbrného pramene",
+  subtitle: "Dlouhé dobrodružství o důvtipu, odvaze, přátelství a síle pravdy",
   level: "A1-A2",
-  author: "Original story created for Ing. Karl Story Language Library",
+  author: "Originální příběh vytvořený pro Ing. Karl Story Language Library",
   image: "/images/foxpic.png",
   estimatedMinutes: 60,
   totalPages: 30,

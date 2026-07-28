@@ -844,11 +844,24 @@ async function requestAiTutor({
   }
 
   if (!response.ok) {
-    throw new Error(
+    const requestError = new Error(
       data?.error ||
         rawText ||
         `Server vrátil chybu HTTP ${response.status}.`
     );
+
+    requestError.status = response.status;
+    requestError.code = data?.code || "";
+    requestError.remaining =
+      typeof data?.remaining === "number"
+        ? data.remaining
+        : null;
+    requestError.dailyLimit =
+      typeof data?.dailyLimit === "number"
+        ? data.dailyLimit
+        : null;
+
+    throw requestError;
   }
 
   if (!data) {
@@ -879,6 +892,11 @@ export default function ConversationPage() {
   const [liveTranscript, setLiveTranscript] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isThinking, setIsThinking] = useState(false);
+  const [dailyAiLimit, setDailyAiLimit] = useState(30);
+  const [remainingAiAnswers, setRemainingAiAnswers] =
+    useState(null);
+  const [isAiLimitReached, setIsAiLimitReached] =
+    useState(false);
 
   const recognitionRef = useRef(null);
   const messagesEndRef = useRef(null);
@@ -891,6 +909,42 @@ export default function ConversationPage() {
       block: "end",
     });
   }, [messages, liveTranscript]);
+
+  useEffect(() => {
+    let isActive = true;
+
+    async function loadAiLimit() {
+      try {
+        const response = await fetch("/api/tutor", {
+          method: "GET",
+          cache: "no-store",
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !isActive) {
+          return;
+        }
+
+        if (typeof data.dailyLimit === "number") {
+          setDailyAiLimit(data.dailyLimit);
+        }
+
+        if (typeof data.remaining === "number") {
+          setRemainingAiAnswers(data.remaining);
+          setIsAiLimitReached(data.remaining <= 0);
+        }
+      } catch {
+        // Stav limitu se znovu načte při odeslání zprávy.
+      }
+    }
+
+    loadAiLimit();
+
+    return () => {
+      isActive = false;
+    };
+  }, []);
 
   function speakText(text) {
     if (
@@ -969,6 +1023,15 @@ export default function ConversationPage() {
         history: historyForAi,
       });
 
+      if (typeof aiResult.dailyLimit === "number") {
+        setDailyAiLimit(aiResult.dailyLimit);
+      }
+
+      if (typeof aiResult.remaining === "number") {
+        setRemainingAiAnswers(aiResult.remaining);
+        setIsAiLimitReached(aiResult.remaining <= 0);
+      }
+
       setConversationStep((currentStep) =>
         Math.min(currentStep + 1, 10)
       );
@@ -1002,6 +1065,52 @@ export default function ConversationPage() {
         speakText(aiResult.reply);
       }, 220);
     } catch (error) {
+      const limitWasReached =
+        error?.code === "DAILY_VISITOR_LIMIT" ||
+        error?.code === "DAILY_IP_LIMIT" ||
+        error?.code === "DAILY_GLOBAL_LIMIT";
+
+      if (typeof error?.dailyLimit === "number") {
+        setDailyAiLimit(error.dailyLimit);
+      }
+
+      if (typeof error?.remaining === "number") {
+        setRemainingAiAnswers(error.remaining);
+      }
+
+      if (limitWasReached) {
+        setIsAiLimitReached(true);
+
+        setMessages((currentMessages) => [
+          ...currentMessages.map((message) =>
+            message.id === userMessageId
+              ? {
+                  ...message,
+                  correctionStatus: "error",
+                  explanation:
+                    error instanceof Error
+                      ? error.message
+                      : "Dnešní limit byl vyčerpán.",
+                }
+              : message
+          ),
+          {
+            id: Date.now() + 1,
+            role: "assistant",
+            text:
+              "Dnešní bezplatný limit AI konverzace byl vyčerpán. Zkuste to prosím znovu zítra.",
+          },
+        ]);
+
+        setErrorMessage(
+          error instanceof Error
+            ? error.message
+            : "Dnešní limit AI konverzace byl vyčerpán."
+        );
+
+        return;
+      }
+
       const fallbackResult = createConversationTurn({
         text: cleanText,
         language: selectedLanguage,
@@ -1347,17 +1456,45 @@ export default function ConversationPage() {
           )}
 
           <div className="conversationControls">
+            <div
+              style={{
+                margin: "0 auto 18px",
+                padding: "12px 16px",
+                maxWidth: "520px",
+                borderRadius: "14px",
+                background: isAiLimitReached
+                  ? "#fff1f2"
+                  : "#ecfdf5",
+                border: isAiLimitReached
+                  ? "1px solid #fecdd3"
+                  : "1px solid #a7f3d0",
+                color: isAiLimitReached
+                  ? "#9f1239"
+                  : "#166534",
+                fontWeight: "700",
+                textAlign: "center",
+              }}
+            >
+              {remainingAiAnswers === null
+                ? "Načítám dnešní limit AI konverzace…"
+                : isAiLimitReached
+                  ? "Dnešní bezplatný limit AI konverzace byl vyčerpán."
+                  : `Dnes vám zbývá ${remainingAiAnswers} z ${dailyAiLimit} AI odpovědí.`}
+            </div>
+
             {!isListening ? (
               <button
                 type="button"
                 className="conversationMicrophoneButton"
                 onClick={startListening}
-                disabled={isThinking}
+                disabled={isThinking || isAiLimitReached}
               >
                 <span>🎤</span>
-                {isThinking
-                  ? "Anna přemýšlí…"
-                  : "Začít mluvit"}
+                {isAiLimitReached
+                  ? "Denní limit vyčerpán"
+                  : isThinking
+                    ? "Anna přemýšlí…"
+                    : "Začít mluvit"}
               </button>
             ) : (
               <button
@@ -1386,13 +1523,16 @@ export default function ConversationPage() {
                 onChange={(event) =>
                   setTypedText(event.target.value)
                 }
-                placeholder="Napište odpověď pro rychlé testování..."
+                placeholder="Napište svou odpověď..."
+                disabled={isAiLimitReached}
               />
 
               <button
                 type="submit"
                 disabled={
-                  isThinking || !typedText.trim()
+                  isThinking ||
+                  isAiLimitReached ||
+                  !typedText.trim()
                 }
               >
                 Odeslat
@@ -1402,7 +1542,7 @@ export default function ConversationPage() {
         </section>
 
         <section className="conversationHelp">
-          <h2>Co je nyní lepší?</h2>
+          <h2>Jak konverzace funguje.</h2>
 
           <div className="conversationHelpGrid">
             <div>

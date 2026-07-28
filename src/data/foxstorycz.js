@@ -1,9 +1,9 @@
 export const foxStoryCz = {
   "id": "chytra-liska-stribrny-pramen",
-  "title": "Chytrá liška a tajemství Stříbrného pramene",
-  "subtitle": "Dlouhé dobrodružství o důvtipu, odvaze, přátelství a síle pravdy",
+  "title": "Умная лиса и тайна Серебряного источника",
+  "subtitle": "Долгое приключение о находчивости, смелости, дружбе и силе правды",
   "level": "A1-A2",
-  "author": "Originální příběh vytvořený pro Ing. Karl Story Language Library",
+  "author": "Оригинальная история, созданная для Ing. Karl Story Language Library",
   "image": "/images/foxpic.png",
   "estimatedMinutes": 60,
   "totalPages": 30,

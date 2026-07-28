@@ -4,7 +4,7 @@ export const horseStoryCz = {
   "subtitle": "Dlouhé dobrodružství o odvaze, přátelství a naději",
   "level": "A1-A2",
   "author": "Originální příběh vytvořený pro Ing. Karl Story Language Library",
-  "image": "/images/horsepic.png",
+  "image": "/images/horse1.png",
   "estimatedMinutes": 50,
   "totalPages": 30,
   "pages": [

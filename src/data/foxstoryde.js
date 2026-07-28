@@ -1,9 +1,9 @@
 export const foxStoryDe = {
   "id": "die-kluge-fuechsin-silberquelle",
-  "title": "Die kluge Füchsin und das Geheimnis der Silberquelle",
-  "subtitle": "Ein langes Abenteuer über kluges Denken, Mut, Freundschaft und die Kraft der Wahrheit",
+  "title": "Chytrá liška a tajemství Stříbrného pramene",
+  "subtitle": "Dlouhé dobrodružství o důvtipu, odvaze, přátelství a síle pravdy",
   "level": "A1-A2",
-  "author": "Originalgeschichte für Ing. Karl Story Language Library",
+  "author": "Originální příběh vytvořený pro Ing. Karl Story Language Library",
   "image": "/images/foxpic.png",
   "estimatedMinutes": 60,
   "totalPages": 30,

@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+const footerLinkStyle = {
+  color: "#dbeafe",
+  fontSize: "16px",
+  textDecoration: "none",
+};
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -25,9 +31,8 @@ export default function Footer() {
           padding: "55px 30px 45px",
           boxSizing: "border-box",
           display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit, minmax(240px, 1fr))",
-          gap: "45px",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+          gap: "40px",
           textAlign: "center",
         }}
       >
@@ -70,6 +75,7 @@ export default function Footer() {
           </h3>
 
           <nav
+            aria-label="Rychlá navigace"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -77,58 +83,23 @@ export default function Footer() {
               gap: "12px",
             }}
           >
-            <Link
-              href="/"
-              style={{
-                color: "#dbeafe",
-                fontSize: "16px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/" style={footerLinkStyle}>
               Hlavní stránka
             </Link>
 
-            <Link
-              href="/stories"
-              style={{
-                color: "#dbeafe",
-                fontSize: "16px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/stories" style={footerLinkStyle}>
               Interaktivní příběhy
             </Link>
 
-            <Link
-              href="/konverzace"
-              style={{
-                color: "#dbeafe",
-                fontSize: "16px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/konverzace" style={footerLinkStyle}>
               Hlasová konverzace
             </Link>
 
-            <Link
-              href="/vyslovnost"
-              style={{
-                color: "#dbeafe",
-                fontSize: "16px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/vyslovnost" style={footerLinkStyle}>
               Výslovnost
             </Link>
 
-            <Link
-              href="/slovnik"
-              style={{
-                color: "#dbeafe",
-                fontSize: "16px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/slovnik" style={footerLinkStyle}>
               Slovníček
             </Link>
           </nav>
@@ -161,6 +132,56 @@ export default function Footer() {
             <span>🇩🇪 Němčina</span>
             <span>🇨🇿 Čeština</span>
           </div>
+        </div>
+
+        <div>
+          <h3
+            style={{
+              margin: "0 0 18px",
+              color: "#ffffff",
+              fontSize: "24px",
+              fontWeight: "800",
+            }}
+          >
+            Kontakt a informace
+          </h3>
+
+          <nav
+            aria-label="Kontakt a právní informace"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "12px",
+            }}
+          >
+            <Link
+              href="/kontakt"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "11px 16px",
+                borderRadius: "10px",
+                background: "#ffffff",
+                color: "#14532d",
+                fontSize: "15px",
+                fontWeight: "900",
+                textDecoration: "none",
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.13)",
+              }}
+            >
+              ✉ Kontaktní formulář
+            </Link>
+
+            <Link href="/ochrana-soukromi" style={footerLinkStyle}>
+              Ochrana soukromí
+            </Link>
+
+            <Link href="/cookies" style={footerLinkStyle}>
+              Informace o cookies
+            </Link>
+          </nav>
         </div>
       </div>
 

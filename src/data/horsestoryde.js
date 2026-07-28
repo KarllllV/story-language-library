@@ -1,10 +1,10 @@
 export const horseStoryDe = {
   "id": "das-tapfere-pferd",
-  "title": "Das tapfere Pferd",
+  "title": "Statečný kůň",
   "subtitle": "Ein langes Abenteuer über Mut, Freundschaft und Hoffnung",
   "level": "A1-A2",
   "author": "Originalgeschichte für Ing. Karl Story Language Library",
-  "image": "/images/horsepic.png",
+  "image": "/images/horse1.png",
   "estimatedMinutes": 50,
   "totalPages": 30,
   "pages": [

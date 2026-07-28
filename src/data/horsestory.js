@@ -1,6 +1,6 @@
 export const horseStory = {
   id: "brave-horse",
-  title: "The Brave Horse",
+  title: "Statečný kůň",
   subtitle: "A long adventure about courage, friendship, and hope",
   level: "A1-A2",
   author: "Original story created for Ing. Karl Story Language Library",

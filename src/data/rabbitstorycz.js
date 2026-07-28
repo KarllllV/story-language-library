@@ -1,9 +1,9 @@
 export const rabbitStory = {
   id: "oliver-secret-forest-cz",
-  title: "Oliver a tajemný les",
-  subtitle: "Jemné dobrodružství pro výuku češtiny",
+  title: "Оливер и таинственный лес",
+  subtitle: "Доброе приключение для изучения чешского языка",
   level: "A1-A2",
-  author: "Originální příběh pro Ing. Karl Story Language Library",
+  author: "Оригинальная история для Ing. Karl Story Language Library",
   image: "/images/rabbitpic.png",
   estimatedMinutes: 35,
   totalPages: 10,

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import foxStory from "@/data/foxstory";
 
@@ -18,15 +19,36 @@ import {
   getFontSizeInPixels,
 } from "@/lib/settingsStorage";
 
+const topNavigationButtonStyle = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  minHeight: "42px",
+  padding: "10px 15px",
+  borderRadius: "11px",
+  background: "#16a34a",
+  color: "white",
+  fontSize: "14px",
+  fontWeight: "800",
+  textDecoration: "none",
+  boxShadow: "0 7px 18px rgba(22, 163, 74, 0.18)",
+};
+
+const homeNavigationButtonStyle = {
+  ...topNavigationButtonStyle,
+  border: "1px solid #cbd5e1",
+  background: "rgba(255, 255, 255, 0.92)",
+  color: "#334155",
+  boxShadow: "0 7px 18px rgba(15, 23, 42, 0.07)",
+};
+
 const COMPLETED_STORIES_KEY = "completedStories";
 
 function markStoryAsCompleted(storyId) {
   let completedStories = [];
 
   try {
-    const storedValue = window.localStorage.getItem(
-      COMPLETED_STORIES_KEY
-    );
+    const storedValue = window.localStorage.getItem(COMPLETED_STORIES_KEY);
     const parsedValue = storedValue ? JSON.parse(storedValue) : [];
 
     if (Array.isArray(parsedValue)) {
@@ -45,7 +67,7 @@ function markStoryAsCompleted(storyId) {
   try {
     window.localStorage.setItem(
       COMPLETED_STORIES_KEY,
-      JSON.stringify([...completedStories, storyId])
+      JSON.stringify([...completedStories, storyId]),
     );
   } catch {
     // Nedostupné úložiště nesmí přerušit čtení příběhu.
@@ -101,24 +123,22 @@ function estimatedWordDuration(word, speed) {
 export default function FoxStoryPage() {
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(
-    DEFAULT_APP_SETTINGS.selectedVoice
+    DEFAULT_APP_SETTINGS.selectedVoice,
   );
   const [readingSpeed, setReadingSpeed] = useState(
-    DEFAULT_APP_SETTINGS.readingSpeed
+    DEFAULT_APP_SETTINGS.readingSpeed,
   );
 
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [showTranslation, setShowTranslation] = useState(
-    DEFAULT_APP_SETTINGS.showTranslations
+    DEFAULT_APP_SETTINGS.showTranslations,
   );
-  const [fontSize, setFontSize] = useState(
-    DEFAULT_APP_SETTINGS.fontSize
-  );
+  const [fontSize, setFontSize] = useState(DEFAULT_APP_SETTINGS.fontSize);
   const [autoContinue, setAutoContinue] = useState(
-    DEFAULT_APP_SETTINGS.autoContinue
+    DEFAULT_APP_SETTINGS.autoContinue,
   );
   const [highlightCurrentWord, setHighlightCurrentWord] = useState(
-    DEFAULT_APP_SETTINGS.highlightCurrentWord
+    DEFAULT_APP_SETTINGS.highlightCurrentWord,
   );
 
   const [isReading, setIsReading] = useState(false);
@@ -142,20 +162,18 @@ export default function FoxStoryPage() {
   const currentPage = foxStory.pages[currentPageIndex];
   const sentenceWords = useMemo(
     () => currentPage.english.map((sentence) => splitWords(sentence)),
-    [currentPage]
+    [currentPage],
   );
 
   const isSelectedWordSaved = selectedWord
-    ? savedWords.some(
-        (item) => item.word === selectedWord.word
-      )
+    ? savedWords.some((item) => item.word === selectedWord.word)
     : false;
 
   useEffect(() => {
     function loadVoices() {
       const availableVoices = window.speechSynthesis.getVoices();
       const languageVoices = availableVoices.filter((voice) =>
-        voice.lang.toLowerCase().startsWith("en")
+        voice.lang.toLowerCase().startsWith("en"),
       );
 
       setVoices(languageVoices);
@@ -170,19 +188,19 @@ export default function FoxStoryPage() {
 
         const preferredVoice =
           languageVoices.find((voice) =>
-            voice.name.toLowerCase().includes("natural")
+            voice.name.toLowerCase().includes("natural"),
           ) ||
           languageVoices.find((voice) =>
-            voice.name.toLowerCase().includes("online")
+            voice.name.toLowerCase().includes("online"),
           ) ||
           languageVoices.find((voice) =>
-            voice.name.toLowerCase().includes("aria")
+            voice.name.toLowerCase().includes("aria"),
           ) ||
           languageVoices.find((voice) =>
-            voice.name.toLowerCase().includes("sonia")
+            voice.name.toLowerCase().includes("sonia"),
           ) ||
           languageVoices.find((voice) =>
-            voice.name.toLowerCase().includes("google")
+            voice.name.toLowerCase().includes("google"),
           ) ||
           languageVoices[0];
 
@@ -201,9 +219,7 @@ export default function FoxStoryPage() {
 
     setSavedWords(migratedWords);
 
-    const storedProgress = localStorage.getItem(
-      `storyProgress:${foxStory.id}`
-    );
+    const storedProgress = localStorage.getItem(`storyProgress:${foxStory.id}`);
 
     if (storedProgress) {
       try {
@@ -216,10 +232,7 @@ export default function FoxStoryPage() {
         ) {
           setSavedProgress(parsed);
           setCurrentPageIndex(
-            Math.min(
-              Math.max(parsed.pageIndex, 0),
-              foxStory.pages.length - 1
-            )
+            Math.min(Math.max(parsed.pageIndex, 0), foxStory.pages.length - 1),
           );
         }
       } catch {
@@ -235,70 +248,50 @@ export default function FoxStoryPage() {
         window.clearTimeout(highlightTimerRef.current);
       }
 
-      window.speechSynthesis.removeEventListener(
-        "voiceschanged",
-        loadVoices
-      );
+      window.speechSynthesis.removeEventListener("voiceschanged", loadVoices);
     };
   }, []);
 
   useEffect(() => {
     function applySettings(nextSettings = getAppSettings()) {
       setReadingSpeed(
-        Number(
-          nextSettings.readingSpeed ??
-            DEFAULT_APP_SETTINGS.readingSpeed
-        )
+        Number(nextSettings.readingSpeed ?? DEFAULT_APP_SETTINGS.readingSpeed),
       );
 
       setShowTranslation(
         Boolean(
           nextSettings.showTranslations ??
-            DEFAULT_APP_SETTINGS.showTranslations
-        )
+            DEFAULT_APP_SETTINGS.showTranslations,
+        ),
       );
 
-      setFontSize(
-        nextSettings.fontSize ||
-          DEFAULT_APP_SETTINGS.fontSize
-      );
+      setFontSize(nextSettings.fontSize || DEFAULT_APP_SETTINGS.fontSize);
 
       setAutoContinue(
-        Boolean(
-          nextSettings.autoContinue ??
-            DEFAULT_APP_SETTINGS.autoContinue
-        )
+        Boolean(nextSettings.autoContinue ?? DEFAULT_APP_SETTINGS.autoContinue),
       );
 
       setHighlightCurrentWord(
         Boolean(
           nextSettings.highlightCurrentWord ??
-            DEFAULT_APP_SETTINGS.highlightCurrentWord
-        )
+            DEFAULT_APP_SETTINGS.highlightCurrentWord,
+        ),
       );
 
       if (
         nextSettings.selectedVoice &&
-        voices.some(
-          (voice) =>
-            voice.name === nextSettings.selectedVoice
-        )
+        voices.some((voice) => voice.name === nextSettings.selectedVoice)
       ) {
         setSelectedVoice(nextSettings.selectedVoice);
       }
     }
 
     function handleSettingsUpdated(event) {
-      applySettings(
-        event.detail || getAppSettings()
-      );
+      applySettings(event.detail || getAppSettings());
     }
 
     function handleStorage(event) {
-      if (
-        !event.key ||
-        event.key === "storyLanguageSettings"
-      ) {
+      if (!event.key || event.key === "storyLanguageSettings") {
         applySettings();
       }
     }
@@ -309,32 +302,14 @@ export default function FoxStoryPage() {
 
     applySettings();
 
-    window.addEventListener(
-      "settings-updated",
-      handleSettingsUpdated
-    );
-    window.addEventListener(
-      "storage",
-      handleStorage
-    );
-    window.addEventListener(
-      "focus",
-      handleFocus
-    );
+    window.addEventListener("settings-updated", handleSettingsUpdated);
+    window.addEventListener("storage", handleStorage);
+    window.addEventListener("focus", handleFocus);
 
     return () => {
-      window.removeEventListener(
-        "settings-updated",
-        handleSettingsUpdated
-      );
-      window.removeEventListener(
-        "storage",
-        handleStorage
-      );
-      window.removeEventListener(
-        "focus",
-        handleFocus
-      );
+      window.removeEventListener("settings-updated", handleSettingsUpdated);
+      window.removeEventListener("storage", handleStorage);
+      window.removeEventListener("focus", handleFocus);
     };
   }, [voices]);
 
@@ -395,7 +370,7 @@ export default function FoxStoryPage() {
     pageIndex,
     sentenceIndex,
     wordIndex,
-    showMessage = false
+    showMessage = false,
   ) {
     const progress = {
       pageIndex,
@@ -406,7 +381,7 @@ export default function FoxStoryPage() {
 
     localStorage.setItem(
       `storyProgress:${foxStory.id}`,
-      JSON.stringify(progress)
+      JSON.stringify(progress),
     );
 
     setSavedProgress(progress);
@@ -455,7 +430,7 @@ export default function FoxStoryPage() {
     pageIndex,
     sentenceIndex,
     startWordIndex,
-    sessionId
+    sessionId,
   ) {
     stopHighlightTimer();
 
@@ -477,20 +452,18 @@ export default function FoxStoryPage() {
 
       saveProgress(pageIndex, sentenceIndex, wordIndex);
 
-      highlightTimerRef.current = window.setTimeout(() => {
-        advance(wordIndex + 1);
-      }, estimatedWordDuration(words[wordIndex], readingSpeed));
+      highlightTimerRef.current = window.setTimeout(
+        () => {
+          advance(wordIndex + 1);
+        },
+        estimatedWordDuration(words[wordIndex], readingSpeed),
+      );
     }
 
     advance(startWordIndex);
   }
 
-  function speakSentence(
-    pageIndex,
-    sentenceIndex,
-    startWordIndex,
-    sessionId
-  ) {
+  function speakSentence(pageIndex, sentenceIndex, startWordIndex, sessionId) {
     if (sessionId !== sessionIdRef.current) return;
 
     const page = foxStory.pages[pageIndex];
@@ -562,7 +535,7 @@ export default function FoxStoryPage() {
             pageIndex,
             sentenceIndex,
             startWordIndex,
-            sessionId
+            sessionId,
           );
         }
       }, 250);
@@ -577,7 +550,7 @@ export default function FoxStoryPage() {
 
       const localWordIndex = wordIndexFromCharIndex(
         spokenText,
-        event.charIndex
+        event.charIndex,
       );
       const absoluteWordIndex = startWordIndex + localWordIndex;
 
@@ -634,12 +607,7 @@ export default function FoxStoryPage() {
     setSelectedWord(null);
     setIsPaused(false);
 
-    speakSentence(
-      currentPageIndex,
-      0,
-      0,
-      sessionIdRef.current
-    );
+    speakSentence(currentPageIndex, 0, 0, sessionIdRef.current);
   }
 
   function pauseReading() {
@@ -655,7 +623,7 @@ export default function FoxStoryPage() {
       currentPageIndex,
       currentSentenceRef.current,
       currentWordRef.current,
-      true
+      true,
     );
 
     setIsPaused(true);
@@ -677,7 +645,7 @@ export default function FoxStoryPage() {
       currentPageIndex,
       currentSentenceRef.current,
       currentWordRef.current,
-      sessionIdRef.current
+      sessionIdRef.current,
     );
   }
 
@@ -690,7 +658,7 @@ export default function FoxStoryPage() {
 
     const safePageIndex = Math.min(
       Math.max(savedProgress.pageIndex, 0),
-      foxStory.pages.length - 1
+      foxStory.pages.length - 1,
     );
 
     setCurrentPageIndex(safePageIndex);
@@ -707,7 +675,7 @@ export default function FoxStoryPage() {
         safePageIndex,
         savedProgress.sentenceIndex,
         savedProgress.wordIndex,
-        sessionIdRef.current
+        sessionIdRef.current,
       );
     }, 100);
   }
@@ -717,7 +685,7 @@ export default function FoxStoryPage() {
       saveProgress(
         currentPageIndex,
         currentSentenceRef.current,
-        currentWordRef.current
+        currentWordRef.current,
       );
     }
 
@@ -739,13 +707,13 @@ export default function FoxStoryPage() {
       currentPageIndex,
       currentSentenceRef.current,
       currentWordRef.current,
-      true
+      true,
     );
   }
 
   function testVoice() {
     const testSpeech = new SpeechSynthesisUtterance(
-      "Hello. This is a preview of the selected English voice."
+      "Hello. This is a preview of the selected English voice.",
     );
 
     configureSpeech(testSpeech);
@@ -769,7 +737,7 @@ export default function FoxStoryPage() {
       saveProgress(
         currentPageIndex,
         currentSentenceRef.current,
-        currentWordRef.current
+        currentWordRef.current,
       );
 
       setIsPaused(true);
@@ -782,8 +750,7 @@ export default function FoxStoryPage() {
         wordInformation?.translation || "Překlad zatím není ve slovníku.",
       example:
         wordInformation?.example || "Příkladová věta zatím není dostupná.",
-      exampleTranslation:
-        wordInformation?.exampleTranslation || "",
+      exampleTranslation: wordInformation?.exampleTranslation || "",
     });
   }
 
@@ -816,8 +783,7 @@ export default function FoxStoryPage() {
       translation: selectedWord.translation,
       language: "en",
       example: selectedWord.example || "",
-      exampleTranslation:
-        selectedWord.exampleTranslation || "",
+      exampleTranslation: selectedWord.exampleTranslation || "",
       source: foxStory.title,
     });
 
@@ -827,7 +793,7 @@ export default function FoxStoryPage() {
       getVocabularyWords({
         language: "en",
         source: foxStory.title,
-      })
+      }),
     );
   }
 
@@ -841,14 +807,14 @@ export default function FoxStoryPage() {
       getVocabularyWords({
         language: "en",
         source: foxStory.title,
-      })
+      }),
     );
   }
 
   function changePage(nextIndex) {
     const safeIndex = Math.min(
       Math.max(nextIndex, 0),
-      foxStory.pages.length - 1
+      foxStory.pages.length - 1,
     );
 
     sessionIdRef.current += 1;
@@ -880,6 +846,23 @@ export default function FoxStoryPage() {
       }}
     >
       <div style={{ maxWidth: "860px", margin: "0 auto" }}>
+        <nav
+          aria-label="Navigace příběhu"
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            marginBottom: "24px",
+          }}
+        >
+          <Link href="/stories" style={topNavigationButtonStyle}>
+            ← Zpět na příběhy
+          </Link>
+          <Link href="/" style={homeNavigationButtonStyle}>
+            ⌂ Hlavní stránka
+          </Link>
+        </nav>
+
         <header style={{ marginBottom: "24px" }}>
           <p style={{ margin: 0, color: "#64748b", fontSize: "16px" }}>
             Learn English through stories
@@ -892,7 +875,7 @@ export default function FoxStoryPage() {
               fontSize: "42px",
             }}
           >
-            📚 English Stories
+            📚 Anglické příběhy
           </h1>
         </header>
 
@@ -966,7 +949,7 @@ export default function FoxStoryPage() {
                   fontWeight: "bold",
                 }}
               >
-                English voice
+                Anglický hlas
               </label>
 
               <select
@@ -1007,7 +990,7 @@ export default function FoxStoryPage() {
                   fontWeight: "bold",
                 }}
               >
-                Reading speed: {readingSpeed.toFixed(2)}×
+                Rychlost čtení: {readingSpeed.toFixed(2)}×
               </label>
 
               <input
@@ -1035,7 +1018,7 @@ export default function FoxStoryPage() {
                   cursor: "pointer",
                 }}
               >
-                🔊 Test voice
+                🔊 Vyzkoušet hlas
               </button>
             </div>
 
@@ -1062,7 +1045,7 @@ export default function FoxStoryPage() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Continue saved
+                  ▶ Pokračovat z uloženého místa
                 </button>
               )}
 
@@ -1080,7 +1063,7 @@ export default function FoxStoryPage() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Read this page
+                  ▶ Přečíst tuto stránku
                 </button>
               )}
 
@@ -1116,7 +1099,7 @@ export default function FoxStoryPage() {
                     cursor: "pointer",
                   }}
                 >
-                  ▶ Continue
+                  ▶ Pokračovat
                 </button>
               )}
 
@@ -1134,7 +1117,7 @@ export default function FoxStoryPage() {
                     cursor: "pointer",
                   }}
                 >
-                  💾 Save position
+                  💾 Uložit pozici
                 </button>
               )}
 
@@ -1167,7 +1150,7 @@ export default function FoxStoryPage() {
                   cursor: "pointer",
                 }}
               >
-                🇨🇿 {showTranslation ? "Hide Czech" : "Show Czech"}
+                🇨🇿 {showTranslation ? "Skrýt češtinu" : "Zobrazit češtinu"}
               </button>
             </div>
 
@@ -1283,16 +1266,14 @@ export default function FoxStoryPage() {
                   padding: "12px 18px",
                   border: "1px solid #cbd5e1",
                   borderRadius: "12px",
-                  background:
-                    currentPageIndex === 0 ? "#e2e8f0" : "white",
+                  background: currentPageIndex === 0 ? "#e2e8f0" : "white",
                   color: "#172033",
                   fontSize: "16px",
-                  cursor:
-                    currentPageIndex === 0 ? "not-allowed" : "pointer",
+                  cursor: currentPageIndex === 0 ? "not-allowed" : "pointer",
                   justifySelf: "start",
                 }}
               >
-                ← Previous
+                ← Předchozí
               </button>
 
               <div
@@ -1313,9 +1294,7 @@ export default function FoxStoryPage() {
 
               <button
                 type="button"
-                disabled={
-                  currentPageIndex === foxStory.pages.length - 1
-                }
+                disabled={currentPageIndex === foxStory.pages.length - 1}
                 onClick={() => changePage(currentPageIndex + 1)}
                 style={{
                   padding: "12px 18px",
@@ -1334,7 +1313,7 @@ export default function FoxStoryPage() {
                   justifySelf: "end",
                 }}
               >
-                Next →
+                Další →
               </button>
             </div>
           </div>
@@ -1349,7 +1328,7 @@ export default function FoxStoryPage() {
           }}
         >
           <h2 style={{ margin: "0 0 18px", color: "#172033" }}>
-            ⭐ Saved Words
+            ⭐ Uložená slovíčka
           </h2>
 
           {savedWords.length === 0 ? (
@@ -1380,9 +1359,7 @@ export default function FoxStoryPage() {
                     {item.word}
                   </strong>
 
-                  <span style={{ color: "#64748b" }}>
-                    {item.translation}
-                  </span>
+                  <span style={{ color: "#64748b" }}>{item.translation}</span>
                 </div>
 
                 <button
@@ -1545,15 +1522,11 @@ export default function FoxStoryPage() {
                 padding: "9px 11px",
                 border: "none",
                 borderRadius: "8px",
-                background: isSelectedWordSaved
-                  ? "#16a34a"
-                  : "#f59e0b",
+                background: isSelectedWordSaved ? "#16a34a" : "#f59e0b",
                 color: "white",
                 fontSize: "13px",
                 fontWeight: "bold",
-                cursor: isSelectedWordSaved
-                  ? "default"
-                  : "pointer",
+                cursor: isSelectedWordSaved ? "default" : "pointer",
               }}
             >
               {isSelectedWordSaved

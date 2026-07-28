@@ -20,7 +20,7 @@ const menu = [
   {
     icon: "🗣️",
     title: "Trénink výslovnosti",
-    text: "Poslouchejte česká slova a věty a zlepšujte svou výslovnost.",
+    text: "Poslouchejte slova a věty a zlepšujte svou výslovnost.",
     link: "/vyslovnost",
     button: "Procvičit výslovnost",
     color: "#9333ea",
