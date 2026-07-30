@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import foxStory from "@/data/foxstory";
 
-import { dictionary } from "@/data/dictionary.js";
+import { dictionary } from "@/data/dictionaryAJfox";
 
 import {
   getVocabularyWords,

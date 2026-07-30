@@ -58,7 +58,19 @@ export default function Footer() {
             }}
           >
             Moderní aplikace pro výuku jazyků pomocí interaktivních příběhů,
-            hlasové konverzace, výslovnosti a vlastního slovníčku.
+            hlasové konverzace, tréninku výslovnosti, kvízu, pexesa a křížovky.
+          </p>
+
+          <p
+            style={{
+              margin: "18px 0 0",
+              color: "#dcfce7",
+              fontSize: "15px",
+              fontWeight: "700",
+              lineHeight: "1.7",
+            }}
+          >
+            🇬🇧 Angličtina • 🇩🇪 Němčina • 🇨🇿 Čeština
           </p>
         </div>
 
@@ -96,11 +108,11 @@ export default function Footer() {
             </Link>
 
             <Link href="/vyslovnost" style={footerLinkStyle}>
-              Výslovnost
+              Trénink výslovnosti
             </Link>
 
             <Link href="/slovnik" style={footerLinkStyle}>
-              Slovníček
+              Moje slovíčka
             </Link>
           </nav>
         </div>
@@ -114,24 +126,34 @@ export default function Footer() {
               fontWeight: "800",
             }}
           >
-            Výuka jazyků
+            Hry a procvičování
           </h3>
 
-          <div
+          <nav
+            aria-label="Hry a procvičování"
             style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: "13px",
-              color: "#dbeafe",
-              fontSize: "16px",
-              fontWeight: "600",
+              gap: "12px",
             }}
           >
-            <span>🇬🇧 Angličtina</span>
-            <span>🇩🇪 Němčina</span>
-            <span>🇨🇿 Čeština</span>
-          </div>
+            <Link href="/kviz" style={footerLinkStyle}>
+              ❓ Jazykový kvíz
+            </Link>
+
+            <Link href="/pexeso" style={footerLinkStyle}>
+              🧠 Jazykové pexeso
+            </Link>
+
+            <Link href="/krizovka" style={footerLinkStyle}>
+              ✏️ Jazyková křížovka
+            </Link>
+
+            <Link href="/pokrok" style={footerLinkStyle}>
+              🏆 Můj pokrok
+            </Link>
+          </nav>
         </div>
 
         <div>

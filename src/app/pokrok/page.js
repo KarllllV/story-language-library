@@ -706,6 +706,7 @@ export default function ProgressPage() {
   });
 
   const [message, setMessage] = useState("");
+  const [activeTab, setActiveTab] = useState("study");
 
   const loadProgress = useCallback(() => {
     setData({
@@ -1107,6 +1108,39 @@ export default function ProgressPage() {
     (achievement) => achievement.unlocked,
   ).length;
 
+  const progressTabs = [
+    {
+      id: "study",
+      icon: "📚",
+      label: "Studium",
+      count: null,
+    },
+    {
+      id: "pexeso",
+      icon: "🧩",
+      label: "Pexeso",
+      count: statistics.pexesoGames,
+    },
+    {
+      id: "quiz",
+      icon: "❓",
+      label: "Kvízy",
+      count: statistics.quizGames,
+    },
+    {
+      id: "crossword",
+      icon: "✏️",
+      label: "Křížovky",
+      count: statistics.crosswordGames,
+    },
+    {
+      id: "achievements",
+      icon: "🎖️",
+      label: "Úspěchy",
+      count: `${unlockedAchievements}/${achievements.length}`,
+    },
+  ];
+
   function resetProgress() {
     const confirmed = window.confirm(
       "Opravdu chcete vymazat všechny statistiky pokroku? Slovíčka ze slovníku zůstanou zachována, ale jejich stav naučení a procvičování bude vynulován.",
@@ -1179,6 +1213,28 @@ export default function ProgressPage() {
             další studijní aktivity uložené v tomto prohlížeči.
           </p>
         </header>
+
+        <aside className="progressStorageNotice" role="note">
+          <div className="progressStorageNoticeIcon" aria-hidden="true">
+            💾
+          </div>
+
+          <div>
+            <h2>Pokrok se ukládá pouze v tomto prohlížeči</h2>
+
+            <p>
+              Vaše výsledky, uložená slovíčka a pozice v příbězích zůstávají
+              pouze v tomto prohlížeči na tomto zařízení. Na jiné zařízení se
+              automaticky nepřenesou a po vymazání dat webu nebo prohlížeče
+              budou odstraněny.
+            </p>
+
+            <small>
+              Pro zachování pokroku používejte stejné zařízení a prohlížeč a
+              nemažte data této stránky.
+            </small>
+          </div>
+        </aside>
 
         <section className="progressHeroCard">
           <div
@@ -1296,7 +1352,37 @@ export default function ProgressPage() {
           </article>
         </section>
 
-        <div className="progressDashboardGrid">
+        <nav className="progressTabs" aria-label="Oblasti pokroku">
+          {progressTabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+
+            return (
+              <button
+                key={tab.id}
+                type="button"
+                className={`progressTabButton${isActive ? " active" : ""}`}
+                aria-pressed={isActive}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                <span className="progressTabIcon">{tab.icon}</span>
+                <span>{tab.label}</span>
+
+                {tab.count !== null && (
+                  <span className="progressTabCount">{tab.count}</span>
+                )}
+              </button>
+            );
+          })}
+        </nav>
+
+        <p className="progressTabsHint">
+          Vyberte oblast, jejíž podrobné výsledky chcete zobrazit.
+        </p>
+
+        <div
+          className="progressDashboardGrid progressTabPanel"
+          hidden={activeTab !== "study"}
+        >
           <section className="progressPanel">
             <div className="progressPanelHeading">
               <div>
@@ -1376,7 +1462,10 @@ export default function ProgressPage() {
           </section>
         </div>
 
-        <section className="progressPanel progressPexesoPanel">
+        <section
+          className="progressPanel progressPexesoPanel progressTabPanel"
+          hidden={activeTab !== "pexeso"}
+        >
           <div className="progressPanelHeading">
             <div>
               <h2>🧩 Výsledky pexesa</h2>
@@ -1526,7 +1615,10 @@ export default function ProgressPage() {
           )}
         </section>
 
-        <section className="progressPanel progressPexesoPanel">
+        <section
+          className="progressPanel progressPexesoPanel progressTabPanel"
+          hidden={activeTab !== "quiz"}
+        >
           <div className="progressPanelHeading">
             <div>
               <h2>❓ Výsledky kvízů</h2>
@@ -1678,7 +1770,10 @@ export default function ProgressPage() {
           )}
         </section>
 
-        <section className="progressPanel progressPexesoPanel">
+        <section
+          className="progressPanel progressPexesoPanel progressTabPanel"
+          hidden={activeTab !== "crossword"}
+        >
           <div className="progressPanelHeading">
             <div>
               <h2>✏️ Výsledky křížovek</h2>
@@ -1836,7 +1931,10 @@ export default function ProgressPage() {
           )}
         </section>
 
-        <section className="progressPanel progressStoriesPanel">
+        <section
+          className="progressPanel progressStoriesPanel progressTabPanel"
+          hidden={activeTab !== "study"}
+        >
           <div className="progressPanelHeading">
             <div>
               <h2>📖 Rozečtené příběhy</h2>
@@ -1871,7 +1969,10 @@ export default function ProgressPage() {
           )}
         </section>
 
-        <section className="progressPanel">
+        <section
+          className="progressPanel progressTabPanel"
+          hidden={activeTab !== "achievements"}
+        >
           <div className="progressPanelHeading">
             <div>
               <h2>🎖️ Úspěchy</h2>

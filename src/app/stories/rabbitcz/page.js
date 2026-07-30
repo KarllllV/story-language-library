@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import rabbitStory from "@/data/rabbitstorycz";
 
-import { dictionary } from "@/data/dictionarycz";
+import { dictionary } from "@/data/dictionaryczrabbit";
 
 import {
   getVocabularyWords,

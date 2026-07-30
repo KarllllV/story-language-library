@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import horseStoryDe from "@/data/horsestoryde";
 
-import { dictionary } from "@/data/dictionaryde.js";
+import { dictionary } from "@/data/dictionarydehorse";
 
 import {
   getVocabularyWords,

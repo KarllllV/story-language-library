@@ -1,5421 +1,8 @@
 export const dictionary = {
-  aber: {
-    translation: "ale",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  abend: {
-    translation: "večer",
-    example: "Am Abend legte sich dichter Nebel über den Wald.",
-    exampleTranslation: "Večer zahalila les hustá mlha.",
-  },
-  alle: {
-    translation: "všichni",
-    example: "Alle freuten sich über seine Freundlichkeit.",
-    exampleTranslation: "Všichni měli radost z jeho laskavosti.",
-  },
-  allen: {
-    translation: "všemi / všem",
-    example: "Jeden Morgen wachte Oliver vor allen anderen auf.",
-    exampleTranslation: "Každé ráno se Oliver probouzel dříve než ostatní.",
-  },
-  als: {
-    translation: "než / jako",
-    example:
-      "In dieser Nacht verstand Oliver, dass Freundlichkeit stärker sein kann als Angst.",
-    exampleTranslation:
-      "Té noci Oliver pochopil, že laskavost může být silnější než strach.",
-  },
-  alt: {
-    translation: "starý",
-    example: "Der Schlüssel war alt, aber immer noch wunderschön.",
-    exampleTranslation: "Klíč byl starý, ale stále krásný.",
-  },
-  alte: {
-    translation: "stará",
-    example: "Eine alte Schildkröte begrüßte ihn freundlich.",
-    exampleTranslation: "Přivítala ho stará želva.",
-  },
-  alten: {
-    translation: "starém / starými",
-    example: "Zwischen alten Steinen stand ein silbernes Tor.",
-    exampleTranslation: "Mezi starými kameny stála stříbrná brána.",
-  },
-  älteste: {
-    translation: "nejstarší",
-    example: "Oliver besuchte Mira, die älteste Eule im Wald.",
-    exampleTranslation: "Oliver šel navštívit Miru, nejstarší sovu v lese.",
-  },
-  am: {
-    translation: "v / u / na",
-    example: "Am nächsten Morgen erreichte Oliver eine Lichtung.",
-    exampleTranslation: "Dalšího rána Oliver dorazil na malou mýtinu.",
-  },
-  an: {
-    translation: "u / na",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval, jak první světlo prochází mezi stromy.",
-  },
-  anderen: {
-    translation: "ostatním / ostatních",
-    example:
-      "Sie warnte ihn außerdem, dass nur jemand das Tor finden könne, der anderen helfe.",
-    exampleTranslation:
-      "Také ho varovala, že bránu může najít jen ten, kdo pomáhá ostatním.",
-  },
-  angst: {
-    translation: "strach",
-    example: "Er hatte Angst hinüberzugehen.",
-    exampleTranslation: "Bál se přejít.",
-  },
-  ast: {
-    translation: "větev",
-    example: "Oliver fand einen langen Ast und legte ihn über die Lücke.",
-    exampleTranslation: "Oliver našel dlouhou větev a položil ji přes mezeru.",
-  },
-  auf: {
-    translation: "na / vzhůru",
-    example: "Jeden Morgen wachte Oliver vor allen anderen auf.",
-    exampleTranslation: "Každé ráno se Oliver probouzel dříve než ostatní.",
-  },
-  aufgabe: {
-    translation: "úkol",
-    example: "Die Magie hatte ihre Aufgabe erfüllt.",
-    exampleTranslation: "Kouzlo splnilo svůj úkol.",
-  },
-  aufmerksam: {
-    translation: "pozorně",
-    example: "Mira öffnete ihre großen Augen und betrachtete ihn aufmerksam.",
-    exampleTranslation:
-      "Mira otevřela své velké oči a pozorně si ho prohlédla.",
-  },
-  außerdem: {
-    translation: "kromě toho / také",
-    example:
-      "Sie warnte ihn außerdem, dass nur jemand das Tor finden könne, der anderen helfe.",
-    exampleTranslation:
-      "Také ho varovala, že bránu může najít jen ten, kdo pomáhá ostatním.",
-  },
-  augen: {
-    translation: "oči",
-    example: "Mira öffnete ihre großen Augen und betrachtete ihn aufmerksam.",
-    exampleTranslation:
-      "Mira otevřela své velké oči a pečlivě si ho prohlédla.",
-  },
-  aus: {
-    translation: "z / ven",
-    example:
-      "Sie sah überrascht aus und sagte: »Diesen Schlüssel habe ich noch nie gesehen.«",
-    exampleTranslation:
-      "Překvapeně se na něj podívala a řekla: „Tento klíč jsem nikdy neviděla.“",
-  },
-  bach: {
-    translation: "potok",
-    example:
-      "Sie führte über einen schnellen Bach, doch ein Brett war zerbrochen.",
-    exampleTranslation:
-      "Most vedl přes rychlý potok, ale jedno prkno bylo zlomené.",
-  },
-  bau: {
-    translation: "nora",
-    example:
-      "Er lebte mit seiner Mutter und zwei Schwestern in einem warmen Bau unter einer alten Eiche.",
-    exampleTranslation:
-      "Žil se svou maminkou a dvěma sestrami v teplé noře pod starým dubem.",
-  },
-  baum: {
-    translation: "strom",
-    example: "Sie lebte in einem hohlen Baum auf einem Hügel.",
-    exampleTranslation: "Žila v dutém stromě poblíž kopce.",
-  },
-  bäumen: {
-    translation: "stromy",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval, jak první světlo prochází mezi stromy.",
-  },
-  befand: {
-    translation: "nacházel se",
-    example: "In der Mitte befand sich ein kleines Schlüsselloch.",
-    exampleTranslation: "Uprostřed byl malý zámek.",
-  },
-  begann: {
-    translation: "začal",
-    example: "Der Schlüssel begann golden zu leuchten.",
-    exampleTranslation: "Klíč začal zářit zlatým světlem.",
-  },
-  beobachtete: {
-    translation: "pozoroval",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval, jak první světlo prochází mezi stromy.",
-  },
-  betrachtete: {
-    translation: "prohlížela si",
-    example: "Mira öffnete ihre großen Augen und betrachtete ihn aufmerksam.",
-    exampleTranslation:
-      "Mira otevřela své velké oči a pečlivě si ho prohlédla.",
-  },
-  bevor: {
-    translation: "než / předtím než",
-    example: "Bevor er ging, schloss sich das Mondtor langsam wieder.",
-    exampleTranslation: "Když odcházel, Měsíční brána se pomalu zavřela.",
-  },
-  blätter: {
-    translation: "listy / listí",
-    example:
-      "Er schob die Blätter mit seiner Pfote zur Seite und fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Odsunul listí tlapkou a našel malý zlatý klíč.",
-  },
-  braunen: {
-    translation: "hnědýma",
-    example:
-      "Oliver war ein kleiner weißer Hase mit weichen Ohren und leuchtend braunen Augen.",
-    exampleTranslation:
-      "Oliver byl malý bílý králíček s hebkými oušky a jasně hnědýma očima.",
-  },
-  brett: {
-    translation: "prkno",
-    example:
-      "Sie führte über einen schnellen Bach, doch ein Brett war zerbrochen.",
-    exampleTranslation:
-      "Most vedl přes rychlý potok, ale jedno prkno bylo zlomené.",
-  },
-  brücke: {
-    translation: "most",
-    example: "Später an diesem Tag erreichte Oliver eine schmale Holzbrücke.",
-    exampleTranslation:
-      "Později toho dne Oliver dorazil k úzkému dřevěnému mostu.",
-  },
-  dann: {
-    translation: "potom",
-    example: "Dann sagte sie: »Dieser Schlüssel könnte das Mondtor öffnen.«",
-    exampleTranslation:
-      "Potom řekla: „Tento klíč možná otevírá Měsíční bránu.“",
-  },
-  das: {
-    translation: "to / ten / ta",
-    example: "Das Tor begann sanft zu leuchten.",
-    exampleTranslation: "Brána začala jemně zářit.",
-  },
-  dass: {
-    translation: "že",
-    example: "Sie erklärte, dass nur gute Herzen diesen Ort finden.",
-    exampleTranslation: "Vysvětlila, že toto místo najdou jen dobrá srdce.",
-  },
-  dem: {
-    translation: "tomu / tím",
-    example:
-      "Oliver beschloss, das Schloss zu finden, zu dem der Schlüssel gehörte.",
-    exampleTranslation:
-      "Oliver se rozhodl, že najde zámek, ke kterému klíč patří.",
-  },
-  den: {
-    translation: "ten / toho / těm",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval první světlo mezi stromy.",
-  },
-  der: {
-    translation: "ten / ta / toho",
-    example: "Der Wald war zu dieser Zeit ganz still.",
-    exampleTranslation: "Les byl v tu dobu tichý.",
-  },
-  des: {
-    translation: "toho",
-    example: "In der Nähe des Flusses hörte Oliver jemanden weinen.",
-    exampleTranslation: "Poblíž řeky Oliver uslyšel někoho plakat.",
-  },
-  die: {
-    translation: "ta / ty",
-    example: "Die Bäume schimmerten im silbernen Licht.",
-    exampleTranslation: "Stromy se rozzářily stříbrným světlem.",
-  },
-  dieser: {
-    translation: "této",
-    example:
-      "In dieser Nacht verstand Oliver, dass Freundlichkeit stärker sein kann als Angst.",
-    exampleTranslation:
-      "Té noci Oliver pochopil, že laskavost může být silnější než strach.",
-  },
-  dinge: {
-    translation: "věci",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  doch: {
-    translation: "ale / přece",
-    example:
-      "Sie führte über einen schnellen Bach, doch ein Brett war zerbrochen.",
-    exampleTranslation:
-      "Most vedl přes rychlý potok, ale jedno prkno bylo zlomené.",
-  },
-  drei: {
-    translation: "tři",
-    example:
-      "Er erzählte Oliver von einem versteckten Pfad hinter drei Kiefern.",
-    exampleTranslation: "Řekl Oliverovi o skryté stezce za třemi borovicemi.",
-  },
-  durch: {
-    translation: "skrz / přes",
-    example: "Ein warmer Wind wehte durch den Wald.",
-    exampleTranslation: "Lesem se rozlil teplý vítr.",
-  },
-  eiche: {
-    translation: "dub",
-    example:
-      "Er lebte mit seiner Mutter und zwei Schwestern in einem warmen Bau unter einer alten Eiche.",
-    exampleTranslation:
-      "Žil se svou maminkou a dvěma sestrami v teplé noře pod starým dubem.",
-  },
-  eingang: {
-    translation: "vchod",
-    example: "Er setzte sich gern an den Eingang.",
-    exampleTranslation: "Rád sedával u vchodu.",
-  },
-  einmal: {
-    translation: "jednou",
-    example: "Einmal wird sich alles ändern.",
-    exampleTranslation: "Jednou se všechno změní.",
-  },
-  erste: {
-    translation: "první",
-    example: "Er beobachtete das erste Licht.",
-    exampleTranslation: "Pozoroval první světlo.",
-  },
-  erreichte: {
-    translation: "dorazil",
-    example: "Oliver erreichte eine kleine Lichtung.",
-    exampleTranslation: "Oliver dorazil na malou mýtinu.",
-  },
-  erzählte: {
-    translation: "vyprávěl",
-    example: "Bram erzählte Oliver von einem versteckten Pfad.",
-    exampleTranslation: "Bram vyprávěl Oliverovi o skryté stezce.",
-  },
-  etwas: {
-    translation: "něco",
-    example: "Oliver sah etwas unter den Blättern glänzen.",
-    exampleTranslation: "Oliver uviděl něco zářit pod listím.",
-  },
-  eule: {
-    translation: "sova",
-    example: "Oliver besuchte Mira, die weise Eule.",
-    exampleTranslation: "Oliver navštívil moudrou sovu Miru.",
-  },
-  fand: {
-    translation: "našel",
-    example: "Oliver fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Oliver našel malý zlatý klíč.",
-  },
-  feder: {
-    translation: "pírko",
-    example: "Der Vogel schenkte Oliver eine Feder.",
-    exampleTranslation: "Pták daroval Oliverovi pírko.",
-  },
-  finden: {
-    translation: "najít",
-    example: "Nur gute Herzen können das Tor finden.",
-    exampleTranslation: "Jen dobrá srdce mohou najít bránu.",
-  },
-  flog: {
-    translation: "letěl",
-    example: "Ein Vogel flog über den Wald.",
-    exampleTranslation: "Pták letěl nad lesem.",
-  },
-  freundlichkeit: {
-    translation: "laskavost",
-    example: "Freundlichkeit öffnete das Tor.",
-    exampleTranslation: "Laskavost otevřela bránu.",
-  },
-  führte: {
-    translation: "vedla",
-    example: "Der Pfad führte tiefer in den Wald.",
-    exampleTranslation: "Stezka vedla hlouběji do lesa.",
-  },
-  für: {
-    translation: "pro",
-    example: "Das Geschenk war für Oliver.",
-    exampleTranslation: "Dárek byl pro Olivera.",
-  },
-  gab: {
-    translation: "dal",
-    example: "Nella gab Oliver eine Nuss.",
-    exampleTranslation: "Nella dala Oliverovi oříšek.",
-  },
-  ganze: {
-    translation: "celý",
-    example: "Der ganze Wald war still.",
-    exampleTranslation: "Celý les byl tichý.",
-  },
-  geheimnis: {
-    translation: "tajemství",
-    example: "Das Geheimnis blieb sicher.",
-    exampleTranslation: "Tajemství zůstalo v bezpečí.",
-  },
-  gehen: {
-    translation: "jít",
-    example: "Sie mussten weiter gehen.",
-    exampleTranslation: "Museli jít dál.",
-  },
-  gemeinsam: {
-    translation: "společně",
-    example: "Sie arbeiteten gemeinsam.",
-    exampleTranslation: "Pracovali společně.",
-  },
-  genug: {
-    translation: "dost",
-    example: "Sie hatten genug Mut.",
-    exampleTranslation: "Měli dost odvahy.",
-  },
-  gerettet: {
-    translation: "zachráněný",
-    example: "Der kleine Vogel war gerettet.",
-    exampleTranslation: "Malý pták byl zachráněn.",
-  },
-  geschichten: {
-    translation: "příběhy",
-    example: "Mira kannte viele Geschichten.",
-    exampleTranslation: "Mira znala mnoho příběhů.",
-  },
-  ging: {
-    translation: "šel",
-    example: "Oliver ging langsam weiter.",
-    exampleTranslation: "Oliver šel pomalu dál.",
-  },
-  großen: {
-    translation: "velké",
-    example: "Mira öffnete ihre großen Augen.",
-    exampleTranslation: "Mira otevřela své velké oči.",
-  },
-  gut: {
-    translation: "dobrý",
-    example: "Oliver hatte ein gutes Herz.",
-    exampleTranslation: "Oliver měl dobré srdce.",
-  },
-  half: {
-    translation: "pomohl",
-    example: "Oliver half jedem Tier.",
-    exampleTranslation: "Oliver pomohl každému zvířeti.",
-  },
-  hinter: {
-    translation: "za",
-    example: "Hinter den Bäumen begann der Pfad.",
-    exampleTranslation: "Za stromy začínala stezka.",
-  },
-  hohlen: {
-    translation: "dutý",
-    example: "Mira lebte in einem hohlen Baum.",
-    exampleTranslation: "Mira žila v dutém stromě.",
-  },
-  hörte: {
-    translation: "slyšel",
-    example: "Oliver hörte ein Weinen.",
-    exampleTranslation: "Oliver uslyšel pláč.",
-  },
-  hügel: {
-    translation: "kopec",
-    example: "Der Baum stand auf einem Hügel.",
-    exampleTranslation: "Strom stál na kopci.",
-  },
-  immer: {
-    translation: "vždy",
-    example: "Seine Mutter sagte immer die Wahrheit.",
-    exampleTranslation: "Jeho maminka vždy říkala pravdu.",
-  },
-  jemanden: {
-    translation: "někoho",
-    example: "Oliver hörte jemanden weinen.",
-    exampleTranslation: "Oliver uslyšel někoho plakat.",
-  },
-  jetzt: {
-    translation: "teď",
-    example: "Jetzt begann das Abenteuer.",
-    exampleTranslation: "Teď začalo dobrodružství.",
-  },
-  junge: {
-    translation: "mladý",
-    example: "Ein junger Vogel saß dort.",
-    exampleTranslation: "Seděl tam mladý pták.",
-  },
-  eichhörnchen: {
-    translation: "veverka",
-    example: "Ein junges Eichhörnchen namens Nella saß auf einem Stein.",
-    exampleTranslation: "Na kameni seděla mladá veverka jménem Nella.",
-  },
-  ein: {
-    translation: "jeden / nějaký",
-    example:
-      "Oliver war ein kleiner weißer Hase mit weichen Ohren und leuchtend braunen Augen.",
-    exampleTranslation:
-      "Oliver byl malý bílý králíček s hebkými oušky a jasně hnědýma očima.",
-  },
-  eine: {
-    translation: "jedna / nějaká",
-    example:
-      "Er hob den Schlüssel auf und spürte eine sanfte Wärme in seiner Pfote.",
-    exampleTranslation: "Zvedl klíč a ucítil v tlapce jemné teplo.",
-  },
-  einem: {
-    translation: "jednomu / jednom",
-    example:
-      "Er lebte mit seiner Mutter und zwei Schwestern in einem warmen Bau unter einer alten Eiche.",
-    exampleTranslation:
-      "Žil se svou maminkou a dvěma sestrami v teplé noře pod starým dubem.",
-  },
-  einen: {
-    translation: "jednoho / nějakého",
-    example:
-      "Er schob die Blätter mit seiner Pfote zur Seite und fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Odsunul listí tlapkou a našel malý zlatý klíč.",
-  },
-  einer: {
-    translation: "jedné / nějaké",
-    example:
-      "Er lebte mit seiner Mutter und zwei Schwestern in einem warmen Bau unter einer alten Eiche.",
-    exampleTranslation:
-      "Žil se svou maminkou a dvěma sestrami v teplé noře pod starým dubem.",
-  },
-  eines: {
-    translation: "jednoho / nějakého",
-    example:
-      "Eines Morgens sah Oliver etwas unter einem Haufen brauner Blätter glänzen.",
-    exampleTranslation:
-      "Jednoho rána Oliver uviděl něco zářit pod hromadou hnědého listí.",
-  },
-  ende: {
-    translation: "konec",
-    example: "Und sie lebten glücklich bis ans Ende ihrer Tage.",
-    exampleTranslation: "A všichni spolu žili šťastně až do konce.",
-  },
-  entdeckte: {
-    translation: "objevil",
-    example: "Schließlich entdeckte Oliver den Beutel zwischen zwei Wurzeln.",
-    exampleTranslation:
-      "Nakonec Oliver uviděl sáček zachycený mezi dvěma kořeny.",
-  },
-  er: {
-    translation: "on",
-    example:
-      "Er lebte mit seiner Mutter und zwei Schwestern in einem warmen Bau unter einer alten Eiche.",
-    exampleTranslation:
-      "Žil se svou maminkou a dvěma sestrami v teplé noře pod starým dubem.",
-  },
-  erinnerte: {
-    translation: "vzpomněl si",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  erklärte: {
-    translation: "vysvětlila",
-    example: "Mira erklärte, dass es tief im Wald verborgen sei.",
-    exampleTranslation:
-      "Mira vysvětlila, že stojí někde v nejhlubší části lesa.",
-  },
-  es: {
-    translation: "to / ono",
-    example: "Mira erklärte, dass es tief im Wald verborgen sei.",
-    exampleTranslation:
-      "Mira vysvětlila, že stojí někde v nejhlubší části lesa.",
-  },
-  ferne: {
-    translation: "vzdálený / dálka",
-    example:
-      "Für einen kurzen Moment hörte er einen leisen Klang wie eine ferne Glocke.",
-    exampleTranslation:
-      "Na okamžik uslyšel tichý zvuk, podobný vzdálenému zvonku.",
-  },
-  fest: {
-    translation: "pevně",
-    example: "Er hielt den Ast fest, während Bram vorsichtig hinüberlief.",
-    exampleTranslation: "Držel větev, zatímco Bram po ní pomalu přecházel.",
-  },
-  flogen: {
-    translation: "letěli",
-    example: "Schmetterlinge flogen lautlos zwischen den Pflanzen.",
-    exampleTranslation: "Mezi rostlinami tiše létali motýli.",
-  },
-  fragte: {
-    translation: "ptal se",
-    example:
-      "Oliver fragte sich oft, was sich hinter dem Pfad in der Nähe seines Zuhauses verbarg.",
-    exampleTranslation:
-      "Oliver často přemýšlel, co se skrývá za stezkou poblíž jeho domova.",
-  },
-  fuchs: {
-    translation: "liška",
-    example: "Plötzlich trat ein roter Fuchs hinter einem Baum hervor.",
-    exampleTranslation: "Najednou zpoza stromu vystoupila červená liška.",
-  },
-  ganz: {
-    translation: "zcela / celý",
-    example: "Der Wald war zu dieser Zeit ganz still.",
-    exampleTranslation: "Les byl v tu dobu tichý.",
-  },
-  gehört: {
-    translation: "slyšel / patří",
-    example: "Oliver hatte noch nie vom Mondtor gehört.",
-    exampleTranslation: "Oliver o Měsíční bráně nikdy neslyšel.",
-  },
-  gern: {
-    translation: "rád",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval, jak první světlo prochází mezi stromy.",
-  },
-  geschichte: {
-    translation: "příběh",
-    example: "Oliver erzählte ihnen seine Geschichte.",
-    exampleTranslation: "Oliver jim vyprávěl svůj příběh.",
-  },
-  gewesen: {
-    translation: "byl",
-    example: "Er wusste, dass Freundlichkeit der wahre Schlüssel gewesen war.",
-    exampleTranslation: "Pochopil, že skutečným klíčem byla laskavost.",
-  },
-  glitzerte: {
-    translation: "třpytil se",
-    example: "Ein kleiner Bach glitzerte wie Sterne.",
-    exampleTranslation: "Malý potůček se třpytil jako hvězdy.",
-  },
-  glocke: {
-    translation: "zvon / zvonek",
-    example:
-      "Für einen kurzen Moment hörte er einen leisen Klang wie eine ferne Glocke.",
-    exampleTranslation:
-      "Na okamžik uslyšel tichý zvuk, podobný vzdálenému zvonku.",
-  },
-  große: {
-    translation: "velké / velká",
-    example: "Oliver spürte große Ruhe.",
-    exampleTranslation: "Oliver cítil velký klid.",
-  },
-  guten: {
-    translation: "dobrého / dobrá",
-    example: "Jedes neue Abenteuer begann mit einer guten Tat.",
-    exampleTranslation: "Každé nové dobrodružství začínalo dobrým skutkem.",
-  },
-  habe: {
-    translation: "mám / jsem",
-    example:
-      "Sie sah überrascht aus und sagte: »Diesen Schlüssel habe ich noch nie gesehen.«",
-    exampleTranslation:
-      "Překvapeně se na něj podívala a řekla: „Tento klíč jsem nikdy neviděla.“",
-  },
-  hase: {
-    translation: "králík / zajíc",
-    example:
-      "Oliver war ein kleiner weißer Hase mit weichen Ohren und leuchtend braunen Augen.",
-    exampleTranslation:
-      "Oliver byl malý bílý králíček s hebkými oušky a jasně hnědýma očima.",
-  },
-  hatte: {
-    translation: "měl",
-    example: "Oliver hatte noch nie vom Mondtor gehört.",
-    exampleTranslation: "Oliver o Měsíční bráně nikdy neslyšel.",
-  },
-  hatten: {
-    translation: "měli",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  hervor: {
-    translation: "ven / dopředu",
-    example: "Plötzlich trat ein roter Fuchs hinter einem Baum hervor.",
-    exampleTranslation: "Najednou zpoza stromu vystoupila červená liška.",
-  },
-  hielt: {
-    translation: "držel",
-    example: "Er hielt den Ast fest, während Bram vorsichtig hinüberlief.",
-    exampleTranslation: "Držel větev, zatímco Bram po ní pomalu přecházel.",
-  },
-  hindurch: {
-    translation: "skrz / dovnitř",
-    example: "Mutig trat er hindurch.",
-    exampleTranslation: "Odvážně vstoupil dovnitř.",
-  },
-  hinein: {
-    translation: "dovnitř",
-    example: "Oliver steckte vorsichtig den goldenen Schlüssel hinein.",
-    exampleTranslation: "Oliver do něj opatrně vložil zlatý klíč.",
-  },
-  hob: {
-    translation: "zvedl",
-    example:
-      "Er hob den Schlüssel auf und spürte eine sanfte Wärme in seiner Pfote.",
-    exampleTranslation: "Zvedl klíč a ucítil v tlapce jemné teplo.",
-  },
-  ich: {
-    translation: "já",
-    example:
-      "Sie sah überrascht aus und sagte: »Diesen Schlüssel habe ich noch nie gesehen.«",
-    exampleTranslation:
-      "Překvapeně se na něj podívala a řekla: „Tento klíč jsem nikdy neviděla.“",
-  },
-  igel: {
-    translation: "ježek",
-    example: "Auf der anderen Seite stand ein alter Igel namens Bram.",
-    exampleTranslation: "Na druhé straně stál starý ježek jménem Bram.",
-  },
-  ihm: {
-    translation: "jemu / mu",
-    example: "Lora bedankte sich und versprach, ihm nichts anzutun.",
-    exampleTranslation: "Lora mu poděkovala a slíbila, že mu neublíží.",
-  },
-  ihn: {
-    translation: "jeho / ho",
-    example: "Mira öffnete ihre großen Augen und betrachtete ihn aufmerksam.",
-    exampleTranslation:
-      "Mira otevřela své velké oči a pečlivě si ho prohlédla.",
-  },
-  ihnen: {
-    translation: "jim",
-    example: "Oliver erzählte ihnen seine Geschichte.",
-    exampleTranslation: "Oliver jim vyprávěl svůj příběh.",
-  },
-  ihr: {
-    translation: "její / jí",
-    example:
-      "Nur die Vögel waren wach und ihr Gesang klang klar in der kühlen Luft.",
-    exampleTranslation:
-      "Vzhůru byli jen ptáci a jejich zpěv zněl v chladném vzduchu čistě.",
-  },
-  ihre: {
-    translation: "její / jejich",
-    example: "Mira öffnete ihre großen Augen und betrachtete ihn aufmerksam.",
-    exampleTranslation:
-      "Mira otevřela své velké oči a pečlivě si ho prohlédla.",
-  },
-  ihren: {
-    translation: "její / svůj",
-    example: "Sie hatte ihren Beutel mit Nüssen verloren.",
-    exampleTranslation: "Ztratila sáček s oříšky, který nesla domů.",
-  },
-  im: {
-    translation: "v",
-    example: "Im Garten blühten silberne Blumen.",
-    exampleTranslation: "V zahradě kvetly stříbrné květiny.",
-  },
-  in: {
-    translation: "v",
-    example: "Er lebte in einem warmen Bau.",
-    exampleTranslation: "Žil v teplé noře.",
-  },
-  jemand: {
-    translation: "někdo",
-    example: "Nur jemand mit einem guten Herzen konnte das Tor finden.",
-    exampleTranslation: "Jen někdo s dobrým srdcem mohl najít bránu.",
-  },
-  kam: {
-    translation: "dorazil",
-    example: "Am Abend kam Oliver nach Hause.",
-    exampleTranslation: "Večer Oliver dorazil domů.",
-  },
-  kannte: {
-    translation: "znala",
-    example: "Mira kannte viele Geschichten.",
-    exampleTranslation: "Mira znala mnoho příběhů.",
-  },
-  keinen: {
-    translation: "žádný",
-    example: "Oliver hatte keinen Grund zur Angst.",
-    exampleTranslation: "Oliver neměl žádný důvod ke strachu.",
-  },
-  kleinen: {
-    translation: "malý",
-    example: "Oliver fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Oliver našel malý zlatý klíč.",
-  },
-  kleiner: {
-    translation: "malý",
-    example: "Oliver war ein kleiner weißer Hase.",
-    exampleTranslation: "Oliver byl malý bílý králíček.",
-  },
-  klar: {
-    translation: "jasně / čistě",
-    example: "Der Gesang klang klar in der Luft.",
-    exampleTranslation: "Zpěv zněl v chladném vzduchu čistě.",
-  },
-  konnte: {
-    translation: "mohl",
-    example: "Oliver konnte den Weg kaum erkennen.",
-    exampleTranslation: "Oliver sotva viděl cestu.",
-  },
-  könnten: {
-    translation: "mohli",
-    example: "Sie könnten zusammen gehen.",
-    exampleTranslation: "Mohli by jít společně.",
-  },
-  könnte: {
-    translation: "mohl by",
-    example: "Dieser Schlüssel könnte das Mondtor öffnen.",
-    exampleTranslation: "Tento klíč možná otevírá Měsíční bránu.",
-  },
-  lange: {
-    translation: "dlouho",
-    example: "Oliver dachte lange nach.",
-    exampleTranslation: "Oliver dlouho přemýšlel.",
-  },
-  langen: {
-    translation: "dlouhá",
-    example: "Oliver fand einen langen Ast.",
-    exampleTranslation: "Oliver našel dlouhou větev.",
-  },
-  langsam: {
-    translation: "pomalu",
-    example: "Das Mondtor öffnete sich langsam.",
-    exampleTranslation: "Měsíční brána se pomalu otevřela.",
-  },
-  lächelte: {
-    translation: "usmál se",
-    example: "Bram lächelte erleichtert.",
-    exampleTranslation: "Bram se s úlevou usmál.",
-  },
-  leicht: {
-    translation: "lehce",
-    example: "Der Schlüssel war leicht.",
-    exampleTranslation: "Klíč byl lehký.",
-  },
-  leisen: {
-    translation: "tichý",
-    example: "Er hörte einen leisen Klang.",
-    exampleTranslation: "Uslyšel tichý zvuk.",
-  },
-  lernten: {
-    translation: "naučili se",
-    example: "Alle lernten etwas Wichtiges.",
-    exampleTranslation: "Všichni se naučili něco důležitého.",
-  },
-  leuchtete: {
-    translation: "zářil",
-    example: "Der Schlüssel leuchtete golden.",
-    exampleTranslation: "Klíč zlatě zářil.",
-  },
-  licht: {
-    translation: "světlo",
-    example: "Das erste Licht erschien.",
-    exampleTranslation: "Objevilo se první světlo.",
-  },
-  lichtung: {
-    translation: "mýtina",
-    example: "Oliver erreichte eine Lichtung.",
-    exampleTranslation: "Oliver dorazil na mýtinu.",
-  },
-  lief: {
-    translation: "běžel",
-    example: "Oliver lief zurück nach Hause.",
-    exampleTranslation: "Oliver běžel domů.",
-  },
-  luft: {
-    translation: "vzduch",
-    example: "Der Gesang klang klar in der kühlen Luft.",
-    exampleTranslation: "Zpěv zněl v chladném vzduchu čistě.",
-  },
-  machte: {
-    translation: "udělal",
-    example: "Oliver machte einen tiefen Atemzug.",
-    exampleTranslation: "Oliver se zhluboka nadechl.",
-  },
-  man: {
-    translation: "člověk",
-    example: "Nur ein guter Mensch findet den Weg.",
-    exampleTranslation: "Jen dobrý člověk najde cestu.",
-  },
-  mit: {
-    translation: "s",
-    example: "Er lebte mit seiner Mutter.",
-    exampleTranslation: "Žil se svou maminkou.",
-  },
-  mitte: {
-    translation: "střed",
-    example: "In der Mitte befand sich ein Schlüsselloch.",
-    exampleTranslation: "Uprostřed byl zámek.",
-  },
-  mond: {
-    translation: "měsíc",
-    example: "Auf dem Schlüssel war ein kleiner Mond.",
-    exampleTranslation: "Na klíči byl malý měsíc.",
-  },
-  morgen: {
-    translation: "ráno",
-    example: "Am nächsten Morgen erreichte Oliver eine Lichtung.",
-    exampleTranslation: "Dalšího rána Oliver dorazil na mýtinu.",
-  },
-  mutter: {
-    translation: "maminka",
-    example: "Er lebte mit seiner Mutter.",
-    exampleTranslation: "Žil se svou maminkou.",
-  },
-  mut: {
-    translation: "odvaha",
-    example: "Mut und Freundlichkeit gehören zusammen.",
-    exampleTranslation: "Odvaha a laskavost patří k sobě.",
-  },
-  nach: {
-    translation: "po / do",
-    example: "Nach dem Abenteuer kehrte Oliver nach Hause zurück.",
-    exampleTranslation: "Po dobrodružství se Oliver vrátil domů.",
-  },
-  nahm: {
-    translation: "vzal",
-    example: "Oliver nahm den goldenen Schlüssel.",
-    exampleTranslation: "Oliver vzal zlatý klíč.",
-  },
-  neben: {
-    translation: "vedle",
-    example: "Oliver stellte sich neben den Baum.",
-    exampleTranslation: "Oliver se postavil vedle stromu.",
-  },
-  neu: {
-    translation: "nový",
-    example: "Jedes Abenteuer brachte etwas Neues.",
-    exampleTranslation: "Každé dobrodružství přineslo něco nového.",
-  },
-  neue: {
-    translation: "nový",
-    example: "Jedes neue Abenteuer begann mit einer guten Tat.",
-    exampleTranslation: "Každé nové dobrodružství začínalo dobrým skutkem.",
-  },
-  nicht: {
-    translation: "ne",
-    example: "Oliver hatte keine Angst, aber er war nicht unvorsichtig.",
-    exampleTranslation: "Oliver neměl strach, ale nebyl neopatrný.",
-  },
-  nie: {
-    translation: "nikdy",
-    example: "Diesen Schlüssel habe ich noch nie gesehen.",
-    exampleTranslation: "Tento klíč jsem nikdy neviděla.",
-  },
-  niemand: {
-    translation: "nikdo",
-    example: "Niemand war in seiner Nähe.",
-    exampleTranslation: "Nikdo nebyl poblíž.",
-  },
-  öffnen: {
-    translation: "otevřít",
-    example: "Der Schlüssel konnte das Mondtor öffnen.",
-    exampleTranslation: "Klíč mohl otevřít Měsíční bránu.",
-  },
-  öffnete: {
-    translation: "otevřel",
-    example: "Oliver öffnete vorsichtig das Tor.",
-    exampleTranslation: "Oliver opatrně otevřel bránu.",
-  },
-  ohren: {
-    translation: "ouška",
-    example: "Oliver hatte weiche Ohren.",
-    exampleTranslation: "Oliver měl hebká ouška.",
-  },
-  ort: {
-    translation: "místo",
-    example: "Nur gute Herzen finden diesen Ort.",
-    exampleTranslation: "Jen dobrá srdce najdou toto místo.",
-  },
-  plötzlich: {
-    translation: "najednou",
-    example: "Plötzlich trat ein Fuchs hervor.",
-    exampleTranslation: "Najednou vystoupila liška.",
-  },
-  ruhig: {
-    translation: "klidný",
-    example: "Der Wald war ruhig.",
-    exampleTranslation: "Les byl klidný.",
-  },
-  schlüssel: {
-    translation: "klíč",
-    example: "Oliver fand einen goldenen Schlüssel.",
-    exampleTranslation: "Oliver našel zlatý klíč.",
-  },
-  schloss: {
-    translation: "zámek",
-    example: "Oliver wollte das Schloss finden.",
-    exampleTranslation: "Oliver chtěl najít zámek.",
-  },
-  sondern: {
-    translation: "ale spíše",
-    example: "Er war nicht stark, sondern freundlich.",
-    exampleTranslation: "Nebyl silný, ale spíše laskavý.",
-  },
-  später: {
-    translation: "později",
-    example: "Später erreichte Oliver die Brücke.",
-    exampleTranslation: "Později Oliver dorazil k mostu.",
-  },
-  tat: {
-    translation: "skutek",
-    example: "Jede gute Tat zählt.",
-    exampleTranslation: "Každý dobrý skutek se počítá.",
-  },
-  tor: {
-    translation: "brána",
-    example: "Das Tor begann zu leuchten.",
-    exampleTranslation: "Brána začala zářit.",
-  },
-  unter: {
-    translation: "pod",
-    example: "Der Bau lag unter einer alten Eiche.",
-    exampleTranslation: "Nora byla pod starým dubem.",
-  },
-  wald: {
-    translation: "les",
-    example: "Der Wald war wunderschön.",
-    exampleTranslation: "Les byl nádherný.",
-  },
-  weg: {
-    translation: "cesta",
-    example: "Oliver machte sich auf den Weg.",
-    exampleTranslation: "Oliver se vydal na cestu.",
-  },
-  weiß: {
-    translation: "bílý",
-    example: "Oliver war ein weißer Hase.",
-    exampleTranslation: "Oliver byl bílý králíček.",
-  },
-  wind: {
-    translation: "vítr",
-    example: "Ein warmer Wind wehte durch den Wald.",
-    exampleTranslation: "Lesem vál teplý vítr.",
-  },
-  wurzeln: {
-    translation: "kořeny",
-    example: "Der Beutel lag zwischen den Wurzeln.",
-    exampleTranslation: "Sáček ležel mezi kořeny.",
-  },
-  ziel: {
-    translation: "cíl",
-    example: "Oliver erreichte sein Ziel.",
-    exampleTranslation: "Oliver dosáhl svého cíle.",
-  },
-  zurück: {
-    translation: "zpět",
-    example: "Oliver lief zurück nach Hause.",
-    exampleTranslation: "Oliver běžel zpět domů.",
-  },
-  zwei: {
-    translation: "dva",
-    example: "Oliver hatte zwei Schwestern.",
-    exampleTranslation: "Oliver měl dvě sestry.",
-  },
-  zwischen: {
-    translation: "mezi",
-    example: "Zwischen den Bäumen fiel Licht.",
-    exampleTranslation: "Mezi stromy dopadalo světlo.",
-  },
-  alter: {
-    translation: "starý",
-    example: "Auf der anderen Seite stand ein alter Igel namens Bram.",
-    exampleTranslation: "Na druhé straně stál starý ježek jménem Bram.",
-  },
-  andere: {
-    translation: "jiní / ostatní",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  bis: {
-    translation: "až / do",
-    example: "Und sie lebten glücklich bis ans Ende ihrer Tage.",
-    exampleTranslation: "A všichni spolu žili šťastně až do konce.",
-  },
-  blatt: {
-    translation: "list",
-    example:
-      "Er reinigte ihre Pfote mit Wasser und verband sie mit einem weichen Blatt.",
-    exampleTranslation: "Očistil tlapku vodou a zabalil ji do měkkého listu.",
-  },
-  blieb: {
-    translation: "zůstal",
-    example: "Oliver blieb neugierig, aber immer hilfsbereit.",
-    exampleTranslation: "Oliver zůstal zvědavý a ochotný pomáhat.",
-  },
-  bäume: {
-    translation: "stromy",
-    example: "Die Bäume schimmerten im silbernen Licht.",
-    exampleTranslation: "Stromy se rozzářily stříbrným světlem.",
-  },
-  diesem: {
-    translation: "tomto",
-    example: "Später an diesem Tag erreichte Oliver eine schmale Holzbrücke.",
-    exampleTranslation:
-      "Později toho dne Oliver dorazil k úzkému dřevěnému mostu.",
-  },
-  du: {
-    translation: "ty",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  ihrer: {
-    translation: "její / jejich",
-    example:
-      "Nella freute sich sehr und schenkte Oliver eine ihrer besten Nüsse.",
-    exampleTranslation:
-      "Nella měla velkou radost a dala Oliverovi jeden ze svých nejlepších oříšků.",
-  },
-  ist: {
-    translation: "je",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  jede: {
-    translation: "každá",
-    example: "Seine Blätter leuchteten jede Nacht.",
-    exampleTranslation: "Jeho listy každou noc jemně zářily.",
-  },
-  jeden: {
-    translation: "každý",
-    example: "Jeden Morgen wachte Oliver vor allen anderen auf.",
-    exampleTranslation: "Každé ráno se Oliver probouzel dříve než ostatní.",
-  },
-  jedes: {
-    translation: "každé",
-    example: "Jedes neue Abenteuer begann mit einer guten Tat.",
-    exampleTranslation: "Každé nové dobrodružství začínalo dobrým skutkem.",
-  },
-  junges: {
-    translation: "mladé",
-    example: "Ein junges Eichhörnchen namens Nella saß auf einem Stein.",
-    exampleTranslation: "Na kameni seděla mladá veverka jménem Nella.",
-  },
-  kamen: {
-    translation: "přišli",
-    example: "Viele Tiere kamen, um den Baum zu bewundern.",
-    exampleTranslation: "Mnoho zvířat se na strom chodilo dívat.",
-  },
-  kann: {
-    translation: "může",
-    example:
-      "In dieser Nacht verstand Oliver, dass Freundlichkeit stärker sein kann als Angst.",
-    exampleTranslation:
-      "Té noci Oliver pochopil, že laskavost může být silnější než strach.",
-  },
-  kaum: {
-    translation: "sotva",
-    example: "Oliver konnte den Weg kaum erkennen.",
-    exampleTranslation: "Oliver neviděl stezku jasně.",
-  },
-  kleines: {
-    translation: "malé",
-    example: "In der Mitte befand sich ein kleines Schlüsselloch.",
-    exampleTranslation: "Uprostřed byl malý zámek.",
-  },
-  kurzen: {
-    translation: "krátký",
-    example:
-      "Für einen kurzen Moment hörte er einen leisen Klang wie eine ferne Glocke.",
-    exampleTranslation:
-      "Na okamžik uslyšel tichý zvuk, podobný vzdálenému zvonku.",
-  },
-  lag: {
-    translation: "ležel / nacházel se",
-    example: "Hinter dem Tor lag ein wunderschöner Garten.",
-    exampleTranslation: "Za branou se nacházela nádherná zahrada.",
-  },
-  legte: {
-    translation: "položil",
-    example: "Oliver legte den goldenen Schlüssel vor sie.",
-    exampleTranslation: "Oliver před ni položil zlatý klíč.",
-  },
-  lücke: {
-    translation: "mezera",
-    example: "Oliver fand einen langen Ast und legte ihn über die Lücke.",
-    exampleTranslation:
-      "Oliver našel dlouhou větev a položil ji přes poškozené místo.",
-  },
-  morgens: {
-    translation: "ráno",
-    example:
-      "Eines Morgens sah Oliver etwas unter einem Haufen brauner Blätter glänzen.",
-    exampleTranslation:
-      "Jednoho rána Oliver uviděl něco zářit pod hromadou hnědého listí.",
-  },
-  musst: {
-    translation: "musíš",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  nacht: {
-    translation: "noc",
-    example:
-      "In dieser Nacht verstand Oliver, dass Freundlichkeit stärker sein kann als Angst.",
-    exampleTranslation:
-      "Té noci Oliver pochopil, že laskavost může být silnější než strach.",
-  },
-  namens: {
-    translation: "jménem",
-    example: "Ein junges Eichhörnchen namens Nella saß auf einem Stein.",
-    exampleTranslation: "Na kameni seděla mladá veverka jménem Nella.",
-  },
-  neugier: {
-    translation: "zvědavost",
-    example: "Oliver hörte auf sie, doch seine Neugier wurde jeden Tag größer.",
-    exampleTranslation:
-      "Oliver ji poslouchal, ale jeho zvědavost byla každým dnem silnější.",
-  },
-  nichts: {
-    translation: "nic",
-    example: "Lora bedankte sich und versprach, ihm nichts anzutun.",
-    exampleTranslation: "Lora mu poděkovala a slíbila, že mu neublíží.",
-  },
-  nickte: {
-    translation: "přikývla",
-    example: "Die Schildkröte nickte zustimmend.",
-    exampleTranslation: "Želva spokojeně přikývla.",
-  },
-  noch: {
-    translation: "ještě",
-    example: "Der Schlüssel war alt, aber immer noch wunderschön.",
-    exampleTranslation: "Klíč byl starý, ale stále krásný.",
-  },
-  nur: {
-    translation: "jen / pouze",
-    example:
-      "Nur die Vögel waren wach und ihr Gesang klang klar in der kühlen Luft.",
-    exampleTranslation:
-      "Vzhůru byli jen ptáci a jejich zpěv zněl v chladném vzduchu čistě.",
-  },
-  nächsten: {
-    translation: "příští / následující",
-    example: "Am nächsten Morgen erreichte Oliver eine Lichtung.",
-    exampleTranslation: "Dalšího rána Oliver dorazil na malou mýtinu.",
-  },
-  oft: {
-    translation: "často",
-    example:
-      "Oliver fragte sich oft, was sich hinter dem Pfad in der Nähe seines Zuhauses verbarg.",
-    exampleTranslation:
-      "Oliver často přemýšlel, co se skrývá za stezkou poblíž jeho domova.",
-  },
-  pfote: {
-    translation: "tlapka",
-    example:
-      "Er schob die Blätter mit seiner Pfote zur Seite und fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Odsunul listí tlapkou a našel malý zlatý klíč.",
-  },
-  reinigte: {
-    translation: "očistil",
-    example:
-      "Er reinigte ihre Pfote mit Wasser und verband sie mit einem weichen Blatt.",
-    exampleTranslation: "Očistil tlapku vodou a zabalil ji do měkkého listu.",
-  },
-  reise: {
-    translation: "cesta",
-    example: "Oliver vergaß für einen Moment seine Reise und half ihr.",
-    exampleTranslation:
-      "Oliver na chvíli zapomněl na svou cestu a nabídl jí pomoc.",
-  },
-  sagte: {
-    translation: "řekl / řekla",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  sah: {
-    translation: "viděl / díval se",
-    example:
-      "Eines Morgens sah Oliver etwas unter einem Haufen brauner Blätter glänzen.",
-    exampleTranslation:
-      "Jednoho rána Oliver uviděl něco zářit pod hromadou hnědého listí.",
-  },
-  schenkte: {
-    translation: "daroval / darovala",
-    example:
-      "Nella freute sich sehr und schenkte Oliver eine ihrer besten Nüsse.",
-    exampleTranslation:
-      "Nella měla velkou radost a dala Oliverovi jeden ze svých nejlepších oříšků.",
-  },
-  schließlich: {
-    translation: "nakonec",
-    example: "Schließlich entdeckte Oliver den Beutel zwischen zwei Wurzeln.",
-    exampleTranslation:
-      "Nakonec Oliver uviděl sáček zachycený mezi dvěma kořeny.",
-  },
-  schmale: {
-    translation: "úzký",
-    example: "Später an diesem Tag erreichte Oliver eine schmale Holzbrücke.",
-    exampleTranslation:
-      "Později toho dne Oliver dorazil k úzkému dřevěnému mostu.",
-  },
-  schnellen: {
-    translation: "rychlý",
-    example:
-      "Sie führte über einen schnellen Bach, doch ein Brett war zerbrochen.",
-    exampleTranslation:
-      "Most vedl přes rychlý potok, ale jedno prkno bylo zlomené.",
-  },
-  schob: {
-    translation: "odsunul",
-    example:
-      "Er schob die Blätter mit seiner Pfote zur Seite und fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Odsunul listí tlapkou a našel malý zlatý klíč.",
-  },
-  schon: {
-    translation: "už",
-    example: "Schon nach wenigen Tagen wuchs ein wunderschöner Baum.",
-    exampleTranslation: "Za několik dní z něj vyrostl nádherný strom.",
-  },
-  sehr: {
-    translation: "velmi",
-    example:
-      "Nella freute sich sehr und schenkte Oliver eine ihrer besten Nüsse.",
-    exampleTranslation:
-      "Nella měla velkou radost a dala Oliverovi jeden ze svých nejlepších oříšků.",
-  },
-  sein: {
-    translation: "být / jeho",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  seine: {
-    translation: "jeho",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  seiner: {
-    translation: "jeho",
-    example:
-      "Er lebte mit seiner Mutter und zwei Schwestern in einem warmen Bau unter einer alten Eiche.",
-    exampleTranslation:
-      "Žil se svou maminkou a dvěma sestrami v teplé noře pod starým dubem.",
-  },
-  seines: {
-    translation: "jeho",
-    example:
-      "Oliver fragte sich oft, was sich hinter dem Pfad in der Nähe seines Zuhauses verbarg.",
-    exampleTranslation:
-      "Oliver často přemýšlel, co se skrývá za stezkou poblíž jeho domova.",
-  },
-  seite: {
-    translation: "strana",
-    example:
-      "Er schob die Blätter mit seiner Pfote zur Seite und fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Odsunul listí tlapkou a našel malý zlatý klíč.",
-  },
-  setzte: {
-    translation: "posadil se",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval, jak první světlo prochází mezi stromy.",
-  },
-  sich: {
-    translation: "se / si",
-    example:
-      "Er setzte sich gern an den Eingang und beobachtete das erste Licht zwischen den Bäumen.",
-    exampleTranslation:
-      "Rád sedával u vchodu a sledoval, jak první světlo prochází mezi stromy.",
-  },
-  sicher: {
-    translation: "bezpečně / bezpečný",
-    example: "Sie führte Oliver sicher durch den Nebel.",
-    exampleTranslation: "Provedla Olivera mlhou do bezpečné jeskyně.",
-  },
-  sie: {
-    translation: "ona / oni / je",
-    example: "Oliver hörte auf sie, doch seine Neugier wurde jeden Tag größer.",
-    exampleTranslation:
-      "Oliver ji poslouchal, ale jeho zvědavost byla každým dnem silnější.",
-  },
-  silberne: {
-    translation: "stříbrné",
-    example: "Überall blühten silberne Blumen.",
-    exampleTranslation: "Všude kvetly stříbrné květiny.",
-  },
-  silbernen: {
-    translation: "stříbrný",
-    example: "Die Bäume schimmerten im silbernen Licht.",
-    exampleTranslation: "Stromy se rozzářily stříbrným světlem.",
-  },
-  silbernes: {
-    translation: "stříbrné",
-    example: "Zwischen alten Steinen stand ein silbernes Tor.",
-    exampleTranslation: "Mezi starými kameny stála stříbrná brána.",
-  },
-  spürte: {
-    translation: "cítil",
-    example:
-      "Er hob den Schlüssel auf und spürte eine sanfte Wärme in seiner Pfote.",
-    exampleTranslation: "Zvedl klíč a ucítil v tlapce jemné teplo.",
-  },
-  stand: {
-    translation: "stál",
-    example: "Auf der anderen Seite stand ein alter Igel namens Bram.",
-    exampleTranslation: "Na druhé straně stál starý ježek jménem Bram.",
-  },
-  steckte: {
-    translation: "vložil",
-    example: "Oliver steckte vorsichtig den goldenen Schlüssel hinein.",
-    exampleTranslation: "Oliver do něj opatrně vložil zlatý klíč.",
-  },
-  stein: {
-    translation: "kámen",
-    example: "Ein junges Eichhörnchen namens Nella saß auf einem Stein.",
-    exampleTranslation: "Na kameni seděla mladá veverka jménem Nella.",
-  },
-  steinen: {
-    translation: "kameny",
-    example:
-      "Gemeinsam suchten sie unter Büschen, hinter Steinen und am Flussufer.",
-    exampleTranslation: "Hledali pod keři, za kameny a vedle řeky.",
-  },
-  still: {
-    translation: "tichý / tiše",
-    example: "Der Wald war zu dieser Zeit ganz still.",
-    exampleTranslation: "Les byl v tu dobu tichý.",
-  },
-  stärker: {
-    translation: "silnější",
-    example:
-      "In dieser Nacht verstand Oliver, dass Freundlichkeit stärker sein kann als Angst.",
-    exampleTranslation:
-      "Té noci Oliver pochopil, že laskavost může být silnější než strach.",
-  },
-  suchten: {
-    translation: "hledali",
-    example:
-      "Gemeinsam suchten sie unter Büschen, hinter Steinen und am Flussufer.",
-    exampleTranslation: "Hledali pod keři, za kameny a vedle řeky.",
-  },
-  tag: {
-    translation: "den",
-    example: "Oliver hörte auf sie, doch seine Neugier wurde jeden Tag größer.",
-    exampleTranslation:
-      "Oliver ji poslouchal, ale jeho zvědavost byla každým dnem silnější.",
-  },
-  tage: {
-    translation: "dny",
-    example: "Und sie lebten glücklich bis ans Ende ihrer Tage.",
-    exampleTranslation: "A všichni spolu žili šťastně až do konce.",
-  },
-  tagen: {
-    translation: "dnech",
-    example: "Schon nach wenigen Tagen wuchs ein wunderschöner Baum.",
-    exampleTranslation: "Za několik dní z něj vyrostl nádherný strom.",
-  },
-  tasche: {
-    translation: "taška / kapsa",
-    example: "Der goldene Schlüssel wurde in seiner Tasche warm.",
-    exampleTranslation: "Zlatý klíč v jeho kapse se zahřál.",
-  },
-  tief: {
-    translation: "hluboko",
-    example: "Mira erklärte, dass es tief im Wald verborgen sei.",
-    exampleTranslation:
-      "Mira vysvětlila, že stojí někde v nejhlubší části lesa.",
-  },
-  tiefen: {
-    translation: "hluboký",
-    example: "Oliver machte einen tiefen Atemzug.",
-    exampleTranslation: "Oliver se zhluboka nadechl.",
-  },
-  tiere: {
-    translation: "zvířata",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  tieren: {
-    translation: "zvířatům / zvířaty",
-    example: "Unterwegs half er noch vielen Tieren.",
-    exampleTranslation: "Po cestě ještě pomohl několika dalším zvířatům.",
-  },
-  trat: {
-    translation: "vstoupil / vykročil",
-    example: "Plötzlich trat ein roter Fuchs hinter einem Baum hervor.",
-    exampleTranslation: "Najednou zpoza stromu vystoupila červená liška.",
-  },
-  um: {
-    translation: "aby / kolem",
-    example: "Oliver schaute sich um, doch niemand war in seiner Nähe.",
-    exampleTranslation: "Oliver se rozhlédl, ale nikdo poblíž nebyl.",
-  },
-  und: {
-    translation: "a",
-    example:
-      "Oliver war ein kleiner weißer Hase mit weichen Ohren und leuchtend braunen Augen.",
-    exampleTranslation:
-      "Oliver byl malý bílý králíček s hebkými oušky a jasně hnědýma očima.",
-  },
-  verband: {
-    translation: "zabalil / obvázal",
-    example:
-      "Er reinigte ihre Pfote mit Wasser und verband sie mit einem weichen Blatt.",
-    exampleTranslation: "Očistil tlapku vodou a zabalil ji do měkkého listu.",
-  },
-  verborgen: {
-    translation: "ukrytý / skrytý",
-    example: "Mira erklärte, dass es tief im Wald verborgen sei.",
-    exampleTranslation:
-      "Mira vysvětlila, že stojí někde v nejhlubší části lesa.",
-  },
-  vergessen: {
-    translation: "zapomenutý",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  verloren: {
-    translation: "ztracený / ztratila",
-    example: "Sie hatte ihren Beutel mit Nüssen verloren.",
-    exampleTranslation: "Ztratila sáček s oříšky, který nesla domů.",
-  },
-  verstand: {
-    translation: "pochopil",
-    example:
-      "In dieser Nacht verstand Oliver, dass Freundlichkeit stärker sein kann als Angst.",
-    exampleTranslation:
-      "Té noci Oliver pochopil, že laskavost může být silnější než strach.",
-  },
-  versteckten: {
-    translation: "skrytý",
-    example:
-      "Er erzählte Oliver von einem versteckten Pfad hinter drei Kiefern.",
-    exampleTranslation: "Řekl Oliverovi o skryté stezce za třemi borovicemi.",
-  },
-  verwandelte: {
-    translation: "proměnil se",
-    example:
-      "Der goldene Schlüssel verwandelte sich in einen einfachen Holzschlüssel.",
-    exampleTranslation: "Zlatý klíč se proměnil v obyčejný dřevěný klíč.",
-  },
-  viele: {
-    translation: "mnoho",
-    example:
-      "Mira kannte viele Geschichten und erinnerte sich an Dinge, die andere Tiere längst vergessen hatten.",
-    exampleTranslation:
-      "Mira znala mnoho příběhů a pamatovala si věci, na které ostatní zvířata zapomněla.",
-  },
-  vom: {
-    translation: "od / z (von dem)",
-    example: "Oliver hatte noch nie vom Mondtor gehört.",
-    exampleTranslation: "Oliver o Měsíční bráně nikdy neslyšel.",
-  },
-  von: {
-    translation: "od / z / o",
-    example:
-      "Er erzählte Oliver von einem versteckten Pfad hinter drei Kiefern.",
-    exampleTranslation: "Řekl Oliverovi o skryté stezce za třemi borovicemi.",
-  },
-  vor: {
-    translation: "před",
-    example: "Jeden Morgen wachte Oliver vor allen anderen auf.",
-    exampleTranslation: "Každé ráno se Oliver probouzel dříve než ostatní.",
-  },
-  vorsichtig: {
-    translation: "opatrně",
-    example:
-      "Seine Mutter sagte immer: »Der Wald ist wunderschön, aber du musst vorsichtig sein.«",
-    exampleTranslation:
-      "Maminka mu vždy říkala: „Les je krásný, ale musíš být opatrný.“",
-  },
-  vögel: {
-    translation: "ptáci",
-    example:
-      "Nur die Vögel waren wach und ihr Gesang klang klar in der kühlen Luft.",
-    exampleTranslation:
-      "Vzhůru byli jen ptáci a jejich zpěv zněl v chladném vzduchu čistě.",
-  },
-  war: {
-    translation: "byl / byla",
-    example:
-      "Oliver war ein kleiner weißer Hase mit weichen Ohren und leuchtend braunen Augen.",
-    exampleTranslation:
-      "Oliver byl malý bílý králíček s hebkými oušky a jasně hnědýma očima.",
-  },
-  waren: {
-    translation: "byli / byly",
-    example:
-      "Nur die Vögel waren wach und ihr Gesang klang klar in der kühlen Luft.",
-    exampleTranslation:
-      "Vzhůru byli jen ptáci a jejich zpěv zněl v chladném vzduchu čistě.",
-  },
-  warnte: {
-    translation: "varovala",
-    example:
-      "Sie warnte ihn außerdem, dass nur jemand das Tor finden könne, der anderen helfe.",
-    exampleTranslation:
-      "Také ho varovala, že bránu může najít jen ten, kdo pomáhá ostatním.",
-  },
-  was: {
-    translation: "co",
-    example:
-      "Oliver fragte sich oft, was sich hinter dem Pfad in der Nähe seines Zuhauses verbarg.",
-    exampleTranslation:
-      "Oliver často přemýšlel, co se skrývá za stezkou poblíž jeho domova.",
-  },
-  wasser: {
-    translation: "voda",
-    example:
-      "Er reinigte ihre Pfote mit Wasser und verband sie mit einem weichen Blatt.",
-    exampleTranslation: "Očistil tlapku vodou a zabalil ji do měkkého listu.",
-  },
-  weichen: {
-    translation: "měkkými / hebkými",
-    example:
-      "Oliver war ein kleiner weißer Hase mit weichen Ohren und leuchtend braunen Augen.",
-    exampleTranslation:
-      "Oliver byl malý bílý králíček s hebkými oušky a jasně hnědýma očima.",
-  },
-  wie: {
-    translation: "jako / jak",
-    example:
-      "Für einen kurzen Moment hörte er einen leisen Klang wie eine ferne Glocke.",
-    exampleTranslation:
-      "Na okamžik uslyšel tichý zvuk, podobný vzdálenému zvonku.",
-  },
-  wieder: {
-    translation: "znovu",
-    example: "Bevor er ging, schloss sich das Mondtor langsam wieder.",
-    exampleTranslation: "Když odcházel, Měsíční brána se pomalu zavřela.",
-  },
-  wuchs: {
-    translation: "vyrostl",
-    example: "Schon nach wenigen Tagen wuchs ein wunderschöner Baum.",
-    exampleTranslation: "Za několik dní z něj vyrostl nádherný strom.",
-  },
-  wurde: {
-    translation: "stal se / byl",
-    example: "Oliver hörte auf sie, doch seine Neugier wurde jeden Tag größer.",
-    exampleTranslation:
-      "Oliver ji poslouchal, ale jeho zvědavost byla každým dnem silnější.",
-  },
-  wusste: {
-    translation: "věděl",
-    example: "Er wusste, dass Freundlichkeit der wahre Schlüssel gewesen war.",
-    exampleTranslation: "Pochopil, že skutečným klíčem byla laskavost.",
-  },
-  während: {
-    translation: "zatímco",
-    example: "Er hielt den Ast fest, während Bram vorsichtig hinüberlief.",
-    exampleTranslation: "Držel větev, zatímco Bram po ní pomalu přecházel.",
-  },
-  zeigte: {
-    translation: "ukázal",
-    example: "Er lief zurück zum Bau und zeigte seiner Mutter den Schlüssel.",
-    exampleTranslation: "Rozběhl se zpět do nory a ukázal klíč mamince.",
-  },
-  zeit: {
-    translation: "čas",
-    example: "Der Wald war zu dieser Zeit ganz still.",
-    exampleTranslation: "Les byl v tu dobu tichý.",
-  },
-  zerbrochen: {
-    translation: "zlomený",
-    example:
-      "Sie führte über einen schnellen Bach, doch ein Brett war zerbrochen.",
-    exampleTranslation:
-      "Most vedl přes rychlý potok, ale jedno prkno bylo zlomené.",
-  },
-  zu: {
-    translation: "k / do / příliš",
-    example: "Der Wald war zu dieser Zeit ganz still.",
-    exampleTranslation: "Les byl v tu dobu tichý.",
-  },
-  zum: {
-    translation: "k / ke (zu dem)",
-    example: "Er lief zurück zum Bau und zeigte seiner Mutter den Schlüssel.",
-    exampleTranslation: "Rozběhl se zpět do nory a ukázal klíč mamince.",
-  },
-  zur: {
-    translation: "k / ke (zu der)",
-    example:
-      "Er schob die Blätter mit seiner Pfote zur Seite und fand einen kleinen goldenen Schlüssel.",
-    exampleTranslation: "Odsunul listí tlapkou a našel malý zlatý klíč.",
-  },
-  zustimmend: {
-    translation: "souhlasně",
-    example: "Die Schildkröte nickte zustimmend.",
-    exampleTranslation: "Želva spokojeně přikývla.",
-  },
-  zuvor: {
-    translation: "předtím",
-    example: "Der Wald wurde friedlicher als je zuvor.",
-    exampleTranslation: "Les byl klidnější než kdy předtím.",
-  },
-  über: {
-    translation: "nad / přes / o",
-    example:
-      "Sie führte über einen schnellen Bach, doch ein Brett war zerbrochen.",
-    exampleTranslation:
-      "Most vedl přes rychlý potok, ale jedno prkno bylo zlomené.",
-  },
-  überrascht: {
-    translation: "překvapeně",
-    example:
-      "Sie sah überrascht aus und sagte: »Diesen Schlüssel habe ich noch nie gesehen.«",
-    exampleTranslation:
-      "Překvapeně se na něj podívala a řekla: „Tento klíč jsem nikdy neviděla.“",
-  },
   ab: {
     translation: "dolů, pryč; odlučitelná předpona",
-    example:
-      "Wenn er unsicher wurde, stieg sie ab und zeigte ihm den Weg zu Fuß.",
-    exampleTranslation:
-      "Když si nebyl jistý, sesedla a ukázala mu cestu pěšky.",
-  },
-  allein: {
-    translation: "sám, samotný",
-    example:
-      "Vojtech hatte das südliche Tor geöffnet, aber es konnte allein nicht genug Wasser ablassen.",
-    exampleTranslation:
-      "Vojtěch otevřel jižní výpust, ale sama nedokázala vypustit dostatek vody.",
-  },
-  alles: {
-    translation: "všechno",
-    example: "Petr gab ihm Wasser und fragte, ob am Staudamm alles sicher war.",
-    exampleTranslation:
-      "Petr mu dal vodu a zeptal se, zda je na hrázi všechno v bezpečí.",
-  },
-  ameisen: {
-    translation: "mravenci",
-    example:
-      "Schwalben flogen tief, Ameisen trugen ihre Eier bergauf, und der Wald wurde still.",
-    exampleTranslation:
-      "Vlaštovky létaly nízko, mravenci nosili vajíčka do kopce a les ztichl.",
-  },
-  anfang: {
-    translation: "začátku",
-    example:
-      "Zwei Stunden später erreichten sie den alten Steinbruch und den Anfang des Wolfspasses.",
-    exampleTranslation:
-      "O dvě hodiny později dorazili ke starému lomu a začátku Vlčího sedla.",
-  },
-  anhalten: {
-    translation: "zastaví",
-    example:
-      "Klara versprach, dass sie anhalten würde, wenn Jantar anhalten wollte.",
-    exampleTranslation:
-      "Klára slíbila, že zastaví, pokud bude chtít Jantar zastavit.",
-  },
-  antwortete: {
-    translation: "odpověděl",
-    example:
-      "Ihr Vater antwortete, dass manche Ängste sehr lange bei uns bleiben.",
-    exampleTranslation:
-      "Její otec odpověděl, že některé strachy s námi zůstávají velmi dlouho.",
-  },
-  apfel: {
-    translation: "jablko",
-    example:
-      "Petr gab ihm einen Apfel und sagte, dass Vertrauen nie mit Gewalt aufgebaut werden konnte.",
-    exampleTranslation:
-      "Petr mu dal jablko a řekl, že důvěru nikdy nelze postavit silou.",
-  },
-  apfelbaum: {
-    translation: "jabloň",
-    example:
-      "Ein umgestürzter Apfelbaum versperrte den Weg, aber Jantar bemerkte ihn vor Klara.",
-    exampleTranslation:
-      "Cestu blokovala spadlá jabloň, ale Jantar si jí všiml dříve než Klára.",
-  },
-  arbeit: {
-    translation: "práce",
-    example:
-      "Sie gaben den erschrockenen Pferden Zeit zum Atmen, bevor die schwere Arbeit begann.",
-    exampleTranslation:
-      "Než začali s těžkou prací, nechali vyděšené koně chvíli dýchat.",
-  },
-  atmete: {
-    translation: "dýchal",
-    example:
-      "Klara blieb ruhig, berührte seinen Hals und atmete langsam neben ihm.",
-    exampleTranslation:
-      "Klára zůstala klidná, dotkla se jeho krku a pomalu vedle něj dýchala.",
-  },
-  auch: {
-    translation: "také",
-    example:
-      "Er wusste auch, dass ein Sturm kam, wenn die Luft nach Metall zu riechen begann.",
-    exampleTranslation:
-      "Také poznal přicházející bouřku, když vzduch začal vonět po kovu.",
-  },
-  aussah: {
-    translation: "vypadal",
-    example:
-      "Sie dachten nur selten an ihn, weil er so stark wie der Berg selbst aussah.",
-    exampleTranslation:
-      "Málokdy na ni mysleli, protože vypadala pevná jako samotná hora.",
-  },
-  bald: {
-    translation: "brzy",
-    example:
-      "Die Kinder der Familie Novak liebten ihn, aber niemand wusste, wie wichtig er bald werden würde.",
-    exampleTranslation:
-      "Děti Novákových ho milovaly, ale nikdo netušil, jak důležitý se brzy stane.",
-  },
-  balken: {
-    translation: "trám",
-    example: "Ein Balken fiel vom Schuppen, und Ondra schrie.",
-    exampleTranslation: "Z kůlny spadl trám a Ondra vykřikl.",
-  },
-  band: {
-    translation: "stužka; uvázal",
-    example: "Vor dem Rennen band sie ein grünes Band in seine dunkle Mähne.",
-    exampleTranslation:
-      "Před závodem mu uvázala do tmavé hřívy zelenou stužku.",
-  },
-  bat: {
-    translation: "požádala",
-    example: "Klara blieb am anderen Ufer und bat ihn, sie anzusehen.",
-    exampleTranslation:
-      "Klára zůstala na vzdáleném břehu a požádala ho, aby se díval na ni.",
-  },
-  baumes: {
-    translation: "stromu",
-    example:
-      "Schließlich hielt er sich an einem Ast eines umgestürzten Baumes fest.",
-    exampleTranslation: "Nakonec se zachytil větve spadlého stromu.",
-  },
-  bedeckte: {
-    translation: "zakryla",
-    example:
-      "Dichter Nebel bedeckte den Weg, und die weißen Zeichen waren schwer zu sehen.",
-    exampleTranslation:
-      "Stezku zakryla hustá mlha a bílé značky bylo těžké vidět.",
-  },
-  bedeckten: {
-    translation: "zakrývala",
-    example: "Am Ende bedeckten alte Holzbretter eine kleine Öffnung.",
-    exampleTranslation: "Na konci zakrývala malý otvor stará dřevěná prkna.",
-  },
-  bedeutete: {
-    translation: "znamenala",
-    example:
-      "Dann verstand Jantar, dass nicht jedes fremde Geräusch Gefahr bedeutete.",
-    exampleTranslation:
-      "Jantar potom pochopil, že ne každý podivný zvuk znamená nebezpečí.",
-  },
-  befestigte: {
-    translation: "připevnil",
-    example:
-      "Er befestigte einen kleinen Stern aus Messing an Jantars Zaumzeug.",
-    exampleTranslation: "Na Jantarovu uzdu připevnil malou mosaznou hvězdu.",
-  },
-  beginnen: {
-    translation: "začít",
-    example:
-      "Wenn es die Oberkante erreichte, konnte die alte Steinmauer zu brechen beginnen.",
-    exampleTranslation:
-      "Pokud by dosáhla vrcholu, stará kamenná stěna by se mohla začít rozpadat.",
-  },
-  bei: {
-    translation: "u, při",
-    example:
-      "Ihr Vater antwortete, dass manche Ängste sehr lange bei uns bleiben.",
-    exampleTranslation:
-      "Její otec odpověděl, že některé strachy s námi zůstávají velmi dlouho.",
-  },
-  beide: {
-    translation: "oba, obě",
-    example:
-      "Klara legte beide Hände auf seinen Kopf und sagte ihm, dass Ondra draußen war.",
-    exampleTranslation:
-      "Klára mu položila obě ruce na hlavu a řekla mu, že je Ondra venku.",
-  },
-  beiden: {
-    translation: "obou, oběma",
-    example: "An beiden Ufern standen Menschen und riefen den Reitern zu.",
-    exampleTranslation: "Na obou březích stáli lidé a povzbuzovali jezdce.",
-  },
-  beim: {
-    translation: "při, u (bei dem)",
-    example:
-      "Jantar trug leichte Lasten, half beim Heu und trainierte jede Woche mit Klara.",
-    exampleTranslation:
-      "Jantar vozil lehké náklady, pomáhal se senem a každý týden trénoval s Klárou.",
-  },
-  bekam: {
-    translation: "dostal, obdržel",
-    example:
-      "Jantar wurde abgetrocknet, mit einer Decke bedeckt und bekam frisches Wasser.",
-    exampleTranslation:
-      "Jantara osušili, přikryli dekou a dali mu čerstvou vodu.",
-  },
-  bemerkte: {
-    translation: "všiml",
-    example:
-      "Ein umgestürzter Apfelbaum versperrte den Weg, aber Jantar bemerkte ihn vor Klara.",
-    exampleTranslation:
-      "Cestu blokovala spadlá jabloň, ale Jantar si jí všiml dříve než Klára.",
-  },
-  benutzen: {
-    translation: "použít",
-    example:
-      "Er erklärte, dass ein schwerer Wagen den beschädigten Bergweg nicht benutzen konnte.",
-    exampleTranslation:
-      "Vysvětlil, že těžký vůz nemůže použít poškozenou horskou stezku.",
-  },
-  benutzte: {
-    translation: "použil",
-    example:
-      "Niemand benutzte sie mehr, und nur ein schmaler Holzsteg hatte sie mit dem Ufer verbunden.",
-    exampleTranslation:
-      "Nikdo ho už nepoužíval a s břehem ho spojovala jen úzká dřevěná lávka.",
-  },
-  beobachten: {
-    translation: "pozorovat",
-    example:
-      "Er begann die alte Stute zu beobachten und ihrem Beispiel zu folgen.",
-    exampleTranslation:
-      "Začal starou klisnu pozorovat a následovat její příklad.",
-  },
-  beobachteten: {
-    translation: "sledovali",
-    example:
-      "Seine Hunde lagen an der Tür und beobachteten ihren Besitzer aufmerksam.",
-    exampleTranslation: "Jeho psi leželi u dveří a pozorně hlídali svého pána.",
-  },
-  bereitete: {
-    translation: "připravil",
-    example:
-      "Petr zog seinen Mantel an und bereitete einen Wagen mit zwei starken Pferden vor.",
-    exampleTranslation:
-      "Petr si oblékl plášť a připravil vůz se dvěma silnými koňmi.",
-  },
-  bereits: {
-    translation: "už, již",
-    example:
-      "Niemand wusste, dass die Berge bereits den Sturm vorbereiteten, vor dem Vojtech Angst hatte.",
-    exampleTranslation:
-      "Nikdo nevěděl, že hory už připravují bouřku, které se Vojtěch obával.",
-  },
-  berührte: {
-    translation: "dotkla",
-    example: "Wenn die Sonne sein Fell berührte, glänzte es wie warmer Honig.",
-    exampleTranslation:
-      "Když se jeho srsti dotklo slunce, leskla se jako teplý med.",
-  },
-  beschädigt: {
-    translation: "poškodila",
-    example:
-      "Niemand wusste, ob der Sturm ihn beschädigt oder überflutet hatte.",
-    exampleTranslation:
-      "Nikdo nevěděl, zda ji bouřka poškodila nebo zaplavila.",
-  },
-  beschädigte: {
-    translation: "poškozenou",
-    example:
-      "Auf leichtem Boden sparten sie ihre Kraft und gingen vorsichtig über jede beschädigte Stelle.",
-    exampleTranslation:
-      "Na snadné zemi šetřili sílu a přes každé poškozené místo postupovali opatrně.",
-  },
-  beschädigten: {
-    translation: "poškozené",
-    example:
-      "Sie folgten der beschädigten Straße auf der anderen Seite nach unten.",
-    exampleTranslation: "Začali sestupovat po poškozené cestě na druhé straně.",
-  },
-  besitzer: {
-    translation: "majitel",
-    example:
-      "Seine Hunde lagen an der Tür und beobachteten ihren Besitzer aufmerksam.",
-    exampleTranslation: "Jeho psi leželi u dveří a pozorně hlídali svého pána.",
-  },
-  bestimmen: {
-    translation: "určit, rozhodovat",
-    example:
-      "Jantar lernte, dass Angst da sein konnte, ohne seine Richtung zu bestimmen.",
-    exampleTranslation:
-      "Jantar se učil, že strach může být přítomný, aniž by určoval jeho směr.",
-  },
-  beugte: {
-    translation: "naklonila",
-    example:
-      "Klara beugte sich zu Jantar und flüsterte: „Wir müssen ihnen nichts beweisen.“",
-    exampleTranslation:
-      "Klára se naklonila k Jantarovi a zašeptala: „Nemusíme jim nic dokazovat.“",
-  },
-  bewegen: {
-    translation: "pohnout",
-    example:
-      "Marek warnte, dass sich die Brücke bewegen würde und jeder Schritt gerade sein musste.",
-    exampleTranslation:
-      "Marek varoval, že se most bude pohybovat a každý krok musí vést rovně.",
-  },
-  bewegt: {
-    translation: "pohybuje se, pohnutý",
-    example: "Die ganze Nacht hatte er sich langsam zur Straße bewegt.",
-    exampleTranslation: "Celou noc se pomalu pohyboval směrem k cestě.",
-  },
-  bewegte: {
-    translation: "pohnul, pohyboval se",
-    example:
-      "Jantar beobachtete die bewegte Oberfläche und spürte, wie sich jeder Muskel in seinem Körper anspannte.",
-    exampleTranslation:
-      "Jantar sledoval pohybující se hladinu a cítil, jak se mu napíná každý sval.",
-  },
-  bewegung: {
-    translation: "pohyb",
-    example:
-      "Die Bewegung, die Tiefe und das starke Geräusch einer Strömung brachten die Erinnerung zurück.",
-    exampleTranslation: "Vzpomínku vracel pohyb, hloubka a silný zvuk proudu.",
-  },
-  beweisen: {
-    translation: "dokazovat",
-    example:
-      "Klara beugte sich zu Jantar und flüsterte: „Wir müssen ihnen nichts beweisen.“",
-    exampleTranslation:
-      "Klára se naklonila k Jantarovi a zašeptala: „Nemusíme jim nic dokazovat.“",
-  },
-  bitten: {
-    translation: "požádala",
-    example:
-      "Er sagte ihr, sie solle um zehn Menschen, schweres Werkzeug und einen Techniker namens Herr Horsky bitten.",
-    exampleTranslation:
-      "Řekl jí, aby požádala o deset lidí, těžké nářadí a technika jménem pan Horský.",
-  },
-  blass: {
-    translation: "zbledla",
-    example:
-      "Klaras Mutter wurde blass, denn die alte Mühle stand sehr nah am gefährlichsten Wasser.",
-    exampleTranslation:
-      "Klářina matka zbledla, protože starý mlýn stál blízko nejnebezpečnější vody.",
-  },
-  bleiben: {
-    translation: "zůstat",
-    example:
-      "Er lernte stehen zu bleiben, zuzuhören und sich umzusehen, bevor er weiterging.",
-    exampleTranslation:
-      "Naučil se zastavit, poslouchat a rozhlédnout se, než se pohnul.",
-  },
-  bleibt: {
-    translation: "zůstává, zastaví",
-    example:
-      "„Ich dachte, ein tapferes Pferd bleibt niemals stehen“, sagte er.",
-    exampleTranslation:
-      "„Myslel jsem si, že statečný kůň nikdy nezastaví,“ řekl.",
-  },
-  blieben: {
-    translation: "zůstávaly",
-    example:
-      "Jantars Beine zitterten, aber seine Augen blieben auf den verängstigten Jungen gerichtet.",
-    exampleTranslation:
-      "Jantarovi se třásly nohy, ale jeho oči zůstávaly upřené na vyděšeného chlapce.",
-  },
-  blitz: {
-    translation: "blesk",
-    example:
-      "Jeder Blitz machte den Stall für einen Moment weiß, bevor die Dunkelheit zurückkam.",
-    exampleTranslation:
-      "Každý blesk na okamžik zbarvil stáj doběla, než se vrátila tma.",
-  },
-  boden: {
-    translation: "země, půda, podlaha, dno",
-    example:
-      "Schließlich fand Jantar den festen Boden unter dem Wasser und erreichte das andere Ufer.",
-    exampleTranslation:
-      "Nakonec Jantar našel pod vodou pevnou zem a došel na druhý břeh.",
-  },
-  brachen: {
-    translation: "prorazili, zlomili",
-    example:
-      "Die Feuerwehrleute brachen eine Öffnung in den Zaun, während Jantar beide Fohlen zu ihnen führte.",
-    exampleTranslation:
-      "Hasiči prorazili otvor v plotě, zatímco k nim Jantar vedl obě hříbata.",
-  },
-  brachte: {
-    translation: "přinesla",
-    example:
-      "Jeden Morgen vor der Schule brachte sie ihm Heu und putzte sein glänzendes Fell.",
-    exampleTranslation:
-      "Každé ráno před školou mu přinesla seno a vyčistila jeho lesklou srst.",
-  },
-  brachten: {
-    translation: "přinesli, přivedli",
-    example:
-      "Die Bewegung, die Tiefe und das starke Geräusch einer Strömung brachten die Erinnerung zurück.",
-    exampleTranslation: "Vzpomínku vracel pohyb, hloubka a silný zvuk proudu.",
-  },
-  brauchte: {
-    translation: "potřeboval",
-    example:
-      "Zum ersten Mal hatte Jantar gefährliches Wasser überquert, weil jemand ihn brauchte.",
-    exampleTranslation:
-      "Jantar poprvé překonal nebezpečnou vodu, protože ho někdo potřeboval.",
-  },
-  brauchten: {
-    translation: "potřebovali",
-    example:
-      "Sie brauchten Eisenstangen, eine lange Kette und Menschen, die das Wassertor verstanden.",
-    exampleTranslation:
-      "Potřebovali železné páky, dlouhý řetěz a lidi, kteří rozuměli výpusti.",
-  },
-  brechen: {
-    translation: "zlomit, rozbít",
-    example:
-      "Wenn es die Oberkante erreichte, konnte die alte Steinmauer zu brechen beginnen.",
-    exampleTranslation:
-      "Pokud by dosáhla vrcholu, stará kamenná stěna by se mohla začít rozpadat.",
-  },
-  breit: {
-    translation: "široký",
-    example:
-      "Das Wasser bedeckte die Straße fast zehn Meter breit, und der Boden war nicht zu sehen.",
-    exampleTranslation:
-      "Voda zakrývala cestu v šířce téměř deseti metrů a dno nebylo vidět.",
-  },
-  breite: {
-    translation: "široký",
-    example:
-      "Endlich wurde aus dem Bergweg eine breite Stadtstraße mit festem Boden unter seinen Hufen.",
-    exampleTranslation:
-      "Horská cesta se konečně změnila v širokou městskou silnici s pevnou zemí pod jeho kopyty.",
-  },
-  breitete: {
-    translation: "rozložil, rozprostřel",
-    example: "Der Müller breitete eine nasse Karte auf dem Küchentisch aus.",
-    exampleTranslation: "Mlynář rozložil na kuchyňský stůl mokrou mapu.",
-  },
-  bretter: {
-    translation: "prkna",
-    example:
-      "Als sie vom Staudamm hörten, nahmen sie Äxte, Bretter und starke Seile.",
-    exampleTranslation:
-      "Když uslyšeli o hrázi, vzali sekery, prkna a pevná lana.",
-  },
-  bringen: {
-    translation: "přinést, dopravit",
-    example:
-      "Trotzdem war er ihre einzige Möglichkeit, die schweren Werkzeuge rechtzeitig nach Podlesi zu bringen.",
-    exampleTranslation:
-      "Přesto to byla jejich jediná možnost, jak dostat těžké nářadí do Podlesí včas.",
-  },
-  brunnen: {
-    translation: "studny",
-    example:
-      "Jantar stand neben dem Brunnen und hörte die Sorge in den Stimmen der Männer.",
-    exampleTranslation:
-      "Jantar stál u studny a slyšel obavy v hlasech obou mužů.",
-  },
-  bäche: {
-    translation: "potoky",
-    example: "Nach dem Sturm kreuzten überall kleine Bäche den Weg.",
-    exampleTranslation: "Po bouřce vedly přes stezku všude malé potoky.",
-  },
-  da: {
-    translation: "tam, zde; protože",
-    example:
-      "Jantar lernte, dass Angst da sein konnte, ohne seine Richtung zu bestimmen.",
-    exampleTranslation:
-      "Jantar se učil, že strach může být přítomný, aniž by určoval jeho směr.",
-  },
-  dachte: {
-    translation: "myslel",
-    example:
-      "„Ich dachte, ein tapferes Pferd bleibt niemals stehen“, sagte er.",
-    exampleTranslation:
-      "„Myslel jsem si, že statečný kůň nikdy nezastaví,“ řekl.",
-  },
-  dachten: {
-    translation: "mysleli",
-    example:
-      "Sie dachten nur selten an ihn, weil er so stark wie der Berg selbst aussah.",
-    exampleTranslation:
-      "Málokdy na ni mysleli, protože vypadala pevná jako samotná hora.",
-  },
-  dadurch: {
-    translation: "tím, díky tomu",
-    example: "Dadurch verschwand nicht jede Angst.",
-    exampleTranslation: "Neznamenalo to, že každý strach zmizel.",
-  },
-  dahinter: {
-    translation: "za",
-    example:
-      "Jantar und Klara folgten ihm, dahinter kamen die beladenen Pferde und die anderen Menschen.",
-    exampleTranslation:
-      "Jantar s Klárou ho následovali a za nimi šli naložení koně a ostatní lidé.",
-  },
-  damit: {
-    translation: "aby, tím",
-    example:
-      "Klara sprach weiter, damit Jantar wusste, dass sie noch immer stark neben ihm war.",
-    exampleTranslation:
-      "Klára dál mluvila, aby Jantar věděl, že je vedle něj stále silná.",
-  },
-  danach: {
-    translation: "potom, poté",
-    example:
-      "Diese Entdeckung blieb in ihm während jeder schweren Stunde, die danach kam.",
-    exampleTranslation:
-      "Tento objev v něm zůstal během každé těžké hodiny, která následovala.",
-  },
-  dankte: {
-    translation: "poděkoval",
-    example:
-      "Klara berührte den weißen Stern auf Jantars Stirn und dankte ihm leise.",
-    exampleTranslation:
-      "Klára se dotkla bílé hvězdy na Jantarově čele a tiše mu poděkovala.",
-  },
-  daran: {
-    translation: "na tom, na to",
-    example:
-      "Die Begegnung erinnerte Klara daran, dass verängstigte Tiere Platz, Geduld und Respekt brauchten.",
-    exampleTranslation:
-      "Setkání připomnělo Kláře, že vyděšená zvířata potřebují prostor, trpělivost a respekt.",
-  },
-  darauf: {
-    translation: "na to, na něm",
-    example:
-      "Das Pferd prüfte den Stein, bevor es sein ganzes Gewicht darauf stellte.",
-    exampleTranslation: "Kůň kámen vyzkoušel, než na něj přenesl celou váhu.",
-  },
-  daraus: {
-    translation: "z toho",
-    example:
-      "Ein ruhiger Eimer mit Wasser machte ihm keine Angst, und er trank ohne Probleme daraus.",
-    exampleTranslation:
-      "Klidný kbelík vody mu nevadil a pil z něj beze strachu.",
-  },
-  darin: {
-    translation: "ní",
-    example:
-      "Im Sommer schwammen die Kinder darin, und im Winter liefen sie auf seinen gefrorenen Stellen Schlittschuh.",
-    exampleTranslation:
-      "V létě se v ní děti koupaly a v zimě bruslily na jejích zamrzlých tůních.",
-  },
-  dasselbe: {
-    translation: "stejný",
-    example: "Ein flacher Bach war aber nicht dasselbe wie ein tiefer Fluss.",
-    exampleTranslation: "Mělký potok však nebyl stejný jako hluboká řeka.",
-  },
-  dauern: {
-    translation: "trvala",
-    example:
-      "Weiter flussaufwärts stand eine Steinbrücke, aber der Weg dorthin würde zu lange dauern.",
-    exampleTranslation:
-      "Proti proudu stál kamenný most, ale cesta k němu by trvala příliš dlouho.",
-  },
-  dauerte: {
-    translation: "trvala",
-    example: "Bei gutem Wetter dauerte die Reise sechs Stunden.",
-    exampleTranslation: "Za dobrého počasí trvala cesta šest hodin.",
-  },
-  davon: {
-    translation: "z toho, o tom",
-    example:
-      "Das ganze Tal hing nun davon ab, das alte nördliche Tor vor dem nächsten Regen zu reparieren.",
-    exampleTranslation:
-      "Celé údolí nyní záviselo na opravě staré severní výpusti před dalším deštěm.",
-  },
-  decke: {
-    translation: "dekou",
-    example:
-      "Jantar wurde abgetrocknet, mit einer Decke bedeckt und bekam frisches Wasser.",
-    exampleTranslation:
-      "Jantara osušili, přikryli dekou a dali mu čerstvou vodu.",
-  },
-  decken: {
-    translation: "deky",
-    example:
-      "Klara und ihre Mutter kochten Tee und legten trockene Decken bereit.",
-    exampleTranslation: "Klára s matkou vařily čaj a připravovaly suché deky.",
-  },
-  deine: {
-    translation: "tvoje",
-    example: "„Deine Arbeit ist jetzt beendet“, sagte sie zu ihm.",
-    exampleTranslation: "„Tvoje práce už skončila,“ řekla mu.",
-  },
-  denn: {
-    translation: "protože",
-    example:
-      "Klara nannte ihn nicht furchtlos, denn sie wusste, dass er noch immer Angst hatte.",
-    exampleTranslation:
-      "Klára mu neříkala, že je nebojácný, protože věděla, že stále cítí strach.",
-  },
-  deshalb: {
-    translation: "proto",
-    example:
-      "Vojtech sprach normalerweise sicher, deshalb blieb sein besorgtes Gesicht in Klaras Gedanken.",
-    exampleTranslation:
-      "Vojtěch obvykle mluvil sebejistě, a proto zůstal jeho ustaraný výraz v Klářiných myšlenkách.",
-  },
-  diese: {
-    translation: "tato, tyto",
-    example:
-      "Jantar hörte diese Worte nie, aber Ladas Nähe gab ihm ein Gefühl von Sicherheit.",
-    exampleTranslation:
-      "Jantar ta slova nikdy neslyšel, ale Ladina přítomnost mu dávala pocit bezpečí.",
-  },
-  dieses: {
-    translation: "toto, tento",
-    example: "„Dieses Pferd hat Angst vor Wasser“, sagte er laut.",
-    exampleTranslation: "„Ten kůň se bojí vody,“ řekl hlasitě.",
-  },
-  direkt: {
-    translation: "přímo",
-    example: "Direkt vor ihnen glänzte der Fluss in der Sonne.",
-    exampleTranslation: "Přímo před nimi se ve slunci leskla řeka.",
-  },
-  dort: {
-    translation: "tam",
-    example: "Dort lebten sechs Pferde, und das jüngste hieß Jantar.",
-    exampleTranslation: "Žilo tam šest koní a nejmladší se jmenoval Jantar.",
-  },
-  dorthin: {
-    translation: "tam",
-    example:
-      "Weiter flussaufwärts stand eine Steinbrücke, aber der Weg dorthin würde zu lange dauern.",
-    exampleTranslation:
-      "Proti proudu stál kamenný most, ale cesta k němu by trvala příliš dlouho.",
-  },
-  draußen: {
-    translation: "venku",
-    example:
-      "Draußen verwandelte sich der friedliche Fluss Jasna in einen wilden Strom, den niemand wiedererkannte.",
-    exampleTranslation:
-      "Venku se klidná řeka Jasná měnila v silný proud, který nikdo nepoznával.",
-  },
-  drehen: {
-    translation: "otáčí",
-    example: "„Sein großes Rad lässt sich immer schwerer drehen.“",
-    exampleTranslation: "„Jejím velkým kolem se otáčí stále obtížněji.“",
-  },
-  drehte: {
-    translation: "otočila",
-    example:
-      "Klara drehte sich zu ihm und sah Angst, aber auch neue Entschlossenheit in seinen Augen.",
-    exampleTranslation:
-      "Klára se k němu otočila a uviděla v jeho očích strach, ale také nové odhodlání.",
-  },
-  drinnen: {
-    translation: "uvnitř",
-    example:
-      "Drinnen stützte Klara seinen Knöchel mit einem Stück Holz und einem Verband.",
-    exampleTranslation:
-      "Uvnitř Klára použila kus dřeva a obvaz, aby mu zpevnila kotník.",
-  },
-  dritten: {
-    translation: "třetím",
-    example: "Als sie aus dem Wald kamen, lagen sie auf dem dritten Platz.",
-    exampleTranslation: "Když vyjeli mezi stromy, byli na třetím místě.",
-  },
-  druck: {
-    translation: "tlaku",
-    example: "Der Druck des hohen Wassers hielt das Tor geschlossen.",
-    exampleTranslation: "Tlak vysoké vody držel výpust zavřenou.",
-  },
-  drückte: {
-    translation: "tlačil, vehnal",
-    example:
-      "Das Pferd trat zurück, als der Wind Regen durch die offene Tür drückte.",
-    exampleTranslation:
-      "Kůň ustoupil, když vítr vehnal otevřenými dveřmi dovnitř déšť.",
-  },
-  drückten: {
-    translation: "tlačili",
-    example:
-      "Horsky benutzte einen alten Schlüssel, während zwei Feuerwehrleute mit aller Kraft gegen das Schloss drückten.",
-    exampleTranslation:
-      "Horský použil starý klíč, zatímco dva hasiči tlačili na zámek ze všech sil.",
-  },
-  dunkel: {
-    translation: "tmavý",
-    example:
-      "Die Strömung war kalt, dunkel und viel stärker als der kleine Bach beim Training.",
-    exampleTranslation:
-      "Proud byl studený, tmavý a mnohem silnější než malý potok při tréninku.",
-  },
-  dunkelheit: {
-    translation: "tmy",
-    example:
-      "Jeder Blitz machte den Stall für einen Moment weiß, bevor die Dunkelheit zurückkam.",
-    exampleTranslation:
-      "Každý blesk na okamžik zbarvil stáj doběla, než se vrátila tma.",
-  },
-  dunkle: {
-    translation: "tmavé",
-    example: "Wenn er über die Wiese lief, tanzte seine dunkle Mähne im Wind.",
-    exampleTranslation:
-      "Když běžel po louce, jeho tmavá hříva tančila ve větru.",
-  },
-  dunklen: {
-    translation: "tmavý",
-    example:
-      "Er fand einen schmalen Weg durch den dunklen Obstgarten um den Baum herum.",
-    exampleTranslation: "Našel úzký průchod kolem ní přes tmavý sad.",
-  },
-  dünne: {
-    translation: "tenká",
-    example:
-      "Eine dünne Linie erschien im Felsen, und Sand begann herunterzufallen.",
-    exampleTranslation: "Ve skále se objevila tenká čára a začal padat písek.",
-  },
-  echos: {
-    translation: "ozvěny",
-    example:
-      "Stimmen und Hufschläge kamen als lange fremde Echos von den Wänden zurück.",
-    exampleTranslation:
-      "Hlasy a údery kopyt se vracely od stěn jako dlouhé neznámé ozvěny.",
-  },
-  echte: {
-    translation: "opravdová",
-    example:
-      "„Hilfe, die an einem Menschen in Not vorbeigeht, ist keine echte Hilfe“, antwortete Klara.",
-    exampleTranslation:
-      "„Pomoc, která přejede kolem člověka v nouzi, není opravdová pomoc,“ odpověděla Klára.",
-  },
-  ecke: {
-    translation: "kout",
-    example:
-      "Klara durchsuchte das Haus, die Scheune und jede Ecke des Stalls.",
-    exampleTranslation: "Klára prohledala dům, stodolu i každý kout stáje.",
-  },
-  eimer: {
-    translation: "kbelík",
-    example:
-      "Ein ruhiger Eimer mit Wasser machte ihm keine Angst, und er trank ohne Probleme daraus.",
-    exampleTranslation:
-      "Klidný kbelík vody mu nevadil a pil z něj beze strachu.",
-  },
-  einfach: {
-    translation: "jednoduše",
-    example: "Der Mut war einfach stärker geworden als sein Wunsch zu fliehen.",
-    exampleTranslation: "Odvaha byla jednoduše silnější než jeho touha utéct.",
-  },
-  einige: {
-    translation: "někteří",
-    example:
-      "Einige Menschen riefen Klara zu, sie solle weiterreiten, und jemand lachte über sie.",
-    exampleTranslation:
-      "Někteří lidé volali na Kláru, aby pokračovala, a někdo se jim smál.",
-  },
-  einigen: {
-    translation: "některé",
-    example:
-      "Klara war schon auf einigen unteren Waldwegen geritten, aber noch nie durch den ganzen Pass.",
-    exampleTranslation:
-      "Klára už dříve projela některé nižší lesní cesty, ale nikdy ne celé sedlo.",
-  },
-  einzige: {
-    translation: "jediná",
-    example:
-      "Trotzdem war er ihre einzige Möglichkeit, die schweren Werkzeuge rechtzeitig nach Podlesi zu bringen.",
-    exampleTranslation:
-      "Přesto to byla jejich jediná možnost, jak dostat těžké nářadí do Podlesí včas.",
-  },
-  eisen: {
-    translation: "železo",
-    example:
-      "Vor langer Zeit hatten Arbeiter durch ihn Eisen zum alten Steinbruch gebracht.",
-    exampleTranslation:
-      "Před dávnými lety jím dělníci vozili železo ke starému lomu.",
-  },
-  endete: {
-    translation: "skončil",
-    example:
-      "Der linke Gang war stark überflutet, und der rechte endete an einem alten tiefen Schacht.",
-    exampleTranslation:
-      "Levá chodba byla silně zaplavená a pravá končila u staré hluboké šachty.",
-  },
-  endlich: {
-    translation: "konečně",
-    example: "Am Nachmittag erreichten Klara und Jantar endlich den Wolfspass.",
-    exampleTranslation:
-      "Odpoledne Klára s Jantarem konečně dorazili do Vlčího sedla.",
-  },
-  engen: {
-    translation: "úzkých",
-    example:
-      "Der frische Wind fühlte sich nach den engen Gängen und der schweren Luft wunderbar an.",
-    exampleTranslation:
-      "Čerstvý vítr byl po úzkých chodbách a těžkém podzemním vzduchu nádherný.",
-  },
-  entdeckten: {
-    translation: "objevili",
-    example: "Am Waldrand entdeckten sie Ondras rote Mütze im Schlamm.",
-    exampleTranslation:
-      "Na kraji lesa objevili v blátě Ondrovu červenou čepici.",
-  },
-  entfernt: {
-    translation: "daleko",
-    example:
-      "Matous sagte, dass seine kleine Holzhütte nicht weit entfernt war.",
-    exampleTranslation: "Matouš řekl, že jeho malá dřevěná salaš není daleko.",
-  },
-  entfernten: {
-    translation: "odstranili",
-    example: "Die Männer entfernten sie und sahen draußen den Nachthimmel.",
-    exampleTranslation: "Muži je odstranili a venku uviděli noční oblohu.",
-  },
-  entlang: {
-    translation: "podél",
-    example:
-      "Seine Mutter lief am Ufer entlang und rief voller Angst nach ihm.",
-    exampleTranslation: "Jeho matka běžela podél břehu a vyděšeně ho volala.",
-  },
-  entschied: {
-    translation: "rozhodla",
-    example: "Sie entschied, dass sie den Kanal selbst überqueren musste.",
-    exampleTranslation: "Rozhodla se, že bude muset náhon přejít sama.",
-  },
-  erinnern: {
-    translation: "pamatoval",
-    example:
-      "Die nächsten Tage waren heißer, als sich irgendjemand erinnern konnte.",
-    exampleTranslation:
-      "Následující dny byly teplejší, než si kdokoli pamatoval.",
-  },
-  erkannte: {
-    translation: "poznala",
-    example:
-      "Klara erkannte den Heimweg, und die ganze Gruppe begann den letzten Abstieg.",
-    exampleTranslation:
-      "Klára poznala cestu domů a celá skupina začala poslední sestup.",
-  },
-  erneut: {
-    translation: "znovu",
-    example: "Sie ruhten sich aus, zogen erneut und öffneten das Tor weiter.",
-    exampleTranslation: "Odpočinuli si, znovu zabrali a otevřeli výpust více.",
-  },
-  erreichen: {
-    translation: "dosáhnout, dorazit",
-    example:
-      "Für eine lange Geschichte blieb keine Zeit, weil die Werkzeuge den Staudamm erreichen mussten.",
-    exampleTranslation:
-      "Na dlouhé vyprávění nebyl čas, protože nářadí se muselo dostat k hrázi.",
-  },
-  erreichten: {
-    translation: "dorazili",
-    example: "Als sie Ondra erreichten, hob sie ihn vor sich in den Sattel.",
-    exampleTranslation:
-      "Když dorazili k Ondrovi, zvedla ho do sedla před sebe.",
-  },
-  erschien: {
-    translation: "objevila",
-    example:
-      "Das kleine Holzboot erschien plötzlich wie der schlimmste Gegenstand im ganzen Haus.",
-    exampleTranslation:
-      "Malá dřevěná loďka najednou vypadala jako nejstrašnější věc v domě.",
-  },
-  erschienen: {
-    translation: "objevily",
-    example:
-      "Hinter der kleinen Kapelle öffnete sich der Wald, und die grauen Berge erschienen.",
-    exampleTranslation: "Za malou kaplí skončil les a objevily se šedé hory.",
-  },
-  erschrockene: {
-    translation: "vyděšený, polekaný",
-    example:
-      "Klara blieb bei Jantar und sprach ruhig, wenn sich das erschrockene Pferd bewegte.",
-    exampleTranslation:
-      "Klára zůstala vedle Jantara a klidně mluvila, kdykoli se vyděšený kůň pohnul.",
-  },
-  ersten: {
-    translation: "první",
-    example:
-      "Zum ersten Mal hatte Jantar gefährliches Wasser überquert, weil jemand ihn brauchte.",
-    exampleTranslation:
-      "Jantar poprvé překonal nebezpečnou vodu, protože ho někdo potřeboval.",
-  },
-  erzählen: {
-    translation: "vyprávět",
-    example:
-      "Wenn Pferde den Menschen ihre Gedanken erzählen könnten, hätte Lada Jantar einen einfachen Rat gegeben.",
-    exampleTranslation:
-      "Kdyby koně dokázali lidem vyprávět své myšlenky, dala by Lada Jantarovi jednoduchou radu.",
-  },
-  erzählt: {
-    translation: "příběh",
-    example:
-      "Die Geschichte vom großen Wasser wurde den Kindern von Podlesi über viele Generationen erzählt.",
-    exampleTranslation:
-      "Příběh o velké vodě si děti v Podlesí vyprávěly po mnoho generací.",
-  },
-  essen: {
-    translation: "jídle",
-    example:
-      "Nach Essen, Wasser und einer kurzen Pause gingen Klara und Jantar weiter bergauf.",
-    exampleTranslation:
-      "Po jídle, vodě a krátkém odpočinku pokračovali Klára s Jantarem do kopce.",
-  },
-  familie: {
-    translation: "rodina",
-    example:
-      "Hinter dem letzten Haus in Podlesi lag der Bauernhof der Familie Novak.",
-    exampleTranslation:
-      "Za posledním domem v Podlesí stál statek rodiny Novákových.",
-  },
-  familien: {
-    translation: "rodiny",
-    example:
-      "Auf dem Platz spielte Musik, Familien verkauften Kuchen, und Kinder liefen kleine Rennen.",
-    exampleTranslation:
-      "Na návsi hrála hudba, rodiny prodávaly koláče a děti běhaly v malých závodech.",
-  },
-  fanden: {
-    translation: "našli",
-    example:
-      "Sie fanden einen alten Hirten namens Matous, der unter einem Baum saß.",
-    exampleTranslation:
-      "Našli starého pastýře Matouše, který seděl pod stromem.",
-  },
-  fast: {
-    translation: "téměř",
-    example: "Dort reichte das Wasser den Pferden fast bis zu den Knien.",
-    exampleTranslation: "Voda tam koním sahala téměř ke kolenům.",
-  },
-  fehlte: {
-    translation: "chyběla",
-    example:
-      "Sein Bett war leer, und sein gelber Regenmantel fehlte an der Tür.",
-    exampleTranslation:
-      "Jeho postel byla prázdná a u dveří chyběla žlutá pláštěnka.",
-  },
-  felder: {
-    translation: "pole",
-    example:
-      "Blitze erhellten die Felder, und der Donner ließ die Fenster zittern.",
-    exampleTranslation: "Blesky osvětlovaly pole a hrom otřásal okny.",
-  },
-  fell: {
-    translation: "srst",
-    example: "Wenn die Sonne sein Fell berührte, glänzte es wie warmer Honig.",
-    exampleTranslation:
-      "Když se jeho srsti dotklo slunce, leskla se jako teplý med.",
-  },
-  felsen: {
-    translation: "skále",
-    example:
-      "Klara musste den weißen Zeichen auf den Steinen bis zum Schwarzen Felsen folgen.",
-    exampleTranslation:
-      "Klára měla sledovat bílé značky na kamenech, dokud nedorazí k Černé skále.",
-  },
-  fenster: {
-    translation: "oknem",
-    example:
-      "Blitze erhellten die Felder, und der Donner ließ die Fenster zittern.",
-    exampleTranslation: "Blesky osvětlovaly pole a hrom otřásal okny.",
-  },
-  festen: {
-    translation: "pevnou",
-    example:
-      "Schließlich fand Jantar den festen Boden unter dem Wasser und erreichte das andere Ufer.",
-    exampleTranslation:
-      "Nakonec Jantar našel pod vodou pevnou zem a došel na druhý břeh.",
-  },
-  fiel: {
-    translation: "spadl",
-    example: "Dann fiel starker Regen wie eine graue Wand über das ganze Tal.",
-    exampleTranslation:
-      "Potom padal silný déšť jako šedá stěna přes celé údolí.",
-  },
-  fielen: {
-    translation: "padaly",
-    example:
-      "Erdstücke fielen in die Strömung, und die alten Holzbalken neigten sich zur Seite.",
-    exampleTranslation:
-      "Kusy hlíny padaly do proudu a staré dřevěné trámy se naklonily na stranu.",
-  },
-  finger: {
-    translation: "prstem",
-    example:
-      "Horsky prüfte die Luft mit einem nassen Finger und stimmte ihm zu.",
-    exampleTranslation:
-      "Horský vyzkoušel proudění mokrým prstem a souhlasil s ním.",
-  },
-  flach: {
-    translation: "mělká",
-    example:
-      "Klara zeigte Jantar, dass das Wasser flach war, und er ging weiter.",
-    exampleTranslation:
-      "Klára ukázala Jantarovi, že je voda mělká, a on pokračoval.",
-  },
-  flasche: {
-    translation: "láhev",
-    example:
-      "Klaras Mutter packte Brot, Käse, eine Flasche Wasser und trockene Kleidung ein.",
-    exampleTranslation:
-      "Klářina matka zabalila chléb, sýr, láhev vody a suché oblečení.",
-  },
-  floss: {
-    translation: "tekla",
-    example:
-      "Auf der anderen Seite floss der klare Fluss Jasna an den Häusern vorbei.",
-    exampleTranslation: "Z druhé strany kolem domů tekla čistá řeka Jasná.",
-  },
-  flüsterte: {
-    translation: "zašeptala",
-    example:
-      "Klara beugte sich zu Jantar und flüsterte: „Wir müssen ihnen nichts beweisen.“",
-    exampleTranslation:
-      "Klára se naklonila k Jantarovi a zašeptala: „Nemusíme jim nic dokazovat.“",
-  },
-  folgen: {
-    translation: "následovat",
-    example:
-      "Er begann die alte Stute zu beobachten und ihrem Beispiel zu folgen.",
-    exampleTranslation:
-      "Začal starou klisnu pozorovat a následovat její příklad.",
-  },
-  folgte: {
-    translation: "následovala",
-    example: "Ihre Mutter folgte ihnen in den tiefen Wald und verschwand.",
-    exampleTranslation:
-      "Jejich matka je následovala do hlubokého lesa a zmizela.",
-  },
-  folgten: {
-    translation: "následovali",
-    example:
-      "Die Reiter überquerten eine Wiese, folgten dem Wald und ritten am Ende durch eine Furt im Fluss.",
-    exampleTranslation:
-      "Jezdci přejeli louku, pokračovali kolem lesa a končili průjezdem říčním brodem.",
-  },
-  fragen: {
-    translation: "zeptá",
-    example:
-      "Petr versprach, bei seinem nächsten Besuch in Bela noch einmal nach der Reparatur zu fragen.",
-    exampleTranslation:
-      "Petr slíbil, že se při příští návštěvě Bělé znovu zeptá na opravu.",
-  },
-  frei: {
-    translation: "volná",
-    example: "Der Feuerwehrmann vor ihm sagte Klara, dass der Weg frei war.",
-    exampleTranslation: "Hasič před nimi řekl Kláře, že cesta je volná.",
-  },
-  frische: {
-    translation: "čerstvé",
-    example:
-      "Der frische Wind fühlte sich nach den engen Gängen und der schweren Luft wunderbar an.",
-    exampleTranslation:
-      "Čerstvý vítr byl po úzkých chodbách a těžkém podzemním vzduchu nádherný.",
-  },
-  frischer: {
-    translation: "čerstvého",
-    example:
-      "Jantar hob den Kopf und spürte eine schwache Bewegung frischer Luft.",
-    exampleTranslation:
-      "Jantar zvedl hlavu a ucítil slabý pohyb čerstvého vzduchu.",
-  },
-  früher: {
-    translation: "dříve",
-    example:
-      "Er konnte einen Weg im dichten Nebel finden und hörte ferne Schritte früher als die anderen Pferde.",
-    exampleTranslation:
-      "Dokázal najít cestu v husté mlze a slyšel vzdálené kroky dříve než ostatní koně.",
-  },
-  fühlte: {
-    translation: "cítil",
-    example:
-      "Auch Jantar fühlte Angst, als er Wasser im Inneren des Berges tropfen hörte.",
-    exampleTranslation:
-      "Také Jantar cítil strach, když slyšel vodu kapající uvnitř hory.",
-  },
-  führen: {
-    translation: "provedla",
-    example:
-      "Jeder kleine Erfolg zeigte Jantar, dass Klara ihn nie unvorsichtig in Gefahr führen würde.",
-    exampleTranslation:
-      "Každý malý úspěch učil Jantara, že ho Klára nikdy neopatrně nezavede do nebezpečí.",
-  },
-  führten: {
-    translation: "vedly",
-    example: "Kleine Fußspuren führten von der Mütze zum alten Mühlenkanal.",
-    exampleTranslation:
-      "Od čepice vedly malé stopy bot směrem ke starému mlýnskému náhonu.",
-  },
-  füllte: {
-    translation: "naplnil",
-    example:
-      "In einer Frühlingsnacht füllte starker Regen den kleinen Bach neben ihrer Weide.",
-    exampleTranslation:
-      "Jedné jarní noci naplnil silný déšť malý potok vedle jejich pastviny.",
-  },
-  füllten: {
-    translation: "naplnily",
-    example:
-      "Kinder weinten, und die Zimmer füllten sich mit nassen Mänteln und schmutzigen Schuhen.",
-    exampleTranslation:
-      "Děti plakaly a pokoje se naplnily mokrými kabáty a zablácenými botami.",
-  },
-  gang: {
-    translation: "chodba",
-    example:
-      "Der linke Gang war stark überflutet, und der rechte endete an einem alten tiefen Schacht.",
-    exampleTranslation:
-      "Levá chodba byla silně zaplavená a pravá končila u staré hluboké šachty.",
-  },
-  ganzen: {
-    translation: "celé",
-    example:
-      "Sie gab ihm eine Karotte, und Jantar war den ganzen Tag stolz auf sich.",
-    exampleTranslation:
-      "Dala mu mrkev a Jantar byl na sebe po zbytek dne pyšný.",
-  },
-  ganzes: {
-    translation: "celou",
-    example:
-      "Das Pferd prüfte den Stein, bevor es sein ganzes Gewicht darauf stellte.",
-    exampleTranslation: "Kůň kámen vyzkoušel, než na něj přenesl celou váhu.",
-  },
-  gebracht: {
-    translation: "přinesl, dopravil",
-    example:
-      "Vor langer Zeit hatten Arbeiter durch ihn Eisen zum alten Steinbruch gebracht.",
-    exampleTranslation:
-      "Před dávnými lety jím dělníci vozili železo ke starému lomu.",
-  },
-  gefahr: {
-    translation: "nebezpečí",
-    example:
-      "Jeder kleine Erfolg zeigte Jantar, dass Klara ihn nie unvorsichtig in Gefahr führen würde.",
-    exampleTranslation:
-      "Každý malý úspěch učil Jantara, že ho Klára nikdy neopatrně nezavede do nebezpečí.",
-  },
-  gefährlich: {
-    translation: "nebezpečné",
-    example: "Er warnte sie, umzukehren, wenn der Weg zu gefährlich wurde.",
-    exampleTranslation:
-      "Varoval ji, aby se vrátila, pokud bude stezka příliš nebezpečná.",
-  },
-  gegangen: {
-    translation: "šel",
-    example:
-      "Wahrscheinlich war er gegangen, um es zu retten, bevor der Fluss es wegtrug.",
-    exampleTranslation:
-      "Pravděpodobně ji šel zachránit dřív, než ji řeka odnese.",
-  },
-  gegen: {
-    translation: "proti, směrem k",
-    example:
-      "In der Mitte spritzte das Wasser laut gegen einen Stein, und Jantar sprang zurück.",
-    exampleTranslation:
-      "Uprostřed se voda hlasitě rozstříkla o kámen a Jantar uskočil.",
-  },
-  gekommen: {
-    translation: "nepřijel",
-    example: "Aber noch war niemand gekommen, um es zu reparieren.",
-    exampleTranslation: "Nikdo však zatím nepřijel, aby ji opravil.",
-  },
-  gemacht: {
-    translation: "udělali",
-    example:
-      "Als sie genug Platz gemacht hatten, überquerten die beiden jungen Tiere den Weg.",
-    exampleTranslation:
-      "Když jim udělali dostatek místa, obě mláďata přešla přes stezku.",
-  },
-  genau: {
-    translation: "přesně",
-    example:
-      "Sekunden später fielen schwere Steine genau auf die Stelle, an der Jantar gestanden hatte.",
-    exampleTranslation:
-      "O několik vteřin později dopadly těžké kameny na místo, kde předtím stál Jantar.",
-  },
-  gerade: {
-    translation: "právě, rovný",
-    example:
-      "Sie war breit genug für einen Menschen, aber nur gerade breit genug für ein Pferd.",
-    exampleTranslation: "Pro člověka byl dost široký, ale pro koně jen stěží.",
-  },
-  geruch: {
-    translation: "vůni",
-    example:
-      "Er war neugierig auf jeden neuen Besucher, jedes Geräusch und jeden Geruch auf dem Hof.",
-    exampleTranslation:
-      "Zajímal se o každého nového návštěvníka, zvuk i vůni, které dorazily na statek.",
-  },
-  geräusch: {
-    translation: "zvuk",
-    example:
-      "Er war neugierig auf jeden neuen Besucher, jedes Geräusch und jeden Geruch auf dem Hof.",
-    exampleTranslation:
-      "Zajímal se o každého nového návštěvníka, zvuk i vůni, které dorazily na statek.",
-  },
-  geschlossen: {
-    translation: "zavřenou",
-    example: "Der Druck des hohen Wassers hielt das Tor geschlossen.",
-    exampleTranslation: "Tlak vysoké vody držel výpust zavřenou.",
-  },
-  gesicht: {
-    translation: "obličej",
-    example:
-      "Vojtech sprach normalerweise sicher, deshalb blieb sein besorgtes Gesicht in Klaras Gedanken.",
-    exampleTranslation:
-      "Vojtěch obvykle mluvil sebejistě, a proto zůstal jeho ustaraný výraz v Klářiných myšlenkách.",
-  },
-  gestanden: {
-    translation: "stál",
-    example:
-      "Sekunden später fielen schwere Steine genau auf die Stelle, an der Jantar gestanden hatte.",
-    exampleTranslation:
-      "O několik vteřin později dopadly těžké kameny na místo, kde předtím stál Jantar.",
-  },
-  getragen: {
-    translation: "nesl, odnesl",
-    example:
-      "Vor vielen Jahren hatte sie die Post zwischen Podlesi und der nahen Stadt getragen.",
-    exampleTranslation:
-      "Před lety vozila poštu mezi Podlesím a nedalekým městem.",
-  },
-  gewarnt: {
-    translation: "varoval",
-    example:
-      "„Dieses Pferd hat uns gewarnt, bevor ein Mensch die Gefahr sah“, sagte Feuerwehrchef Bartos.",
-    exampleTranslation:
-      "„Ten kůň nás varoval dříve, než si nebezpečí všiml člověk,“ řekl velitel Bartoš.",
-  },
-  gewicht: {
-    translation: "vahou",
-    example:
-      "Jantar setzte jeden Huf vorsichtig, weil sich der weiche Boden unter seinem Gewicht bewegte.",
-    exampleTranslation:
-      "Jantar pokládal každé kopyto opatrně, protože měkká zem se pod jeho vahou pohybovala.",
-  },
-  gewonnen: {
-    translation: "vyhráli",
-    example: "Klara freute sich, als hätten sie ein wichtiges Rennen gewonnen.",
-    exampleTranslation: "Klára se radovala, jako by vyhráli důležitý závod.",
-  },
-  geöffnet: {
-    translation: "neotevřel",
-    example:
-      "Vojtech hatte das südliche Tor geöffnet, aber es konnte allein nicht genug Wasser ablassen.",
-    exampleTranslation:
-      "Vojtěch otevřel jižní výpust, ale sama nedokázala vypustit dostatek vody.",
-  },
-  gingen: {
-    translation: "šel",
-    example:
-      "Zuerst gingen sie durch kleine Pfützen, die der Regen hinterlassen hatte.",
-    exampleTranslation:
-      "Nejprve procházeli malými kalužemi, které zůstaly po dešti.",
-  },
-  glaubte: {
-    translation: "věřil, domníval se",
-    example:
-      "Horsky glaubte, dass der wichtigste Metallstift im nördlichen Tor gebrochen war.",
-    exampleTranslation:
-      "Horský se domníval, že se uvnitř severní výpusti zlomil hlavní kovový čep.",
-  },
-  gleichgewicht: {
-    translation: "rovnováhu",
-    example:
-      "Ein Ast traf seine Schulter, und für einen Moment verlor er das Gleichgewicht.",
-    exampleTranslation:
-      "Do ramene mu narazila větev a na okamžik ztratil rovnováhu.",
-  },
-  gleichmäßigen: {
-    translation: "pravidelný, rovnoměrný",
-    example:
-      "Er war schnell, aber Klara hielt ihn in einem ruhigen und gleichmäßigen Tempo.",
-    exampleTranslation:
-      "Byl rychlý, ale Klára ho držela v klidném a pravidelném tempu.",
-  },
-  glänzte: {
-    translation: "leskla",
-    example: "Wenn die Sonne sein Fell berührte, glänzte es wie warmer Honig.",
-    exampleTranslation:
-      "Když se jeho srsti dotklo slunce, leskla se jako teplý med.",
-  },
-  graben: {
-    translation: "příkopy",
-    example:
-      "Das Wasser füllte schnell jeden Graben und lief über die Dorfstraßen.",
-    exampleTranslation:
-      "Voda rychle naplnila všechny příkopy a tekla po vesnických cestách.",
-  },
-  gras: {
-    translation: "tráva",
-    example:
-      "Am anderen Ufer wuchs hohes Gras, und gelbe Schmetterlinge flogen darüber.",
-    exampleTranslation:
-      "Na druhém břehu rostla vysoká tráva a nad ní létali žlutí motýli.",
-  },
-  großer: {
-    translation: "velká",
-    example: "„Ich hoffe nur, dass vorher kein großer Sturm kommt“, sagte er.",
-    exampleTranslation: "„Jen doufám, že předtím nepřijde velká bouřka,“ řekl.",
-  },
-  großes: {
-    translation: "velkým",
-    example:
-      "Ein großes schwarzes Pferd namens Baron gehörte dem reichen Händler Herrn Rydl.",
-    exampleTranslation:
-      "Velký černý kůň jménem Baron patřil bohatému obchodníkovi panu Rýdlovi.",
-  },
-  gruppe: {
-    translation: "skupina",
-    example:
-      "Die Menschen von Bela öffneten ihre Lager und gaben der Gruppe zusätzliches Essen und Decken.",
-    exampleTranslation:
-      "Lidé z Bělé otevřeli své sklady a dali skupině další jídlo a deky.",
-  },
-  größeren: {
-    translation: "větší",
-    example:
-      "Die Feuerwehrleute trugen kleine Steine weg und bewegten die größeren mit Eisenstangen.",
-    exampleTranslation:
-      "Hasiči odnášeli malé kameny a větší posouvali železnými pákami.",
-  },
-  größte: {
-    translation: "největší",
-    example: "Der größte Teil der kleinen Holzbrücke war verschwunden.",
-    exampleTranslation: "Většina malého dřevěného mostku zmizela.",
-  },
-  grüne: {
-    translation: "zelené",
-    example: "Grüne Hügel und ein tiefer Wald schützten es auf einer Seite.",
-    exampleTranslation:
-      "Z jedné strany ji chránily zelené kopce a hluboký les.",
-  },
-  haben: {
-    translation: "mít",
-    example:
-      "Klara fragte, ob Jantar eines Tages keine Angst mehr vor dem Fluss haben würde.",
-    exampleTranslation:
-      "Klára se zeptala, zda se Jantar někdy přestane řeky bát.",
-  },
-  halfen: {
-    translation: "pomáhali",
-    example:
-      "Die anderen Männer halfen Familien, bewachten den Staudamm oder kümmerten sich um Verletzte.",
-    exampleTranslation:
-      "Ostatní muži pomáhali rodinám, hlídali hráz nebo se starali o zraněné.",
-  },
-  hals: {
-    translation: "krk",
-    example:
-      "„Guten Morgen, mein Freund“, sagte sie und legte eine Hand auf seinen Hals.",
-    exampleTranslation:
-      "„Dobré ráno, můj příteli,“ říkala a položila mu ruku na krk.",
-  },
-  halten: {
-    translation: "udržet",
-    example: "Es fand eine kleine Spalte, in der es einen Huf halten konnte.",
-    exampleTranslation:
-      "Našel malou prasklinu, ve které mohl udržet jedno kopyto.",
-  },
-  hand: {
-    translation: "ruku",
-    example:
-      "„Guten Morgen, mein Freund“, sagte sie und legte eine Hand auf seinen Hals.",
-    exampleTranslation:
-      "„Dobré ráno, můj příteli,“ říkala a položila mu ruku na krk.",
-  },
-  hang: {
-    translation: "svahu",
-    example: "Weiter oben hörte Klara einen Mann vom nassen Hang rufen.",
-    exampleTranslation:
-      "Výše na stezce uslyšela Klára muže volajícího z mokrého svahu.",
-  },
-  hat: {
-    translation: "má",
-    example: "„Dieses Pferd hat Angst vor Wasser“, sagte er laut.",
-    exampleTranslation: "„Ten kůň se bojí vody,“ řekl hlasitě.",
-  },
-  haus: {
-    translation: "dům",
-    example:
-      "Hinter dem letzten Haus in Podlesi lag der Bauernhof der Familie Novak.",
-    exampleTranslation:
-      "Za posledním domem v Podlesí stál statek rodiny Novákových.",
-  },
-  helfen: {
-    translation: "pomoci",
-    example:
-      "Sie wollte ihm einen neuen Weg zeigen und ihm helfen, sich selbst zu vertrauen.",
-    exampleTranslation:
-      "Chtěla mu ukázat novou cestu a naučit ho věřit sobě samému.",
-  },
-  helle: {
-    translation: "jasné",
-    example:
-      "Jantar hatte helle, wachsame Augen und starke Beine für lange Reisen.",
-    exampleTranslation:
-      "Jantar měl jasné pozorné oči a silné nohy, které jako by byly stvořené pro dlouhé cesty.",
-  },
-  her: {
-    translation: "sem, tam",
-    example:
-      "Lada ging in ihrer Box hin und her und sah oft aus dem Stallfenster.",
-    exampleTranslation:
-      "Lada přecházela ve svém boxu a často se dívala z okna stáje.",
-  },
-  herum: {
-    translation: "kolem",
-    example:
-      "Er fand einen schmalen Weg durch den dunklen Obstgarten um den Baum herum.",
-    exampleTranslation: "Našel úzký průchod kolem ní přes tmavý sad.",
-  },
-  heute: {
-    translation: "dnes",
-    example: "„Heute machen wir nur das, was wir gemeinsam schaffen können.“",
-    exampleTranslation: "„Dnes uděláme jen to, co společně zvládneme.“",
-  },
-  hielten: {
-    translation: "drželi",
-    example:
-      "Die Männer hielten die Seile, während Klara hinüberging und Jantar vom anderen Ufer rief.",
-    exampleTranslation:
-      "Muži drželi lana, zatímco Klára přešla a z druhého břehu zavolala Jantara.",
-  },
-  hier: {
-    translation: "tu",
-    example: "„Jetzt sind nur noch wir beide hier“, sagte Klara.",
-    exampleTranslation: "„Teď jsme tu jen my dva,“ řekla Klára.",
-  },
-  hilfe: {
-    translation: "pomoc",
-    example:
-      "Sie wusste aber, dass das rote Licht bedeutete, dass der Wärter des Staudamms Hilfe brauchte.",
-    exampleTranslation:
-      "Věděla však, že červené světlo znamená, že správce hráze potřebuje pomoc.",
-  },
-  hin: {
-    translation: "tam",
-    example:
-      "Lada ging in ihrer Box hin und her und sah oft aus dem Stallfenster.",
-    exampleTranslation:
-      "Lada přecházela ve svém boxu a často se dívala z okna stáje.",
-  },
-  hinauf: {
-    translation: "kopce",
-    example:
-      "Bevor die Arbeit beendet war, lief ein Dorfbewohner mit einer weiteren schlechten Nachricht den Hügel hinauf.",
-    exampleTranslation:
-      "Než byla práce dokončena, vyběhl do kopce vesničan s další špatnou zprávou.",
-  },
-  hing: {
-    translation: "visel, závisel",
-    example:
-      "Das ganze Tal hing nun davon ab, das alte nördliche Tor vor dem nächsten Regen zu reparieren.",
-    exampleTranslation:
-      "Celé údolí nyní záviselo na opravě staré severní výpusti před dalším deštěm.",
-  },
-  hinteren: {
-    translation: "zadním",
-    example:
-      "Klara nahm Jantars Sattel ab und reinigte die kleine Wunde an seinem hinteren Huf.",
-    exampleTranslation:
-      "Klára sundala Jantarovi sedlo a vyčistila malou ránu na jeho zadním kopytě.",
-  },
-  hinterlassen: {
-    translation: "zanechat, zanechal",
-    example:
-      "Zuerst gingen sie durch kleine Pfützen, die der Regen hinterlassen hatte.",
-    exampleTranslation:
-      "Nejprve procházeli malými kalužemi, které zůstaly po dešti.",
-  },
-  hinunter: {
-    translation: "dolů",
-    example: "Dann gingen er und Klara die dunkle Straße hinunter nach Bela.",
-    exampleTranslation:
-      "Potom s Klárou pokračovali po tmavé cestě dolů k Bělé.",
-  },
-  hoch: {
-    translation: "vysoko",
-    example: "Hoch über dem Dorf stand ein alter Staudamm aus Stein.",
-    exampleTranslation: "Vysoko nad vesnicí stála stará kamenná hráz.",
-  },
-  hohen: {
-    translation: "vysokými",
-    example: "Der Wolfspass lag in der Ferne zwischen zwei hohen Gipfeln.",
-    exampleTranslation:
-      "Vlčí sedlo leželo v dálce mezi dvěma vysokými vrcholy.",
-  },
-  holz: {
-    translation: "dřevo",
-    example:
-      "Er hatte ein rotes Dach, eine große Scheune und einen warmen Stall aus Holz.",
-    exampleTranslation:
-      "Měl červenou střechu, velkou stodolu a teplou dřevěnou stáj.",
-  },
-  huf: {
-    translation: "kopyto",
-    example: "Nach einer langen Weile stellte er einen Huf ins Wasser.",
-    exampleTranslation: "Po dlouhé chvíli položil do vody jedno kopyto.",
-  },
-  hängen: {
-    translation: "viset, zachytit se",
-    example:
-      "Nasse Nadeln kratzten seinen Rücken, und ein Ast blieb in seiner Mähne hängen.",
-    exampleTranslation:
-      "Mokré jehličí ho škrábalo po hřbetě a jedna větev se zachytila v hřívě.",
-  },
-  hätte: {
-    translation: "kdyby",
-    example:
-      "Wenn Pferde den Menschen ihre Gedanken erzählen könnten, hätte Lada Jantar einen einfachen Rat gegeben.",
-    exampleTranslation:
-      "Kdyby koně dokázali lidem vyprávět své myšlenky, dala by Lada Jantarovi jednoduchou radu.",
-  },
-  hätten: {
-    translation: "měl",
-    example: "Klara freute sich, als hätten sie ein wichtiges Rennen gewonnen.",
-    exampleTranslation: "Klára se radovala, jako by vyhráli důležitý závod.",
-  },
-  häusern: {
-    translation: "prázdných",
-    example:
-      "Auf der anderen Seite floss der klare Fluss Jasna an den Häusern vorbei.",
-    exampleTranslation: "Z druhé strany kolem domů tekla čistá řeka Jasná.",
-  },
-  hören: {
-    translation: "slyšela",
-    example:
-      "Seine Beine zitterten, und sein Herz schlug so laut, dass er nichts anderes hören konnte.",
-    exampleTranslation:
-      "Třásly se mu nohy a srdce mu bušilo tak hlasitě, že nic jiného neslyšel.",
-  },
-  hörten: {
-    translation: "slyšeli",
-    example:
-      "Als sie vom Staudamm hörten, nahmen sie Äxte, Bretter und starke Seile.",
-    exampleTranslation:
-      "Když uslyšeli o hrázi, vzali sekery, prkna a pevná lana.",
-  },
-  ihrem: {
-    translation: "jejím, svým",
-    example:
-      "Jantar stand oft in der Box neben ihr und hörte ihrem ruhigen Atem zu.",
-    exampleTranslation:
-      "Jantar často stával ve vedlejším boxu a poslouchal její klidné dýchání.",
-  },
-  inneren: {
-    translation: "uvnitř",
-    example:
-      "Auch Jantar fühlte Angst, als er Wasser im Inneren des Berges tropfen hörte.",
-    exampleTranslation:
-      "Také Jantar cítil strach, když slyšel vodu kapající uvnitř hory.",
-  },
-  ins: {
-    translation: "do",
-    example: "Nach einer langen Weile stellte er einen Huf ins Wasser.",
-    exampleTranslation: "Po dlouhé chvíli položil do vody jedno kopyto.",
-  },
-  irgendwo: {
-    translation: "někde",
-    example:
-      "Schließlich antwortete eine schwache Kinderstimme von irgendwo vor ihnen.",
-    exampleTranslation:
-      "Z místa před nimi nakonec odpověděl slabý dětský hlas.",
-  },
-  jahre: {
-    translation: "roky, léta",
-    example:
-      "Es war Herr Horsky, der Mann, der Jahre zuvor das südliche Wassertor repariert hatte.",
-    exampleTranslation:
-      "Byl to pan Horský, muž, který před lety opravoval jižní výpust.",
-  },
-  jahren: {
-    translation: "letech",
-    example:
-      "Vor vielen Jahren hatte sie die Post zwischen Podlesi und der nahen Stadt getragen.",
-    exampleTranslation:
-      "Před lety vozila poštu mezi Podlesím a nedalekým městem.",
-  },
-  jedem: {
-    translation: "každým",
-    example: "Nach dieser Nacht blieb er vor jedem tiefen Bach stehen.",
-    exampleTranslation: "Od té noci se zastavil před každým hlubším potokem.",
-  },
-  jeder: {
-    translation: "každý",
-    example:
-      "Die vierzehnjährige Klara kümmerte sich mehr als jeder andere um Jantar.",
-    exampleTranslation:
-      "O Jantara se více než kdokoli jiný starala čtrnáctiletá Klára.",
-  },
-  jungen: {
-    translation: "mladým",
-    example: "Barons Reiter lächelte, als er den jungen Jantar sah.",
-    exampleTranslation: "Baronův jezdec se usmál, když uviděl mladého Jantara.",
-  },
-  jüngste: {
-    translation: "nejmladší",
-    example: "Dort lebten sechs Pferde, und das jüngste hieß Jantar.",
-    exampleTranslation: "Žilo tam šest koní a nejmladší se jmenoval Jantar.",
-  },
-  kalt: {
-    translation: "studený",
-    example:
-      "Die Strömung war kalt, dunkel und viel stärker als der kleine Bach beim Training.",
-    exampleTranslation:
-      "Proud byl studený, tmavý a mnohem silnější než malý potok při tréninku.",
-  },
-  kalte: {
-    translation: "studenou",
-    example:
-      "Jantar überlebte, aber er vergaß nie das kalte Wasser und sein schreckliches Geräusch.",
-    exampleTranslation:
-      "Jantar přežil, ale nikdy nezapomněl na studenou vodu ani její hrozný zvuk.",
-  },
-  kalten: {
-    translation: "chladné",
-    example:
-      "Der starke Regen war zu einem leichten kalten Nieselregen geworden.",
-    exampleTranslation: "Silný déšť se změnil v jemné studené mrholení.",
-  },
-  kanal: {
-    translation: "starý",
-    example:
-      "Die alte Mühle stand auf einer kleinen Insel zwischen dem Fluss und seinem Kanal.",
-    exampleTranslation:
-      "Starý mlýn stál na malém ostrově mezi řekou a jejím náhonem.",
-  },
-  kanals: {
-    translation: "kanál, náhon",
-    example:
-      "In der Mitte des Kanals reichte das Wasser Jantar fast bis zum Bauch.",
-    exampleTranslation:
-      "Uprostřed náhonu sahala voda Jantarovi téměř k břichu.",
-  },
-  karte: {
-    translation: "mapě",
-    example: "Der Müller breitete eine nasse Karte auf dem Küchentisch aus.",
-    exampleTranslation: "Mlynář rozložil na kuchyňský stůl mokrou mapu.",
-  },
-  kehrte: {
-    translation: "vrátil",
-    example:
-      "Das Leben in Podlesi kehrte bald zu seinem ruhigen Rhythmus zurück.",
-    exampleTranslation:
-      "Život v Podlesí se brzy vrátil do svého klidného rytmu.",
-  },
-  kehrten: {
-    translation: "vrátili",
-    example:
-      "Nach dem Fest kehrten Klara und Jantar zur ruhigen Furt im Fluss zurück.",
-    exampleTranslation:
-      "Po slavnosti se Klára s Jantarem vrátili ke klidnému říčnímu brodu.",
-  },
-  kein: {
-    translation: "žádný",
-    example:
-      "Für ihn war das Rennen eine weitere Lektion im Zuhören und Vertrauen und kein Kampf um einen Preis.",
-    exampleTranslation:
-      "Závod pro něj byl další lekcí naslouchání a důvěry, nikoli bojem o cenu.",
-  },
-  keine: {
-    translation: "žádná, žádné",
-    example:
-      "Ein ruhiger Eimer mit Wasser machte ihm keine Angst, und er trank ohne Probleme daraus.",
-    exampleTranslation:
-      "Klidný kbelík vody mu nevadil a pil z něj beze strachu.",
-  },
-  kette: {
-    translation: "řetěz",
-    example:
-      "Sie brauchten Eisenstangen, eine lange Kette und Menschen, die das Wassertor verstanden.",
-    exampleTranslation:
-      "Potřebovali železné páky, dlouhý řetěz a lidi, kteří rozuměli výpusti.",
-  },
-  ketten: {
-    translation: "řetězy",
-    example:
-      "Vier starke Pferde wurden vorbereitet, um Werkzeuge, Ketten, Seile und das schwere Metallteil zu tragen.",
-    exampleTranslation:
-      "Připravili čtyři silné koně, aby nesli nářadí, řetězy, lana a těžkou kovovou součástku.",
-  },
-  kinder: {
-    translation: "děti",
-    example:
-      "Im Sommer schwammen die Kinder darin, und im Winter liefen sie auf seinen gefrorenen Stellen Schlittschuh.",
-    exampleTranslation:
-      "V létě se v ní děti koupaly a v zimě bruslily na jejích zamrzlých tůních.",
-  },
-  klare: {
-    translation: "jasná",
-    example:
-      "Auf der anderen Seite floss der klare Fluss Jasna an den Häusern vorbei.",
-    exampleTranslation: "Z druhé strany kolem domů tekla čistá řeka Jasná.",
-  },
-  kleine: {
-    translation: "malý",
-    example:
-      "Zuerst gingen sie durch kleine Pfützen, die der Regen hinterlassen hatte.",
-    exampleTranslation:
-      "Nejprve procházeli malými kalužemi, které zůstaly po dešti.",
-  },
-  kleinere: {
-    translation: "menší",
-    example:
-      "Das größere Fohlen folgte ihm, aber das kleinere hatte zu viel Angst, um sich zu bewegen.",
-    exampleTranslation:
-      "Větší hříbě ho následovalo, ale menší se příliš bálo pohnout.",
-  },
-  klopfte: {
-    translation: "bušit",
-    example: "Gegen zehn Uhr klopfte jemand laut an das Tor des Bauernhofs.",
-    exampleTranslation:
-      "Kolem desáté hodiny začal někdo silně bušit na vrata statku.",
-  },
-  klug: {
-    translation: "chytrý",
-    example: "Jantar war schnell, klug und sehr vorsichtig.",
-    exampleTranslation: "Jantar byl rychlý, chytrý a velmi opatrný.",
-  },
-  kluges: {
-    translation: "moudrý",
-    example:
-      "Ein kluges Pferd beobachtete den Boden, das Wetter und die Menschen, bevor es sein Tempo wählte.",
-    exampleTranslation:
-      "Moudrý kůň sledoval zem, počasí i lidi, než si zvolil rychlost.",
-  },
-  knacken: {
-    translation: "prasknutí",
-    example: "In der Mitte ließ ihn ein lautes Knacken stehen bleiben.",
-    exampleTranslation: "Uprostřed ho zastavilo hlasité prasknutí.",
-  },
-  kochten: {
-    translation: "vařily",
-    example:
-      "Klara und ihre Mutter kochten Tee und legten trockene Decken bereit.",
-    exampleTranslation: "Klára s matkou vařily čaj a připravovaly suché deky.",
-  },
-  kommen: {
-    translation: "přijít",
-    example:
-      "Sie wusste, dass sie den jungen Wildschweinen nicht näher kommen durften.",
-    exampleTranslation: "Věděla, že se nesmějí přiblížit k mladým prasátkům.",
-  },
-  kommt: {
-    translation: "nepřijde",
-    example: "„Ich hoffe nur, dass vorher kein großer Sturm kommt“, sagte er.",
-    exampleTranslation: "„Jen doufám, že předtím nepřijde velká bouřka,“ řekl.",
-  },
-  konnten: {
-    translation: "mohly",
-    example:
-      "Er gab ihr auch eine kleine Glocke, die Menschen durch den Bergnebel hören konnten.",
-    exampleTranslation:
-      "Také jí dal malý zvonek, který lidé uslyší i v horské mlze.",
-  },
-  kopf: {
-    translation: "hlava",
-    example:
-      "Klara stieg ab, berührte den weißen Stern auf seinem Kopf und sagte: „Es ist in Ordnung.“",
-    exampleTranslation:
-      "Klára sesedla, dotkla se bílé hvězdy na jeho čele a řekla: „To je v pořádku.“",
-  },
-  kraft: {
-    translation: "sílu",
-    example:
-      "Lada lehrte ihn auch, seine Kraft zu sparen und nicht nur zu laufen, weil andere liefen.",
-    exampleTranslation:
-      "Lada ho také učila šetřit sílu a nikdy neběžet jen proto, že běží ostatní.",
-  },
-  kurz: {
-    translation: "krátce",
-    example:
-      "Wenn ihn ein lautes Geräusch erschreckte, sah Lada nur kurz auf und fraß weiter ihr Heu.",
-    exampleTranslation:
-      "Když ho vylekal hlasitý zvuk, Lada jen zvedla hlavu a pokračovala v pojídání sena.",
-  },
-  kurze: {
-    translation: "krátké",
-    example:
-      "Klara band das kurze Seil an Jantars Zaumzeug und blieb dicht an der Wand.",
-    exampleTranslation:
-      "Klára přivázala krátké lano k Jantarově uzdě a zůstala blízko stěny.",
-  },
-  können: {
-    translation: "můžeme",
-    example: "„Heute machen wir nur das, was wir gemeinsam schaffen können.“",
-    exampleTranslation: "„Dnes uděláme jen to, co společně zvládneme.“",
-  },
-  körper: {
-    translation: "tělo",
-    example:
-      "Jantar beobachtete die bewegte Oberfläche und spürte, wie sich jeder Muskel in seinem Körper anspannte.",
-    exampleTranslation:
-      "Jantar sledoval pohybující se hladinu a cítil, jak se mu napíná každý sval.",
-  },
-  kümmerte: {
-    translation: "starala",
-    example:
-      "Die vierzehnjährige Klara kümmerte sich mehr als jeder andere um Jantar.",
-    exampleTranslation:
-      "O Jantara se více než kdokoli jiný starala čtrnáctiletá Klára.",
-  },
-  lachen: {
-    translation: "smíchem",
-    example:
-      "Klara wusste, dass man Angst nicht mit Lachen oder bösen Worten vertreiben konnte.",
-    exampleTranslation:
-      "Klára věděla, že strach nelze zahnat smíchem ani rozzlobenými slovy.",
-  },
-  lagen: {
-    translation: "leželi",
-    example: "Als sie aus dem Wald kamen, lagen sie auf dem dritten Platz.",
-    exampleTranslation: "Když vyjeli mezi stromy, byli na třetím místě.",
-  },
-  lager: {
-    translation: "sklady",
-    example:
-      "Die Menschen von Bela öffneten ihre Lager und gaben der Gruppe zusätzliches Essen und Decken.",
-    exampleTranslation:
-      "Lidé z Bělé otevřeli své sklady a dali skupině další jídlo a deky.",
-  },
-  langer: {
-    translation: "dávnými",
-    example:
-      "Vor langer Zeit hatten Arbeiter durch ihn Eisen zum alten Steinbruch gebracht.",
-    exampleTranslation:
-      "Před dávnými lety jím dělníci vozili železo ke starému lomu.",
-  },
-  langsamer: {
-    translation: "zpomalil",
-    example:
-      "Jantar wurde langsamer, als das Geräusch des Flusses lauter wurde.",
-    exampleTranslation: "Jantar zpomalil, když zvuk řeky zesílil.",
-  },
-  laterne: {
-    translation: "lucernu",
-    example:
-      "Klara zog ihren Mantel an, nahm eine Laterne und lief zu Jantars Box.",
-    exampleTranslation:
-      "Klára si oblékla plášť, vzala lucernu a běžela k Jantarovu boxu.",
-  },
-  laternen: {
-    translation: "lucerny",
-    example:
-      "Er und der Müller nahmen sofort Seile, Schaufeln und Laternen mit zum Staudamm.",
-    exampleTranslation:
-      "On a mlynář okamžitě vzali lana, lopaty a lucerny a vyrazili k hrázi.",
-  },
-  laufen: {
-    translation: "běžet",
-    example:
-      "Lada lehrte ihn auch, seine Kraft zu sparen und nicht nur zu laufen, weil andere liefen.",
-    exampleTranslation:
-      "Lada ho také učila šetřit sílu a nikdy neběžet jen proto, že běží ostatní.",
-  },
-  laut: {
-    translation: "hlasitě",
-    example:
-      "Seine Beine zitterten, und sein Herz schlug so laut, dass er nichts anderes hören konnte.",
-    exampleTranslation:
-      "Třásly se mu nohy a srdce mu bušilo tak hlasitě, že nic jiného neslyšel.",
-  },
-  leben: {
-    translation: "život",
-    example:
-      "Diese stillen Lektionen sollten später mehr Leben schützen, als sich jemand im Stall vorstellen konnte.",
-    exampleTranslation:
-      "Tyto tiché lekce později ochránily více životů, než si kdokoli ve stáji dokázal představit.",
-  },
-  leer: {
-    translation: "prázdná",
-    example:
-      "Sein Bett war leer, und sein gelber Regenmantel fehlte an der Tür.",
-    exampleTranslation:
-      "Jeho postel byla prázdná a u dveří chyběla žlutá pláštěnka.",
-  },
-  leere: {
-    translation: "prázdných",
-    example:
-      "Der Sicherheitskanal leitete das Wasser von den Häusern weg auf breite leere Felder.",
-    exampleTranslation:
-      "Bezpečnostní kanál odváděl vypuštěnou vodu od domů do širokých prázdných polí.",
-  },
-  leeren: {
-    translation: "prázdné",
-    example:
-      "Das Geräusch von Jantars Hufen erfüllte die leeren Straßen von Bela.",
-    exampleTranslation: "Zvuk Jantarových kopyt naplnil prázdné ulice Bělé.",
-  },
-  legten: {
-    translation: "položili",
-    example:
-      "Klara und ihre Mutter kochten Tee und legten trockene Decken bereit.",
-    exampleTranslation: "Klára s matkou vařily čaj a připravovaly suché deky.",
-  },
-  leichter: {
-    translation: "snadnější",
-    example:
-      "Der Boden war fest, und für einen Moment wurde die Reise leichter.",
-    exampleTranslation: "Zem byla pevná a cesta se na chvíli stala snadnější.",
-  },
-  leise: {
-    translation: "tiše",
-    example:
-      "Die kleine Glocke an Jantars Sattel klingelte leise, als die beiden im Nebel verschwanden.",
-    exampleTranslation:
-      "Malý zvonek na Jantarově sedle tiše zvonil, když dvojice mizela v mlze.",
-  },
-  leises: {
-    translation: "tiché",
-    example: "Dann kam ein leises Knacken von der Steindecke.",
-    exampleTranslation: "Potom se z kamenného stropu ozvalo tiché praskání.",
-  },
-  leitete: {
-    translation: "vedl, odváděl",
-    example:
-      "Der Sicherheitskanal leitete das Wasser von den Häusern weg auf breite leere Felder.",
-    exampleTranslation:
-      "Bezpečnostní kanál odváděl vypuštěnou vodu od domů do širokých prázdných polí.",
-  },
-  liegenden: {
-    translation: "ležící, položený",
-    example:
-      "Feuerwehrchef Bartos schickte andere Feuerwehrleute los, um die Straßen zu prüfen und die tiefer liegenden Dörfer zu warnen.",
-    exampleTranslation:
-      "Velitel Bartoš poslal další hasiče zkontrolovat cesty a varovat níže položené vesnice.",
-  },
-  ließ: {
-    translation: "nechala",
-    example:
-      "Sie führte ihn zur Seite und ließ die anderen Pferde vorbeiziehen.",
-    exampleTranslation: "Odvedla ho stranou a nechala ostatní koně projet.",
-  },
-  linie: {
-    translation: "čára",
-    example:
-      "Eine dünne Linie erschien im Felsen, und Sand begann herunterzufallen.",
-    exampleTranslation: "Ve skále se objevila tenká čára a začal padat písek.",
-  },
-  linke: {
-    translation: "levá",
-    example: "Danach würde der linke Weg sie zum Pass führen.",
-    exampleTranslation: "Potom ji levá cesta zavede směrem k sedlu.",
-  },
-  links: {
-    translation: "vlevo",
-    example:
-      "Links stieg eine Steinwand auf, und rechts fiel der Boden tief ab.",
-    exampleTranslation:
-      "Vlevo stoupala kamenná stěna a vpravo země prudce klesala.",
-  },
-  länger: {
-    translation: "rozhodnutí",
-    example: "Aber das Wasser war nicht länger der Herr seiner Entscheidungen.",
-    exampleTranslation: "Voda už však nebyla pánem jeho rozhodnutí.",
-  },
-  lässt: {
-    translation: "nechává, dá se",
-    example: "„Sein großes Rad lässt sich immer schwerer drehen.“",
-    exampleTranslation: "„Jejím velkým kolem se otáčí stále obtížněji.“",
-  },
-  läutete: {
-    translation: "zazvonil",
-    example:
-      "Die Dorfglocke läutete, die Menge wurde still, und jeder Reiter machte sich bereit.",
-    exampleTranslation:
-      "Vesnický zvon zazvonil, dav ztichl a každý jezdec se připravil na start.",
-  },
-  machen: {
-    translation: "uděláme",
-    example: "„Heute machen wir nur das, was wir gemeinsam schaffen können.“",
-    exampleTranslation: "„Dnes uděláme jen to, co společně zvládneme.“",
-  },
-  machst: {
-    translation: "uděláš",
-    example:
-      "„Er wächst immer dann, wenn du einen kleinen Schritt in die richtige Richtung machst.“",
-    exampleTranslation:
-      "„Roste pokaždé, když uděláš malý krok správným směrem.“",
-  },
-  mal: {
-    translation: "poprvé",
-    example:
-      "Zum ersten Mal hatte Jantar gefährliches Wasser überquert, weil jemand ihn brauchte.",
-    exampleTranslation:
-      "Jantar poprvé překonal nebezpečnou vodu, protože ho někdo potřeboval.",
-  },
-  manche: {
-    translation: "některé",
-    example:
-      "Ihr Vater antwortete, dass manche Ängste sehr lange bei uns bleiben.",
-    exampleTranslation:
-      "Její otec odpověděl, že některé strachy s námi zůstávají velmi dlouho.",
-  },
-  mantel: {
-    translation: "plášť",
-    example:
-      "Petr zog seinen Mantel an und bereitete einen Wagen mit zwei starken Pferden vor.",
-    exampleTranslation:
-      "Petr si oblékl plášť a připravil vůz se dvěma silnými koňmi.",
-  },
-  mauer: {
-    translation: "stěně",
-    example:
-      "Alle gingen von der starken Strömung zurück und beobachteten die Wasserzeichen an der Mauer.",
-    exampleTranslation:
-      "Všichni ustoupili od silného proudu a sledovali značky výšky hladiny na stěně.",
-  },
-  mehr: {
-    translation: "více",
-    example:
-      "Die vierzehnjährige Klara kümmerte sich mehr als jeder andere um Jantar.",
-    exampleTranslation:
-      "O Jantara se více než kdokoli jiný starala čtrnáctiletá Klára.",
-  },
-  mehrere: {
-    translation: "několik",
-    example:
-      "Petr, Klara und mehrere Feuerwehrleute liefen schnell vom Staudamm hinunter.",
-    exampleTranslation: "Petr, Klára a několik hasičů spěchali od hráze dolů.",
-  },
-  mein: {
-    translation: "příteli",
-    example:
-      "„Guten Morgen, mein Freund“, sagte sie und legte eine Hand auf seinen Hals.",
-    exampleTranslation:
-      "„Dobré ráno, můj příteli,“ říkala a položila mu ruku na krk.",
-  },
-  menge: {
-    translation: "dav",
-    example:
-      "Die Dorfglocke läutete, die Menge wurde still, und jeder Reiter machte sich bereit.",
-    exampleTranslation:
-      "Vesnický zvon zazvonil, dav ztichl a každý jezdec se připravil na start.",
-  },
-  menschen: {
-    translation: "lidé",
-    example: "Die Menschen hatten den Staudamm jeden Tag ihres Lebens gesehen.",
-    exampleTranslation: "Lidé vídali hráz každý den svého života.",
-  },
-  metall: {
-    translation: "kov",
-    example:
-      "Er wusste auch, dass ein Sturm kam, wenn die Luft nach Metall zu riechen begann.",
-    exampleTranslation:
-      "Také poznal přicházející bouřku, když vzduch začal vonět po kovu.",
-  },
-  minuten: {
-    translation: "minutách",
-    example:
-      "Petr kam einige Minuten später zurück, und Klara erzählte ihm von der Warnung.",
-    exampleTranslation:
-      "Petr se vrátil o několik minut později a Klára mu řekla o varování.",
-  },
-  mitternacht: {
-    translation: "půlnocí",
-    example:
-      "Kurz vor Mitternacht verließ die Rettungsgruppe Bela, und Jantar führte sie an.",
-    exampleTranslation:
-      "Krátce před půlnocí opustila záchranná skupina Bělou a Jantar ji vedl.",
-  },
-  mittlere: {
-    translation: "prostřední",
-    example: "Horsky war nicht sicher, wohin der mittlere Gang führte.",
-    exampleTranslation: "Horský si nebyl jistý, kam vede prostřední chodba.",
-  },
-  monat: {
-    translation: "měsíc",
-    example:
-      "Einen Monat später feierten die Menschen ein ruhiges Fest auf der Wiese.",
-    exampleTranslation:
-      "O měsíc později uspořádali lidé na louce tichou slavnost.",
-  },
-  musik: {
-    translation: "hudba",
-    example:
-      "Auf dem Platz spielte Musik, Familien verkauften Kuchen, und Kinder liefen kleine Rennen.",
-    exampleTranslation:
-      "Na návsi hrála hudba, rodiny prodávaly koláče a děti běhaly v malých závodech.",
-  },
-  musste: {
-    translation: "musel, musela",
-    example:
-      "Der Regen hatte Teile der Spuren fortgewaschen, deshalb musste Jantar oft neu suchen.",
-    exampleTranslation:
-      "Déšť smyl části stop, a tak Jantar často zastavoval a znovu hledal.",
-  },
-  mussten: {
-    translation: "musely",
-    example: "Die Familien am Ufer mussten ihre Häuser sofort verlassen.",
-    exampleTranslation:
-      "Rodiny žijící u břehu musely okamžitě opustit své domovy.",
-  },
-  müde: {
-    translation: "unavený",
-    example: "Das müde Pferd hob den Kopf und ging zum kleinen Tor.",
-    exampleTranslation: "Unavený kůň zvedl hlavu a přistoupil k malým vrátkům.",
-  },
-  müssen: {
-    translation: "nemusíme",
-    example: "„Wir müssen heute nicht hinübergehen“, sagte Klara zu ihm.",
-    exampleTranslation: "„Dnes nemusíme přecházet,“ řekla mu Klára.",
-  },
-  nachmittag: {
-    translation: "odpoledne",
-    example:
-      "An einem heißen Nachmittag kam der Wärter des Staudamms zum Bauernhof.",
-    exampleTranslation:
-      "Jednoho horkého odpoledne přijel na statek správce hráze.",
-  },
-  nachricht: {
-    translation: "zpráva",
-    example: "Er zeigte allen, dass sie eine dringende Nachricht trugen.",
-    exampleTranslation: "Všem ukazoval, že vezou naléhavou zprávu.",
-  },
-  nachrichten: {
-    translation: "zprávy",
-    example: "Die Nacht schien endlos, während alle auf Nachrichten warteten.",
-    exampleTranslation:
-      "Noc se zdála nekonečná, zatímco všichni čekali na zprávy.",
-  },
-  nahmen: {
-    translation: "vzali",
-    example:
-      "Er und der Müller nahmen sofort Seile, Schaufeln und Laternen mit zum Staudamm.",
-    exampleTranslation:
-      "On a mlynář okamžitě vzali lana, lopaty a lucerny a vyrazili k hrázi.",
-  },
-  nannten: {
-    translation: "říkali",
-    example:
-      "Die Menschen nannten Jantar für den Rest seines langen Lebens das tapfere Pferd.",
-    exampleTranslation:
-      "Lidé říkali Jantarovi statečný kůň po celý zbytek jeho dlouhého života.",
-  },
-  nase: {
-    translation: "nosu",
-    example:
-      "Wenn Klara glücklich war, berührte er sanft ihre Schulter mit seiner Nase.",
-    exampleTranslation:
-      "Když byla Klára veselá, jemně se nosem dotkl jejího ramene.",
-  },
-  nassen: {
-    translation: "mokrým",
-    example:
-      "Kinder weinten, und die Zimmer füllten sich mit nassen Mänteln und schmutzigen Schuhen.",
-    exampleTranslation:
-      "Děti plakaly a pokoje se naplnily mokrými kabáty a zablácenými botami.",
-  },
-  neuen: {
-    translation: "nového",
-    example:
-      "Er war neugierig auf jeden neuen Besucher, jedes Geräusch und jeden Geruch auf dem Hof.",
-    exampleTranslation:
-      "Zajímal se o každého nového návštěvníka, zvuk i vůni, které dorazily na statek.",
-  },
-  niemals: {
-    translation: "nikdy",
-    example:
-      "„Ich dachte, ein tapferes Pferd bleibt niemals stehen“, sagte er.",
-    exampleTranslation:
-      "„Myslel jsem si, že statečný kůň nikdy nezastaví,“ řekl.",
-  },
-  normalerweise: {
-    translation: "obvykle",
-    example:
-      "Vojtech sprach normalerweise sicher, deshalb blieb sein besorgtes Gesicht in Klaras Gedanken.",
-    exampleTranslation:
-      "Vojtěch obvykle mluvil sebejistě, a proto zůstal jeho ustaraný výraz v Klářiných myšlenkách.",
-  },
-  nun: {
-    translation: "nyní",
-    example: "Der Rückweg war schwerer, weil Jantar nun zwei Menschen trug.",
-    exampleTranslation:
-      "Cesta zpět byla těžší, protože Jantar nyní nesl dva lidi.",
-  },
-  nördliche: {
-    translation: "severní",
-    example:
-      "„Die Steine sind fest, aber das nördliche Wassertor ist alt“, erklärte Vojtech.",
-    exampleTranslation:
-      "„Kameny jsou pevné, ale severní výpust je stará,“ vysvětlil Vojtěch.",
-  },
-  nördlichen: {
-    translation: "severní",
-    example:
-      "Horsky glaubte, dass der wichtigste Metallstift im nördlichen Tor gebrochen war.",
-    exampleTranslation:
-      "Horský se domníval, že se uvnitř severní výpusti zlomil hlavní kovový čep.",
-  },
-  ob: {
-    translation: "zda",
-    example:
-      "Klara fragte, ob Jantar eines Tages keine Angst mehr vor dem Fluss haben würde.",
-    exampleTranslation:
-      "Klára se zeptala, zda se Jantar někdy přestane řeky bát.",
-  },
-  oben: {
-    translation: "nahoru",
-    example: "Weiter oben hörte Klara einen Mann vom nassen Hang rufen.",
-    exampleTranslation:
-      "Výše na stezce uslyšela Klára muže volajícího z mokrého svahu.",
-  },
-  oberen: {
-    translation: "horní",
-    example: "Dünne Wasserströme liefen über den oberen Rand des Staudamms.",
-    exampleTranslation: "Přes horní okraj hráze začaly téct tenké proudy.",
-  },
-  oberfläche: {
-    translation: "hladinu",
-    example:
-      "Jantar beobachtete die bewegte Oberfläche und spürte, wie sich jeder Muskel in seinem Körper anspannte.",
-    exampleTranslation:
-      "Jantar sledoval pohybující se hladinu a cítil, jak se mu napíná každý sval.",
-  },
-  obstgarten: {
-    translation: "sad",
-    example:
-      "Klara wählte den höheren Weg durch den Obstgarten, weil die Straße am Fluss überschwemmt war.",
-    exampleTranslation:
-      "Klára zvolila vyšší cestu přes sad, protože cesta u řeky byla zaplavená.",
-  },
-  oder: {
-    translation: "nebo",
-    example:
-      "Klara wusste, dass man Angst nicht mit Lachen oder bösen Worten vertreiben konnte.",
-    exampleTranslation:
-      "Klára věděla, že strach nelze zahnat smíchem ani rozzlobenými slovy.",
-  },
-  offene: {
-    translation: "otevřenými",
-    example:
-      "Das Pferd trat zurück, als der Wind Regen durch die offene Tür drückte.",
-    exampleTranslation:
-      "Kůň ustoupil, když vítr vehnal otevřenými dveřmi dovnitř déšť.",
-  },
-  ohne: {
-    translation: "aniž",
-    example:
-      "Ein ruhiger Eimer mit Wasser machte ihm keine Angst, und er trank ohne Probleme daraus.",
-    exampleTranslation:
-      "Klidný kbelík vody mu nevadil a pil z něj beze strachu.",
-  },
-  pfützen: {
-    translation: "kalužemi",
-    example:
-      "Zuerst gingen sie durch kleine Pfützen, die der Regen hinterlassen hatte.",
-    exampleTranslation:
-      "Nejprve procházeli malými kalužemi, které zůstaly po dešti.",
-  },
-  plan: {
-    translation: "plán",
-    example:
-      "Keiner von ihnen hatte einen sicheren Plan, und der alte Schuppen konnte jeden Moment einstürzen.",
-    exampleTranslation:
-      "Ani jeden z nich neměl bezpečný plán a stará kůlna se mohla každou chvíli zřítit.",
-  },
-  platz: {
-    translation: "místo, prostor",
-    example:
-      "Auf dem Platz spielte Musik, Familien verkauften Kuchen, und Kinder liefen kleine Rennen.",
-    exampleTranslation:
-      "Na návsi hrála hudba, rodiny prodávaly koláče a děti běhaly v malých závodech.",
-  },
-  preis: {
-    translation: "cenu",
-    example:
-      "Für ihn war das Rennen eine weitere Lektion im Zuhören und Vertrauen und kein Kampf um einen Preis.",
-    exampleTranslation:
-      "Závod pro něj byl další lekcí naslouchání a důvěry, nikoli bojem o cenu.",
-  },
-  prüfen: {
-    translation: "zkontrolovat",
-    example:
-      "Feuerwehrchef Bartos schickte andere Feuerwehrleute los, um die Straßen zu prüfen und die tiefer liegenden Dörfer zu warnen.",
-    exampleTranslation:
-      "Velitel Bartoš poslal další hasiče zkontrolovat cesty a varovat níže položené vesnice.",
-  },
-  prüfte: {
-    translation: "zkontroloval, vyzkoušel",
-    example:
-      "Jantar prüfte weiter die Luft, aber die Wildschweine kamen nicht zurück.",
-    exampleTranslation: "Jantar dál větřil, ale divoká prasata se nevrátila.",
-  },
-  rad: {
-    translation: "kolo",
-    example: "„Sein großes Rad lässt sich immer schwerer drehen.“",
-    exampleTranslation: "„Jejím velkým kolem se otáčí stále obtížněji.“",
-  },
-  rand: {
-    translation: "kraji",
-    example: "Am Rand eines breiten Tals lag ein kleines Dorf namens Podlesi.",
-    exampleTranslation:
-      "Na kraji širokého údolí ležela malá vesnice jménem Podlesí.",
-  },
-  rat: {
-    translation: "radu",
-    example:
-      "Wenn Pferde den Menschen ihre Gedanken erzählen könnten, hätte Lada Jantar einen einfachen Rat gegeben.",
-    exampleTranslation:
-      "Kdyby koně dokázali lidem vyprávět své myšlenky, dala by Lada Jantarovi jednoduchou radu.",
-  },
-  raum: {
-    translation: "místnosti",
-    example: "Ein älterer Techniker mit runder Brille kam in den Raum.",
-    exampleTranslation:
-      "Do místnosti vstoupil starší technik s kulatými brýlemi.",
-  },
-  rauschen: {
-    translation: "hukot, řev",
-    example:
-      "Wenn er das laute Rauschen von Wasser hörte, kam die alte Erinnerung zurück.",
-    exampleTranslation:
-      "Kdykoli uslyšel hlasité hučení vody, stará vzpomínka se vrátila.",
-  },
-  rauschte: {
-    translation: "hučel, šuměl",
-    example: "Er trat sofort zurück, während das Wasser unter ihm rauschte.",
-    exampleTranslation: "Okamžitě ustoupil, zatímco pod ním hučela voda.",
-  },
-  rechte: {
-    translation: "pravá",
-    example:
-      "Der linke Gang war stark überflutet, und der rechte endete an einem alten tiefen Schacht.",
-    exampleTranslation:
-      "Levá chodba byla silně zaplavená a pravá končila u staré hluboké šachty.",
-  },
-  rechts: {
-    translation: "vpravo",
-    example:
-      "Links stieg eine Steinwand auf, und rechts fiel der Boden tief ab.",
-    exampleTranslation:
-      "Vlevo stoupala kamenná stěna a vpravo země prudce klesala.",
-  },
-  rechtzeitig: {
-    translation: "včas",
-    example:
-      "Trotzdem war er ihre einzige Möglichkeit, die schweren Werkzeuge rechtzeitig nach Podlesi zu bringen.",
-    exampleTranslation:
-      "Přesto to byla jejich jediná možnost, jak dostat těžké nářadí do Podlesí včas.",
-  },
-  regen: {
-    translation: "déšť",
-    example:
-      "In einer Frühlingsnacht füllte starker Regen den kleinen Bach neben ihrer Weide.",
-    exampleTranslation:
-      "Jedné jarní noci naplnil silný déšť malý potok vedle jejich pastviny.",
-  },
-  reichte: {
-    translation: "sahal, dosáhl",
-    example: "Dort reichte das Wasser den Pferden fast bis zu den Knien.",
-    exampleTranslation: "Voda tam koním sahala téměř ke kolenům.",
-  },
-  reparatur: {
-    translation: "opravu",
-    example:
-      "Petr versprach, bei seinem nächsten Besuch in Bela noch einmal nach der Reparatur zu fragen.",
-    exampleTranslation:
-      "Petr slíbil, že se při příští návštěvě Bělé znovu zeptá na opravu.",
-  },
-  reparieren: {
-    translation: "opravil",
-    example: "Aber noch war niemand gekommen, um es zu reparieren.",
-    exampleTranslation: "Nikdo však zatím nepřijel, aby ji opravil.",
-  },
-  repariert: {
-    translation: "opravoval",
-    example:
-      "Es war Herr Horsky, der Mann, der Jahre zuvor das südliche Wassertor repariert hatte.",
-    exampleTranslation:
-      "Byl to pan Horský, muž, který před lety opravoval jižní výpust.",
-  },
-  reparierten: {
-    translation: "opravili",
-    example:
-      "In den nächsten Wochen reparierten Arbeiter den Staudamm, die Straßen, die Brücke und die Zäune des Bauernhofs.",
-    exampleTranslation:
-      "V následujících týdnech dělníci opravili hráz, cesty, most i ploty statku.",
-  },
-  rest: {
-    translation: "zbytek",
-    example: "Klara stieg ab und ging den Rest der Reise neben ihm.",
-    exampleTranslation: "Klára sesedla a po zbytek cesty šla vedle něj.",
-  },
-  retten: {
-    translation: "zachránit",
-    example:
-      "Wahrscheinlich war er gegangen, um es zu retten, bevor der Fluss es wegtrug.",
-    exampleTranslation:
-      "Pravděpodobně ji šel zachránit dřív, než ji řeka odnese.",
-  },
-  rettung: {
-    translation: "záchrana",
-    example:
-      "Jantar war von der Rettung an der Mühle noch müde, deshalb verlangte Klara nie, dass er lief.",
-    exampleTranslation:
-      "Jantar byl po záchraně u mlýna stále unavený, a tak po něm Klára nikdy nechtěla běh.",
-  },
-  richtige: {
-    translation: "správným",
-    example:
-      "„Er wächst immer dann, wenn du einen kleinen Schritt in die richtige Richtung machst.“",
-    exampleTranslation:
-      "„Roste pokaždé, když uděláš malý krok správným směrem.“",
-  },
-  richtigen: {
-    translation: "správný",
-    example:
-      "„Aber ein Herz, das im richtigen Moment gut entscheidet, ist noch wichtiger.“",
-    exampleTranslation:
-      "„Ale ještě důležitější je srdce, které se ve správnou chvíli dobře rozhodne.“",
-  },
-  richtung: {
-    translation: "směr",
-    example:
-      "„Er wächst immer dann, wenn du einen kleinen Schritt in die richtige Richtung machst.“",
-    exampleTranslation:
-      "„Roste pokaždé, když uděláš malý krok správným směrem.“",
-  },
-  rief: {
-    translation: "volal, zavolal, vykřikl",
-    example:
-      "Seine Mutter lief am Ufer entlang und rief voller Angst nach ihm.",
-    exampleTranslation: "Jeho matka běžela podél břehu a vyděšeně ho volala.",
-  },
-  riss: {
-    translation: "strhl",
-    example: "Jantar rutschte aus, und die starke Strömung riss ihn mit.",
-    exampleTranslation: "Jantar uklouzl a silný proud ho odnesl.",
-  },
-  roch: {
-    translation: "ucítil",
-    example:
-      "Jantar roch Metall in der Luft und wusste, dass ein Sturm nah war.",
-    exampleTranslation:
-      "Jantar ucítil ve vzduchu kov a věděl, že se blíží bouřka.",
-  },
-  rostige: {
-    translation: "rezavé",
-    example: "Rostige Teile einer Eisenbahnlinie lagen noch unter ihren Füßen.",
-    exampleTranslation:
-      "Pod nohama jim zůstávaly rezavé kusy železničních kolejí.",
-  },
-  rostigen: {
-    translation: "rezavými",
-    example:
-      "Sie fanden den Eingang hinter nassen Büschen und rostigen Eisentoren.",
-    exampleTranslation:
-      "Vchod do tunelu našli za mokrými keři a rezavými železnými vraty.",
-  },
-  rote: {
-    translation: "červenou",
-    example: "Am Waldrand entdeckten sie Ondras rote Mütze im Schlamm.",
-    exampleTranslation:
-      "Na kraji lesa objevili v blátě Ondrovu červenou čepici.",
-  },
-  rotes: {
-    translation: "červenou",
-    example:
-      "Er hatte ein rotes Dach, eine große Scheune und einen warmen Stall aus Holz.",
-    exampleTranslation:
-      "Měl červenou střechu, velkou stodolu a teplou dřevěnou stáj.",
-  },
-  rufen: {
-    translation: "volajícího",
-    example:
-      "„Sie werden rufen und klatschen, und Jantar könnte sich erschrecken“, sagte er.",
-    exampleTranslation:
-      "„Budou křičet a tleskat a Jantar se může polekat,“ řekl.",
-  },
-  ruhigen: {
-    translation: "klidný",
-    example:
-      "Jantar stand oft in der Box neben ihr und hörte ihrem ruhigen Atem zu.",
-    exampleTranslation:
-      "Jantar často stával ve vedlejším boxu a poslouchal její klidné dýchání.",
-  },
-  ruhiges: {
-    translation: "tichou",
-    example:
-      "Einen Monat später feierten die Menschen ein ruhiges Fest auf der Wiese.",
-    exampleTranslation:
-      "O měsíc později uspořádali lidé na louce tichou slavnost.",
-  },
-  rutschte: {
-    translation: "uklouzla",
-    example: "Jantar rutschte aus, und die starke Strömung riss ihn mit.",
-    exampleTranslation: "Jantar uklouzl a silný proud ho odnesl.",
-  },
-  sache: {
-    translation: "věc, záležitost",
-    example:
-      "Der Junge weinte und sagte, dass ihm die Sache mit dem kleinen Boot leidtat.",
-    exampleTranslation: "Chlapec plakal a říkal, že ho ta malá loďka mrzí.",
-  },
-  sahen: {
-    translation: "uviděli",
-    example:
-      "Der Wind schob den Nebel weg, und tief unten sahen sie die roten Dächer von Bela.",
-    exampleTranslation:
-      "Vítr odnesl mlhu a hluboko pod sebou uviděli červené střechy Bělé.",
-  },
-  sammelten: {
-    translation: "shromáždil se",
-    example: "Hoch über dem Tal sammelten sich dunkle Wolken über den Bergen.",
-    exampleTranslation:
-      "Vysoko nad údolím se nad horami hromadily tmavé mraky.",
-  },
-  sand: {
-    translation: "pískem",
-    example: "Die Menschen auf dem Dorfplatz füllten Säcke mit Sand.",
-    exampleTranslation: "Lidé na vesnické návsi plnili pytle pískem.",
-  },
-  schacht: {
-    translation: "šachty",
-    example:
-      "Der linke Gang war stark überflutet, und der rechte endete an einem alten tiefen Schacht.",
-    exampleTranslation:
-      "Levá chodba byla silně zaplavená a pravá končila u staré hluboké šachty.",
-  },
-  schickte: {
-    translation: "poslal",
-    example:
-      "Als er vom Staudamm hörte, schickte er sofort einen Läufer zur Feuerwache.",
-    exampleTranslation:
-      "Jakmile uslyšel o hrázi, poslal běžce k hasičské zbrojnici.",
-  },
-  schien: {
-    translation: "zdála",
-    example: "Die Nacht schien endlos, während alle auf Nachrichten warteten.",
-    exampleTranslation:
-      "Noc se zdála nekonečná, zatímco všichni čekali na zprávy.",
-  },
-  schlamm: {
-    translation: "blátě",
-    example:
-      "Sie ließ Jantar den sichersten Weg zwischen abgebrochenen Ästen und tiefem Schlamm wählen.",
-    exampleTranslation:
-      "Nechala Jantara, aby mezi polámanými větvemi a hlubokým blátem zvolil nejbezpečnější cestu.",
-  },
-  schlug: {
-    translation: "bil, tloukl",
-    example:
-      "Seine Beine zitterten, und sein Herz schlug so laut, dass er nichts anderes hören konnte.",
-    exampleTranslation:
-      "Třásly se mu nohy a srdce mu bušilo tak hlasitě, že nic jiného neslyšel.",
-  },
-  schläge: {
-    translation: "údery",
-    example:
-      "Drei Schläge der Glocke am Staudamm meldeten, dass das nördliche Tor ganz geöffnet war.",
-    exampleTranslation:
-      "Tři údery zvonu z hráze oznámily, že severní výpust je úplně otevřená.",
-  },
-  schmal: {
-    translation: "úzký",
-    example:
-      "Der Tunnel wurde in alten Arbeitsräumen breit und zwischen den Felsen schmal.",
-    exampleTranslation:
-      "Tunel se ve starých pracovních místech rozšiřoval a mezi skalami se zužoval.",
-  },
-  schmalen: {
-    translation: "úzké",
-    example:
-      "Er fand einen schmalen Weg durch den dunklen Obstgarten um den Baum herum.",
-    exampleTranslation: "Našel úzký průchod kolem ní přes tmavý sad.",
-  },
-  schmaler: {
-    translation: "úzký",
-    example:
-      "Niemand benutzte sie mehr, und nur ein schmaler Holzsteg hatte sie mit dem Ufer verbunden.",
-    exampleTranslation:
-      "Nikdo ho už nepoužíval a s břehem ho spojovala jen úzká dřevěná lávka.",
-  },
-  schnell: {
-    translation: "rychle",
-    example: "Jantar war schnell, klug und sehr vorsichtig.",
-    exampleTranslation: "Jantar byl rychlý, chytrý a velmi opatrný.",
-  },
-  schnelle: {
-    translation: "rychlé",
-    example: "„Schnelle Beine sind nützlich“, sagte er zu Klara.",
-    exampleTranslation: "„Rychlé nohy jsou užitečné,“ řekl Kláře.",
-  },
-  schneller: {
-    translation: "rychleji",
-    example:
-      "Als die ersten Lichter der Stadt erschienen, ging das erschöpfte Pferd schneller.",
-    exampleTranslation:
-      "Když se objevila první světla města, vyčerpaný kůň začal kráčet rychleji.",
-  },
-  schoben: {
-    translation: "zasunuli, tlačili",
-    example:
-      "Sie entfernten das gebrochene Metall und schoben den neuen Stift an seinen Platz.",
-    exampleTranslation: "Odstranili zlomený kov a zasunuli nový čep na místo.",
-  },
-  schoss: {
-    translation: "spěchal, vyrazil",
-    example:
-      "Das nördliche Tor hob sich, und ein starker Strom schoss in den leeren Sicherheitskanal.",
-    exampleTranslation:
-      "Severní výpust se zvedla a do prázdného bezpečnostního kanálu vyrazil silný proud.",
-  },
-  schrank: {
-    translation: "skříň",
-    example: "Er öffnete einen Schrank und fand einen langen Ersatzstift.",
-    exampleTranslation: "Otevřel skříň a našel dlouhý náhradní čep.",
-  },
-  schritt: {
-    translation: "krok",
-    example:
-      "„Er wächst immer dann, wenn du einen kleinen Schritt in die richtige Richtung machst.“",
-    exampleTranslation:
-      "„Roste pokaždé, když uděláš malý krok správným směrem.“",
-  },
-  schritte: {
-    translation: "kroky",
-    example:
-      "Er konnte einen Weg im dichten Nebel finden und hörte ferne Schritte früher als die anderen Pferde.",
-    exampleTranslation:
-      "Dokázal najít cestu v husté mlze a slyšel vzdálené kroky dříve než ostatní koně.",
-  },
-  schule: {
-    translation: "školou",
-    example:
-      "Jeden Morgen vor der Schule brachte sie ihm Heu und putzte sein glänzendes Fell.",
-    exampleTranslation:
-      "Každé ráno před školou mu přinesla seno a vyčistila jeho lesklou srst.",
-  },
-  schwarzen: {
-    translation: "černé",
-    example:
-      "Klara musste den weißen Zeichen auf den Steinen bis zum Schwarzen Felsen folgen.",
-    exampleTranslation:
-      "Klára měla sledovat bílé značky na kamenech, dokud nedorazí k Černé skále.",
-  },
-  schwarzes: {
-    translation: "černý",
-    example:
-      "Ein großes schwarzes Pferd namens Baron gehörte dem reichen Händler Herrn Rydl.",
-    exampleTranslation:
-      "Velký černý kůň jménem Baron patřil bohatému obchodníkovi panu Rýdlovi.",
-  },
-  schwer: {
-    translation: "těžké",
-    example:
-      "Dichter Nebel bedeckte den Weg, und die weißen Zeichen waren schwer zu sehen.",
-    exampleTranslation:
-      "Stezku zakryla hustá mlha a bílé značky bylo těžké vidět.",
-  },
-  schwere: {
-    translation: "těžkou",
-    example:
-      "Vier starke Pferde wurden vorbereitet, um Werkzeuge, Ketten, Seile und das schwere Metallteil zu tragen.",
-    exampleTranslation:
-      "Připravili čtyři silné koně, aby nesli nářadí, řetězy, lana a těžkou kovovou součástku.",
-  },
-  schweren: {
-    translation: "těžké",
-    example:
-      "Diese Entdeckung blieb in ihm während jeder schweren Stunde, die danach kam.",
-    exampleTranslation:
-      "Tento objev v něm zůstal během každé těžké hodiny, která následovala.",
-  },
-  schützen: {
-    translation: "ochránily",
-    example:
-      "Diese stillen Lektionen sollten später mehr Leben schützen, als sich jemand im Stall vorstellen konnte.",
-    exampleTranslation:
-      "Tyto tiché lekce později ochránily více životů, než si kdokoli ve stáji dokázal představit.",
-  },
-  sehen: {
-    translation: "vidět",
-    example:
-      "Klara beobachtete seine Ohren und sprach langsam, statt auf das wilde Wasser zu sehen.",
-    exampleTranslation:
-      "Klára sledovala jeho uši a pomalu mluvila, místo aby se dívala na divokou vodu.",
-  },
-  seil: {
-    translation: "lano",
-    example:
-      "Ein Bauer erreichte ihn mit einem Seil und zog ihn in Sicherheit.",
-    exampleTranslation:
-      "Hospodář se k němu dostal s lanem a vytáhl ho do bezpečí.",
-  },
-  seile: {
-    translation: "lana",
-    example:
-      "Er und der Müller nahmen sofort Seile, Schaufeln und Laternen mit zum Staudamm.",
-    exampleTranslation:
-      "On a mlynář okamžitě vzali lana, lopaty a lucerny a vyrazili k hrázi.",
-  },
-  seinem: {
-    translation: "jeho",
-    example:
-      "Jantar beobachtete die bewegte Oberfläche und spürte, wie sich jeder Muskel in seinem Körper anspannte.",
-    exampleTranslation:
-      "Jantar sledoval pohybující se hladinu a cítil, jak se mu napíná každý sval.",
-  },
-  seinen: {
-    translation: "jeho",
-    example:
-      "Im Sommer schwammen die Kinder darin, und im Winter liefen sie auf seinen gefrorenen Stellen Schlittschuh.",
-    exampleTranslation:
-      "V létě se v ní děti koupaly a v zimě bruslily na jejích zamrzlých tůních.",
-  },
-  seit: {
-    translation: "od",
-    example:
-      "Zum ersten Mal seit dem Beginn des Sturms erlaubte sich Vojtech ein kleines Lächeln.",
-    exampleTranslation: "Vojtěch se poprvé od začátku bouřky slabě usmál.",
-  },
-  sekunden: {
-    translation: "vteřin",
-    example:
-      "Sekunden später fielen schwere Steine genau auf die Stelle, an der Jantar gestanden hatte.",
-    exampleTranslation:
-      "O několik vteřin později dopadly těžké kameny na místo, kde předtím stál Jantar.",
-  },
-  selbst: {
-    translation: "sama",
-    example:
-      "Sie dachten nur selten an ihn, weil er so stark wie der Berg selbst aussah.",
-    exampleTranslation:
-      "Málokdy na ni mysleli, protože vypadala pevná jako samotná hora.",
-  },
-  senkte: {
-    translation: "snížil, sklonil",
-    example:
-      "Jantar hörte die Angst in ihrer Stimme und senkte den Kopf für das Zaumzeug.",
-    exampleTranslation:
-      "Jantar slyšel strach v jejím hlase a sklonil hlavu pro uzdu.",
-  },
-  sichere: {
-    translation: "bezpečné",
-    example: "Lada ging zuerst und fand sichere Wege um umgestürzte Bäume.",
-    exampleTranslation:
-      "Lada šla první a nacházela bezpečné cesty kolem spadlých stromů.",
-  },
-  sicheren: {
-    translation: "bezpečný",
-    example:
-      "Keiner von ihnen hatte einen sicheren Plan, und der alte Schuppen konnte jeden Moment einstürzen.",
-    exampleTranslation:
-      "Ani jeden z nich neměl bezpečný plán a stará kůlna se mohla každou chvíli zřítit.",
-  },
-  sicherte: {
-    translation: "zajistil",
-    example:
-      "Ihr Vater sicherte die Scheunentore und brachte die Schafe von der tiefen Weide weg.",
-    exampleTranslation:
-      "Její otec zajistil vrata stodoly a odvedl ovce z nízké pastviny.",
-  },
-  sind: {
-    translation: "jsou",
-    example:
-      "„Die Steine sind fest, aber das nördliche Wassertor ist alt“, erklärte Vojtech.",
-    exampleTranslation:
-      "„Kameny jsou pevné, ale severní výpust je stará,“ vysvětlil Vojtěch.",
-  },
-  so: {
-    translation: "jako",
-    example:
-      "Sie dachten nur selten an ihn, weil er so stark wie der Berg selbst aussah.",
-    exampleTranslation:
-      "Málokdy na ni mysleli, protože vypadala pevná jako samotná hora.",
-  },
-  sofort: {
-    translation: "okamžitě",
-    example: "Die Familien am Ufer mussten ihre Häuser sofort verlassen.",
-    exampleTranslation:
-      "Rodiny žijící u břehu musely okamžitě opustit své domovy.",
-  },
-  sogar: {
-    translation: "dokonce",
-    example:
-      "Sogar Herr Rydl, der beim Rennen am Fluss gelacht hatte, kam und sagte, dass er sich geirrt hatte.",
-    exampleTranslation:
-      "Dokonce i pan Rýdl, který se smál při závodu u řeky, přišel říct, že se mýlil.",
-  },
-  sollte: {
-    translation: "měla",
-    example: "Sie sollte es dem Feuerwehrchef in Bela zeigen.",
-    exampleTranslation: "Měla ho ukázat veliteli hasičů v Bělé.",
-  },
-  sollten: {
-    translation: "měli, měli by",
-    example:
-      "Diese stillen Lektionen sollten später mehr Leben schützen, als sich jemand im Stall vorstellen konnte.",
-    exampleTranslation:
-      "Tyto tiché lekce později ochránily více životů, než si kdokoli ve stáji dokázal představit.",
-  },
-  sommer: {
-    translation: "létě",
-    example:
-      "Im Sommer schwammen die Kinder darin, und im Winter liefen sie auf seinen gefrorenen Stellen Schlittschuh.",
-    exampleTranslation:
-      "V létě se v ní děti koupaly a v zimě bruslily na jejích zamrzlých tůních.",
-  },
-  sonne: {
-    translation: "slunci",
-    example: "Wenn die Sonne sein Fell berührte, glänzte es wie warmer Honig.",
-    exampleTranslation:
-      "Když se jeho srsti dotklo slunce, leskla se jako teplý med.",
-  },
-  sonnenaufgang: {
-    translation: "svítáním",
-    example:
-      "Vor Sonnenaufgang verließen Klara, Jantar, Karel und Lada den Bauernhof.",
-    exampleTranslation:
-      "Před svítáním opustili Klára, Jantar, Karel a Lada statek.",
-  },
-  sonnenuntergang: {
-    translation: "slunce",
-    example: "Der erste Donner kam noch vor Sonnenuntergang.",
-    exampleTranslation: "První hrom přišel ještě před západem slunce.",
-  },
-  sprach: {
-    translation: "mluvila",
-    example:
-      "Sie sprach immer mit einer sanften und freundlichen Stimme zu ihm.",
-    exampleTranslation: "Vždy na něj mluvila jemným a přátelským hlasem.",
-  },
-  sprang: {
-    translation: "skočil",
-    example:
-      "In der Mitte spritzte das Wasser laut gegen einen Stein, und Jantar sprang zurück.",
-    exampleTranslation:
-      "Uprostřed se voda hlasitě rozstříkla o kámen a Jantar uskočil.",
-  },
-  sprangen: {
-    translation: "skočil",
-    example:
-      "Auf der Wiese überholten sie zwei Reiter und sprangen im Wald über einen umgestürzten Baum.",
-    exampleTranslation:
-      "Na louce předjeli dva jezdce a v lese přeskočili spadlý strom.",
-  },
-  spritzte: {
-    translation: "stříkal, rozstříkl se",
-    example:
-      "In der Mitte spritzte das Wasser laut gegen einen Stein, und Jantar sprang zurück.",
-    exampleTranslation:
-      "Uprostřed se voda hlasitě rozstříkla o kámen a Jantar uskočil.",
-  },
-  spur: {
-    translation: "stopa",
-    example: "Von ihrem kleinen Bruder gab es keine Spur.",
-    exampleTranslation: "Po jejím malém bratrovi nebyla ani stopa.",
-  },
-  spuren: {
-    translation: "stop",
-    example:
-      "Der Regen hatte Teile der Spuren fortgewaschen, deshalb musste Jantar oft neu suchen.",
-    exampleTranslation:
-      "Déšť smyl části stop, a tak Jantar často zastavoval a znovu hledal.",
-  },
-  standen: {
-    translation: "stáli",
-    example: "An beiden Ufern standen Menschen und riefen den Reitern zu.",
-    exampleTranslation: "Na obou březích stáli lidé a povzbuzovali jezdce.",
-  },
-  stark: {
-    translation: "silně",
-    example:
-      "Sie dachten nur selten an ihn, weil er so stark wie der Berg selbst aussah.",
-    exampleTranslation:
-      "Málokdy na ni mysleli, protože vypadala pevná jako samotná hora.",
-  },
-  starken: {
-    translation: "silného",
-    example:
-      "Petr zog seinen Mantel an und bereitete einen Wagen mit zwei starken Pferden vor.",
-    exampleTranslation:
-      "Petr si oblékl plášť a připravil vůz se dvěma silnými koňmi.",
-  },
-  starker: {
-    translation: "silný",
-    example:
-      "In einer Frühlingsnacht füllte starker Regen den kleinen Bach neben ihrer Weide.",
-    exampleTranslation:
-      "Jedné jarní noci naplnil silný déšť malý potok vedle jejich pastviny.",
-  },
-  statt: {
-    translation: "místo",
-    example:
-      "Klara beobachtete seine Ohren und sprach langsam, statt auf das wilde Wasser zu sehen.",
-    exampleTranslation:
-      "Klára sledovala jeho uši a pomalu mluvila, místo aby se dívala na divokou vodu.",
-  },
-  staub: {
-    translation: "prach",
-    example:
-      "Die Pferde zogen an ihren Seilen, während Staub den Tunnel füllte.",
-    exampleTranslation: "Koně tahali za lana, zatímco tunel naplnil prach.",
-  },
-  steg: {
-    translation: "lávka, můstek",
-    example:
-      "„Der Fluss steigt, und der Steg bei der Mühle ist schon weg“, rief Karel.",
-    exampleTranslation:
-      "„Řeka stoupá a lávka u mlýna už je pryč,“ křičel Karel.",
-  },
-  stehen: {
-    translation: "stát",
-    example: "Nach dieser Nacht blieb er vor jedem tiefen Bach stehen.",
-    exampleTranslation: "Od té noci se zastavil před každým hlubším potokem.",
-  },
-  steigt: {
-    translation: "stoupá",
-    example:
-      "„Der Fluss steigt, und der Steg bei der Mühle ist schon weg“, rief Karel.",
-    exampleTranslation:
-      "„Řeka stoupá a lávka u mlýna už je pryč,“ křičel Karel.",
-  },
-  steil: {
-    translation: "strmě",
-    example: "Der mittlere Tunnel stieg steil an, aber sein Boden war trocken.",
-    exampleTranslation:
-      "Prostřední tunel strmě stoupal, ale jeho zem byla suchá.",
-  },
-  steinbruch: {
-    translation: "lomu",
-    example:
-      "Sie konnte Lada bis zum alten Steinbruch folgen und von dort allein weitergehen.",
-    exampleTranslation:
-      "Mohla následovat Ladu až ke starému lomu a odtud pokračovat.",
-  },
-  steine: {
-    translation: "kameny",
-    example:
-      "„Die Steine sind fest, aber das nördliche Wassertor ist alt“, erklärte Vojtech.",
-    exampleTranslation:
-      "„Kameny jsou pevné, ale severní výpust je stará,“ vysvětlil Vojtěch.",
-  },
-  steinwand: {
-    translation: "kamenná stěna",
-    example:
-      "Links stieg eine Steinwand auf, und rechts fiel der Boden tief ab.",
-    exampleTranslation:
-      "Vlevo stoupala kamenná stěna a vpravo země prudce klesala.",
-  },
-  stelle: {
-    translation: "místě",
-    example:
-      "Eines Nachmittags führte Klara Jantar zu einer breiteren Stelle des Baches.",
-    exampleTranslation:
-      "Jednoho odpoledne vzala Klára Jantara k širší části potoka.",
-  },
-  stellen: {
-    translation: "místa",
-    example:
-      "Im Sommer schwammen die Kinder darin, und im Winter liefen sie auf seinen gefrorenen Stellen Schlittschuh.",
-    exampleTranslation:
-      "V létě se v ní děti koupaly a v zimě bruslily na jejích zamrzlých tůních.",
-  },
-  stellte: {
-    translation: "postavil",
-    example: "Nach einer langen Weile stellte er einen Huf ins Wasser.",
-    exampleTranslation: "Po dlouhé chvíli položil do vody jedno kopyto.",
-  },
-  stern: {
-    translation: "hvězdu",
-    example:
-      "Er war kastanienbraun und hatte einen kleinen weißen Stern auf der Stirn.",
-    exampleTranslation: "Byl kaštanově hnědý a na čele měl malou bílou hvězdu.",
-  },
-  stieg: {
-    translation: "stoupal, nastoupil; sesedl",
-    example:
-      "Wenn er unsicher wurde, stieg sie ab und zeigte ihm den Weg zu Fuß.",
-    exampleTranslation:
-      "Když si nebyl jistý, sesedla a ukázala mu cestu pěšky.",
-  },
-  stift: {
-    translation: "čep, kolík",
-    example:
-      "Sie entfernten das gebrochene Metall und schoben den neuen Stift an seinen Platz.",
-    exampleTranslation: "Odstranili zlomený kov a zasunuli nový čep na místo.",
-  },
-  stimme: {
-    translation: "hlase",
-    example:
-      "Sie sprach immer mit einer sanften und freundlichen Stimme zu ihm.",
-    exampleTranslation: "Vždy na něj mluvila jemným a přátelským hlasem.",
-  },
-  stimmen: {
-    translation: "hlasy",
-    example:
-      "Jantar stand neben dem Brunnen und hörte die Sorge in den Stimmen der Männer.",
-    exampleTranslation:
-      "Jantar stál u studny a slyšel obavy v hlasech obou mužů.",
-  },
-  stimmte: {
-    translation: "souhlasil",
-    example:
-      "Horsky prüfte die Luft mit einem nassen Finger und stimmte ihm zu.",
-    exampleTranslation:
-      "Horský vyzkoušel proudění mokrým prstem a souhlasil s ním.",
-  },
-  stirn: {
-    translation: "čelo",
-    example:
-      "Er war kastanienbraun und hatte einen kleinen weißen Stern auf der Stirn.",
-    exampleTranslation: "Byl kaštanově hnědý a na čele měl malou bílou hvězdu.",
-  },
-  stoffstreifen: {
-    translation: "proužek látky",
-    example:
-      "Klara band neben dem grünen Band einen roten Stoffstreifen in seine Mähne.",
-    exampleTranslation:
-      "Klára mu vedle zelené stužky uvázala do hřívy červený proužek.",
-  },
-  strömte: {
-    translation: "spěchal, vyrazil",
-    example:
-      "Das Wasser durchbrach den Zaun und strömte in das Gehege der Pferde.",
-    exampleTranslation: "Voda prorazila plot a vtrhla do koňské ohrady.",
-  },
-  strömung: {
-    translation: "proud",
-    example: "Jantar rutschte aus, und die starke Strömung riss ihn mit.",
-    exampleTranslation: "Jantar uklouzl a silný proud ho odnesl.",
-  },
-  stunde: {
-    translation: "hodina",
-    example: "Eine Stunde verging, bevor Klaras Mutter sich plötzlich umsah.",
-    exampleTranslation:
-      "Uplynula hodina, než se Klářina matka náhle rozhlédla.",
-  },
-  stunden: {
-    translation: "hodiny",
-    example: "Bei gutem Wetter dauerte die Reise sechs Stunden.",
-    exampleTranslation: "Za dobrého počasí trvala cesta šest hodin.",
-  },
-  stück: {
-    translation: "kus",
-    example:
-      "Drinnen stützte Klara seinen Knöchel mit einem Stück Holz und einem Verband.",
-    exampleTranslation:
-      "Uvnitř Klára použila kus dřeva a obvaz, aby mu zpevnila kotník.",
-  },
-  stützte: {
-    translation: "podepřel, zpevnil",
-    example:
-      "Drinnen stützte Klara seinen Knöchel mit einem Stück Holz und einem Verband.",
-    exampleTranslation:
-      "Uvnitř Klára použila kus dřeva a obvaz, aby mu zpevnila kotník.",
-  },
-  suchen: {
-    translation: "hledal",
-    example:
-      "Der Regen hatte Teile der Spuren fortgewaschen, deshalb musste Jantar oft neu suchen.",
-    exampleTranslation:
-      "Déšť smyl části stop, a tak Jantar často zastavoval a znovu hledal.",
-  },
-  suchte: {
-    translation: "hledala",
-    example:
-      "Klara suchte nach einem Seil oder einem langen Brett, fand aber nichts.",
-    exampleTranslation:
-      "Klára hledala lano nebo dlouhé prkno, ale nic nenašla.",
-  },
-  südliche: {
-    translation: "jižní",
-    example:
-      "Vojtech hatte das südliche Tor geöffnet, aber es konnte allein nicht genug Wasser ablassen.",
-    exampleTranslation:
-      "Vojtěch otevřel jižní výpust, ale sama nedokázala vypustit dostatek vody.",
-  },
-  tages: {
-    translation: "někdy",
-    example:
-      "Klara fragte, ob Jantar eines Tages keine Angst mehr vor dem Fluss haben würde.",
-    exampleTranslation:
-      "Klára se zeptala, zda se Jantar někdy přestane řeky bát.",
-  },
-  tal: {
-    translation: "údolí",
-    example: "Sie kannte jede Straße, jede Brücke und jeden Bergweg im Tal.",
-    exampleTranslation: "Znala každou cestu, most i horskou stezku v údolí.",
-  },
-  tals: {
-    translation: "údolí",
-    example: "Am Rand eines breiten Tals lag ein kleines Dorf namens Podlesi.",
-    exampleTranslation:
-      "Na kraji širokého údolí ležela malá vesnice jménem Podlesí.",
-  },
-  tanzte: {
-    translation: "tančila",
-    example: "Wenn er über die Wiese lief, tanzte seine dunkle Mähne im Wind.",
-    exampleTranslation:
-      "Když běžel po louce, jeho tmavá hříva tančila ve větru.",
-  },
-  teil: {
-    translation: "část",
-    example: "Der spannendste Teil war ein Pferderennen durch das Tal.",
-    exampleTranslation: "Nejnapínavější částí byl koňský závod kolem údolí.",
-  },
-  teile: {
-    translation: "části",
-    example:
-      "Der Regen hatte Teile der Spuren fortgewaschen, deshalb musste Jantar oft neu suchen.",
-    exampleTranslation:
-      "Déšť smyl části stop, a tak Jantar často zastavoval a znovu hledal.",
-  },
-  teilte: {
-    translation: "rozdělil",
-    example: "Am Steinbruch teilte sich der Bergweg in zwei Pfade.",
-    exampleTranslation: "U lomu se horská cesta rozdělila na dvě stezky.",
-  },
-  teilten: {
-    translation: "podělil se",
-    example:
-      "Er war nicht verletzt, deshalb teilten sie etwas Brot und gingen weiter zum Pass.",
-    exampleTranslation:
-      "Nebyl zraněný, a tak se podělili o trochu chleba a pokračovali k sedlu.",
-  },
-  tiefe: {
-    translation: "hloubka",
-    example:
-      "Die Bewegung, die Tiefe und das starke Geräusch einer Strömung brachten die Erinnerung zurück.",
-    exampleTranslation: "Vzpomínku vracel pohyb, hloubka a silný zvuk proudu.",
-  },
-  tiefer: {
-    translation: "hlubší, níže",
-    example: "Grüne Hügel und ein tiefer Wald schützten es auf einer Seite.",
-    exampleTranslation:
-      "Z jedné strany ji chránily zelené kopce a hluboký les.",
-  },
-  tiefes: {
-    translation: "hluboká",
-    example:
-      "Er wurde niemals unvorsichtig, und tiefes Wasser wurde nie sein Freund.",
-    exampleTranslation:
-      "Nikdy se nestal neopatrným a hluboká voda se nikdy nestala jeho přítelem.",
-  },
-  tochter: {
-    translation: "dcera",
-    example:
-      "Ihre Mutter hatte Angst, half aber trotzdem, alles für ihre Tochter vorzubereiten.",
-    exampleTranslation:
-      "Její matka se bála, přesto pomohla připravit vše, co mohla dcera potřebovat.",
-  },
-  tore: {
-    translation: "vrata",
-    example:
-      "Als sich die Tore endlich öffneten, kam kalte Luft aus der Dunkelheit.",
-    exampleTranslation:
-      "Když se vrata konečně otevřela, vyšel ze tmy studený vzduch.",
-  },
-  traf: {
-    translation: "udeřil",
-    example:
-      "Ein Ast traf seine Schulter, und für einen Moment verlor er das Gleichgewicht.",
-    exampleTranslation:
-      "Do ramene mu narazila větev a na okamžik ztratil rovnováhu.",
-  },
-  tragen: {
-    translation: "nést, vozit",
-    example:
-      "Vier starke Pferde wurden vorbereitet, um Werkzeuge, Ketten, Seile und das schwere Metallteil zu tragen.",
-    exampleTranslation:
-      "Připravili čtyři silné koně, aby nesli nářadí, řetězy, lana a těžkou kovovou součástku.",
-  },
-  trank: {
-    translation: "pil",
-    example:
-      "Ein ruhiger Eimer mit Wasser machte ihm keine Angst, und er trank ohne Probleme daraus.",
-    exampleTranslation:
-      "Klidný kbelík vody mu nevadil a pil z něj beze strachu.",
-  },
-  treffen: {
-    translation: "zasáhnout, narazit",
-    example:
-      "David stand oberhalb der Brücke und achtete auf große Äste, die die neuen Stämme treffen konnten.",
-    exampleTranslation:
-      "David stál proti proudu a sledoval velké větve, které by mohly narazit do nových kmenů.",
-  },
-  trockene: {
-    translation: "suché",
-    example:
-      "Klara und ihre Mutter kochten Tee und legten trockene Decken bereit.",
-    exampleTranslation: "Klára s matkou vařily čaj a připravovaly suché deky.",
-  },
-  tropfen: {
-    translation: "kapající",
-    example:
-      "Auch Jantar fühlte Angst, als er Wasser im Inneren des Berges tropfen hörte.",
-    exampleTranslation:
-      "Také Jantar cítil strach, když slyšel vodu kapající uvnitř hory.",
-  },
-  trotzdem: {
-    translation: "přesto",
-    example: "Trotzdem nannte ihn in Podlesi niemand ein tapferes Pferd.",
-    exampleTranslation: "Přesto mu v Podlesí nikdo neříkal statečný kůň.",
-  },
-  trug: {
-    translation: "nesl",
-    example:
-      "Jantar trug leichte Lasten, half beim Heu und trainierte jede Woche mit Klara.",
-    exampleTranslation:
-      "Jantar vozil lehké náklady, pomáhal se senem a každý týden trénoval s Klárou.",
-  },
-  trugen: {
-    translation: "nosili",
-    example:
-      "Schwalben flogen tief, Ameisen trugen ihre Eier bergauf, und der Wald wurde still.",
-    exampleTranslation:
-      "Vlaštovky létaly nízko, mravenci nosili vajíčka do kopce a les ztichl.",
-  },
-  tunnel: {
-    translation: "tunel",
-    example:
-      "Jantar ging langsam durch den Eingang und folgte ihr in den Tunnel.",
-    exampleTranslation:
-      "Jantar pomalu překročil vchod a následoval ji do tunelu.",
-  },
-  tür: {
-    translation: "dveří",
-    example:
-      "Sein Bett war leer, und sein gelber Regenmantel fehlte an der Tür.",
-    exampleTranslation:
-      "Jeho postel byla prázdná a u dveří chyběla žlutá pláštěnka.",
-  },
-  ufer: {
-    translation: "břeh",
-    example:
-      "Seine Mutter lief am Ufer entlang und rief voller Angst nach ihm.",
-    exampleTranslation: "Jeho matka běžela podél břehu a vyděšeně ho volala.",
-  },
-  uns: {
-    translation: "nás",
-    example:
-      "Ihr Vater antwortete, dass manche Ängste sehr lange bei uns bleiben.",
-    exampleTranslation:
-      "Její otec odpověděl, že některé strachy s námi zůstávají velmi dlouho.",
-  },
-  unten: {
-    translation: "pod",
-    example:
-      "Der Wind schob den Nebel weg, und tief unten sahen sie die roten Dächer von Bela.",
-    exampleTranslation:
-      "Vítr odnesl mlhu a hluboko pod sebou uviděli červené střechy Bělé.",
-  },
-  unteren: {
-    translation: "nižší",
-    example:
-      "Klara war schon auf einigen unteren Waldwegen geritten, aber noch nie durch den ganzen Pass.",
-    exampleTranslation:
-      "Klára už dříve projela některé nižší lesní cesty, ale nikdy ne celé sedlo.",
-  },
-  unterhalb: {
-    translation: "pod",
-    example:
-      "Klara suchte oberhalb und unterhalb der Straße, fand aber keinen sicheren Übergang.",
-    exampleTranslation:
-      "Klára hledala nad i pod cestou, ale nenašla bezpečný přechod.",
-  },
-  verbergen: {
-    translation: "skrývat",
-    example:
-      "Jantar versuchte seine Angst zu verstecken, aber ein Pferd kann zitternde Beine nicht verbergen.",
-    exampleTranslation:
-      "Jantar se snažil strach skrývat, ale kůň nemůže před pozornýma očima schovat třesoucí se nohy.",
-  },
-  verbunden: {
-    translation: "spojovala",
-    example:
-      "Niemand benutzte sie mehr, und nur ein schmaler Holzsteg hatte sie mit dem Ufer verbunden.",
-    exampleTranslation:
-      "Nikdo ho už nepoužíval a s břehem ho spojovala jen úzká dřevěná lávka.",
-  },
-  verlassen: {
-    translation: "opustit",
-    example: "Die Familien am Ufer mussten ihre Häuser sofort verlassen.",
-    exampleTranslation:
-      "Rodiny žijící u břehu musely okamžitě opustit své domovy.",
-  },
-  verletzt: {
-    translation: "zraněný",
-    example:
-      "Vojtech lebte, aber er war auf der Treppe gestürzt und hatte sich am Bein verletzt.",
-    exampleTranslation: "Vojtěch žil, ale spadl na schodech a poranil si nohu.",
-  },
-  verlor: {
-    translation: "ztratil",
-    example:
-      "Ein Ast traf seine Schulter, und für einen Moment verlor er das Gleichgewicht.",
-    exampleTranslation:
-      "Do ramene mu narazila větev a na okamžik ztratil rovnováhu.",
-  },
-  verschwand: {
-    translation: "zmizela",
-    example: "Dadurch verschwand nicht jede Angst.",
-    exampleTranslation: "Neznamenalo to, že každý strach zmizel.",
-  },
-  verschwunden: {
-    translation: "zmizela",
-    example: "Der Steg war jetzt verschwunden.",
-    exampleTranslation: "Lávka byla nyní pryč.",
-  },
-  versperrte: {
-    translation: "blokovala",
-    example:
-      "Ein umgestürzter Apfelbaum versperrte den Weg, aber Jantar bemerkte ihn vor Klara.",
-    exampleTranslation:
-      "Cestu blokovala spadlá jabloň, ale Jantar si jí všiml dříve než Klára.",
-  },
-  versprachen: {
-    translation: "slíbili",
-    example:
-      "Sie wollten kein Geld und versprachen, auf dem Rückweg dem verletzten Hirten zu helfen.",
-    exampleTranslation:
-      "Odmítli peníze a slíbili, že cestou zpět pomohou zraněnému pastýři.",
-  },
-  versuchte: {
-    translation: "zkusil",
-    example:
-      "Jantar versuchte seine Angst zu verstecken, aber ein Pferd kann zitternde Beine nicht verbergen.",
-    exampleTranslation:
-      "Jantar se snažil strach skrývat, ale kůň nemůže před pozornýma očima schovat třesoucí se nohy.",
-  },
-  vertrauen: {
-    translation: "důvěry",
-    example:
-      "Ihr Vertrauen wuchs an vielen gewöhnlichen Morgen und nicht in einer einzigen großen Lektion.",
-    exampleTranslation:
-      "Jejich důvěra rostla během mnoha obyčejných rán, nikoli při jediné velké lekci.",
-  },
-  viel: {
-    translation: "příliš",
-    example:
-      "Die Strömung war kalt, dunkel und viel stärker als der kleine Bach beim Training.",
-    exampleTranslation:
-      "Proud byl studený, tmavý a mnohem silnější než malý potok při tréninku.",
-  },
-  vier: {
-    translation: "čtyři",
-    example:
-      "Vier starke Pferde wurden vorbereitet, um Werkzeuge, Ketten, Seile und das schwere Metallteil zu tragen.",
-    exampleTranslation:
-      "Připravili čtyři silné koně, aby nesli nářadí, řetězy, lana a těžkou kovovou součástku.",
-  },
-  voller: {
-    translation: "plnou",
-    example:
-      "Seine Mutter lief am Ufer entlang und rief voller Angst nach ihm.",
-    exampleTranslation: "Jeho matka běžela podél břehu a vyděšeně ho volala.",
-  },
-  vorbei: {
-    translation: "kolem",
-    example:
-      "Auf der anderen Seite floss der klare Fluss Jasna an den Häusern vorbei.",
-    exampleTranslation: "Z druhé strany kolem domů tekla čistá řeka Jasná.",
-  },
-  vorher: {
-    translation: "předtím",
-    example: "„Ich hoffe nur, dass vorher kein großer Sturm kommt“, sagte er.",
-    exampleTranslation: "„Jen doufám, že předtím nepřijde velká bouřka,“ řekl.",
-  },
-  völlig: {
-    translation: "úplně",
-    example:
-      "Sie warteten, bis der Wald völlig still war, bevor sie weitergingen.",
-    exampleTranslation:
-      "Počkali, dokud les úplně neztichl, a teprve potom se znovu vydali dopředu.",
-  },
-  wagen: {
-    translation: "vůz",
-    example:
-      "Petr zog seinen Mantel an und bereitete einen Wagen mit zwei starken Pferden vor.",
-    exampleTranslation:
-      "Petr si oblékl plášť a připravil vůz se dvěma silnými koňmi.",
-  },
-  wahrscheinlich: {
-    translation: "pravděpodobně",
-    example:
-      "Wahrscheinlich war er gegangen, um es zu retten, bevor der Fluss es wegtrug.",
-    exampleTranslation:
-      "Pravděpodobně ji šel zachránit dřív, než ji řeka odnese.",
-  },
-  waldes: {
-    translation: "lesa",
-    example:
-      "Der Müller machte Lada bereit, um sie durch den ersten Teil des Waldes zu führen.",
-    exampleTranslation:
-      "Mlynář připravil Ladu, aby je provedla první částí lesa.",
-  },
-  wand: {
-    translation: "stěně",
-    example: "Dann fiel starker Regen wie eine graue Wand über das ganze Tal.",
-    exampleTranslation:
-      "Potom padal silný déšť jako šedá stěna přes celé údolí.",
-  },
-  warnen: {
-    translation: "varovat",
-    example:
-      "Feuerwehrchef Bartos schickte andere Feuerwehrleute los, um die Straßen zu prüfen und die tiefer liegenden Dörfer zu warnen.",
-    exampleTranslation:
-      "Velitel Bartoš poslal další hasiče zkontrolovat cesty a varovat níže položené vesnice.",
-  },
-  warnung: {
-    translation: "varování",
-    example:
-      "Petr kam einige Minuten später zurück, und Klara erzählte ihm von der Warnung.",
-    exampleTranslation:
-      "Petr se vrátil o několik minut později a Klára mu řekla o varování.",
-  },
-  warten: {
-    translation: "čekat",
-    example:
-      "Ihr Vater Petr machte sich Sorgen, weil viele Menschen an der Furt warten würden.",
-    exampleTranslation:
-      "Její otec Petr měl obavy, protože u brodu mělo čekat mnoho lidí.",
-  },
-  wartete: {
-    translation: "čekal",
-    example:
-      "Jantar spürte die Aufregung um sich, wartete aber auf Klaras sanftes Zeichen.",
-    exampleTranslation:
-      "Jantar cítil vzrušení kolem sebe, ale čekal na Klářin jemný pokyn.",
-  },
-  warteten: {
-    translation: "čekali",
-    example: "Acht Pferde warteten an der Startlinie.",
-    exampleTranslation: "Na startu čekalo osm koní.",
-  },
-  wassers: {
-    translation: "vody",
-    example: "Der Druck des hohen Wassers hielt das Tor geschlossen.",
-    exampleTranslation: "Tlak vysoké vody držel výpust zavřenou.",
-  },
-  weder: {
-    translation: "ani",
-    example:
-      "Seine Angst war weder auf der Insel noch beim Rückweg verschwunden.",
-    exampleTranslation:
-      "Jeho strach nezmizel ani na ostrově, ani během cesty zpět.",
-  },
-  wege: {
-    translation: "cesty",
-    example: "Lada ging zuerst und fand sichere Wege um umgestürzte Bäume.",
-    exampleTranslation:
-      "Lada šla první a nacházela bezpečné cesty kolem spadlých stromů.",
-  },
-  weide: {
-    translation: "pastviny",
-    example:
-      "In einer Frühlingsnacht füllte starker Regen den kleinen Bach neben ihrer Weide.",
-    exampleTranslation:
-      "Jedné jarní noci naplnil silný déšť malý potok vedle jejich pastviny.",
-  },
-  weil: {
-    translation: "protože",
-    example:
-      "Sie dachten nur selten an ihn, weil er so stark wie der Berg selbst aussah.",
-    exampleTranslation:
-      "Málokdy na ni mysleli, protože vypadala pevná jako samotná hora.",
-  },
-  weile: {
-    translation: "chvíli",
-    example: "Nach einer langen Weile stellte er einen Huf ins Wasser.",
-    exampleTranslation: "Po dlouhé chvíli položil do vody jedno kopyto.",
-  },
-  weit: {
-    translation: "daleko",
-    example:
-      "Matous sagte, dass seine kleine Holzhütte nicht weit entfernt war.",
-    exampleTranslation: "Matouš řekl, že jeho malá dřevěná salaš není daleko.",
-  },
-  weiter: {
-    translation: "dál",
-    example:
-      "Wenn ihn ein lautes Geräusch erschreckte, sah Lada nur kurz auf und fraß weiter ihr Heu.",
-    exampleTranslation:
-      "Když ho vylekal hlasitý zvuk, Lada jen zvedla hlavu a pokračovala v pojídání sena.",
-  },
-  weitere: {
-    translation: "další",
-    example:
-      "Für ihn war das Rennen eine weitere Lektion im Zuhören und Vertrauen und kein Kampf um einen Preis.",
-    exampleTranslation:
-      "Závod pro něj byl další lekcí naslouchání a důvěry, nikoli bojem o cenu.",
-  },
-  weiteren: {
-    translation: "další",
-    example:
-      "Bevor die Arbeit beendet war, lief ein Dorfbewohner mit einer weiteren schlechten Nachricht den Hügel hinauf.",
-    exampleTranslation:
-      "Než byla práce dokončena, vyběhl do kopce vesničan s další špatnou zprávou.",
-  },
-  weißen: {
-    translation: "bílé",
-    example:
-      "Er war kastanienbraun und hatte einen kleinen weißen Stern auf der Stirn.",
-    exampleTranslation: "Byl kaštanově hnědý a na čele měl malou bílou hvězdu.",
-  },
-  wenig: {
-    translation: "málo",
-    example:
-      "Jetzt arbeitete sie nur noch wenig, aber alle Pferde achteten sie.",
-    exampleTranslation:
-      "Teď pracovala jen málo, ale všichni koně ji respektovali.",
-  },
-  wenn: {
-    translation: "když, pokud",
-    example: "Wenn die Sonne sein Fell berührte, glänzte es wie warmer Honig.",
-    exampleTranslation:
-      "Když se jeho srsti dotklo slunce, leskla se jako teplý med.",
-  },
-  wer: {
-    translation: "kdo",
-    example:
-      "Das kleinere Fohlen drückte sich an Jantar, als wüsste es, wer es beschützt hatte.",
-    exampleTranslation:
-      "Menší hříbě se přitisklo k Jantarovi, jako by chápalo, kdo ho ochránil.",
-  },
-  werden: {
-    translation: "budou",
-    example:
-      "Die Kinder der Familie Novak liebten ihn, aber niemand wusste, wie wichtig er bald werden würde.",
-    exampleTranslation:
-      "Děti Novákových ho milovaly, ale nikdo netušil, jak důležitý se brzy stane.",
-  },
-  werkzeuge: {
-    translation: "nářadí",
-    example:
-      "Er hieß Vojtech, hatte weiße Haare und trug eine Ledertasche voller Werkzeuge.",
-    exampleTranslation:
-      "Jmenoval se Vojtěch, měl bílé vlasy a koženou brašnu plnou nářadí.",
-  },
-  wichtig: {
-    translation: "důležité",
-    example:
-      "Die Kinder der Familie Novak liebten ihn, aber niemand wusste, wie wichtig er bald werden würde.",
-    exampleTranslation:
-      "Děti Novákových ho milovaly, ale nikdo netušil, jak důležitý se brzy stane.",
-  },
-  wichtiger: {
-    translation: "důležitější",
-    example:
-      "„Aber ein Herz, das im richtigen Moment gut entscheidet, ist noch wichtiger.“",
-    exampleTranslation:
-      "„Ale ještě důležitější je srdce, které se ve správnou chvíli dobře rozhodne.“",
-  },
-  wichtigste: {
-    translation: "hlavní",
-    example:
-      "Horsky glaubte, dass der wichtigste Metallstift im nördlichen Tor gebrochen war.",
-    exampleTranslation:
-      "Horský se domníval, že se uvnitř severní výpusti zlomil hlavní kovový čep.",
-  },
-  wir: {
-    translation: "my",
-    example: "„Heute machen wir nur das, was wir gemeinsam schaffen können.“",
-    exampleTranslation: "„Dnes uděláme jen to, co společně zvládneme.“",
-  },
-  wird: {
-    translation: "je",
-    example:
-      "„Jantar bleibt stehen, beobachtet, denkt nach und geht dann dorthin, wo er wirklich gebraucht wird.“",
-    exampleTranslation:
-      "„Jantar zastaví, pozoruje, přemýšlí a potom jde tam, kde je opravdu potřeba.“",
-  },
-  wirklich: {
-    translation: "opravdu",
-    example:
-      "„Jantar bleibt stehen, beobachtet, denkt nach und geht dann dorthin, wo er wirklich gebraucht wird.“",
-    exampleTranslation:
-      "„Jantar zastaví, pozoruje, přemýšlí a potom jde tam, kde je opravdu potřeba.“",
-  },
-  wo: {
-    translation: "kde",
-    example: "„Wo ist Ondra?“, fragte sie.",
-    exampleTranslation: "„Kde je Ondra?“ zeptala se.",
-  },
-  woche: {
-    translation: "týden",
-    example:
-      "Jantar trug leichte Lasten, half beim Heu und trainierte jede Woche mit Klara.",
-    exampleTranslation:
-      "Jantar vozil lehké náklady, pomáhal se senem a každý týden trénoval s Klárou.",
-  },
-  wohin: {
-    translation: "kam",
-    example: "Horsky war nicht sicher, wohin der mittlere Gang führte.",
-    exampleTranslation: "Horský si nebyl jistý, kam vede prostřední chodba.",
-  },
-  wolken: {
-    translation: "mraky",
-    example: "Hoch über dem Tal sammelten sich dunkle Wolken über den Bergen.",
-    exampleTranslation:
-      "Vysoko nad údolím se nad horami hromadily tmavé mraky.",
-  },
-  wollte: {
-    translation: "chtěl, chtěla",
-    example:
-      "Klara wollte auf Jantar reiten, aber der Sieg war ihr nicht wichtig.",
-    exampleTranslation:
-      "Klára chtěla jet na Jantarovi, ale nezáleželo jí na vítězství.",
-  },
-  wollten: {
-    translation: "chtěli",
-    example:
-      "Sie wollten kein Geld und versprachen, auf dem Rückweg dem verletzten Hirten zu helfen.",
-    exampleTranslation:
-      "Odmítli peníze a slíbili, že cestou zpět pomohou zraněnému pastýři.",
-  },
-  worden: {
-    translation: "byla",
-    example: "Der Hauptgang war drei Jahre zuvor als Notweg repariert worden.",
-    exampleTranslation:
-      "Hlavní chodba byla před třemi lety opravena jako nouzová cesta.",
-  },
-  wurden: {
-    translation: "byli, byly",
-    example:
-      "Vier starke Pferde wurden vorbereitet, um Werkzeuge, Ketten, Seile und das schwere Metallteil zu tragen.",
-    exampleTranslation:
-      "Připravili čtyři silné koně, aby nesli nářadí, řetězy, lana a těžkou kovovou součástku.",
-  },
-  wächter: {
-    translation: "strážný",
-    example:
-      "Ein Wächter hielt sie am Stadttor an, weil die Straßen in der Nacht gefährlich waren.",
-    exampleTranslation:
-      "U městské brány je zastavil strážný, protože cesty byly v noci nebezpečné.",
-  },
-  wänden: {
-    translation: "stěnami",
-    example:
-      "Stimmen und Hufschläge kamen als lange fremde Echos von den Wänden zurück.",
-    exampleTranslation:
-      "Hlasy a údery kopyt se vracely od stěn jako dlouhé neznámé ozvěny.",
-  },
-  würde: {
-    translation: "by, chtěl by",
-    example:
-      "Die Kinder der Familie Novak liebten ihn, aber niemand wusste, wie wichtig er bald werden würde.",
-    exampleTranslation:
-      "Děti Novákových ho milovaly, ale nikdo netušil, jak důležitý se brzy stane.",
-  },
-  würden: {
-    translation: "by, byli by",
-    example:
-      "Sie lobte nur seine Entscheidung und versprach, dass sie langsam weitermachen würden.",
-    exampleTranslation:
-      "Jen pochválila jeho rozhodnutí a slíbila mu, že budou pokračovat pomalu.",
-  },
-  wüsste: {
-    translation: "věděl",
-    example:
-      "Das kleinere Fohlen drückte sich an Jantar, als wüsste es, wer es beschützt hatte.",
-    exampleTranslation:
-      "Menší hříbě se přitisklo k Jantarovi, jako by chápalo, kdo ho ochránil.",
-  },
-  zaun: {
-    translation: "plot",
-    example:
-      "Das Wasser durchbrach den Zaun und strömte in das Gehege der Pferde.",
-    exampleTranslation: "Voda prorazila plot a vtrhla do koňské ohrady.",
-  },
-  zehn: {
-    translation: "deset",
-    example: "Gegen zehn Uhr klopfte jemand laut an das Tor des Bauernhofs.",
-    exampleTranslation:
-      "Kolem desáté hodiny začal někdo silně bušit na vrata statku.",
-  },
-  zeichen: {
-    translation: "znamení, značka",
-    example:
-      "Jantar spürte die Aufregung um sich, wartete aber auf Klaras sanftes Zeichen.",
-    exampleTranslation:
-      "Jantar cítil vzrušení kolem sebe, ale čekal na Klářin jemný pokyn.",
-  },
-  zeigen: {
-    translation: "ukázat",
-    example:
-      "Sie wollte ihm einen neuen Weg zeigen und ihm helfen, sich selbst zu vertrauen.",
-    exampleTranslation:
-      "Chtěla mu ukázat novou cestu a naučit ho věřit sobě samému.",
-  },
-  ziehen: {
-    translation: "táhnout",
-    example:
-      "Jedes starke Pferd wurde gebraucht, um die Wagen für die Flucht aus dem Dorf zu ziehen.",
-    exampleTranslation:
-      "Každý silný kůň byl potřeba k tažení evakuačních vozů.",
-  },
-  zog: {
-    translation: "vytáhl",
-    example:
-      "Ein Bauer erreichte ihn mit einem Seil und zog ihn in Sicherheit.",
-    exampleTranslation:
-      "Hospodář se k němu dostal s lanem a vytáhl ho do bezpečí.",
-  },
-  zogen: {
-    translation: "táhl, vytáhl",
-    example:
-      "Die Pferde zogen an ihren Seilen, während Staub den Tunnel füllte.",
-    exampleTranslation: "Koně tahali za lana, zatímco tunel naplnil prach.",
-  },
-  zuerst: {
-    translation: "nejprve",
-    example:
-      "Zuerst gingen sie durch kleine Pfützen, die der Regen hinterlassen hatte.",
-    exampleTranslation:
-      "Nejprve procházeli malými kalužemi, které zůstaly po dešti.",
-  },
-  zuhören: {
-    translation: "naslouchání",
-    example:
-      "Für ihn war das Rennen eine weitere Lektion im Zuhören und Vertrauen und kein Kampf um einen Preis.",
-    exampleTranslation:
-      "Závod pro něj byl další lekcí naslouchání a důvěry, nikoli bojem o cenu.",
-  },
-  zurückgehen: {
-    translation: "jít zpět, ustoupit",
-    example: "Horsky rief, dass alle zurückgehen sollten.",
-    exampleTranslation: "Horský vykřikl, aby všichni ustoupili.",
-  },
-  zweiten: {
-    translation: "druhé",
-    example: "Dann setzte er langsam den zweiten Huf hinein.",
-    exampleTranslation: "Potom pomalu přidal druhé kopyto.",
-  },
-  ärmel: {
-    translation: "rukáv",
-    example:
-      "Als sie zum Wasser ging, packte Jantar sanft den Ärmel ihres Mantels.",
-    exampleTranslation:
-      "Když vykročila k vodě, Jantar ji jemně chytil za rukáv pláště.",
-  },
-  äste: {
-    translation: "větve",
-    example:
-      "Der Wald war voller Wasser, abgebrochener Äste und fremder Geräusche.",
-    exampleTranslation:
-      "Les byl plný vody, polámaných větví a neznámých zvuků.",
-  },
-  öffneten: {
-    translation: "otevřeli",
-    example:
-      "Die Menschen von Bela öffneten ihre Lager und gaben der Gruppe zusätzliches Essen und Decken.",
-    exampleTranslation:
-      "Lidé z Bělé otevřeli své sklady a dali skupině další jídlo a deky.",
-  },
-  öffnung: {
-    translation: "otvor",
-    example:
-      "Unter dem höchsten Stamm gab es eine kleine Öffnung, deshalb nahm Klara den Sattel ab.",
-    exampleTranslation:
-      "Pod nejvyšším kmenem byl malý otvor, a tak Klára sundala sedlo.",
-  },
-  überqueren: {
-    translation: "přejít",
-    example: "Sie entschied, dass sie den Kanal selbst überqueren musste.",
-    exampleTranslation: "Rozhodla se, že bude muset náhon přejít sama.",
-  },
-  übrig: {
-    translation: "zůstal",
-    example: "Nur der hohe Bergweg durch den Wolfspass blieb übrig.",
-    exampleTranslation: "Zbývala jen vysoká horská cesta přes Vlčí sedlo.",
+    example: "Das andere ließ überschüssigen Druck ab.",
+    exampleTranslation: "Druhé uvolňovalo přebytečný tlak.",
   },
   abdruck: {
     translation: "otisk, stopa",
@@ -5429,10 +16,22 @@ export const dictionary = {
     example: "Auf den ersten Blick wirkten die Abdrücke überzeugend.",
     exampleTranslation: "Otisky vypadaly na první pohled přesvědčivě.",
   },
+  abend: {
+    translation: "večer",
+    example:
+      "„Gestern Abend habe ich den Schrank abgeschlossen“, erklärte der Verwalter Vavrinec.",
+    exampleTranslation:
+      "„Včera večer jsem skříňku zamkl,“ prohlásil správce Vavřinec.",
+  },
   abendessen: {
     translation: "večeře",
     example: "Mitten beim Abendessen kam eine erschrockene Häsin angelaufen.",
     exampleTranslation: "Uprostřed večeře přiběhla vyděšená zaječice.",
+  },
+  aber: {
+    translation: "ale",
+    example: "Ryska bemerkte es, sagte aber nichts.",
+    exampleTranslation: "Ryška si toho všimla, ale nic neřekla.",
   },
   abfließen: {
     translation: "odtékat",
@@ -5545,6 +144,18 @@ export const dictionary = {
     exampleTranslation:
       "V jednom keři objevila další kousek provázku a na něm zachycenou zelenou řasu.",
   },
+  alle: {
+    translation: "všichni",
+    example:
+      "Sie alle glaubten, dass der Verwalter Vavrinec, ein kleines Wiesel in einem langen braunen Mantel, das System bewachte.",
+    exampleTranslation:
+      "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
+  },
+  allein: {
+    translation: "sám, samotný",
+    example: "„Aber Glaube allein reicht nicht aus.",
+    exampleTranslation: "„Ale víra nestačí.",
+  },
   allem: {
     translation: "vším; především",
     example:
@@ -5552,26 +163,102 @@ export const dictionary = {
     exampleTranslation:
       "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
   },
+  allen: {
+    translation: "všemi / všem",
+    example: "Vavrinec legte den Schlüssel vor allen auf den Boden.",
+    exampleTranslation: "Vavřinec před všechny položil klíč.",
+  },
+  alles: {
+    translation: "všechno",
+    example: "An diesem Morgen war fast alles wie immer.",
+    exampleTranslation: "Toho rána bylo všechno téměř stejné jako jindy.",
+  },
+  als: {
+    translation: "než / jako",
+    example: "Der Silberbach floss langsamer als gewöhnlich.",
+    exampleTranslation: "Stříbrný potok tekl pomaleji než obvykle.",
+  },
   also: {
     translation: "tedy, takže",
     example: "Also hatte er den Mantel erst vor Kurzem repariert.",
     exampleTranslation: "Kabát tedy opravoval nedávno.",
+  },
+  alt: {
+    translation: "starý",
+    example: "Sie waren nicht alt.",
+    exampleTranslation: "Nebyly staré.",
+  },
+  alte: {
+    translation: "stará",
+    example:
+      "Ein Specht klopfte an eine alte Buche, Eichelhäher stritten um eine Eichel, und eine Maus raschelte im Gras.",
+    exampleTranslation:
+      "Datel klepal do starého buku, sojky se hádaly o žalud a v trávě šustila myš.",
   },
   altem: {
     translation: "starém, starým",
     example: "Die Luft roch nach Stein, Erde und altem Wasser.",
     exampleTranslation: "Vzduch voněl po kameni, hlíně a staré vodě.",
   },
+  alten: {
+    translation: "starém / starými",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
+  },
+  alter: {
+    translation: "starý",
+    example: "„Dahinter verläuft ein alter Ausgleichskanal.",
+    exampleTranslation: "„Za ní vede starý vyrovnávací kanál.",
+  },
   altes: {
     translation: "staré",
     example: "Neben dem Brunnen war ein altes Sicherheitstor eingezeichnet.",
     exampleTranslation: "U studny byl zakreslený starý bezpečnostní uzávěr.",
+  },
+  älteste: {
+    translation: "nejstarší",
+    example:
+      "Sie war das älteste Mitglied des Waldrates und kannte viele Geschichten über die früheren Bewohner des Tals.",
+    exampleTranslation:
+      "Byla nejstarší členkou lesní rady a znala mnoho příběhů o dávných obyvatelích údolí.",
+  },
+  am: {
+    translation: "v / u / na",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
+  },
+  ameisen: {
+    translation: "mravenci",
+    example:
+      "Wenn die Ameisen den Hügel hinaufeilten, suchte sie am Himmel nach Gewitterwolken.",
+    exampleTranslation:
+      "Když mravenci spěchali do kopce, hledala na obloze bouřkové mraky.",
   },
   amtes: {
     translation: "úřadu, funkce",
     example:
       "Der Rat enthob ihn außerdem seines Amtes als Verwalter des Wasserhauses.",
     exampleTranslation: "Rada mu také odebrala funkci správce vodního domu.",
+  },
+  an: {
+    translation: "u / na",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
+  },
+  andere: {
+    translation: "jiní / ostatní",
+    example: "Ein Rad hatte eine tiefere Spur hinterlassen als das andere.",
+    exampleTranslation: "Jedno kolo zanechávalo hlubší stopu než druhé.",
+  },
+  anderen: {
+    translation: "ostatním / ostatních",
+    example: "Jedes steuerte einen anderen Teil des Wassersystems.",
+    exampleTranslation: "Každé ovládalo jinou část vodního systému.",
   },
   anderer: {
     translation: "jiný",
@@ -5596,6 +283,11 @@ export const dictionary = {
     example:
       "Der Eimer änderte plötzlich die Richtung und traf den Hebel in der Mitte.",
     exampleTranslation: "Vědro prudce změnilo směr a zasáhlo páku uprostřed.",
+  },
+  anfang: {
+    translation: "začátku",
+    example: "Dann erzählte er alles von Anfang an.",
+    exampleTranslation: "Potom řekl všechno od začátku.",
   },
   angabe: {
     translation: "údaj",
@@ -5632,6 +324,18 @@ export const dictionary = {
       "Sie mussten Steine, Wurzeln und alte Äste entfernen, die sich dort angesammelt hatten.",
     exampleTranslation:
       "Museli odstranit kameny, kořeny a staré větve, které se tam nahromadily.",
+  },
+  angst: {
+    translation: "strach",
+    example: "Ich wollte nachsehen, aber ich hatte Angst.“",
+    exampleTranslation: "Chtěla jsem se podívat, ale bála jsem se.“",
+  },
+  anhalten: {
+    translation: "zastaví",
+    example:
+      "Der Gewinner war nicht derjenige, der zuerst loslief, sondern die Gruppe, die anhalten und ihre Beobachtungen miteinander teilen konnte.",
+    exampleTranslation:
+      "Vítězem se nestal ten, kdo první vyběhl, ale skupina, která se dokázala zastavit a rozdělit si pozorování.",
   },
   anheben: {
     translation: "zvednout",
@@ -5681,10 +385,27 @@ export const dictionary = {
     exampleTranslation:
       "Ryška nastražila uši, protože věděla, že svět neposílá odpovědi hlasitě.",
   },
+  antwortete: {
+    translation: "odpověděl",
+    example: "„Oder jemand hat das obere Tor geschlossen“, antwortete Rozarka.",
+    exampleTranslation: "„Nebo někdo zavřel horní bránu,“ odpověděla Rozárka.",
+  },
+  apfel: {
+    translation: "jablko",
+    example: "Dahinter wuchsen Reihen von Apfel-, Birnen- und Pflaumenbäumen.",
+    exampleTranslation: "Za ním rostly řady jabloní, hrušní a švestek.",
+  },
   äpfel: {
     translation: "jablka",
     example: "In drei Tagen sollte das Fest der ersten Äpfel stattfinden.",
     exampleTranslation: "Za tři dny se měl konat Svátek prvních jablek.",
+  },
+  apfelbaum: {
+    translation: "jabloň",
+    example:
+      "Beim südlichen Obstgarten sah sie Vavrinec, der einen vollen Krug zum jüngsten Apfelbaum trug.",
+    exampleTranslation:
+      "U jižního sadu zahlédla Vavřince, jak nese plný džbán k nejmladší jabloni.",
   },
   apfelbäume: {
     translation: "jabloně",
@@ -5719,6 +440,11 @@ export const dictionary = {
     example: "Sie fanden einen Apfelstiel, vier Krümel und eine schmale Rille.",
     exampleTranslation: "Našly jablečnou stopku, čtyři drobečky a úzkou rýhu.",
   },
+  arbeit: {
+    translation: "práce",
+    example: "Die Arbeit eines ganzen Jahres wäre verloren.“",
+    exampleTranslation: "Celý rok práce bude ztracený.“",
+  },
   arbeitest: {
     translation: "pracuješ",
     example:
@@ -5731,6 +457,44 @@ export const dictionary = {
     example: "Die Biber arbeiteten an den größten Hindernissen.",
     exampleTranslation: "Bobři pracovali na největších překážkách.",
   },
+  ärmel: {
+    translation: "rukáv",
+    example: "An seinem rechten Ärmel fehlte ein kleines Stück Stoff.",
+    exampleTranslation: "Na pravém rukávu mu chyběl malý kus látky.",
+  },
+  ast: {
+    translation: "větev",
+    example:
+      "Sie setzte sich auf einen niedrigen Ast und blickte ernst auf das leere Becken.",
+    exampleTranslation:
+      "Posadila se na nízkou větev a vážně pohlédla na prázdnou nádrž.",
+  },
+  äste: {
+    translation: "větve",
+    example:
+      "Sie mussten Steine, Wurzeln und alte Äste entfernen, die sich dort angesammelt hatten.",
+    exampleTranslation:
+      "Museli odstranit kameny, kořeny a staré větve, které se tam nahromadily.",
+  },
+  atmete: {
+    translation: "dýchal",
+    example:
+      "Er atmete schnell und hielt ein kleines Metallschild in den Pfoten.",
+    exampleTranslation:
+      "Dýchal rychle a v tlapkách držel malou kovovou cedulku.",
+  },
+  auch: {
+    translation: "také",
+    example: "Nicht eine einzige Zehe liegt auch nur ein wenig anders.“",
+    exampleTranslation: "Ani jeden prst neleží trochu jinak.“",
+  },
+  auf: {
+    translation: "na / vzhůru",
+    example:
+      "Sie setzte sich auf einen niedrigen Ast und blickte ernst auf das leere Becken.",
+    exampleTranslation:
+      "Posadila se na nízkou větev a vážně pohlédla na prázdnou nádrž.",
+  },
   aufbewahrt: {
     translation: "uchovávaný",
     example: "Darin wurde normalerweise der Hauptschlüssel aufbewahrt.",
@@ -5741,6 +505,13 @@ export const dictionary = {
     example:
       "Sie waren lang und schmal und sahen auffallend wie Fuchsspuren aus.",
     exampleTranslation: "Byly dlouhé, úzké a nápadně připomínaly liščí stopy.",
+  },
+  aufgabe: {
+    translation: "úkol",
+    example:
+      "Jeder erhielt eine klare Aufgabe, und die Arbeit begann ohne Verwirrung.",
+    exampleTranslation:
+      "Všichni dostali jasný úkol a práce se rozběhla bez zmatku.",
   },
   aufgedeckt: {
     translation: "odhalil",
@@ -5786,6 +557,13 @@ export const dictionary = {
     exampleTranslation:
       "„Protože správná věc nepřestane být správná jen proto, že jsi mi ublížil.“",
   },
+  aufmerksam: {
+    translation: "pozorně",
+    example:
+      "Sie hinterlässt kleine Hinweise und wartet auf jemanden, der aufmerksam nach ihnen sucht.",
+    exampleTranslation:
+      "Zanechává malé stopy a čeká na někoho, kdo je bude pozorně hledat.",
+  },
   aufsicht: {
     translation: "dohled",
     example:
@@ -5800,6 +578,13 @@ export const dictionary = {
     exampleTranslation:
       "Musel odevzdat všechny klíče, zveřejnit své záznamy a pod dohledem Tondy opravit staré kanály.",
   },
+  augen: {
+    translation: "oči",
+    example:
+      "Doch sie hatte ausgezeichnete Augen, eine empfindliche Nase und vor allem einen geduldigen Verstand.",
+    exampleTranslation:
+      "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
+  },
   augenblick: {
     translation: "okamžik",
     example:
@@ -5810,6 +595,11 @@ export const dictionary = {
     translation: "okamžiky",
     example: "Alle paar Augenblicke lauschte Ryska an der Wand.",
     exampleTranslation: "Ryška každou chvíli naslouchala stěně.",
+  },
+  aus: {
+    translation: "z / ven",
+    example: "Und aus der Ferne kam ein metallisches Klirren.",
+    exampleTranslation: "A z dálky se ozvalo kovové cinknutí.",
   },
   ausgebreitet: {
     translation: "rozložený",
@@ -5866,6 +656,13 @@ export const dictionary = {
     exampleTranslation:
       "Ryška věděla, že jediný nalezený zvonek Vavřincovu vinu nesmaže.",
   },
+  aussah: {
+    translation: "vypadal",
+    example:
+      "Ryska verstand, dass eine wiederhergestellte Freundschaft genau so aussah.",
+    exampleTranslation:
+      "Ryška pochopila, že právě tak vypadá opravované přátelství.",
+  },
   aussehen: {
     translation: "vypadat",
     example:
@@ -5879,6 +676,12 @@ export const dictionary = {
       "Wir müssen lernen, niemanden nur wegen seines Aussehens oder seiner Tierart zu beschuldigen.“",
     exampleTranslation:
       "Musíme se naučit neobviňovat nikoho jen podle toho, jak vypadá nebo k jakému druhu patří.“",
+  },
+  außerdem: {
+    translation: "kromě toho / také",
+    example:
+      "Der Rat enthob ihn außerdem seines Amtes als Verwalter des Wasserhauses.",
+    exampleTranslation: "Rada mu také odebrala funkci správce vodního domu.",
   },
   außerordentliche: {
     translation: "mimořádná",
@@ -5899,11 +702,40 @@ export const dictionary = {
       "Wenn der Obstgarten austrocknet, verlieren wir die gesamte Ernte.",
     exampleTranslation: "Jestli sad vyschne, přijdeme o celou úrodu.",
   },
+  bach: {
+    translation: "potok",
+    example: "Ryska beugte sich über den Bach.",
+    exampleTranslation: "Ryška se sklonila k potoku.",
+  },
+  bäche: {
+    translation: "potoky",
+    example:
+      "Wenn eines der Tore geschlossen blieb, konnten die Bäche und Quellen innerhalb weniger Tage austrocknen.",
+    exampleTranslation:
+      "Jestli zůstala některá brána zavřená, potoky i studánky mohly během několika dnů vyschnout.",
+  },
+  bald: {
+    translation: "brzy",
+    example: "„Wir müssen die Wand bald reparieren.",
+    exampleTranslation: "„Stěnu musíme brzy opravit.",
+  },
+  balken: {
+    translation: "trám",
+    example: "In der Höhle lagen noch einige lange Balken.",
+    exampleTranslation: "V jeskyni zůstalo několik dlouhých trámů.",
+  },
   ballen: {
     translation: "polštářek tlapy",
     example:
       "Sie hatten vier Zehen, einen kleinen Ballen und die richtige Größe.",
     exampleTranslation: "Měly čtyři prsty, malý polštářek a správnou velikost.",
+  },
+  band: {
+    translation: "stužka; uvázal",
+    example:
+      "Er band das Seil an das kleinere Rad und wickelte das andere Ende um eine Eisensäule.",
+    exampleTranslation:
+      "Přivázal lano k menšímu kolu a druhý konec omotal kolem železného sloupu.",
   },
   bänder: {
     translation: "stužky, pásky",
@@ -5914,6 +746,19 @@ export const dictionary = {
     translation: "lavice",
     example: "Tonda zeigte auf die leere Bank.",
     exampleTranslation: "Tonda ukázal na prázdnou lavici.",
+  },
+  bat: {
+    translation: "požádala",
+    example: "Rozarka bat alle, den Ort nicht mehr zu betreten.",
+    exampleTranslation:
+      "Rozárka požádala všechny, aby na místo dál nevstupovali.",
+  },
+  bau: {
+    translation: "nora",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
   },
   baue: {
     translation: "nory",
@@ -5928,6 +773,29 @@ export const dictionary = {
       "Die Bewohner des Waldes benutzten dasselbe Zeichen, wenn sie bei unterirdischen Bauen Hilfe brauchten.",
     exampleTranslation:
       "Stejný signál používali obyvatelé lesa, když potřebovali pomoc u podzemních nor.",
+  },
+  baum: {
+    translation: "strom",
+    example:
+      "„Der Baum hält eine Stunde aus“, sagte er, als er Ryska bemerkte.",
+    exampleTranslation: "„Strom hodinu vydrží,“ řekl, když si všiml Ryšky.",
+  },
+  bäume: {
+    translation: "stromy",
+    example: "Die Bäume waren ungewöhnlich grün.",
+    exampleTranslation: "Stromy byly neobvykle zelené.",
+  },
+  bäumen: {
+    translation: "stromy",
+    example:
+      "Tonda schlug eine bessere Entwässerung des Bodens vor, und mehrere Vögel versprachen, schädliche Insekten von den Bäumen zu sammeln.",
+    exampleTranslation:
+      "Tonda navrhl lepší odvodnění půdy a několik ptáků slíbilo, že ze stromů posbírají škodlivý hmyz.",
+  },
+  baumes: {
+    translation: "stromu",
+    example: "Es sah aus wie drei Tropfen unter der Wurzel eines Baumes.",
+    exampleTranslation: "Vypadala jako tři kapky pod kořenem stromu.",
   },
   baumkronen: {
     translation: "koruny stromů",
@@ -5984,6 +852,18 @@ export const dictionary = {
     exampleTranslation:
       "Posadila se na nízkou větev a vážně pohlédla na prázdnou nádrž.",
   },
+  bedeckte: {
+    translation: "zakryla",
+    example:
+      "Schlamm bedeckte seinen blauen Mantel, und Wasser tropfte von seinen sorgfältig gepflegten Schnurrhaaren.",
+    exampleTranslation:
+      "Bláto mu pokrylo modrý kabát a z jeho upravených vousů kapala voda.",
+  },
+  bedeckten: {
+    translation: "zakrývala",
+    example: "Er bestand aus einer niedrigen, mit Moos bedeckten Steintür.",
+    exampleTranslation: "Tvořily ho nízké kamenné dveře pokryté mechem.",
+  },
   bedeckter: {
     translation: "pokrytý",
     example:
@@ -6004,6 +884,13 @@ export const dictionary = {
       "Wolken bedeckten den Himmel, aber das Symbol musste nicht echtes Mondlicht bedeuten.",
     exampleTranslation:
       "Obloha byla zakrytá mraky, ale symbol nemusel znamenat skutečný měsíční svit.",
+  },
+  bedeutete: {
+    translation: "znamenala",
+    example:
+      "Ein Läuten bedeutete ruhiges Wasser, zwei bedeuteten einen schnellen Anstieg und drei unmittelbare Gefahr.",
+    exampleTranslation:
+      "Jedno zazvonění znamenalo klidnou vodu, dvě rychlý růst a tři bezprostřední nebezpečí.",
   },
   bedeuteten: {
     translation: "znamenaly",
@@ -6054,6 +941,11 @@ export const dictionary = {
     exampleTranslation:
       "Přiznal, že se bál o jižní sad, protože část stromů napadla choroba a zbylé potřebovaly více vody.",
   },
+  befand: {
+    translation: "nacházel se",
+    example: "Zwei Wächter sollten jedoch immer wissen, wo sie sich befand.",
+    exampleTranslation: "Dva strážci však budou vědět, kde se pohybuje.",
+  },
   befanden: {
     translation: "nacházely se",
     example:
@@ -6067,10 +959,24 @@ export const dictionary = {
       "Über ihm verlief jedoch eine alte Kette, die an der Decke befestigt war.",
     exampleTranslation: "Nad ní však vedl starý řetěz připevněný ke stropu.",
   },
+  befestigte: {
+    translation: "připevnil",
+    example:
+      "Er steckte den Hauptschlüssel in das Schloss und befestigte den langen Hebel.",
+    exampleTranslation:
+      "Zasunul hlavní klíč do zámku a připevnil dlouhou páku.",
+  },
   befestigten: {
     translation: "připevnili",
     example: "An ihrem Ende befestigten sie ein starkes Seil.",
     exampleTranslation: "Na její konec přivázali silné lano.",
+  },
+  begann: {
+    translation: "začal",
+    example:
+      "Ryska blickte zu der Stelle, an der der Weg den Hügel hinauf begann.",
+    exampleTranslation:
+      "Ryška se podívala k místu, kde začínala cesta na kopec.",
   },
   begannen: {
     translation: "začali",
@@ -6083,6 +989,12 @@ export const dictionary = {
       "Niemand antwortete begeistert, aber Tonda reichte ihm eine kleine Schaufel und ging mit ihm.",
     exampleTranslation:
       "Nikdo mu neodpověděl s nadšením, ale Tonda mu podal lopatku a šel s ním.",
+  },
+  beginnen: {
+    translation: "začít",
+    example:
+      "Diese beginnen unter dem Fenster und enden nach zwanzig Schritten.",
+    exampleTranslation: "Tyto začínají pod oknem a končí po dvaceti krocích.",
   },
   begleitet: {
     translation: "doprovázený",
@@ -6109,6 +1021,24 @@ export const dictionary = {
       "Er behauptete, die Spur eines unbekannten Ungeheuers gefunden zu haben.",
     exampleTranslation: "Tvrdilo, že našlo stopu neznámé příšery.",
   },
+  bei: {
+    translation: "u, při",
+    example:
+      "„Bis morgen bei Sonnenuntergang werde ich herausfinden, wohin die echten Spuren führen.",
+    exampleTranslation:
+      "„Do zítřejšího západu slunce zjistím, kam vedou skutečné stopy.",
+  },
+  beide: {
+    translation: "oba, obě",
+    example:
+      "Beide Wächter und mehrere Mitglieder des Rates warteten vor dem Eingang.",
+    exampleTranslation: "Před vchodem čekali oba strážci a několik členů rady.",
+  },
+  beiden: {
+    translation: "obou, oběma",
+    example: "Von beiden Seiten spritzte Wasser.",
+    exampleTranslation: "Z každé strany stříkala voda.",
+  },
   beides: {
     translation: "obojí",
     example: "Er akzeptierte, dass beides Folgen seiner Taten waren.",
@@ -6120,10 +1050,24 @@ export const dictionary = {
       "„Du hast ihnen gerade mehr beigebracht als mit einer langen Predigt.“",
     exampleTranslation: "„Právě jsi je naučila víc než dlouhým kázáním.“",
   },
+  beim: {
+    translation: "při, u (bei dem)",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
+  },
   beinahe: {
     translation: "téměř, málem",
     example: "Und weil meine Lüge beinahe den Wald zerstört hätte.“",
     exampleTranslation: "A protože moje lež málem zničila les.“",
+  },
+  bekam: {
+    translation: "dostal, obdržel",
+    example:
+      "Rozarka erhielt einen für den Waldrat, Tonda bekam den zweiten als Fachmann für Wasserbauten, und jeden Monat sollte ein anderer Bewohner des Tals den dritten bewachen.",
+    exampleTranslation:
+      "Jeden dostala Rozárka za lesní radu, druhý Tonda jako znalec vodních staveb a třetí měl každý měsíc hlídat jiný obyvatel údolí.",
   },
   bekannt: {
     translation: "známý; oznámený",
@@ -6147,6 +1091,11 @@ export const dictionary = {
     example: "Vavrinec ließ sie gewähren und fühlte sich nicht beleidigt.",
     exampleTranslation: "Vavřinec je nechal a neurazil se.",
   },
+  bemerkte: {
+    translation: "všiml",
+    example: "Trotzdem bemerkte Ryska drei seltsame Dinge.",
+    exampleTranslation: "Ryška si přesto všimla tří zvláštních věcí.",
+  },
   benetzten: {
     translation: "smáčeli",
     example:
@@ -6154,10 +1103,24 @@ export const dictionary = {
     exampleTranslation:
       "Mláďata radostně poskakovala kolem kašny a ptáci si smáčeli křídla.",
   },
+  benutzen: {
+    translation: "použít",
+    example:
+      "„Aber jeder, der in den Obstgarten gelangte, hätte den Stempel benutzen können.“",
+    exampleTranslation:
+      "„Ale razítko mohl použít kdokoli, kdo se do sadu dostal.“",
+  },
   benutzt: {
     translation: "použitý",
     example: "„Jemand hat einen Holzstempel benutzt“, stimmte er zu.",
     exampleTranslation: "„Někdo použil dřevěné razítko,“ souhlasil.",
+  },
+  benutzte: {
+    translation: "použil",
+    example:
+      "Das rechte Rad knarrte noch ein wenig, aber diesmal bedeckte er den Wagen nicht mit Zweigen und benutzte keinen geheimen Weg.",
+    exampleTranslation:
+      "Pravé kolo stále trochu vrzalo, ale tentokrát vozík nezakrýval větvemi a nejel po tajné cestě.",
   },
   benutzten: {
     translation: "používali",
@@ -6165,6 +1128,24 @@ export const dictionary = {
       "Die Bewohner des Waldes benutzten dasselbe Zeichen, wenn sie bei unterirdischen Bauen Hilfe brauchten.",
     exampleTranslation:
       "Stejný signál používali obyvatelé lesa, když potřebovali pomoc u podzemních nor.",
+  },
+  beobachten: {
+    translation: "pozorovat",
+    example:
+      "Sie sollte den Wasserstand beobachten und mit einer Glocke Zeichen geben.",
+    exampleTranslation: "Měla sledovat hladinu a pomocí zvonku dávat znamení.",
+  },
+  beobachtete: {
+    translation: "pozoroval",
+    example: "Ryska beobachtete die wirbelnde Strömung.",
+    exampleTranslation: "Ryška sledovala otáčející se proud.",
+  },
+  beobachteten: {
+    translation: "sledovali",
+    example:
+      "Nach einigen Minuten öffneten sie die zweite Stufe und beobachteten die Druckanzeigen.",
+    exampleTranslation:
+      "Po několika minutách otevřeli druhý dílek a pozorovali značky tlaku.",
   },
   beobachtungen: {
     translation: "pozorování",
@@ -6190,6 +1171,16 @@ export const dictionary = {
     example: "Ryska stand über der Karte und berechnete die Zeit.",
     exampleTranslation: "Ryška stála nad mapou a počítala čas.",
   },
+  bereitete: {
+    translation: "připravil",
+    example: "Ryska bereitete für die Jungtiere ein Festspiel vor.",
+    exampleTranslation: "Ryška připravila pro mláďata slavnostní hru.",
+  },
+  bereits: {
+    translation: "už, již",
+    example: "Der Igel Bodlik ordnete bereits kleine Körbe mit Pilzen.",
+    exampleTranslation: "Ježek Bodlík už rovnal malé košíky s houbami.",
+  },
   bergab: {
     translation: "z kopce",
     example:
@@ -6214,6 +1205,30 @@ export const dictionary = {
       "Sie warteten, bis sich das Wasser beruhigt hatte, und drehten es ein zweites Mal.",
     exampleTranslation:
       "Počkali, dokud se voda neuklidnila, a otočili podruhé.",
+  },
+  berührte: {
+    translation: "dotkla",
+    example: "Beim zweiten berührte er ihn leicht.",
+    exampleTranslation: "Při druhém do ní lehce kleplo.",
+  },
+  beschädigt: {
+    translation: "poškodila",
+    example:
+      "„Die Tür ist beschädigt, und der Hauptschlüssel ist verschwunden.“",
+    exampleTranslation: "„Dveře jsou poškozené a hlavní klíč zmizel.“",
+  },
+  beschädigte: {
+    translation: "poškozenou",
+    example:
+      "Ryska wickelte sich das andere Ende um den Körper und trat vorsichtig auf die beschädigte Brücke.",
+    exampleTranslation:
+      "Ryška si druhý konec omotala kolem těla a opatrně vstoupila na poškozený most.",
+  },
+  beschädigten: {
+    translation: "poškozené",
+    example:
+      "Sie befanden sich jedoch auf der anderen Seite der beschädigten Brücke.",
+    exampleTranslation: "Byly však na opačné straně poškozeného mostku.",
   },
   beschädigung: {
     translation: "poškození",
@@ -6254,6 +1269,11 @@ export const dictionary = {
     exampleTranslation:
       "Přesto bylo důležité nedovolit, aby jeden skutečný podvod proměnil každou další nejistotu v nové obvinění.",
   },
+  besitzer: {
+    translation: "majitel",
+    example: "Die Besitzer der drei Schlüssel trafen sich im Wasserhaus.",
+    exampleTranslation: "Ve vodním domě se sešli držitelé tří klíčů.",
+  },
   besonders: {
     translation: "zvláště",
     example:
@@ -6290,6 +1310,18 @@ export const dictionary = {
     example: "Ein Fest besteht nicht nur aus Musik.",
     exampleTranslation: "Oslava není jen hudba.",
   },
+  bestimmen: {
+    translation: "určit, rozhodovat",
+    example:
+      "Mithilfe des Echos konnte sie den genauen Zeitpunkt des nächsten Schwungs bestimmen.",
+    exampleTranslation:
+      "Podle ozvěny dokázala odhadnout přesný okamžik dalšího pohybu.",
+  },
+  betrachtete: {
+    translation: "prohlížela si",
+    example: "Ryska betrachtete die Karte genau.",
+    exampleTranslation: "Ryška si mapu pečlivě prohlédla.",
+  },
   betrat: {
     translation: "vstoupil",
     example:
@@ -6309,6 +1341,17 @@ export const dictionary = {
     example: "Rozarka bat alle, den Ort nicht mehr zu betreten.",
     exampleTranslation:
       "Rozárka požádala všechny, aby na místo dál nevstupovali.",
+  },
+  beugte: {
+    translation: "naklonila",
+    example: "Ryska beugte sich über den Bach.",
+    exampleTranslation: "Ryška se sklonila k potoku.",
+  },
+  bevor: {
+    translation: "než / předtím než",
+    example:
+      "„Ich habe dich beschuldigt, bevor ich die Wahrheit kannte“, sagte er.",
+    exampleTranslation: "„Obvinil jsem tě dřív, než jsem znal pravdu,“ řekl.",
   },
   bewachen: {
     translation: "hlídat",
@@ -6331,6 +1374,28 @@ export const dictionary = {
     exampleTranslation:
       "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
   },
+  bewegen: {
+    translation: "pohnout",
+    example: "Ohne ihn war es schwierig, die alten Räder von Hand zu bewegen.",
+    exampleTranslation: "Bez ní bylo obtížné pohnout starými koly ručně.",
+  },
+  bewegt: {
+    translation: "pohybuje se, pohnutý",
+    example: "„Die Wand bewegt sich!“, rief sie.",
+    exampleTranslation: "„Stěna se hýbe!“ vykřikla.",
+  },
+  bewegte: {
+    translation: "pohnul, pohyboval se",
+    example: "Das westliche bewegte sich überhaupt nicht.",
+    exampleTranslation: "Západní se nehýbalo vůbec.",
+  },
+  bewegung: {
+    translation: "pohyb",
+    example:
+      "Vielleicht hatte dieselbe ungleichmäßige Bewegung das metallische Klirren verursacht, das sie in der Nacht gehört hatte.",
+    exampleTranslation:
+      "Stejný nepravidelný zvuk možná v noci slyšela jako kovové cinknutí.",
+  },
   beweis: {
     translation: "důkaz",
     example:
@@ -6342,6 +1407,13 @@ export const dictionary = {
     translation: "důkazy",
     example: "Sie brauchte mehr Beweise.",
     exampleTranslation: "Potřebovala více důkazů.",
+  },
+  beweisen: {
+    translation: "dokazovat",
+    example:
+      "„Du musst nicht allen beweisen, dass du arbeitest“, sagte Ryska zu ihm.",
+    exampleTranslation:
+      "„Nemusíš všem dokazovat, že pracuješ,“ řekla mu Ryška.",
   },
   bewiesen: {
     translation: "dokázal, prokázaný",
@@ -6408,11 +1480,40 @@ export const dictionary = {
     example: "Dahinter wuchsen Reihen von Apfel-, Birnen- und Pflaumenbäumen.",
     exampleTranslation: "Za ním rostly řady jabloní, hrušní a švestek.",
   },
+  bis: {
+    translation: "až / do",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
   bist: {
     translation: "jsi",
     example: "„Warum schreibst du, dass du nicht sicher bist?“, fragte Hbitka.",
     exampleTranslation:
       "„Proč tam píšeš, že si nejsi jistý?“ zeptala se Hbitka.",
+  },
+  bitten: {
+    translation: "požádala",
+    example: "Er hatte Angst gehabt, die anderen um Hilfe zu bitten.",
+    exampleTranslation: "Bál se požádat ostatní o pomoc.",
+  },
+  blass: {
+    translation: "zbledla",
+    example: "Vavrinec wurde blass.",
+    exampleTranslation: "Vavřinec zbledl.",
+  },
+  blatt: {
+    translation: "list",
+    example:
+      "In seine Oberfläche waren drei Symbole gemeißelt: ein Tropfen, ein Blatt und ein Mond.",
+    exampleTranslation:
+      "Na jejím povrchu byly vytesané tři znaky: kapka, list a měsíc.",
+  },
+  blätter: {
+    translation: "listy / listí",
+    example: "Unter einer Schicht trockener Blätter fand er einen Eisenring.",
+    exampleTranslation: "Pod vrstvou suchého listí našel železný kruh.",
   },
   blattes: {
     translation: "listu",
@@ -6439,6 +1540,17 @@ export const dictionary = {
     example: "Zwischen den Wurzeln lag ein kleiner Splitter blauer Farbe.",
     exampleTranslation: "Mezi kořeny ležela malá šupinka modré barvy.",
   },
+  bleiben: {
+    translation: "zůstat",
+    example: "Bis dahin musste Ryska in Sichtweite der Wächter bleiben.",
+    exampleTranslation: "Do té doby měla Ryška zůstat na dohled strážců.",
+  },
+  bleibt: {
+    translation: "zůstává, zastaví",
+    example:
+      "„Vertrauen bleibt länger, aber es dauert auch länger, es wiederherzustellen.“",
+    exampleTranslation: "„Důvěra zůstává déle, ale také se déle opravuje.“",
+  },
   blick: {
     translation: "pohled",
     example: "Auf den ersten Blick wirkten die Abdrücke überzeugend.",
@@ -6455,10 +1567,27 @@ export const dictionary = {
     example: "Dann blickte sie zum Brunnen.",
     exampleTranslation: "Potom se podívala ke kašně.",
   },
+  blieb: {
+    translation: "zůstal",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  blieben: {
+    translation: "zůstávaly",
+    example: "Die Freunde blieben regungslos hinter der Holzwand.",
+    exampleTranslation: "Přátelé zůstali bez hnutí za přepážkou.",
+  },
   blindschleichen: {
     translation: "slepýši",
     example: "Dort leben auch Blindschleichen und Mäuse.“",
     exampleTranslation: "Žijí tam také slepýši a myši.“",
+  },
+  blitz: {
+    translation: "blesk",
+    example: "Sie war nicht plötzlich und hell wie ein Blitz.",
+    exampleTranslation: "Nebylo náhlé a zářivé jako blesk.",
   },
   blöcken: {
     translation: "kvádrech, blocích",
@@ -6473,6 +1602,11 @@ export const dictionary = {
       "„Wenn wir an der falschen Kette ziehen, kann das Gewicht das Tor für immer blockieren“, sagte Vavrinec.",
     exampleTranslation:
       "„Když zatáhneme za špatný řetěz, závaží může zablokovat bránu navždy,“ řekl Vavřinec.",
+  },
+  boden: {
+    translation: "země, půda, podlaha, dno",
+    example: "Kleine Späne aus Bienenwachs lagen auf dem Boden.",
+    exampleTranslation: "Na podlaze ležely malé hoblinky včelího vosku.",
   },
   bodens: {
     translation: "země, půdy",
@@ -6499,6 +1633,24 @@ export const dictionary = {
     exampleTranslation:
       "V té chvíli se další část kamene odlomila a zmizela ve vodě.",
   },
+  brachen: {
+    translation: "prorazili, zlomili",
+    example: "Ryska, Bodlik und Pidalka brachen noch vor Sonnenaufgang auf.",
+    exampleTranslation: "Ryška, Bodlík a Píďalka vyrazili ještě před svítáním.",
+  },
+  brachte: {
+    translation: "přinesla",
+    example: "Hbitka brachte ein breites Ahornblatt und schob es hinein.",
+    exampleTranslation:
+      "Hbitka přinesla široký javorový list a zasunula ho dovnitř.",
+  },
+  brachten: {
+    translation: "přinesli, přivedli",
+    example:
+      "Die Mütter brachten ihren Jungen Wasser in Schalen, und die Vögel flogen zu weit entfernten Tümpeln.",
+    exampleTranslation:
+      "Matky přinesly mláďatům vodu v miskách a ptáci létali ke vzdáleným tůním.",
+  },
   brauche: {
     translation: "potřebuji",
     example: "„Ich brauche nur noch ein paar Minuten.“",
@@ -6514,12 +1666,46 @@ export const dictionary = {
     example: "„Dafür braucht er den Schlüssel.",
     exampleTranslation: "„K tomu potřebuje klíč.",
   },
+  brauchte: {
+    translation: "potřeboval",
+    example: "Sie brauchte mehr Beweise.",
+    exampleTranslation: "Potřebovala více důkazů.",
+  },
+  brauchten: {
+    translation: "potřebovali",
+    example:
+      "Die Bewohner des Waldes benutzten dasselbe Zeichen, wenn sie bei unterirdischen Bauen Hilfe brauchten.",
+    exampleTranslation:
+      "Stejný signál používali obyvatelé lesa, když potřebovali pomoc u podzemních nor.",
+  },
+  braunen: {
+    translation: "hnědýma",
+    example:
+      "Sie alle glaubten, dass der Verwalter Vavrinec, ein kleines Wiesel in einem langen braunen Mantel, das System bewachte.",
+    exampleTranslation:
+      "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
+  },
+  brechen: {
+    translation: "zlomit, rozbít",
+    example: "„Und die Wand kann noch immer brechen.“",
+    exampleTranslation: "„A stěna stále může prasknout.“",
+  },
   brechenden: {
     translation: "lámajícího se",
     example:
       "Einige Minuten später kam aus dem oberen Gang das Geräusch brechenden Holzes.",
     exampleTranslation:
       "O několik minut později se z horní chodby ozvalo praskání dřeva.",
+  },
+  breit: {
+    translation: "široký",
+    example: "Der Riss war nun so breit wie eine Pfote.",
+    exampleTranslation: "Prasklina byla nyní široká jako tlapa.",
+  },
+  breite: {
+    translation: "široký",
+    example: "Tonda hob seine breite Pfote.",
+    exampleTranslation: "Tonda zvedl širokou tlapu.",
   },
   breiter: {
     translation: "širší",
@@ -6533,6 +1719,25 @@ export const dictionary = {
     example: "Hbitka brachte ein breites Ahornblatt und schob es hinein.",
     exampleTranslation:
       "Hbitka přinesla široký javorový list a zasunula ho dovnitř.",
+  },
+  breitete: {
+    translation: "rozložil, rozprostřel",
+    example: "Ein einziger klarer Ton breitete sich in der Höhle aus.",
+    exampleTranslation: "Jeskyní se rozlehl jediný čistý tón.",
+  },
+  brett: {
+    translation: "prkno",
+    example:
+      "Dann schoben Ryska und Bodlik ein loses Brett zur Seite und betraten die Kammer.",
+    exampleTranslation:
+      "Pak s Bodlíkem odsunuli uvolněné prkno a vstoupili do komory.",
+  },
+  bretter: {
+    translation: "prkna",
+    example:
+      "Licht schien durch die Bretter, und der Duft von Äpfeln drang hinein.",
+    exampleTranslation:
+      "Mezi prkny prosvítalo světlo a dovnitř proudila vůně jablek.",
   },
   brettern: {
     translation: "prkny",
@@ -6555,10 +1760,20 @@ export const dictionary = {
     exampleTranslation:
       "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
   },
+  bringen: {
+    translation: "přinést, dopravit",
+    example: "„Wir müssen nur den Hebel zu uns bringen.“",
+    exampleTranslation: "„Stačí, když dostaneme páku k sobě.“",
+  },
   brombeerbusch: {
     translation: "ostružinový keř",
     example: "Die Freunde versteckten sich unter einem Brombeerbusch.",
     exampleTranslation: "Přátelé se schovali pod ostružinový keř.",
+  },
+  brücke: {
+    translation: "most",
+    example: "Vavrinec ging über eine schmale Brücke zum größeren Rad.",
+    exampleTranslation: "Vavřinec přecházel po úzkém mostku k většímu kolu.",
   },
   brücken: {
     translation: "mosty",
@@ -6566,6 +1781,11 @@ export const dictionary = {
       "Bodlik zählte die beschädigten Vorräte, und Tonda untersuchte die Brücken und Ufer.",
     exampleTranslation:
       "Bodlík počítal poškozené zásoby a Tonda prohlížel mosty a břehy.",
+  },
+  brunnen: {
+    translation: "studny",
+    example: "Neben der Eiche stand ein steinerner Brunnen.",
+    exampleTranslation: "Vedle dubu stála kamenná kašna.",
   },
   brunnens: {
     translation: "studny, kašny",
@@ -6605,6 +1825,11 @@ export const dictionary = {
     exampleTranslation:
       "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
   },
+  da: {
+    translation: "tam, zde; protože",
+    example: "Vavrinec lag einige Sekunden regungslos da.",
+    exampleTranslation: "Vavřinec ležel několik vteřin bez pohybu.",
+  },
   dachs: {
     translation: "jezevec",
     example:
@@ -6623,6 +1848,23 @@ export const dictionary = {
     translation: "jezevci",
     example: "Die Biber und Dachse sollten den östlichen Kanal verstärken.",
     exampleTranslation: "Bobři a jezevci měli zpevnit východní kanál.",
+  },
+  dachte: {
+    translation: "myslel",
+    example: "„Ich dachte, es wäre nur für zwei Nächte.",
+    exampleTranslation: "„Myslel jsem, že to bude jen na dvě noci.",
+  },
+  dachten: {
+    translation: "mysleli",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
+  },
+  dadurch: {
+    translation: "tím, díky tomu",
+    example: "Dadurch bekommen wir mehr Kraft.“",
+    exampleTranslation: "Tak získáme větší sílu.“",
   },
   dafür: {
     translation: "pro to, za to",
@@ -6648,6 +1890,23 @@ export const dictionary = {
     example: "Bis dahin musste Ryska in Sichtweite der Wächter bleiben.",
     exampleTranslation: "Do té doby měla Ryška zůstat na dohled strážců.",
   },
+  dahinter: {
+    translation: "za",
+    example: "Dahinter wuchsen Reihen von Apfel-, Birnen- und Pflaumenbäumen.",
+    exampleTranslation: "Za ním rostly řady jabloní, hrušní a švestek.",
+  },
+  damit: {
+    translation: "aby, tím",
+    example:
+      "Ryska stützte sich mit den Vorderpfoten dagegen, Vavrinec drückte von der anderen Seite, und Bodlik hielt den Hebel fest, damit er nicht heraussprang.",
+    exampleTranslation:
+      "Ryška se opřela předními tlapami, Vavřinec zatlačil z druhé strany a Bodlík držel páku, aby nevyskočila.",
+  },
+  danach: {
+    translation: "potom, poté",
+    example: "Das erste Klirren ertönte, danach sein Echo.",
+    exampleTranslation: "Ozvalo se první cinknutí, potom ozvěna.",
+  },
   daneben: {
     translation: "vedle toho",
     example: "Daneben erschienen kleine Abdrücke schmaler Pfoten.",
@@ -6657,6 +1916,39 @@ export const dictionary = {
     translation: "děkuji",
     example: "„Danke“, sagte Ryska.",
     exampleTranslation: "„Děkuji,“ řekla Ryška.",
+  },
+  dankte: {
+    translation: "poděkoval",
+    example: "Ryska dankte ihr.",
+    exampleTranslation: "Ryška poděkovala.",
+  },
+  dann: {
+    translation: "potom",
+    example: "Dann blickte sie zum Brunnen.",
+    exampleTranslation: "Potom se podívala ke kašně.",
+  },
+  daran: {
+    translation: "na tom, na to",
+    example: "Als sie gemeinsam daran zogen, hob sich eine kleine Steinplatte.",
+    exampleTranslation:
+      "Když za něj společně zatáhli, zvedla se malá kamenná deska.",
+  },
+  darauf: {
+    translation: "na to, na něm",
+    example: "Die Tiere hatten sich den ganzen Sommer darauf gefreut.",
+    exampleTranslation: "Zvířata se na něj těšila celé léto.",
+  },
+  daraus: {
+    translation: "z toho",
+    example: "„Heute können wir kaum daraus trinken.“",
+    exampleTranslation: "„Dnes se z ní sotva napijeme.“",
+  },
+  darin: {
+    translation: "ní",
+    example:
+      "Darin befanden sich alte Räder und steinerne Kanäle, die das Wasser im ganzen Tal verteilten.",
+    exampleTranslation:
+      "Uvnitř se nacházela stará kola a kamenné kanály, které rozváděly vodu do celého údolí.",
   },
   darum: {
     translation: "proto, o to",
@@ -6668,11 +1960,49 @@ export const dictionary = {
     example: "Darunter lag eine Kupferkassette.",
     exampleTranslation: "Pod ní ležela měděná schránka.",
   },
+  das: {
+    translation: "to / ten / ta",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
+  },
+  dass: {
+    translation: "že",
+    example:
+      "Sie alle glaubten, dass der Verwalter Vavrinec, ein kleines Wiesel in einem langen braunen Mantel, das System bewachte.",
+    exampleTranslation:
+      "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
+  },
+  dasselbe: {
+    translation: "stejný",
+    example:
+      "Dasselbe Zeichen war in den steinernen Brunnen auf dem Waldplatz gemeißelt.",
+    exampleTranslation:
+      "Stejný symbol byl vyrytý na kamenné kašně na Lesním náměstí.",
+  },
+  dauern: {
+    translation: "trvala",
+    example: "Die Reparatur der Steinwand würde einen ganzen Tag dauern.",
+    exampleTranslation: "Oprava kamenné stěny by trvala celý den.",
+  },
   dauert: {
     translation: "trvá",
     example:
       "„Vertrauen bleibt länger, aber es dauert auch länger, es wiederherzustellen.“",
     exampleTranslation: "„Důvěra zůstává déle, ale také se déle opravuje.“",
+  },
+  dauerte: {
+    translation: "trvala",
+    example: "Das Gewitter dauerte die ganze Nacht.",
+    exampleTranslation: "Bouřka pokračovala celou noc.",
+  },
+  davon: {
+    translation: "z toho, o tom",
+    example:
+      "Wenn der Rat davon erfahren hätte, hätte er den südlichen Kanal vollständig geschlossen.",
+    exampleTranslation:
+      "Kdyby se o něm rada dozvěděla, zavřela by jižní kanál úplně.",
   },
   davor: {
     translation: "před tím",
@@ -6687,15 +2017,44 @@ export const dictionary = {
     exampleTranslation:
       "Ryška nic nekomentovala, ale tento čin si zapamatovala.",
   },
+  decke: {
+    translation: "dekou",
+    example: "Von ihrer Decke fiel Wasser in ein tiefes Becken.",
+    exampleTranslation: "Z jejího stropu padala voda do hluboké nádrže.",
+  },
+  decken: {
+    translation: "deky",
+    example:
+      "Eichhörnchen verteilten trockene Blätter als Decken, und Dachse kochten in einem Topf warme Kräutersuppe.",
+    exampleTranslation:
+      "Veverky rozdávaly suché listí na přikrývky a jezevci vařili v kotlíku teplou bylinkovou polévku.",
+  },
   dein: {
     translation: "tvůj",
     example: "„Um dein Geständnis kümmern wir uns später.",
     exampleTranslation: "„Přiznání budeme řešit později.",
   },
+  deine: {
+    translation: "tvoje",
+    example: "„Gib mir deine Pfote“, sagte sie zu Vavrinec.",
+    exampleTranslation: "„Podej mi tlapu,“ řekla Vavřincovi.",
+  },
   dekoration: {
     translation: "výzdoba, ozdoba",
     example: "Die Dekoration kommt zuletzt“, antwortete Ryska.",
     exampleTranslation: "Ozdoby jsou až nakonec,“ odpověděla Ryška.",
+  },
+  dem: {
+    translation: "tomu / tím",
+    example:
+      "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
+    exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
+  },
+  den: {
+    translation: "ten / toho / těm",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
   },
   denen: {
     translation: "kterým, nichž",
@@ -6708,6 +2067,20 @@ export const dictionary = {
     translation: "myslím",
     example: "Was denke ich nur?",
     exampleTranslation: "Co si jen myslím?",
+  },
+  denn: {
+    translation: "protože",
+    example:
+      "Ryska spitzte die Ohren, denn sie wusste, dass die Welt ihre Antworten nicht laut verkündet.",
+    exampleTranslation:
+      "Ryška nastražila uši, protože věděla, že svět neposílá odpovědi hlasitě.",
+  },
+  der: {
+    translation: "ten / ta / toho",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
   },
   deren: {
     translation: "jejichž",
@@ -6723,6 +2096,19 @@ export const dictionary = {
     exampleTranslation:
       "Vítězem se nestal ten, kdo první vyběhl, ale skupina, která se dokázala zastavit a rozdělit si pozorování.",
   },
+  des: {
+    translation: "toho",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
+  },
+  deshalb: {
+    translation: "proto",
+    example:
+      "„Deshalb verschwindet das Wasser aus dem Wald“, erklärte der Biber.",
+    exampleTranslation: "„Proto voda mizí z lesa,“ vysvětlil bobr.",
+  },
   dich: {
     translation: "tebe, tě",
     example:
@@ -6736,6 +2122,13 @@ export const dictionary = {
     exampleTranslation:
       "Vstup do servisního tunelu našli za hustými kapradinami v borovém lese.",
   },
+  die: {
+    translation: "ta / ty",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
+  },
   dieb: {
     translation: "zloděj",
     example: "„Es scheint, dass der Dieb rotes Fell hatte“, sagte er kühl.",
@@ -6746,6 +2139,11 @@ export const dictionary = {
     example: "Der Igel Bodlik bekam den ersten Dienst.",
     exampleTranslation: "První službu získal ježek Bodlík.",
   },
+  diese: {
+    translation: "tato, tyto",
+    example: "„Hilfst du mir, diese Körbe in den Schatten zu tragen?“",
+    exampleTranslation: "„Pomůžeš mi odnést tyto košíky do stínu?“",
+  },
   dieselbe: {
     translation: "stejná",
     example:
@@ -6753,15 +2151,50 @@ export const dictionary = {
     exampleTranslation:
       "Stejný nepravidelný zvuk možná v noci slyšela jako kovové cinknutí.",
   },
+  diesem: {
+    translation: "tomto",
+    example: "An diesem Morgen war fast alles wie immer.",
+    exampleTranslation: "Toho rána bylo všechno téměř stejné jako jindy.",
+  },
+  dieser: {
+    translation: "této",
+    example:
+      "Trotzdem spürte sie, dass dieser Morgen nicht gewöhnlich werden würde.",
+    exampleTranslation: "Přesto cítila, že dnešní ráno nebude obyčejné.",
+  },
+  dieses: {
+    translation: "toto, tento",
+    example:
+      "„Wenn jemand dieses Tor verstellt hat, konnte er fast das gesamte Wasser in den Obstgarten umleiten“, erklärte Tonda.",
+    exampleTranslation:
+      "„Jestli někdo změnil tento uzávěr, mohl odvést téměř všechnu vodu do sadu,“ vysvětlil Tonda.",
+  },
   diesmal: {
     translation: "tentokrát",
     example: "Diesmal suchten sie jedoch keinen Dieb.",
     exampleTranslation: "Tentokrát však neměli hledat zloděje.",
   },
+  dinge: {
+    translation: "věci",
+    example: "Trotzdem bemerkte Ryska drei seltsame Dinge.",
+    exampleTranslation: "Ryška si přesto všimla tří zvláštních věcí.",
+  },
   dir: {
     translation: "tobě, ti",
     example: "„Ich glaube dir“, flüsterte er.",
     exampleTranslation: "„Já ti věřím,“ zašeptal.",
+  },
+  direkt: {
+    translation: "přímo",
+    example: "Es floss direkt vom Hügel hinunter in den Obstgarten.",
+    exampleTranslation: "Tekla od kopce přímo do sadu.",
+  },
+  doch: {
+    translation: "ale / přece",
+    example:
+      "Doch sie hatte ausgezeichnete Augen, eine empfindliche Nase und vor allem einen geduldigen Verstand.",
+    exampleTranslation:
+      "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
   },
   donnern: {
     translation: "dunění",
@@ -6772,6 +2205,18 @@ export const dictionary = {
     translation: "dunělo",
     example: "Tief unter der Erde donnerte das Wasser nicht mehr zornig.",
     exampleTranslation: "Hluboko pod zemí už voda neduněla hněvivě.",
+  },
+  dort: {
+    translation: "tam",
+    example:
+      "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
+    exampleTranslation:
+      "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
+  },
+  dorthin: {
+    translation: "tam",
+    example: "Die Tiere gingen fast nie dorthin.",
+    exampleTranslation: "Zvířata tam téměř nechodila.",
   },
   draht: {
     translation: "drát",
@@ -6785,6 +2230,23 @@ export const dictionary = {
     exampleTranslation:
       "Mezi prkny prosvítalo světlo a dovnitř proudila vůně jablek.",
   },
+  draußen: {
+    translation: "venku",
+    example: "„Ich warte draußen“, sagte der Biber.",
+    exampleTranslation: "„Počkám venku,“ řekl bobr.",
+  },
+  drehen: {
+    translation: "otáčí",
+    example:
+      "Pidalka konnte es erreichen, hatte aber nicht genug Kraft, um seinen rostigen Griff zu drehen.",
+    exampleTranslation:
+      "Píďalka se k němu dokázala dostat, ale neměla sílu otočit jeho rezavým držadlem.",
+  },
+  drehte: {
+    translation: "otočila",
+    example: "Einer der Wächter drehte sich zu Ryska um.",
+    exampleTranslation: "Jeden ze strážců se otočil k Ryšce.",
+  },
   drehten: {
     translation: "otočili",
     example: "Sie drehten das Rad bis zur ersten Markierung.",
@@ -6795,10 +2257,20 @@ export const dictionary = {
     example: "Jede Drehung des Hauptrades musste eingetragen werden.",
     exampleTranslation: "Každé otočení hlavního kola se mělo zapsat.",
   },
+  drei: {
+    translation: "tři",
+    example: "Trotzdem bemerkte Ryska drei seltsame Dinge.",
+    exampleTranslation: "Ryška si přesto všimla tří zvláštních věcí.",
+  },
   dreimal: {
     translation: "třikrát",
     example: "Vavrinec hatte während der Ratssitzung dreimal gehustet.",
     exampleTranslation: "Vavřinec během rady třikrát zakašlal.",
+  },
+  drinnen: {
+    translation: "uvnitř",
+    example: "„Drinnen verläuft ein neuer Kanal“, sagte sie.",
+    exampleTranslation: "„Uvnitř vede nový kanál,“ řekla.",
   },
   dritte: {
     translation: "třetí",
@@ -6807,10 +2279,22 @@ export const dictionary = {
     exampleTranslation:
       "Třetí ukazovala jeskyně pod Stříbrným kopcem, ale chyběly na ní vodní kanály.",
   },
+  dritten: {
+    translation: "třetím",
+    example:
+      "Beim dritten Mal öffnete es sich, und ein Wasserstrom schoss in den östlichen Kanal.",
+    exampleTranslation:
+      "Potřetí se otevřelo a východním kanálem vyrazil proud.",
+  },
   dröhnen: {
     translation: "dunění",
     example: "Der linke führte nach unten, und aus ihm kam ein tiefes Dröhnen.",
     exampleTranslation: "Levá vedla dolů a ozýval se z ní hluboký hukot.",
+  },
+  druck: {
+    translation: "tlaku",
+    example: "Das andere ließ überschüssigen Druck ab.",
+    exampleTranslation: "Druhé uvolňovalo přebytečný tlak.",
   },
   druckanzeigen: {
     translation: "ukazatele tlaku",
@@ -6818,6 +2302,23 @@ export const dictionary = {
       "Nach einigen Minuten öffneten sie die zweite Stufe und beobachteten die Druckanzeigen.",
     exampleTranslation:
       "Po několika minutách otevřeli druhý dílek a pozorovali značky tlaku.",
+  },
+  drückte: {
+    translation: "tlačil, vehnal",
+    example: "Dann drückte er.",
+    exampleTranslation: "Potom zatlačil.",
+  },
+  drückten: {
+    translation: "tlačili",
+    example:
+      "Wenn sie direkt drückten, würde sich der Stein noch fester verkeilen.",
+    exampleTranslation:
+      "Kdyby tlačili přímo, kámen by se sevřel ještě pevněji.",
+  },
+  du: {
+    translation: "ty",
+    example: "„Hilfst du mir, diese Körbe in den Schatten zu tragen?“",
+    exampleTranslation: "„Pomůžeš mi odnést tyto košíky do stínu?“",
   },
   duft: {
     translation: "vůně",
@@ -6833,10 +2334,40 @@ export const dictionary = {
     exampleTranslation:
       "Na vodě se třpytil měsíc a z dálky voněla Vavřincova jablka.",
   },
+  dunkel: {
+    translation: "tmavý",
+    example:
+      "Während das Gras im Wald zu trocknen begann, war der Boden im Obstgarten dunkel und nass.",
+    exampleTranslation:
+      "Zatímco tráva v lese začínala schnout, půda v sadu byla tmavá a mokrá.",
+  },
+  dunkelheit: {
+    translation: "tmy",
+    example: "Der Eingang in die Dunkelheit",
+    exampleTranslation: "Vchod do tmy",
+  },
+  dunkle: {
+    translation: "tmavé",
+    example:
+      "Der Wind wurde stärker, und über dem Hügel sammelten sich dunkle Wolken.",
+    exampleTranslation: "Vítr zesílil a na kopci se hromadily tmavé mraky.",
+  },
+  dunklen: {
+    translation: "tmavý",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
   dunkler: {
     translation: "tmavší, tmavnoucí",
     example: "Ryska blickte zum dunkler werdenden Himmel.",
     exampleTranslation: "Ryška se podívala na tmavnoucí oblohu.",
+  },
+  dünne: {
+    translation: "tenká",
+    example: "In einem Abdruck fand er eine dünne halbkreisförmige Rille.",
+    exampleTranslation: "V jedné stopě našel tenkou rýhu ve tvaru půlkruhu.",
   },
   dünnen: {
     translation: "tenký, tenkého",
@@ -6860,6 +2391,11 @@ export const dictionary = {
     translation: "Dupák (jméno králíka)",
     example: "„Füchse sind klug“, sagte der alte Hase Dupak.",
     exampleTranslation: "„Lišky jsou chytré,“ řekl starý králík Dupák.",
+  },
+  durch: {
+    translation: "skrz / přes",
+    example: "Pidalka zwängte sich durch ein kleines Loch unter dem Zaun.",
+    exampleTranslation: "Píďalka se protáhla malou dírou pod plotem.",
   },
   durchgeschnitten: {
     translation: "přeříznutý",
@@ -6933,6 +2469,19 @@ export const dictionary = {
     example: "Das erste Klirren ertönte, danach sein Echo.",
     exampleTranslation: "Ozvalo se první cinknutí, potom ozvěna.",
   },
+  echos: {
+    translation: "ozvěny",
+    example:
+      "Mithilfe des Echos konnte sie den genauen Zeitpunkt des nächsten Schwungs bestimmen.",
+    exampleTranslation:
+      "Podle ozvěny dokázala odhadnout přesný okamžik dalšího pohybu.",
+  },
+  echte: {
+    translation: "opravdová",
+    example:
+      "„Echte Spuren würden sowohl vom Haus weg als auch zum Haus hin führen.",
+    exampleTranslation: "„Skutečné stopy by vedly od domu i k domu.",
+  },
   echten: {
     translation: "skutečné",
     example:
@@ -6952,6 +2501,11 @@ export const dictionary = {
     example: "„Machen wir aus den Vorbereitungen ein echtes Fest.",
     exampleTranslation: "„Proměňme přípravy v opravdový svátek.",
   },
+  ecke: {
+    translation: "kout",
+    example: "Ryska bemerkte ein kleines Zeichen in der Ecke der Höhlenkarte.",
+    exampleTranslation: "Ryška si všimla malé značky v rohu mapy jeskyní.",
+  },
   eher: {
     translation: "spíše, dříve",
     example:
@@ -6965,6 +2519,13 @@ export const dictionary = {
       "Das Vertrauen ist noch nicht vollständig zurückgekehrt, aber heute hast du ehrlich gearbeitet.",
     exampleTranslation:
       "Důvěra se nevrátila celá, ale dnes jsi poctivě pracoval.",
+  },
+  eiche: {
+    translation: "dub",
+    example:
+      "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
+    exampleTranslation:
+      "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
   },
   eichel: {
     translation: "žalud",
@@ -6987,6 +2548,11 @@ export const dictionary = {
     exampleTranslation:
       "Děti podezíraly Rozárku, dokud nezjistily, že vítr foukal od hnízda sojky.",
   },
+  eichhörnchen: {
+    translation: "veverka",
+    example: "Das Eichhörnchen Hbitka hängte bunte Bänder zwischen die Zweige.",
+    exampleTranslation: "Veverka Hbitka věšela mezi větve barevné stužky.",
+  },
   eigene: {
     translation: "vlastní",
     example:
@@ -7005,15 +2571,71 @@ export const dictionary = {
       "Er nahm den Schlüssel und den Eisenhebel und eilte zum linken Gang.",
     exampleTranslation: "Vzal klíč i železnou páku a spěchal k levé chodbě.",
   },
+  eimer: {
+    translation: "kbelík",
+    example:
+      "Früher hatte man mit dem Eimer Steine aus dem Brunnen geholt, doch nun hing er leer an der Wand.",
+    exampleTranslation:
+      "Vědro kdysi sloužilo k vybírání kamení ze studny, ale nyní viselo prázdné u stěny.",
+  },
   eimers: {
     translation: "vědra",
     example: "Ryska lauschte dem regelmäßigen Klopfen des Eimers.",
     exampleTranslation: "Ryška poslouchala pravidelné klepání vědra.",
   },
+  ein: {
+    translation: "jeden / nějaký",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
+  },
   einander: {
     translation: "navzájem",
     example: "Die Wächter sahen einander überrascht an.",
     exampleTranslation: "Strážci se na sebe překvapeně podívali.",
+  },
+  eine: {
+    translation: "jedna / nějaká",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  einem: {
+    translation: "jednomu / jednom",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
+  einen: {
+    translation: "jednoho / nějakého",
+    example:
+      "Doch sie hatte ausgezeichnete Augen, eine empfindliche Nase und vor allem einen geduldigen Verstand.",
+    exampleTranslation:
+      "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
+  },
+  einer: {
+    translation: "jedné / nějaké",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
+  eines: {
+    translation: "jednoho / nějakého",
+    example:
+      "Wenn eines der Tore geschlossen blieb, konnten die Bäche und Quellen innerhalb weniger Tage austrocknen.",
+    exampleTranslation:
+      "Jestli zůstala některá brána zavřená, potoky i studánky mohly během několika dnů vyschnout.",
+  },
+  einfach: {
+    translation: "jednoduše",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
   },
   einfache: {
     translation: "jednoduchá",
@@ -7021,6 +2643,11 @@ export const dictionary = {
       "Auf ein großes Stück Birkenrinde zeichnete sie eine einfache Karte des Waldes.",
     exampleTranslation:
       "Na velký kus březové kůry nakreslila jednoduchou mapu lesa.",
+  },
+  eingang: {
+    translation: "vchod",
+    example: "Der Eingang könnte verschüttet sein.“",
+    exampleTranslation: "Vchod může být zavalený.“",
   },
   eingeklemmt: {
     translation: "zaklíněný",
@@ -7038,6 +2665,25 @@ export const dictionary = {
     translation: "zakreslený",
     example: "Neben dem Brunnen war ein altes Sicherheitstor eingezeichnet.",
     exampleTranslation: "U studny byl zakreslený starý bezpečnostní uzávěr.",
+  },
+  einige: {
+    translation: "někteří",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  einigen: {
+    translation: "některé",
+    example:
+      "Nach einigen Dutzend Schritten fanden sie den ersten ungewöhnlichen Hinweis.",
+    exampleTranslation:
+      "Po několika desítkách kroků našli první zvláštní stopu.",
+  },
+  einmal: {
+    translation: "jednou",
+    example: "„Nicht einmal im heißesten Sommer.“",
+    exampleTranslation: "„Ani během nejteplejšího léta.“",
   },
   einschlief: {
     translation: "usnul",
@@ -7060,6 +2706,11 @@ export const dictionary = {
     exampleTranslation:
       "To ještě nebyl důkaz, ale jednotlivé části příběhu k sobě začínaly pomalu pasovat.",
   },
+  einzige: {
+    translation: "jediná",
+    example: "Nicht eine einzige Zehe liegt auch nur ein wenig anders.“",
+    exampleTranslation: "Ani jeden prst neleží trochu jinak.“",
+  },
   einziger: {
     translation: "jediný",
     example: "Ein einziger Hinweis erzählt noch nicht die ganze Geschichte.",
@@ -7071,6 +2722,11 @@ export const dictionary = {
       "Tonda erklärte, dass ein einziges Tier die größten Räder innerhalb weniger Minuten verstellen konnte.",
     exampleTranslation:
       "Tonda vysvětlil, že největší kola může jediné zvíře přestavit během několika minut.",
+  },
+  eisen: {
+    translation: "železo",
+    example: "Er roch nach Bienenwachs und ein wenig nach nassem Eisen.",
+    exampleTranslation: "Voněla po včelím vosku a trochu po mokrém železe.",
   },
   eiseneimer: {
     translation: "železné vědro",
@@ -7141,11 +2797,35 @@ export const dictionary = {
     exampleTranslation:
       "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
   },
+  ende: {
+    translation: "konec",
+    example:
+      "Ryska wickelte sich das andere Ende um den Körper und trat vorsichtig auf die beschädigte Brücke.",
+    exampleTranslation:
+      "Ryška si druhý konec omotala kolem těla a opatrně vstoupila na poškozený most.",
+  },
   enden: {
     translation: "konce, končit",
     example:
       "Diese beginnen unter dem Fenster und enden nach zwanzig Schritten.",
     exampleTranslation: "Tyto začínají pod oknem a končí po dvaceti krocích.",
+  },
+  endete: {
+    translation: "skončil",
+    example: "Der rechte Gang endete an einer Holzwand.",
+    exampleTranslation: "Pravá chodba skončila u dřevěné přepážky.",
+  },
+  endlich: {
+    translation: "konečně",
+    example: "Vavrinec ergriff endlich ihre Vorderpfote.",
+    exampleTranslation: "Vavřinec se konečně chytil její přední tlapy.",
+  },
+  engen: {
+    translation: "úzkých",
+    example:
+      "Das Tor zum Steinbruch stand in einer engen Schlucht hinter dem Mondbrunnen.",
+    exampleTranslation:
+      "Brána do kamenolomu stála v úzké soutěsce za Měsíční studnou.",
   },
   entdeckt: {
     translation: "objevený, objevil",
@@ -7153,10 +2833,27 @@ export const dictionary = {
       "Vavrinec hatte offenbar entdeckt, dass dort etwas beschädigt war.",
     exampleTranslation: "Vavřinec zřejmě zjistil, že je tam něco poškozené.",
   },
+  entdeckte: {
+    translation: "objevil",
+    example: "Dann entdeckte ich das beschädigte Tor.",
+    exampleTranslation: "Pak jsem objevil poškozený uzávěr.",
+  },
+  entdeckten: {
+    translation: "objevili",
+    example:
+      "Hinter dem Haus entdeckten sie mehrere Pfotenabdrücke im weichen Boden.",
+    exampleTranslation: "Za domem objevili v měkké půdě několik otisků tlap.",
+  },
   entfernen: {
     translation: "odstranit",
     example: "Tonda begann vorsichtig, die Erde zu entfernen.",
     exampleTranslation: "Tonda začal opatrně odstraňovat hlínu.",
+  },
+  entfernt: {
+    translation: "daleko",
+    example:
+      "Der Hebel war zu weit entfernt, um ihn mit einem Sprung zu erreichen.",
+    exampleTranslation: "Páka ležela příliš daleko pro skok.",
   },
   entfernte: {
     translation: "odstranil",
@@ -7164,6 +2861,13 @@ export const dictionary = {
       "Dann nahm sie einen trockenen Zweig und entfernte vorsichtig etwas Erde.",
     exampleTranslation:
       "Potom vzala suchou větvičku a opatrně odstranila kousek hlíny.",
+  },
+  entfernten: {
+    translation: "odstranili",
+    example:
+      "Die Mütter brachten ihren Jungen Wasser in Schalen, und die Vögel flogen zu weit entfernten Tümpeln.",
+    exampleTranslation:
+      "Matky přinesly mláďatům vodu v miskách a ptáci létali ke vzdáleným tůním.",
   },
   entheben: {
     translation: "odvolat z funkce",
@@ -7177,6 +2881,13 @@ export const dictionary = {
     example:
       "Der Rat enthob ihn außerdem seines Amtes als Verwalter des Wasserhauses.",
     exampleTranslation: "Rada mu také odebrala funkci správce vodního domu.",
+  },
+  entlang: {
+    translation: "podél",
+    example:
+      "Ryska ging am Zaun entlang und fand eine Stelle, an der unter den Holzbrettern Wasser hervortrat.",
+    exampleTranslation:
+      "Ryška obešla plot a našla místo, kde se pod dřevěnými prkny objevovala voda.",
   },
   entlangführten: {
     translation: "vedly podél",
@@ -7196,6 +2907,13 @@ export const dictionary = {
       "Sie wollten hören, was mit dem Wasser geschehen war, und entscheiden, was mit Vavrinec geschehen sollte.",
     exampleTranslation:
       "Chtěla slyšet, co se stalo s vodou, a rozhodnout, co bude s Vavřincem.",
+  },
+  entschied: {
+    translation: "rozhodla",
+    example:
+      "Schließlich entschied sie, dass Ryska bis zum folgenden Abend Zeit bekommen würde.",
+    exampleTranslation:
+      "Nakonec rozhodla, že Ryška dostane čas do příštího večera.",
   },
   entschuldigen: {
     translation: "omluvit se",
@@ -7224,6 +2942,11 @@ export const dictionary = {
       "Tonda schlug eine bessere Entwässerung des Bodens vor, und mehrere Vögel versprachen, schädliche Insekten von den Bäumen zu sammeln.",
     exampleTranslation:
       "Tonda navrhl lepší odvodnění půdy a několik ptáků slíbilo, že ze stromů posbírají škodlivý hmyz.",
+  },
+  er: {
+    translation: "on",
+    example: "Er roch nach Bienenwachs und ein wenig nach nassem Eisen.",
+    exampleTranslation: "Voněla po včelím vosku a trochu po mokrém železe.",
   },
   erbauer: {
     translation: "stavitelé",
@@ -7301,11 +3024,23 @@ export const dictionary = {
     exampleTranslation:
       "Ryška měla stát na vyvýšeném pařezu, ale raději zůstala mezi přáteli.",
   },
+  erinnern: {
+    translation: "pamatoval",
+    example:
+      "Sie sollte daran erinnern, dass Ryska in der Gefahr die anderen warnen und ihnen zugleich zuhören konnte.",
+    exampleTranslation:
+      "Měla připomínat, že v nebezpečí dokázala varovat ostatní a zároveň jim naslouchat.",
+  },
   erinnert: {
     translation: "připomíná",
     example:
       "„Die Vernunft erinnert uns daran, dass wir nicht allein auf der Welt sind.“",
     exampleTranslation: "„Rozum nám připomíná, že nejsme na světě sami.“",
+  },
+  erinnerte: {
+    translation: "vzpomněl si",
+    example: "Ryska erinnerte sich an den blauen Stoffstreifen.",
+    exampleTranslation: "Ryška si vzpomněla na modrý proužek látky.",
   },
   erinnerten: {
     translation: "pamatovali si",
@@ -7313,6 +3048,12 @@ export const dictionary = {
       "Sie erinnerten sich an sie, weil sie Mut mit Besonnenheit, Beweise mit Freundlichkeit und Wahrheit mit Hilfsbereitschaft verband.",
     exampleTranslation:
       "Pamatovala si ji proto, že spojovala odvahu s rozvahou, důkazy s laskavostí a pravdu s ochotou pomoci.",
+  },
+  erkannte: {
+    translation: "poznala",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
   },
   erklang: {
     translation: "zazněl",
@@ -7324,6 +3065,13 @@ export const dictionary = {
     translation: "zazněly",
     example: "In diesem Augenblick erklangen drei schnelle Glockentöne.",
     exampleTranslation: "V té chvíli zazněla tři rychlá cinknutí.",
+  },
+  erklärte: {
+    translation: "vysvětlila",
+    example:
+      "„Gestern Abend habe ich den Schrank abgeschlossen“, erklärte der Verwalter Vavrinec.",
+    exampleTranslation:
+      "„Včera večer jsem skříňku zamkl,“ prohlásil správce Vavřinec.",
   },
   erklärung: {
     translation: "vysvětlení",
@@ -7343,6 +3091,11 @@ export const dictionary = {
     translation: "utrpěl",
     example: "„Du hast den größten Schaden erlitten.",
     exampleTranslation: "„Byla jsi poškozena nejvíc.",
+  },
+  erneut: {
+    translation: "znovu",
+    example: "Sie durchsuchten das Wasserhaus erneut.",
+    exampleTranslation: "Prohledali vodní dům znovu.",
   },
   ernst: {
     translation: "vážně, vážný",
@@ -7368,6 +3121,42 @@ export const dictionary = {
     translation: "otevřel, zahájil",
     example: "Rozarka eröffnete das Fest mit einer kurzen Rede.",
     exampleTranslation: "Rozárka zahájila svátek krátkou řečí.",
+  },
+  erreichen: {
+    translation: "dosáhnout, dorazit",
+    example:
+      "Vavrinec hielt sich mit einer Pfote am Steinrand fest und versuchte, mit der anderen Ryska zu erreichen.",
+    exampleTranslation:
+      "Vavřinec se jednou tlapou držel kamenného okraje a druhou se snažil dosáhnout k Ryšce.",
+  },
+  erreichte: {
+    translation: "dorazil",
+    example: "Ryska erreichte die Lichtung kurz nach Sonnenaufgang.",
+    exampleTranslation: "Ryška dorazila na mýtinu krátce po východu slunce.",
+  },
+  erreichten: {
+    translation: "dorazili",
+    example:
+      "Am nächsten Morgen erreichten kalte Wolken aus dem Norden den Silberwald.",
+    exampleTranslation:
+      "Následující ráno dorazila ke Stříbrnému lesu studená severní oblaka.",
+  },
+  erschien: {
+    translation: "objevila",
+    example:
+      "Zwischen den Blöcken erschien ein dünner Riss, aus dem Wasser zu spritzen begann.",
+    exampleTranslation:
+      "Mezi bloky se objevila tenká prasklina a začala z ní stříkat voda.",
+  },
+  erschienen: {
+    translation: "objevily",
+    example: "Daneben erschienen kleine Abdrücke schmaler Pfoten.",
+    exampleTranslation: "Vedle ní se objevovaly malé otisky úzkých tlap.",
+  },
+  erschrockene: {
+    translation: "vyděšený, polekaný",
+    example: "Mitten beim Abendessen kam eine erschrockene Häsin angelaufen.",
+    exampleTranslation: "Uprostřed večeře přiběhla vyděšená zaječice.",
   },
   erschütterte: {
     translation: "otřásl",
@@ -7398,6 +3187,18 @@ export const dictionary = {
     example: "Klugheit sah nicht immer wie eine erstaunliche Idee aus.",
     exampleTranslation: "Chytrost někdy nevypadala jako úžasný nápad.",
   },
+  erste: {
+    translation: "první",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  ersten: {
+    translation: "první",
+    example: "In drei Tagen sollte das Fest der ersten Äpfel stattfinden.",
+    exampleTranslation: "Za tři dny se měl konat Svátek prvních jablek.",
+  },
   ertönte: {
     translation: "zazněl",
     example: "Das erste Klirren ertönte, danach sein Echo.",
@@ -7415,6 +3216,21 @@ export const dictionary = {
     exampleTranslation:
       "Když se na pavučinách držely malé kapky, očekávala chladné ráno.",
   },
+  erzählen: {
+    translation: "vyprávět",
+    example: "Auch ein kleiner Hinweis konnte die Wahrheit erzählen.",
+    exampleTranslation: "I malá stopa dokázala vyprávět pravdu.",
+  },
+  erzählt: {
+    translation: "příběh",
+    example: "Ein einziger Hinweis erzählt noch nicht die ganze Geschichte.",
+    exampleTranslation: "Jedna stopa ještě nevypráví celý příběh.",
+  },
+  erzählte: {
+    translation: "vyprávěl",
+    example: "Dann erzählte er alles von Anfang an.",
+    exampleTranslation: "Potom řekl všechno od začátku.",
+  },
   erzählten: {
     translation: "vyprávěli",
     example:
@@ -7427,10 +3243,35 @@ export const dictionary = {
     example: "„Ich wollte meine Ernte retten“, beendete er seine Erzählung.",
     exampleTranslation: "„Chtěl jsem zachránit svou úrodu,“ dokončil.",
   },
+  es: {
+    translation: "to / ono",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
+  },
+  essen: {
+    translation: "jídle",
+    example:
+      "Am Vormittag reparieren wir die Kanäle, und am Abend teilen wir unser Essen.",
+    exampleTranslation:
+      "Dopoledne opravíme kanály a večer se podělíme o jídlo.",
+  },
+  etwas: {
+    translation: "něco",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
+  },
   euch: {
     translation: "vás, vám",
     example: "Er führt nach unten, aber für euch ist er zu klein.“",
     exampleTranslation: "Vede dolů, ale pro vás je příliš malá.“",
+  },
+  eule: {
+    translation: "sova",
+    example: "Rozarka, eine alte Eule, flog zum Brunnen.",
+    exampleTranslation: "Ke kašně přiletěla stará sova Rozárka.",
   },
   fachmann: {
     translation: "odborník",
@@ -7463,6 +3304,31 @@ export const dictionary = {
     exampleTranslation:
       "„Právě proto mohla udělat falešné stopy špatně,“ dodala straka Křiklavka.",
   },
+  familie: {
+    translation: "rodina",
+    example:
+      "Jede Familie füllte nur so viele Behälter, wie sie wirklich brauchte.",
+    exampleTranslation:
+      "Každá rodina si naplnila jen tolik nádob, kolik opravdu potřebovala.",
+  },
+  familien: {
+    translation: "rodiny",
+    example:
+      "Tiere aus den höher gelegenen Bauen boten Familien aus dem Tal Platz an.",
+    exampleTranslation: "Zvířata z vyšších nor nabídla místo rodinám z údolí.",
+  },
+  fand: {
+    translation: "našel",
+    example: "In einem Abdruck fand er eine dünne halbkreisförmige Rille.",
+    exampleTranslation: "V jedné stopě našel tenkou rýhu ve tvaru půlkruhu.",
+  },
+  fanden: {
+    translation: "našli",
+    example:
+      "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
+    exampleTranslation:
+      "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
+  },
   farbe: {
     translation: "barva",
     example: "Zwischen den Wurzeln lag ein kleiner Splitter blauer Farbe.",
@@ -7480,12 +3346,27 @@ export const dictionary = {
     example: "Darin standen Kisten mit Obst, Fässer und einige Werkzeuge.",
     exampleTranslation: "Stály v ní bedny s ovocem, sudy a několik nástrojů.",
   },
+  fast: {
+    translation: "téměř",
+    example: "An diesem Morgen war fast alles wie immer.",
+    exampleTranslation: "Toho rána bylo všechno téměř stejné jako jindy.",
+  },
+  feder: {
+    translation: "pírko",
+    example: "An der zweiten Station lag eine Feder unter dem Baum der Eule.",
+    exampleTranslation: "U druhého zastavení leželo pírko pod sovím stromem.",
+  },
   fehler: {
     translation: "chyba",
     example:
       "„Wir brauchen Regeln, die den Wald auch dann schützen, wenn jemand einen Fehler macht.“",
     exampleTranslation:
       "„Potřebujeme pravidla, která ochrání les i tehdy, když někdo udělá chybu.“",
+  },
+  fehlte: {
+    translation: "chyběla",
+    example: "An seinem rechten Ärmel fehlte ein kleines Stück Stoff.",
+    exampleTranslation: "Na pravém rukávu mu chyběl malý kus látky.",
   },
   fehlten: {
     translation: "chyběly",
@@ -7505,6 +3386,27 @@ export const dictionary = {
       "Neben der Bank glitzerte feiner goldener Staub von den Papiersternen, die die Kinder bei der Bühne gebastelt hatten.",
     exampleTranslation:
       "Vedle lavice se třpytil jemný zlatý prášek z papírových hvězd, které děti vyráběly u pódia.",
+  },
+  felder: {
+    translation: "pole",
+    example:
+      "Eine Karte zeigte Waldwege, eine andere die alten Grenzen der Felder.",
+    exampleTranslation:
+      "Na jedné mapě byly zakreslené lesní cesty, na jiné staré hranice polí.",
+  },
+  fell: {
+    translation: "srst",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  felsen: {
+    translation: "skále",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
   },
   felsigen: {
     translation: "skalnatý",
@@ -7533,6 +3435,16 @@ export const dictionary = {
       "Zwischen den beiden Felsvorsprüngen verlief die Kette des alten Eimers.",
     exampleTranslation: "Mezi oběma římsami vedl řetěz od starého vědra.",
   },
+  fenster: {
+    translation: "oknem",
+    example: "Sie führten vom Fenster in Richtung Wald.",
+    exampleTranslation: "Vedly od okna směrem k lesu.",
+  },
+  ferne: {
+    translation: "vzdálený / dálka",
+    example: "Und aus der Ferne kam ein metallisches Klirren.",
+    exampleTranslation: "A z dálky se ozvalo kovové cinknutí.",
+  },
   ferse: {
     translation: "pata",
     example: "Hier ist die Ferse tiefer.",
@@ -7552,6 +3464,11 @@ export const dictionary = {
     exampleTranslation:
       "Původní ozdoby bouře poškodila, a tak zvířata vyrobila nové z toho, co našla.",
   },
+  fest: {
+    translation: "pevně",
+    example: "In drei Tagen sollte das Fest der ersten Äpfel stattfinden.",
+    exampleTranslation: "Za tři dny se měl konat Svátek prvních jablek.",
+  },
   festbänder: {
     translation: "slavnostní stužky",
     example:
@@ -7565,6 +3482,11 @@ export const dictionary = {
       "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
     exampleTranslation:
       "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
+  },
+  festen: {
+    translation: "pevnou",
+    example: "Gemeinsam kehrten sie auf den festen Felsvorsprung zurück.",
+    exampleTranslation: "Společně se vrátili na pevnou římsu.",
   },
   fester: {
     translation: "pevnější, pevný",
@@ -7583,6 +3505,18 @@ export const dictionary = {
     example: "Ryska bereitete für die Jungtiere ein Festspiel vor.",
     exampleTranslation: "Ryška připravila pro mláďata slavnostní hru.",
   },
+  fiel: {
+    translation: "spadl",
+    example: "Von ihrer Decke fiel Wasser in ein tiefes Becken.",
+    exampleTranslation: "Z jejího stropu padala voda do hluboké nádrže.",
+  },
+  fielen: {
+    translation: "padaly",
+    example:
+      "Sie mussten ein altes Rätsel lösen, bevor die ersten Tropfen fielen.",
+    exampleTranslation:
+      "Museli vyřešit starou hádanku dřív, než začnou padat první kapky.",
+  },
   finde: {
     translation: "najdu",
     example:
@@ -7590,12 +3524,24 @@ export const dictionary = {
     exampleTranslation:
       "Pokud nenajdu žádný důkaz, sama odevzdám své doupě strážcům.“",
   },
+  finden: {
+    translation: "najít",
+    example: "Der Dieb wollte, dass wir sie finden.“",
+    exampleTranslation: "Zloděj chtěl, abychom je našli.“",
+  },
   findest: {
     translation: "najdeš",
     example:
       "Und wenn du die Wahrheit findest, nutze sie, um nicht nur dir selbst, sondern auch den anderen den Weg zu zeigen.",
     exampleTranslation:
       "A když najdeš pravdu, použij ji tak, aby ukázala cestu nejen tobě, ale i ostatním.",
+  },
+  finger: {
+    translation: "prstem",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
   },
   fingerbreiten: {
     translation: "šířky prstů",
@@ -7609,6 +3555,13 @@ export const dictionary = {
     exampleTranslation:
       "Ryška procházela podél hlavního koryta a kontrolovala, zda někde nezůstaly malé rybky.",
   },
+  flach: {
+    translation: "mělká",
+    example:
+      "Doch Ryska legte sich fast flach auf den Boden und untersuchte ihre Ränder.",
+    exampleTranslation:
+      "Ryška si však lehla téměř až k zemi a sledovala jejich okraje.",
+  },
   flache: {
     translation: "plochá",
     example: "Ryska bemerkte flache Vertiefungen im Boden.",
@@ -7620,6 +3573,11 @@ export const dictionary = {
       "Bodlik fand ein flaches Brett und stellte es wie ein kleines Paddel ins Wasser.",
     exampleTranslation:
       "Bodlík našel ploché prkno a vložil ho do vody jako malou lopatku.",
+  },
+  flasche: {
+    translation: "láhev",
+    example: "Pidalka goss Wasser aus einer Flasche hinein.",
+    exampleTranslation: "Píďalka do něj nalila vodu z lahve.",
   },
   fließen: {
     translation: "téct",
@@ -7638,6 +3596,23 @@ export const dictionary = {
     exampleTranslation:
       "Hbitka zavěsila na větve červené listy, ptáci spletli věnce z trávy a Bodlík postavil malé lucerny ze skořápek ořechů.",
   },
+  flog: {
+    translation: "letěl",
+    example: "Rozarka, eine alte Eule, flog zum Brunnen.",
+    exampleTranslation: "Ke kašně přiletěla stará sova Rozárka.",
+  },
+  flogen: {
+    translation: "letěli",
+    example:
+      "Die Mütter brachten ihren Jungen Wasser in Schalen, und die Vögel flogen zu weit entfernten Tümpeln.",
+    exampleTranslation:
+      "Matky přinesly mláďatům vodu v miskách a ptáci létali ke vzdáleným tůním.",
+  },
+  floss: {
+    translation: "tekla",
+    example: "Der Silberbach floss langsamer als gewöhnlich.",
+    exampleTranslation: "Stříbrný potok tekl pomaleji než obvykle.",
+  },
   flügel: {
     translation: "křídla",
     example:
@@ -7645,10 +3620,20 @@ export const dictionary = {
     exampleTranslation:
       "Mláďata radostně poskakovala kolem kašny a ptáci si smáčeli křídla.",
   },
+  flüsterte: {
+    translation: "zašeptala",
+    example: "„Ich glaube dir“, flüsterte er.",
+    exampleTranslation: "„Já ti věřím,“ zašeptal.",
+  },
   folge: {
     translation: "následek, pořadí",
     example: "„Ich folge den Hinweisen, die du hinterlassen hast.“",
     exampleTranslation: "„Sleduji stopy, které jsi po sobě nechal.“",
+  },
+  folgen: {
+    translation: "následovat",
+    example: "„Wir folgen ihm“, entschied sie.",
+    exampleTranslation: "„Jdeme za ním,“ rozhodla.",
   },
   folgenden: {
     translation: "následující",
@@ -7656,6 +3641,18 @@ export const dictionary = {
       "Schließlich entschied sie, dass Ryska bis zum folgenden Abend Zeit bekommen würde.",
     exampleTranslation:
       "Nakonec rozhodla, že Ryška dostane čas do příštího večera.",
+  },
+  folgte: {
+    translation: "následovala",
+    example: "Pidalka ging voraus, Bodlik folgte ihr.",
+    exampleTranslation: "Píďalka šla první a Bodlík za ní.",
+  },
+  folgten: {
+    translation: "následovali",
+    example:
+      "Die anderen folgten ihr, doch das Wasser in den Tunneln stieg schnell.",
+    exampleTranslation:
+      "Ostatní ji následovali, ale voda v tunelech rychle stoupala.",
   },
   form: {
     translation: "tvar, forma",
@@ -7694,6 +3691,23 @@ export const dictionary = {
       "Die Jungtiere lachten, doch Ryska warnte sie davor, über jemanden zu lachen, der eine Frage gestellt hatte.",
     exampleTranslation:
       "Mláďata se smála, ale Ryška je upozornila, aby se nesmála tomu, kdo položil otázku.",
+  },
+  fragen: {
+    translation: "zeptá",
+    example:
+      "„Deine Aufgabe ist es, zu fragen, warum das Tor verstellt werden soll, und sicherzustellen, dass die anderen davon wissen.“",
+    exampleTranslation:
+      "„Tvým úkolem je položit otázku, proč se má uzávěr změnit, a ujistit se, že o tom vědí ostatní.“",
+  },
+  fragte: {
+    translation: "ptal se",
+    example: "„Wer hatte noch Zugang zu dem Haus?“, fragte Rozarka.",
+    exampleTranslation: "„Kdo další měl přístup do domu?“ zeptala se Rozárka.",
+  },
+  frei: {
+    translation: "volná",
+    example: "Das Tor bebte, und eine der Ketten wurde frei.",
+    exampleTranslation: "Brána se zachvěla a jeden z řetězů se uvolnil.",
   },
   freigelegt: {
     translation: "odkrytý",
@@ -7736,12 +3750,24 @@ export const dictionary = {
     exampleTranslation:
       "Ryška měla stát na vyvýšeném pařezu, ale raději zůstala mezi přáteli.",
   },
+  freundlichkeit: {
+    translation: "laskavost",
+    example:
+      "Sie erinnerten sich an sie, weil sie Mut mit Besonnenheit, Beweise mit Freundlichkeit und Wahrheit mit Hilfsbereitschaft verband.",
+    exampleTranslation:
+      "Pamatovala si ji proto, že spojovala odvahu s rozvahou, důkazy s laskavostí a pravdu s ochotou pomoci.",
+  },
   freundschaft: {
     translation: "přátelství",
     example:
       "Ryska verstand, dass eine wiederhergestellte Freundschaft genau so aussah.",
     exampleTranslation:
       "Ryška pochopila, že právě tak vypadá opravované přátelství.",
+  },
+  frische: {
+    translation: "čerstvé",
+    example: "Im Staub sah sie frische Spuren eines Wagens.",
+    exampleTranslation: "V prachu viděla čerstvé otisky vozíku.",
   },
   frischen: {
     translation: "čerstvý",
@@ -7750,12 +3776,22 @@ export const dictionary = {
     exampleTranslation:
       "V blátě se neobjevily žádné čerstvé stopy, zato mezi kořeny ležely dva dlouhé stonky rákosu.",
   },
+  frischer: {
+    translation: "čerstvého",
+    example: "Auf dem Boden lag ein frischer blauer Faden.",
+    exampleTranslation: "Na zemi ležela čerstvá modrá nit.",
+  },
   fröhlich: {
     translation: "radostně",
     example:
       "Die Jungtiere sprangen fröhlich um den Brunnen, und die Vögel benetzten ihre Flügel.",
     exampleTranslation:
       "Mláďata radostně poskakovala kolem kašny a ptáci si smáčeli křídla.",
+  },
+  früher: {
+    translation: "dříve",
+    example: "„Hier gab es früher einen Wartungstunnel.",
+    exampleTranslation: "„Tady býval servisní tunel.",
   },
   früheren: {
     translation: "dřívější",
@@ -7770,6 +3806,13 @@ export const dictionary = {
       "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
     exampleTranslation:
       "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
+  },
+  fuchs: {
+    translation: "liška",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
   },
   fuchsbau: {
     translation: "liščí doupě",
@@ -7815,10 +3858,21 @@ export const dictionary = {
     exampleTranslation:
       "„Právě proto mohla udělat falešné stopy špatně,“ dodala straka Křiklavka.",
   },
+  fühlte: {
+    translation: "cítil",
+    example: "Vavrinec ließ sie gewähren und fühlte sich nicht beleidigt.",
+    exampleTranslation: "Vavřinec je nechal a neurazil se.",
+  },
   fuhr: {
     translation: "jel",
     example: "„Er fuhr auf dem Weg zum südlichen Obstgarten.",
     exampleTranslation: "„Jel po cestě k jižnímu sadu.",
+  },
+  führen: {
+    translation: "provedla",
+    example:
+      "„Echte Spuren würden sowohl vom Haus weg als auch zum Haus hin führen.",
+    exampleTranslation: "„Skutečné stopy by vedly od domu i k domu.",
   },
   führt: {
     translation: "vede",
@@ -7826,12 +3880,38 @@ export const dictionary = {
       "„Wir müssen herausfinden, wohin der neue Kanal führt“, entschied sie.",
     exampleTranslation: "„Musíme zjistit, kam vede nový kanál,“ rozhodla.",
   },
+  führte: {
+    translation: "vedla",
+    example:
+      "Der Weg zum Wasserhaus führte zwischen hohen Tannen hindurch und stieg dann steil einen felsigen Hang hinauf.",
+    exampleTranslation:
+      "Cesta k vodnímu domu vedla mezi vysokými jedlemi a potom prudce stoupala po kamenitém svahu.",
+  },
+  führten: {
+    translation: "vedly",
+    example: "Sie führten vom Fenster in Richtung Wald.",
+    exampleTranslation: "Vedly od okna směrem k lesu.",
+  },
   füllen: {
     translation: "naplnit",
     example:
       "„Wenn wir den Zweig zum Steinbruch öffnen, würde das Wasser die leere Grube füllen“, sagte sie.",
     exampleTranslation:
       "„Kdybychom otevřeli větev do lomu, voda by naplnila prázdnou jámu,“ řekla.",
+  },
+  füllte: {
+    translation: "naplnil",
+    example:
+      "Jede Familie füllte nur so viele Behälter, wie sie wirklich brauchte.",
+    exampleTranslation:
+      "Každá rodina si naplnila jen tolik nádob, kolik opravdu potřebovala.",
+  },
+  füllten: {
+    translation: "naplnily",
+    example:
+      "Gemeinsam ersetzten sie die beschädigten Steine und füllten die Fugen mit Lehm.",
+    exampleTranslation:
+      "Společně vyměnili poškozené kameny a spáry vyplnili jílem.",
   },
   fundstücken: {
     translation: "nalezených předmětech",
@@ -7859,12 +3939,56 @@ export const dictionary = {
     example: "Jetzt sag uns, wie der Mechanismus funktioniert.“",
     exampleTranslation: "Teď nám řekni, jak mechanismus funguje.“",
   },
+  für: {
+    translation: "pro",
+    example:
+      "Rozarka berief für den Abend eine außerordentliche Ratssitzung ein.",
+    exampleTranslation: "Rozárka svolala na večer mimořádnou radu.",
+  },
+  gab: {
+    translation: "dal",
+    example:
+      "Ryska hoffte, dass es noch eine weitere Karte des Wassersystems gab.",
+    exampleTranslation:
+      "Ryška doufala, že existuje ještě jedna mapa vodního systému.",
+  },
   galt: {
     translation: "platilo",
     example:
       "Von dieser Zeit an galt im Silberwald eine einfache Regel: Bevor du jemanden beschuldigst, sieh genau hin.",
     exampleTranslation:
       "Ve Stříbrném lese od té doby platilo jednoduché pravidlo: Než někoho obviníš, pozorně se podívej.",
+  },
+  gang: {
+    translation: "chodba",
+    example: "Der Gang führte zwischen nassen Wänden abwärts.",
+    exampleTranslation: "Chodba klesala mezi mokrými stěnami.",
+  },
+  ganz: {
+    translation: "zcela / celý",
+    example:
+      "Auf dem Tisch vor Jitrenkas Platz lag eine nicht ganz aufgegessene Apfelschale.",
+    exampleTranslation:
+      "Na stole před Jitřenčiným místem zůstala nedojedená jablečná slupka.",
+  },
+  ganze: {
+    translation: "celý",
+    example: "Ein einziger Hinweis erzählt noch nicht die ganze Geschichte.",
+    exampleTranslation: "Jedna stopa ještě nevypráví celý příběh.",
+  },
+  ganzen: {
+    translation: "celé",
+    example:
+      "Darin befanden sich alte Räder und steinerne Kanäle, die das Wasser im ganzen Tal verteilten.",
+    exampleTranslation:
+      "Uvnitř se nacházela stará kola a kamenné kanály, které rozváděly vodu do celého údolí.",
+  },
+  ganzes: {
+    translation: "celou",
+    example:
+      "„Mein ganzes Leben lang dachte ich, klug zu sein bedeute, sich vor allen anderen einen Vorteil zu verschaffen“, sagte er schließlich.",
+    exampleTranslation:
+      "„Celý život jsem si myslel, že chytrý je ten, kdo získá výhodu dřív než ostatní,“ řekl nakonec.",
   },
   gearbeitet: {
     translation: "pracoval",
@@ -7898,6 +4022,13 @@ export const dictionary = {
     translation: "ohnutý",
     example: "Ryska folgte der Richtung, in die sie gebogen waren.",
     exampleTranslation: "Ryška sledovala směr, kterým byly ohnuté.",
+  },
+  gebracht: {
+    translation: "přinesl, dopravil",
+    example:
+      "Vavrinec hatte ihren guten Ruf gestohlen und den Wald in Gefahr gebracht.",
+    exampleTranslation:
+      "Vavřinec jí ukradl dobré jméno a vystavil les nebezpečí.",
   },
   gebt: {
     translation: "dejte",
@@ -7936,12 +4067,23 @@ export const dictionary = {
     exampleTranslation:
       "Na svůj stánek pověsil tabulku s počtem sklizených košů.",
   },
+  gefahr: {
+    translation: "nebezpečí",
+    example: "Jetzt müssen wir die Gefahr aufhalten.“",
+    exampleTranslation: "Teď musíme zastavit nebezpečí.“",
+  },
   gefährdet: {
     translation: "ohrožený",
     example:
       "„Stattdessen habe ich den ganzen Wald gefährdet und Ryskas guten Ruf beschädigt.“",
     exampleTranslation:
       "„Místo toho jsem ohrozil celý les a poškodil Ryščino jméno.“",
+  },
+  gefährlich: {
+    translation: "nebezpečné",
+    example:
+      "Nach der Beschädigung des Mondbrunnens konnte er jedoch gefährlich sein.",
+    exampleTranslation: "Po poškození Měsíční studny však mohl být nebezpečný.",
   },
   gefallen: {
     translation: "spadl",
@@ -7996,6 +4138,20 @@ export const dictionary = {
     exampleTranslation:
       "Potom vysvětlila, že nalezené liščí stopy mohou být falešné.",
   },
+  gegangen: {
+    translation: "šel",
+    example:
+      "Nachdem er gegangen war, zog Ryska vorsichtig das Holzstück unter dem Zaun hervor.",
+    exampleTranslation:
+      "Když odešel, Ryška opatrně vytáhla dřevěný odřezek pod plotem.",
+  },
+  gegen: {
+    translation: "proti, směrem k",
+    example:
+      "„Wenn ihr drei Schläge gegen den Stein hört, kehrt sofort zurück.“",
+    exampleTranslation:
+      "„Jestli uslyšíte tři údery do kamene, okamžitě se vraťte.“",
+  },
   gegenseitiges: {
     translation: "vzájemná",
     example:
@@ -8040,12 +4196,22 @@ export const dictionary = {
     exampleTranslation:
       "Pravé kolo stále trochu vrzalo, ale tentokrát vozík nezakrýval větvemi a nejel po tajné cestě.",
   },
+  geheimnis: {
+    translation: "tajemství",
+    example: "„Das Geheimnis erschien mir wie ein Vorteil.",
+    exampleTranslation: "„Tajemství mi připadalo jako výhoda.",
+  },
   geheimnisse: {
     translation: "tajemství",
     example:
       "Ich erzählte niemandem davon, weil ich so aussehen wollte, als wäre ich der Einzige, der alle Geheimnisse des Systems kannte.“",
     exampleTranslation:
       "Nikomu jsem to neřekl, protože jsem chtěl vypadat jako jediný, kdo zná všechna tajemství systému.“",
+  },
+  gehen: {
+    translation: "jít",
+    example: "„Zuerst gehen wir nach rechts“, entschied sie.",
+    exampleTranslation: "„Nejdřív doprava,“ rozhodla.",
   },
   geholt: {
     translation: "přinesl, získal",
@@ -8058,6 +4224,13 @@ export const dictionary = {
     translation: "patřit",
     example: "„Die unteren Enden gehören in diese Öffnungen.“",
     exampleTranslation: "„Spodní konce patří do těch otvorů.“",
+  },
+  gehört: {
+    translation: "slyšel / patří",
+    example:
+      "Vielleicht hatte dieselbe ungleichmäßige Bewegung das metallische Klirren verursacht, das sie in der Nacht gehört hatte.",
+    exampleTranslation:
+      "Stejný nepravidelný zvuk možná v noci slyšela jako kovové cinknutí.",
   },
   gehörten: {
     translation: "patřily",
@@ -8080,6 +4253,13 @@ export const dictionary = {
       "Vavrinec hatte ein schmales Gesicht, sorgfältig gekämmte Schnurrhaare und einen blauen Mantel mit silbernen Knöpfen.",
     exampleTranslation:
       "Vavřinec měl úzký obličej, pečlivě učesané vousy a modrý kabát se stříbrnými knoflíky.",
+  },
+  gekommen: {
+    translation: "nepřijel",
+    example:
+      "„Aber es sagt uns, dass der Dieb nicht nur wegen eines kleinen Schlüssels gekommen ist.",
+    exampleTranslation:
+      "„Ale říká nám to, že zloděj nepřišel jen pro malý klíč.",
   },
   gekrochen: {
     translation: "prolezl",
@@ -8138,6 +4318,19 @@ export const dictionary = {
     exampleTranslation:
       "„Dnes jsi vyřešila více než jednu hádanku,“ řekla sova.",
   },
+  gemacht: {
+    translation: "udělali",
+    example:
+      "„Gerade deshalb könnte sie die falschen Spuren absichtlich schlecht gemacht haben“, fügte die Elster Kriklavka hinzu.",
+    exampleTranslation:
+      "„Právě proto mohla udělat falešné stopy špatně,“ dodala straka Křiklavka.",
+  },
+  gemeinsam: {
+    translation: "společně",
+    example:
+      "Gemeinsam durchsuchten sie den ganzen Vormittag vergilbte Papiere.",
+    exampleTranslation: "Společně prohlížely zažloutlé papíry celé dopoledne.",
+  },
   gemeinsame: {
     translation: "společná",
     example:
@@ -8164,6 +4357,13 @@ export const dictionary = {
     exampleTranslation:
       "Stejný symbol byl vyrytý na kamenné kašně na Lesním náměstí.",
   },
+  genau: {
+    translation: "přesně",
+    example:
+      "Sie beugte sich über den nächsten Abdruck und untersuchte ihn genau.",
+    exampleTranslation:
+      "Sklonila se k nejbližší stopě a pozorně si ji prohlédla.",
+  },
   genaue: {
     translation: "přesná",
     example: "Rozarka gab die genaue Zeit vorher bekannt.",
@@ -8189,6 +4389,20 @@ export const dictionary = {
       "„Das sagt uns noch immer nicht, wer den Schlüssel genommen hat“, wandte der Wächter ein.",
     exampleTranslation: "„To nám stále neříká, kdo vzal klíč,“ namítl strážce.",
   },
+  genug: {
+    translation: "dost",
+    example:
+      "Nach einer Stunde hatten sie eine Seitenöffnung freigelegt, die groß genug für eine Füchsin und einen Igel war.",
+    exampleTranslation:
+      "Po hodině odkryli boční otvor dost velký pro lišku a ježka.",
+  },
+  geöffnet: {
+    translation: "neotevřel",
+    example:
+      "Als sie oben ankamen, fanden sie die schwere Holztür halb geöffnet.",
+    exampleTranslation:
+      "Když dorazili nahoru, našli těžké dřevěné dveře pootevřené.",
+  },
   gepflegten: {
     translation: "upravené",
     example:
@@ -8196,10 +4410,24 @@ export const dictionary = {
     exampleTranslation:
       "Bláto mu pokrylo modrý kabát a z jeho upravených vousů kapala voda.",
   },
+  gerade: {
+    translation: "právě, rovný",
+    example:
+      "„Gerade deshalb könnte sie die falschen Spuren absichtlich schlecht gemacht haben“, fügte die Elster Kriklavka hinzu.",
+    exampleTranslation:
+      "„Právě proto mohla udělat falešné stopy špatně,“ dodala straka Křiklavka.",
+  },
   geraden: {
     translation: "rovný",
     example: "Ein junger Igel bemerkte jedoch einen geraden Rand.",
     exampleTranslation: "Ježčí mládě si však všimlo rovného okraje.",
+  },
+  geräusch: {
+    translation: "zvuk",
+    example:
+      "Einige Minuten später kam aus dem oberen Gang das Geräusch brechenden Holzes.",
+    exampleTranslation:
+      "O několik minut později se z horní chodby ozvalo praskání dřeva.",
   },
   gerechnet: {
     translation: "počítal",
@@ -8220,12 +4448,32 @@ export const dictionary = {
     exampleTranslation:
       "„Kdybych se nepokusil vzít více, dostal by sad spravedlivý díl a nic by se nestalo.“",
   },
+  gerettet: {
+    translation: "zachráněný",
+    example:
+      "„Dann ist die Ernte gerettet, und niemand kann mehr etwas ändern.“",
+    exampleTranslation: "„Pak bude úroda zachráněná a nikdo už nic nezmění.“",
+  },
   gerissene: {
     translation: "prasklá",
     example:
       "Wenn schnell eine große Menge Wasser in die Quelle floss, würde die gerissene Wand dem Druck nicht standhalten.",
     exampleTranslation:
       "Kdyby do pramene rychle přiteklo mnoho vody, prasklá stěna by tlak nevydržela.",
+  },
+  gern: {
+    translation: "rád",
+    example:
+      "„Die Angst erfindet gern eine schnelle Erklärung“, antwortete Ryska.",
+    exampleTranslation:
+      "„Strach si rád vymyslí rychlé vysvětlení,“ odpověděla Ryška.",
+  },
+  geruch: {
+    translation: "vůni",
+    example:
+      "Das fünfte Rätsel wurde durch den Geruch gelöst, das sechste durch gespiegeltes Licht, und beim siebten mussten sie alles verbinden, was sie bei den vorherigen gelernt hatten.",
+    exampleTranslation:
+      "Pátá hádanka se řešila podle vůně, šestá podle odrazu světla a sedmá vyžadovala spojit poznatky ze všech předchozích.",
   },
   gerufen: {
     translation: "zavolal",
@@ -8253,12 +4501,29 @@ export const dictionary = {
     exampleTranslation:
       "„Kdybych se nepokusil vzít více, dostal by sad spravedlivý díl a nic by se nestalo.“",
   },
+  geschichte: {
+    translation: "příběh",
+    example: "Ein einziger Hinweis erzählt noch nicht die ganze Geschichte.",
+    exampleTranslation: "Jedna stopa ještě nevypráví celý příběh.",
+  },
+  geschichten: {
+    translation: "příběhy",
+    example:
+      "Sie war das älteste Mitglied des Waldrates und kannte viele Geschichten über die früheren Bewohner des Tals.",
+    exampleTranslation:
+      "Byla nejstarší členkou lesní rady a znala mnoho příběhů o dávných obyvatelích údolí.",
+  },
   geschieht: {
     translation: "děje se",
     example:
       "„Wenn einmal etwas Ernstes geschieht, erinnern sie sich vielleicht daran, dass ein Hinweis noch nicht die ganze Geschichte ist.“",
     exampleTranslation:
       "„Až půjde o něco vážného, možná si vzpomenou, že jedna stopa ještě není celý příběh.“",
+  },
+  geschlossen: {
+    translation: "zavřenou",
+    example: "„Oder jemand hat das obere Tor geschlossen“, antwortete Rozarka.",
+    exampleTranslation: "„Nebo někdo zavřel horní bránu,“ odpověděla Rozárka.",
   },
   geschlossene: {
     translation: "zavřená",
@@ -8277,6 +4542,13 @@ export const dictionary = {
       "Die gerissene Wand war mit Balken gesichert, doch die Lösung aus der Gewitternacht sollte nur kurze Zeit halten.",
     exampleTranslation:
       "Prasklá stěna byla zajištěná trámy, ale řešení z bouřkové noci mělo vydržet jen krátce.",
+  },
+  gesicht: {
+    translation: "obličej",
+    example:
+      "Vavrinec hatte ein schmales Gesicht, sorgfältig gekämmte Schnurrhaare und einen blauen Mantel mit silbernen Knöpfen.",
+    exampleTranslation:
+      "Vavřinec měl úzký obličej, pečlivě učesané vousy a modrý kabát se stříbrnými knoflíky.",
   },
   gesorgt: {
     translation: "staral se",
@@ -8301,6 +4573,13 @@ export const dictionary = {
     translation: "přiznal",
     example: "„Ich wollte nur den Obstgarten retten“, gestand er.",
     exampleTranslation: "„Chtěl jsem jen zachránit sad,“ přiznal.",
+  },
+  gestanden: {
+    translation: "stál",
+    example:
+      "Im hinteren Raum fanden sie eine leere Stelle, an der ein langer Eisenhebel gestanden hatte.",
+    exampleTranslation:
+      "V zadní místnosti našli prázdné místo po dlouhé železné páce.",
   },
   geständnis: {
     translation: "přiznání",
@@ -8346,6 +4625,13 @@ export const dictionary = {
     exampleTranslation:
       "Na ukradené mapě byl u Měsíční studny červeně nakreslený kříž.",
   },
+  getragen: {
+    translation: "nesl, odnesl",
+    example:
+      "Auf dem Tisch lag der Hauptschlüssel, den Vavrinec zuvor allein getragen hatte.",
+    exampleTranslation:
+      "Na stole ležel hlavní klíč, který předtím nosil Vavřinec sám.",
+  },
   getragener: {
     translation: "nesený",
     example:
@@ -8364,12 +4650,33 @@ export const dictionary = {
     example: "Vavrinec ließ sie gewähren und fühlte sich nicht beleidigt.",
     exampleTranslation: "Vavřinec je nechal a neurazil se.",
   },
+  gewarnt: {
+    translation: "varoval",
+    example:
+      "Eine der drei Warnglocken, die in der Nacht vor dem steigenden Druck gewarnt hatten, war verschwunden.",
+    exampleTranslation:
+      "Jeden ze tří výstražných zvonků, které v noci varovaly před rostoucím tlakem, zmizel.",
+  },
   geweht: {
     translation: "foukal",
     example:
       "Die Kinder verdächtigten Rozarka, bis sie entdeckten, dass der Wind vom Nest eines Eichelhähers geweht hatte.",
     exampleTranslation:
       "Děti podezíraly Rozárku, dokud nezjistily, že vítr foukal od hnízda sojky.",
+  },
+  gewesen: {
+    translation: "byl",
+    example:
+      "„Wenn du uns früher davon erzählt hättest, wäre die Reparatur in der Nacht vielleicht leichter gewesen“, sagte Tonda zu Vavrinec.",
+    exampleTranslation:
+      "„Kdybys nám o tom řekl dřív, noční oprava mohla být snazší,“ řekl Tonda Vavřincovi.",
+  },
+  gewicht: {
+    translation: "vahou",
+    example:
+      "„Wenn wir an der falschen Kette ziehen, kann das Gewicht das Tor für immer blockieren“, sagte Vavrinec.",
+    exampleTranslation:
+      "„Když zatáhneme za špatný řetěz, závaží může zablokovat bránu navždy,“ řekl Vavřinec.",
   },
   gewinnen: {
     translation: "vyhrát, získat",
@@ -8433,6 +4740,12 @@ export const dictionary = {
     exampleTranslation:
       "Byl to obyčejný zvuk, a přece v něm mohlo být ukryto mnoho příběhů.",
   },
+  gewonnen: {
+    translation: "vyhráli",
+    example:
+      "Ryska wusste jedoch, dass sie nur den ersten Teil des Wettlaufs gewonnen hatten.",
+    exampleTranslation: "Ryška však věděla, že vyhráli jen první část závodu.",
+  },
   gezählten: {
     translation: "spočítaných",
     example:
@@ -8457,6 +4770,18 @@ export const dictionary = {
     example: "„In diesem Jahr gibt es weniger Obst als sonst.",
     exampleTranslation: "„Letos je ovoce méně než jindy.",
   },
+  ging: {
+    translation: "šel",
+    example:
+      "Ryska ging mit Rozarka, Bodlik, Tonda und zwei Wächtern des Waldrates.",
+    exampleTranslation:
+      "Ryška šla s Rozárkou, Bodlíkem, Tondou a dvěma strážci lesní rady.",
+  },
+  gingen: {
+    translation: "šel",
+    example: "Die Tiere gingen fast nie dorthin.",
+    exampleTranslation: "Zvířata tam téměř nechodila.",
+  },
   glänzend: {
     translation: "lesklý",
     example:
@@ -8470,6 +4795,11 @@ export const dictionary = {
       "Der Brunnen hörte auf zu rauschen, das kleine Mühlrad blieb stehen, und zwischen den Steinen blieben nur glänzende Pfützen zurück.",
     exampleTranslation:
       "Kašna přestala šumět, mlýnské kolečko se zastavilo a mezi kameny zůstaly jen lesklé loužičky.",
+  },
+  glänzte: {
+    translation: "leskla",
+    example: "Im Inneren glänzte eine kleine Metallplatte.",
+    exampleTranslation: "Uvnitř se leskla malá kovová deska.",
   },
   glatte: {
     translation: "hladké",
@@ -8496,6 +4826,11 @@ export const dictionary = {
     exampleTranslation:
       "„Myslíš, že už znáš všechna tajemství Stříbrného lesa?“ zeptal se.",
   },
+  glaubte: {
+    translation: "věřil, domníval se",
+    example: "„Wenn ich das glaubte, würde ich aufhören hinzusehen.“",
+    exampleTranslation: "„Kdybych si to myslela, přestala bych se dívat.“",
+  },
   glaubten: {
     translation: "věřili",
     example:
@@ -8508,6 +4843,11 @@ export const dictionary = {
     example: "Und alle Abdrücke sind vollkommen gleich.",
     exampleTranslation: "A všechny otisky jsou úplně stejné.",
   },
+  gleichgewicht: {
+    translation: "rovnováhu",
+    example: "Vavrinec verlor das Gleichgewicht.",
+    exampleTranslation: "Vavřinec ztratil rovnováhu.",
+  },
   gleichmäßig: {
     translation: "rovnoměrně",
     example:
@@ -8519,6 +4859,13 @@ export const dictionary = {
     translation: "rovnoměrný",
     example: "In der Ferne war das gleichmäßige Fließen des Brunnens zu hören.",
     exampleTranslation: "Z dálky byl slyšet rovnoměrný tok kašny.",
+  },
+  gleichmäßigen: {
+    translation: "pravidelný, rovnoměrný",
+    example:
+      "Die Tiere jubelten, doch Ryska lauschte dem gleichmäßigen Ton des Wassers unter der Erde.",
+    exampleTranslation:
+      "Zvířata zajásala, ale Ryška poslouchala pravidelný tón vody pod zemí.",
   },
   gleichzeitig: {
     translation: "současně",
@@ -8553,6 +4900,19 @@ export const dictionary = {
     exampleTranslation:
       "Vavřincovi poděkovala a Ryška zvedla ze země poslední třpytivou částečku.",
   },
+  glitzerte: {
+    translation: "třpytil se",
+    example:
+      "Neben der Bank glitzerte feiner goldener Staub von den Papiersternen, die die Kinder bei der Bühne gebastelt hatten.",
+    exampleTranslation:
+      "Vedle lavice se třpytil jemný zlatý prášek z papírových hvězd, které děti vyráběly u pódia.",
+  },
+  glocke: {
+    translation: "zvon / zvonek",
+    example:
+      "Sie sollte den Wasserstand beobachten und mit einer Glocke Zeichen geben.",
+    exampleTranslation: "Měla sledovat hladinu a pomocí zvonku dávat znamení.",
+  },
   glockentöne: {
     translation: "zvuky zvonku",
     example: "Aus der Ferne waren zwei Glockentöne zu hören.",
@@ -8570,6 +4930,20 @@ export const dictionary = {
     example: "Pidalka goss Öl aus Vavrinecs Tasche über das rostige Gelenk.",
     exampleTranslation:
       "Píďalka polila rezavý spoj olejem z Vavřincovy brašny.",
+  },
+  graben: {
+    translation: "příkopy",
+    example:
+      "Bei der alten Weide fand sie eine Hasenfamilie, die einen überfluteten Graben nicht überqueren konnte.",
+    exampleTranslation:
+      "U staré vrby našla králičí rodinu, která nemohla přejít rozvodněný příkop.",
+  },
+  gras: {
+    translation: "tráva",
+    example:
+      "Ein Specht klopfte an eine alte Buche, Eichelhäher stritten um eine Eichel, und eine Maus raschelte im Gras.",
+    exampleTranslation:
+      "Datel klepal do starého buku, sojky se hádaly o žalud a v trávě šustila myš.",
   },
   grausame: {
     translation: "krutá",
@@ -8597,11 +4971,47 @@ export const dictionary = {
     exampleTranslation:
       "Po hodině odkryli boční otvor dost velký pro lišku a ježka.",
   },
+  große: {
+    translation: "velké / velká",
+    example:
+      "In der Mitte des Silberwaldes lag eine große Lichtung, die die Tiere den Waldplatz nannten.",
+    exampleTranslation:
+      "Uprostřed Stříbrného lesa se rozkládala velká mýtina, které zvířata říkala Lesní náměstí.",
+  },
   größe: {
     translation: "velikost",
     example:
       "Sie hatten vier Zehen, einen kleinen Ballen und die richtige Größe.",
     exampleTranslation: "Měly čtyři prsty, malý polštářek a správnou velikost.",
+  },
+  großen: {
+    translation: "velké",
+    example:
+      "Er blickte auf den Schlüssel, der noch im Schloss des großen Rades steckte.",
+    exampleTranslation:
+      "Podíval se na klíč, který zůstal v zámku velkého kola.",
+  },
+  großer: {
+    translation: "velká",
+    example: "Ein letzter großer Stein versperrte die Mündung des Kanals.",
+    exampleTranslation: "Poslední velký kámen blokoval ústí kanálu.",
+  },
+  größeren: {
+    translation: "větší",
+    example: "Vavrinec ging über eine schmale Brücke zum größeren Rad.",
+    exampleTranslation: "Vavřinec přecházel po úzkém mostku k většímu kolu.",
+  },
+  großes: {
+    translation: "velkým",
+    example:
+      "Auf ein großes Stück Birkenrinde zeichnete sie eine einfache Karte des Waldes.",
+    exampleTranslation:
+      "Na velký kus březové kůry nakreslila jednoduchou mapu lesa.",
+  },
+  größte: {
+    translation: "největší",
+    example: "„Der größte Teil fließt zu den südlichen Obstgärten.“",
+    exampleTranslation: "„Většina teče k jižním sadům.“",
   },
   größten: {
     translation: "největší",
@@ -8627,6 +5037,44 @@ export const dictionary = {
     exampleTranslation:
       "Ryška mezitím založila pod starým dubem Školu otevřených očí.",
   },
+  grüne: {
+    translation: "zelené",
+    example:
+      "In einem Busch entdeckte sie ein weiteres Stück Schnur, an dem eine grüne Alge hing.",
+    exampleTranslation:
+      "V jednom keři objevila další kousek provázku a na něm zachycenou zelenou řasu.",
+  },
+  gruppe: {
+    translation: "skupina",
+    example:
+      "Als die Gruppe den Waldplatz erreichte, floss bereits wieder Wasser aus dem Steinrohr.",
+    exampleTranslation:
+      "Když skupina dorazila na Lesní náměstí, z kamenné trubky už znovu tekla voda.",
+  },
+  gut: {
+    translation: "dobrý",
+    example:
+      "Ryska nahm ihre Entschuldigung an, fügte aber hinzu: „Es reicht nicht zu sagen, dass ein Fuchs gut sein kann.",
+    exampleTranslation:
+      "Ryška jejich omluvu přijala, ale dodala: „Nestačí říct, že liška může být hodná.",
+  },
+  guten: {
+    translation: "dobrého / dobrá",
+    example: "„Guten Morgen, Ryska“, rief Bodlik.",
+    exampleTranslation: "„Dobré ráno, Ryško,“ zavolal Bodlík.",
+  },
+  habe: {
+    translation: "mám / jsem",
+    example:
+      "„Gestern Abend habe ich den Schrank abgeschlossen“, erklärte der Verwalter Vavrinec.",
+    exampleTranslation:
+      "„Včera večer jsem skříňku zamkl,“ prohlásil správce Vavřinec.",
+  },
+  haben: {
+    translation: "mít",
+    example: "Vavrinec konnte seinen Mantel jederzeit zerrissen haben.",
+    exampleTranslation: "Vavřinec mohl svůj kabát roztrhnout kdykoli.",
+  },
   haken: {
     translation: "hák",
     example:
@@ -8646,20 +5094,61 @@ export const dictionary = {
     example: "In einem Abdruck fand er eine dünne halbkreisförmige Rille.",
     exampleTranslation: "V jedné stopě našel tenkou rýhu ve tvaru půlkruhu.",
   },
+  half: {
+    translation: "pomohl",
+    example:
+      "Am Kiefernhang half sie einem Dachs, einen Wagen mit Vorräten aus dem Schlamm zu ziehen.",
+    exampleTranslation:
+      "U borové stráně pomohla jezevci vytáhnout vozík se zásobami z bláta.",
+  },
+  halfen: {
+    translation: "pomáhali",
+    example: "Ryska und Bodlik halfen ihm.",
+    exampleTranslation: "Ryška a Bodlík mu pomohli.",
+  },
+  hals: {
+    translation: "krk",
+    example: "Ryska hängte sich eine kleine Laterne um den Hals.",
+    exampleTranslation: "Ryška si kolem krku zavěsila malou lucernu.",
+  },
   hält: {
     translation: "drží, vydrží",
     example: "„Der Druck hält es fest“, erklärte Vavrinec.",
     exampleTranslation: "„Tlak ho drží,“ vysvětlil Vavřinec.",
+  },
+  halten: {
+    translation: "udržet",
+    example: "Aber heute wird sie halten.“",
+    exampleTranslation: "Dnes však vydrží.“",
   },
   haltet: {
     translation: "držte",
     example: "„Haltet sie fest!“",
     exampleTranslation: "„Držte!“",
   },
+  hand: {
+    translation: "ruku",
+    example: "Ohne ihn war es schwierig, die alten Räder von Hand zu bewegen.",
+    exampleTranslation: "Bez ní bylo obtížné pohnout starými koly ručně.",
+  },
   handelst: {
     translation: "jednáš",
     example: "Bevor du handelst, höre zu.",
     exampleTranslation: "Než začneš jednat, naslouchej.",
+  },
+  hang: {
+    translation: "svahu",
+    example:
+      "Der Weg zum Wasserhaus führte zwischen hohen Tannen hindurch und stieg dann steil einen felsigen Hang hinauf.",
+    exampleTranslation:
+      "Cesta k vodnímu domu vedla mezi vysokými jedlemi a potom prudce stoupala po kamenitém svahu.",
+  },
+  hängen: {
+    translation: "viset, zachytit se",
+    example:
+      "Der Eisenhebel glitt ihm aus den Pfoten und blieb zwischen zwei Steinen hängen.",
+    exampleTranslation:
+      "Železná páka mu vyklouzla z tlap a zůstala viset mezi dvěma kameny.",
   },
   hängt: {
     translation: "visí",
@@ -8682,6 +5171,12 @@ export const dictionary = {
       "Der Boden war hart, aber an mehreren Stellen war noch Schlamm vom Regen des Vortages übrig.",
     exampleTranslation:
       "Půda byla tvrdá, ale na několika místech zůstalo po včerejším dešti bláto.",
+  },
+  hase: {
+    translation: "králík / zajíc",
+    example:
+      "In diesem Augenblick kam der Hase Skokanek den Hügel hinuntergerannt.",
+    exampleTranslation: "V tu chvíli přiběhl z kopce zajíc Skokánek.",
   },
   hasen: {
     translation: "zajíci, králíci",
@@ -8713,6 +5208,35 @@ export const dictionary = {
     translation: "máš",
     example: "„Hast du noch etwas gehört?“, fragte Ryska.",
     exampleTranslation: "„Slyšela jsi něco dalšího?“ zeptala se Ryška.",
+  },
+  hat: {
+    translation: "má",
+    example: "„Oder jemand hat das obere Tor geschlossen“, antwortete Rozarka.",
+    exampleTranslation: "„Nebo někdo zavřel horní bránu,“ odpověděla Rozárka.",
+  },
+  hatte: {
+    translation: "měl",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  hätte: {
+    translation: "kdyby",
+    example:
+      "Am liebsten hätte sie gerufen, dass ein kluger Dieb nicht auf sich selbst zeigen würde.",
+    exampleTranslation:
+      "Nejraději by vykřikla, že chytrý zloděj by na sebe neukazoval.",
+  },
+  hatten: {
+    translation: "měli",
+    example: "Die Tiere hatten sich den ganzen Sommer darauf gefreut.",
+    exampleTranslation: "Zvířata se na něj těšila celé léto.",
+  },
+  hätten: {
+    translation: "měl",
+    example: "Unter normalen Umständen hätten alle den Regen begrüßt.",
+    exampleTranslation: "Za normálních okolností by déšť všichni vítali.",
   },
   hättest: {
     translation: "měl bys",
@@ -8768,6 +5292,18 @@ export const dictionary = {
     example: "Die Karte zeigte drei Hauptwege des Wassers.",
     exampleTranslation: "Mapa ukazovala tři hlavní cesty vody.",
   },
+  haus: {
+    translation: "dům",
+    example: "„Wer hatte noch Zugang zu dem Haus?“, fragte Rozarka.",
+    exampleTranslation: "„Kdo další měl přístup do domu?“ zeptala se Rozárka.",
+  },
+  häusern: {
+    translation: "prázdných",
+    example:
+      "Dort bewahrte sie Briefe, Karten und Chroniken auf, die sie im Laufe vieler Jahre in verlassenen Häusern der Menschen gefunden hatte.",
+    exampleTranslation:
+      "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
+  },
   hbitka: {
     translation: "Hbitka (jméno veverky)",
     example: "Das Eichhörnchen Hbitka hängte bunte Bänder zwischen die Zweige.",
@@ -8808,10 +5344,22 @@ export const dictionary = {
     example: "„Nicht einmal im heißesten Sommer.“",
     exampleTranslation: "„Ani během nejteplejšího léta.“",
   },
+  helfen: {
+    translation: "pomoci",
+    example: "Sie wusste, dass ihr Zorn jetzt nicht helfen würde.",
+    exampleTranslation: "Věděla, že hněv by jí nyní nepomohl.",
+  },
   hell: {
     translation: "světlý, jasný",
     example: "Sie war nicht plötzlich und hell wie ein Blitz.",
     exampleTranslation: "Nebylo náhlé a zářivé jako blesk.",
+  },
+  helle: {
+    translation: "jasné",
+    example:
+      "Das Gewitter war bereits hinter die östlichen Hügel gezogen, und zwischen den Wolken erschienen helle Streifen.",
+    exampleTranslation:
+      "Bouře už odešla za východní kopce a mezi mraky se objevovaly světlé pruhy.",
   },
   hellem: {
     translation: "světlém",
@@ -8822,6 +5370,12 @@ export const dictionary = {
     translation: "světlejší, jasný",
     example: "Im Inneren leuchtete ein heller Stein auf.",
     exampleTranslation: "Uvnitř se rozzářil světlý kámen.",
+  },
+  her: {
+    translation: "sem, tam",
+    example:
+      "Vögel brachten Nachrichten zwischen dem Hügel und dem Waldplatz hin und her.",
+    exampleTranslation: "Ptáci nosili zprávy mezi kopcem a Lesním náměstím.",
   },
   heraus: {
     translation: "ven",
@@ -8876,6 +5430,13 @@ export const dictionary = {
     exampleTranslation:
       "Kdyby po něm poslali lano, mohli trámy přetáhnout bez přecházení mostu.",
   },
+  herum: {
+    translation: "kolem",
+    example:
+      "Ryska ging über Steine um das Haus herum und fand hinter einem Busch zwei schmale Wagenspuren.",
+    exampleTranslation:
+      "Ryška obešla dům po kamenech a našla za keřem dvě úzké koleje od vozíku.",
+  },
   herunterfallen: {
     translation: "spadnout",
     example: "Ohne die richtige Vorgehensweise kann es herunterfallen.“",
@@ -8887,6 +5448,13 @@ export const dictionary = {
       "Der kaputte Stand und die heruntergefallenen Festbänder konnten warten.",
     exampleTranslation:
       "Rozbitý stánek a spadané slavnostní stužky mohly počkat.",
+  },
+  hervor: {
+    translation: "ven / dopředu",
+    example:
+      "Nachdem er gegangen war, zog Ryska vorsichtig das Holzstück unter dem Zaun hervor.",
+    exampleTranslation:
+      "Když odešel, Ryška opatrně vytáhla dřevěný odřezek pod plotem.",
   },
   hervorströmte: {
     translation: "proudil ven",
@@ -8902,10 +5470,32 @@ export const dictionary = {
     exampleTranslation:
       "Ryška obešla plot a našla místo, kde se pod dřevěnými prkny objevovala voda.",
   },
+  heute: {
+    translation: "dnes",
+    example: "„Heute können wir kaum daraus trinken.“",
+    exampleTranslation: "„Dnes se z ní sotva napijeme.“",
+  },
   heutige: {
     translation: "dnešní",
     example: "„Die nächsten sind für das heutige Fest.",
     exampleTranslation: "„Další jsou pro dnešní slavnost.",
+  },
+  hielt: {
+    translation: "držel",
+    example:
+      "Er atmete schnell und hielt ein kleines Metallschild in den Pfoten.",
+    exampleTranslation:
+      "Dýchal rychle a v tlapkách držel malou kovovou cedulku.",
+  },
+  hielten: {
+    translation: "drželi",
+    example: "Diesmal hielten sie.",
+    exampleTranslation: "Tentokrát držely.",
+  },
+  hier: {
+    translation: "tu",
+    example: "Hier ist die Ferse tiefer.",
+    exampleTranslation: "Tady je hlubší pata.",
   },
   hierherkommen: {
     translation: "přijít sem",
@@ -8913,6 +5503,13 @@ export const dictionary = {
       "„Wie soll er hierherkommen, wenn er nicht durch den Lüftungsschacht passt?“, fragte Vavrinec.",
     exampleTranslation:
       "„Jak se sem dostane, když se nevejde větrací šachtou?“ zeptal se Vavřinec.",
+  },
+  hilfe: {
+    translation: "pomoc",
+    example:
+      "Die Bewohner des Waldes benutzten dasselbe Zeichen, wenn sie bei unterirdischen Bauen Hilfe brauchten.",
+    exampleTranslation:
+      "Stejný signál používali obyvatelé lesa, když potřebovali pomoc u podzemních nor.",
   },
   hilfsbereitschaft: {
     translation: "ochota pomoci",
@@ -8933,10 +5530,23 @@ export const dictionary = {
     exampleTranslation:
       "Když mravenci spěchali do kopce, hledala na obloze bouřkové mraky.",
   },
+  hin: {
+    translation: "tam",
+    example:
+      "„Echte Spuren würden sowohl vom Haus weg als auch zum Haus hin führen.",
+    exampleTranslation: "„Skutečné stopy by vedly od domu i k domu.",
+  },
   hinabgingen: {
     translation: "sešli dolů",
     example: "Als sie den Hügel hinabgingen, lief Bodlik neben ihr.",
     exampleTranslation: "Když sestupovali z kopce, Bodlík kráčel vedle ní.",
+  },
+  hinauf: {
+    translation: "kopce",
+    example:
+      "Ryska blickte zu der Stelle, an der der Weg den Hügel hinauf begann.",
+    exampleTranslation:
+      "Ryška se podívala k místu, kde začínala cesta na kopec.",
   },
   hinaufeilten: {
     translation: "spěchali nahoru",
@@ -8950,6 +5560,18 @@ export const dictionary = {
     example: "Die Biber arbeiteten an den größten Hindernissen.",
     exampleTranslation: "Bobři pracovali na největších překážkách.",
   },
+  hindurch: {
+    translation: "skrz / dovnitř",
+    example:
+      "Der Weg zum Wasserhaus führte zwischen hohen Tannen hindurch und stieg dann steil einen felsigen Hang hinauf.",
+    exampleTranslation:
+      "Cesta k vodnímu domu vedla mezi vysokými jedlemi a potom prudce stoupala po kamenitém svahu.",
+  },
+  hinein: {
+    translation: "dovnitř",
+    example: "Das Wasser floss aus der Silberquelle hinein.",
+    exampleTranslation: "Voda do ní přitékala ze Stříbrného pramene.",
+  },
   hineingesteckt: {
     translation: "zasunutý dovnitř",
     example:
@@ -8957,12 +5579,35 @@ export const dictionary = {
     exampleTranslation:
       "Někdo do něj zasunul tenký kovový předmět a opatrně ho otevřel.",
   },
+  hing: {
+    translation: "visel, závisel",
+    example: "An der Wand hing ein leerer Eisenschrank.",
+    exampleTranslation: "Na stěně visela prázdná železná skříňka.",
+  },
   hingen: {
     translation: "visely",
     example:
       "Wenn kleine Tropfen an den Spinnennetzen hingen, erwartete sie einen kalten Morgen.",
     exampleTranslation:
       "Když se na pavučinách držely malé kapky, očekávala chladné ráno.",
+  },
+  hinter: {
+    translation: "za",
+    example:
+      "Hinter dem Haus entdeckten sie mehrere Pfotenabdrücke im weichen Boden.",
+    exampleTranslation: "Za domem objevili v měkké půdě několik otisků tlap.",
+  },
+  hinteren: {
+    translation: "zadním",
+    example:
+      "Im hinteren Raum fanden sie eine leere Stelle, an der ein langer Eisenhebel gestanden hatte.",
+    exampleTranslation:
+      "V zadní místnosti našli prázdné místo po dlouhé železné páce.",
+  },
+  hinterlassen: {
+    translation: "zanechat, zanechal",
+    example: "Ein Rad hatte eine tiefere Spur hinterlassen als das andere.",
+    exampleTranslation: "Jedno kolo zanechávalo hlubší stopu než druhé.",
   },
   hinterlässt: {
     translation: "zanechává",
@@ -8977,6 +5622,11 @@ export const dictionary = {
       "Am Rand der Lichtung richtete sie sieben Stationen ein und hinterließ an jeder einen anderen Hinweis.",
     exampleTranslation:
       "Na okraji mýtiny vytvořila sedm zastavení a u každého zanechala jinou stopu.",
+  },
+  hinunter: {
+    translation: "dolů",
+    example: "Tonda beugte sich neben ihr hinunter.",
+    exampleTranslation: "Tonda se sklonil vedle ní.",
   },
   hinuntergerannt: {
     translation: "sběhl dolů",
@@ -9013,12 +5663,29 @@ export const dictionary = {
     example: "„Wenn ich das glaubte, würde ich aufhören hinzusehen.“",
     exampleTranslation: "„Kdybych si to myslela, přestala bych se dívat.“",
   },
+  hob: {
+    translation: "zvedl",
+    example: "Tonda hob seine breite Pfote.",
+    exampleTranslation: "Tonda zvedl širokou tlapu.",
+  },
+  hoch: {
+    translation: "vysoko",
+    example: "Das Wasserhaus stand hoch über dem Wald an der Silberquelle.",
+    exampleTranslation: "Vodní dům stál vysoko nad lesem u Stříbrného pramene.",
+  },
   hoffte: {
     translation: "doufal",
     example:
       "Ryska hoffte, dass es noch eine weitere Karte des Wassersystems gab.",
     exampleTranslation:
       "Ryška doufala, že existuje ještě jedna mapa vodního systému.",
+  },
+  hohen: {
+    translation: "vysokými",
+    example:
+      "Der Weg zum Wasserhaus führte zwischen hohen Tannen hindurch und stieg dann steil einen felsigen Hang hinauf.",
+    exampleTranslation:
+      "Cesta k vodnímu domu vedla mezi vysokými jedlemi a potom prudce stoupala po kamenitém svahu.",
   },
   höher: {
     translation: "vyšší",
@@ -9037,6 +5704,13 @@ export const dictionary = {
       "Er war kein gewöhnlicher Brunnen, sondern eine riesige runde Höhle.",
     exampleTranslation:
       "Nebyla to obyčejná studna, ale obrovská kruhová jeskyně.",
+  },
+  hohlen: {
+    translation: "dutý",
+    example:
+      "Die alte Eule Rozarka hatte in ihrer hohlen Eiche eine kleine Bibliothek.",
+    exampleTranslation:
+      "Stará sova Rozárka měla ve svém dutém dubu malou knihovnu.",
   },
   höhlen: {
     translation: "jeskyně",
@@ -9059,6 +5733,11 @@ export const dictionary = {
     translation: "přinesli, získali",
     example: "Auf dieselbe Weise holten sie den zweiten und den dritten.",
     exampleTranslation: "Stejným způsobem získali druhý a třetí.",
+  },
+  holz: {
+    translation: "dřevo",
+    example: "Neben dem Kanal lagen Stücke aus hellem Holz.",
+    exampleTranslation: "Vedle kanálu ležely odřezky světlého dřeva.",
   },
   holzbrettern: {
     translation: "dřevěnými prkny",
@@ -9137,12 +5816,43 @@ export const dictionary = {
     example: "„Ich höre deine Entschuldigung“, antwortete sie.",
     exampleTranslation: "„Omluvu slyším,“ odpověděla.",
   },
+  hören: {
+    translation: "slyšela",
+    example: "Auf der anderen Seite des Zaunes waren Schritte zu hören.",
+    exampleTranslation: "Z druhé strany plotu se ozvaly kroky.",
+  },
   hört: {
     translation: "slyší",
     example:
       "„Wenn ihr drei Schläge gegen den Stein hört, kehrt sofort zurück.“",
     exampleTranslation:
       "„Jestli uslyšíte tři údery do kamene, okamžitě se vraťte.“",
+  },
+  hörte: {
+    translation: "slyšel",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  hörten: {
+    translation: "slyšeli",
+    example: "Kurz darauf hörten sie ihre gedämpfte Stimme.",
+    exampleTranslation: "Za chvíli se ozval její tlumený hlas.",
+  },
+  huf: {
+    translation: "kopyto",
+    example:
+      "Gemeinsam entdeckten sie, dass der Abdruck aus zwei übereinanderliegenden Spuren bestand: dem Huf eines Rehs und der Kralle eines Vogels.",
+    exampleTranslation:
+      "Společně zjistili, že otisk vytvořily dvě překryté stopy – srnčí kopýtko a ptačí pařát.",
+  },
+  hügel: {
+    translation: "kopec",
+    example:
+      "Wenn die Ameisen den Hügel hinaufeilten, suchte sie am Himmel nach Gewitterwolken.",
+    exampleTranslation:
+      "Když mravenci spěchali do kopce, hledala na obloze bouřkové mraky.",
   },
   hügels: {
     translation: "kopce",
@@ -9161,15 +5871,102 @@ export const dictionary = {
     example: "„Ein Klirren und jemanden, der hustete.",
     exampleTranslation: "„Cinkání a něčí kašel.",
   },
+  ich: {
+    translation: "já",
+    example:
+      "„Gestern Abend habe ich den Schrank abgeschlossen“, erklärte der Verwalter Vavrinec.",
+    exampleTranslation:
+      "„Včera večer jsem skříňku zamkl,“ prohlásil správce Vavřinec.",
+  },
   idee: {
     translation: "nápad",
     example: "Ryska hatte jedoch eine andere Idee.",
     exampleTranslation: "Ryška však měla jiný nápad.",
   },
+  igel: {
+    translation: "ježek",
+    example: "Der Igel Bodlik ordnete bereits kleine Körbe mit Pilzen.",
+    exampleTranslation: "Ježek Bodlík už rovnal malé košíky s houbami.",
+  },
+  ihm: {
+    translation: "jemu / mu",
+    example: "Der linke führte nach unten, und aus ihm kam ein tiefes Dröhnen.",
+    exampleTranslation: "Levá vedla dolů a ozýval se z ní hluboký hukot.",
+  },
+  ihn: {
+    translation: "jeho / ho",
+    example:
+      "Sie beugte sich über den nächsten Abdruck und untersuchte ihn genau.",
+    exampleTranslation:
+      "Sklonila se k nejbližší stopě a pozorně si ji prohlédla.",
+  },
+  ihnen: {
+    translation: "jim",
+    example: "Jemand hatte mit ihnen den Weg markiert.",
+    exampleTranslation: "Někdo si jimi značil cestu.",
+  },
+  ihr: {
+    translation: "její / jí",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  ihre: {
+    translation: "její / jejich",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  ihrem: {
+    translation: "jejím, svým",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  ihren: {
+    translation: "její / svůj",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  ihrer: {
+    translation: "její / jejich",
+    example:
+      "Die alte Eule Rozarka hatte in ihrer hohlen Eiche eine kleine Bibliothek.",
+    exampleTranslation:
+      "Stará sova Rozárka měla ve svém dutém dubu malou knihovnu.",
+  },
+  im: {
+    translation: "v",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
+  },
+  immer: {
+    translation: "vždy",
+    example: "An diesem Morgen war fast alles wie immer.",
+    exampleTranslation: "Toho rána bylo všechno téměř stejné jako jindy.",
+  },
+  in: {
+    translation: "v",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
+  },
   innen: {
     translation: "uvnitř",
     example: "Das Wasser floss nach innen und löste einen rostigen Schwimmer.",
     exampleTranslation: "Voda stekla dovnitř a uvolnila rezavý plovák.",
+  },
+  inneren: {
+    translation: "uvnitř",
+    example: "Im Inneren glänzte eine kleine Metallplatte.",
+    exampleTranslation: "Uvnitř se leskla malá kovová deska.",
   },
   innerhalb: {
     translation: "během, uvnitř",
@@ -9177,6 +5974,11 @@ export const dictionary = {
       "Wenn eines der Tore geschlossen blieb, konnten die Bäche und Quellen innerhalb weniger Tage austrocknen.",
     exampleTranslation:
       "Jestli zůstala některá brána zavřená, potoky i studánky mohly během několika dnů vyschnout.",
+  },
+  ins: {
+    translation: "do",
+    example: "„Dann fällt der Hebel auf den Felsvorsprung statt ins Wasser.“",
+    exampleTranslation: "„Páka pak spadne na římsu místo do vody.“",
   },
   insekten: {
     translation: "hmyz",
@@ -9190,10 +5992,22 @@ export const dictionary = {
     example: "Inzwischen untersuchte Tonda das leere Becken.",
     exampleTranslation: "Tonda mezitím zkoumal prázdnou nádrž.",
   },
+  irgendwo: {
+    translation: "někde",
+    example:
+      "„Wenn er das Sicherheitstor geschlossen hat, sammelt sich irgendwo Wasser.",
+    exampleTranslation:
+      "„Pokud zavřel bezpečnostní uzávěr, voda se někde hromadí.",
+  },
   irrt: {
     translation: "mýlí se",
     example: "„Jeder irrt sich manchmal“, erklärte sie.",
     exampleTranslation: "„Každý se někdy splete,“ vysvětlila.",
+  },
+  ist: {
+    translation: "je",
+    example: "„Die Silberquelle ist noch nie ausgetrocknet“, sagte sie.",
+    exampleTranslation: "„Stříbrný pramen nikdy nevyschl,“ řekla.",
   },
   ja: {
     translation: "ano",
@@ -9204,6 +6018,18 @@ export const dictionary = {
     translation: "rok",
     example: "„In diesem Jahr gibt es weniger Obst als sonst.",
     exampleTranslation: "„Letos je ovoce méně než jindy.",
+  },
+  jahre: {
+    translation: "roky, léta",
+    example:
+      "Dort bewahrte sie Briefe, Karten und Chroniken auf, die sie im Laufe vieler Jahre in verlassenen Häusern der Menschen gefunden hatte.",
+    exampleTranslation:
+      "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
+  },
+  jahren: {
+    translation: "letech",
+    example: "„Ich habe ihn vor Jahren gefunden.",
+    exampleTranslation: "„Našel jsem ho před lety.",
   },
   jahres: {
     translation: "roku",
@@ -9217,15 +6043,61 @@ export const dictionary = {
     exampleTranslation:
       "Druhá končila u starého kamenolomu, který byl desítky let opuštěný.",
   },
+  jede: {
+    translation: "každá",
+    example:
+      "Trotzdem war es wichtig, nicht zuzulassen, dass eine echte Täuschung jede neue Unsicherheit in eine weitere Beschuldigung verwandelte.",
+    exampleTranslation:
+      "Přesto bylo důležité nedovolit, aby jeden skutečný podvod proměnil každou další nejistotu v nové obvinění.",
+  },
+  jedem: {
+    translation: "každým",
+    example: "Unter jedem Symbol befand sich eine Öffnung im Stein.",
+    exampleTranslation: "Pod každým znakem se nacházel kamenný otvor.",
+  },
+  jeden: {
+    translation: "každý",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  jeder: {
+    translation: "každý",
+    example: "Wir brauchen eine Wahrheit, die jeder sehen kann.“",
+    exampleTranslation: "Potřebujeme pravdu, kterou uvidí každý.“",
+  },
   jederzeit: {
     translation: "kdykoli",
     example: "Vavrinec konnte seinen Mantel jederzeit zerrissen haben.",
     exampleTranslation: "Vavřinec mohl svůj kabát roztrhnout kdykoli.",
   },
+  jedes: {
+    translation: "každé",
+    example: "Jedes steuerte einen anderen Teil des Wassersystems.",
+    exampleTranslation: "Každé ovládalo jinou část vodního systému.",
+  },
   jedoch: {
     translation: "avšak",
     example: "Das südliche Rad war jedoch vollständig geöffnet.",
     exampleTranslation: "Jižní kolo však bylo otevřené naplno.",
+  },
+  jemand: {
+    translation: "někdo",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
+  },
+  jemanden: {
+    translation: "někoho",
+    example: "„Ein Klirren und jemanden, der hustete.",
+    exampleTranslation: "„Cinkání a něčí kašel.",
+  },
+  jetzt: {
+    translation: "teď",
+    example: "Sie wusste, dass ihr Zorn jetzt nicht helfen würde.",
+    exampleTranslation: "Věděla, že hněv by jí nyní nepomohl.",
   },
   jitrenka: {
     translation: "Jitřenka (jméno zaječice)",
@@ -9246,10 +6118,36 @@ export const dictionary = {
     exampleTranslation:
       "Zvířata zajásala, ale Ryška poslouchala pravidelný tón vody pod zemí.",
   },
+  junge: {
+    translation: "mladý",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  jungen: {
+    translation: "mladým",
+    example:
+      "Die Mütter brachten ihren Jungen Wasser in Schalen, und die Vögel flogen zu weit entfernten Tümpeln.",
+    exampleTranslation:
+      "Matky přinesly mláďatům vodu v miskách a ptáci létali ke vzdáleným tůním.",
+  },
   junger: {
     translation: "mladý",
     example: "Ein junger Igel bemerkte jedoch einen geraden Rand.",
     exampleTranslation: "Ježčí mládě si však všimlo rovného okraje.",
+  },
+  junges: {
+    translation: "mladé",
+    example:
+      "Ein junges Eichhörnchen erklärte sofort, dass Skokanek dort vorbeigelaufen war.",
+    exampleTranslation:
+      "Malá veverka hned prohlásila, že tudy proběhl Skokánek.",
+  },
+  jüngste: {
+    translation: "nejmladší",
+    example: "Sie konnte ihre jüngste Tochter Jitrenka nicht finden.",
+    exampleTranslation: "Nemohla najít svou nejmladší dceru Jitřenku.",
   },
   jüngsten: {
     translation: "nejmladší",
@@ -9265,11 +6163,45 @@ export const dictionary = {
     exampleTranslation:
       "Mláďata radostně poskakovala kolem kašny a ptáci si smáčeli křídla.",
   },
+  kalt: {
+    translation: "studený",
+    example: "Im Wasserhaus war es kalt.",
+    exampleTranslation: "Uvnitř vodního domu bylo chladno.",
+  },
+  kalte: {
+    translation: "studenou",
+    example:
+      "Sie bemerkte, dass unter der linken Ecke der Tür kalte Luft hervorströmte.",
+    exampleTranslation:
+      "Všimla si, že pod levým rohem dveří proudí chladný vzduch.",
+  },
+  kalten: {
+    translation: "chladné",
+    example:
+      "Wenn kleine Tropfen an den Spinnennetzen hingen, erwartete sie einen kalten Morgen.",
+    exampleTranslation:
+      "Když se na pavučinách držely malé kapky, očekávala chladné ráno.",
+  },
+  kam: {
+    translation: "dorazil",
+    example: "Und aus der Ferne kam ein metallisches Klirren.",
+    exampleTranslation: "A z dálky se ozvalo kovové cinknutí.",
+  },
+  kamen: {
+    translation: "přišli",
+    example: "Dann kamen drei kräftige Schläge aus dem Gang.",
+    exampleTranslation: "Potom se z chodby ozvaly tři silné údery.",
+  },
   kammer: {
     translation: "komora",
     example:
       "Hinter der Wand lag eine geheime Kammer unter dem südlichen Obstgarten.",
     exampleTranslation: "Za stěnou se nacházela tajná komora pod jižním sadem.",
+  },
+  kanal: {
+    translation: "starý",
+    example: "„Vielleicht liegt ein Ast im Kanal“, schlug der Biber Tonda vor.",
+    exampleTranslation: "„Možná je v kanálu větev,“ navrhl bobr Tonda.",
   },
   kanäle: {
     translation: "kanály",
@@ -9285,10 +6217,27 @@ export const dictionary = {
     exampleTranslation:
       "Aby mohla nová kamenná výztuha ztvrdnout, museli na jednu hodinu zastavit vodu do všech menších koryt.",
   },
+  kanals: {
+    translation: "kanál, náhon",
+    example: "Ein letzter großer Stein versperrte die Mündung des Kanals.",
+    exampleTranslation: "Poslední velký kámen blokoval ústí kanálu.",
+  },
+  kann: {
+    translation: "může",
+    example: "Wir brauchen eine Wahrheit, die jeder sehen kann.“",
+    exampleTranslation: "Potřebujeme pravdu, kterou uvidí každý.“",
+  },
   kannst: {
     translation: "můžeš",
     example: "„Woher kannst du das wissen?“, fragte der Wächter.",
     exampleTranslation: "„Jak to můžeš vědět?“ zeptal se strážce.",
+  },
+  kannte: {
+    translation: "znala",
+    example:
+      "Sie war das älteste Mitglied des Waldrates und kannte viele Geschichten über die früheren Bewohner des Tals.",
+    exampleTranslation:
+      "Byla nejstarší členkou lesní rady a znala mnoho příběhů o dávných obyvatelích údolí.",
   },
   kaputte: {
     translation: "rozbitý",
@@ -9296,6 +6245,11 @@ export const dictionary = {
       "Der kaputte Stand und die heruntergefallenen Festbänder konnten warten.",
     exampleTranslation:
       "Rozbitý stánek a spadané slavnostní stužky mohly počkat.",
+  },
+  karte: {
+    translation: "mapě",
+    example: "Auch eine Karte der unterirdischen Kanäle fehlte.",
+    exampleTranslation: "Zmizela také mapa podzemních kanálů.",
   },
   karten: {
     translation: "mapy",
@@ -9318,6 +6272,11 @@ export const dictionary = {
     exampleTranslation:
       "Bál jsem se, že zvířata přestanou nakupovat moje jablka a já přijdu o všechno.“",
   },
+  kaum: {
+    translation: "sotva",
+    example: "„Heute können wir kaum daraus trinken.“",
+    exampleTranslation: "„Dnes se z ní sotva napijeme.“",
+  },
   kehrst: {
     translation: "vracíš se",
     example: "„Warum kehrst du freiwillig zurück?“, fragte einer von ihnen.",
@@ -9329,6 +6288,35 @@ export const dictionary = {
       "„Wenn ihr drei Schläge gegen den Stein hört, kehrt sofort zurück.“",
     exampleTranslation:
       "„Jestli uslyšíte tři údery do kamene, okamžitě se vraťte.“",
+  },
+  kehrte: {
+    translation: "vrátil",
+    example: "Dann kehrte sie in den Tunnel zurück.",
+    exampleTranslation: "Potom se vrátila do tunelu.",
+  },
+  kehrten: {
+    translation: "vrátili",
+    example: "Sie kehrten zur Lichtung zurück.",
+    exampleTranslation: "Vrátily se na mýtinu.",
+  },
+  kein: {
+    translation: "žádný",
+    example:
+      "Das war noch kein Beweis, aber die einzelnen Teile der Geschichte begannen langsam zusammenzupassen.",
+    exampleTranslation:
+      "To ještě nebyl důkaz, ale jednotlivé části příběhu k sobě začínaly pomalu pasovat.",
+  },
+  keine: {
+    translation: "žádná, žádné",
+    example: "Sie wollte keine voreiligen Schlüsse ziehen.",
+    exampleTranslation: "Nechtěla dělat rychlé závěry.",
+  },
+  keinen: {
+    translation: "žádný",
+    example:
+      "Wenn ich keinen Beweis finde, werde ich meinen Bau selbst den Wächtern übergeben.“",
+    exampleTranslation:
+      "Pokud nenajdu žádný důkaz, sama odevzdám své doupě strážcům.“",
   },
   keines: {
     translation: "žádné",
@@ -9358,6 +6346,17 @@ export const dictionary = {
       "Bei jeder Angabe kennzeichnete er, was er sicher wusste und was er nur schätzte.",
     exampleTranslation:
       "U každého údaje označil, co ví jistě a co jen odhaduje.",
+  },
+  kette: {
+    translation: "řetěz",
+    example:
+      "Über ihm verlief jedoch eine alte Kette, die an der Decke befestigt war.",
+    exampleTranslation: "Nad ní však vedl starý řetěz připevněný ke stropu.",
+  },
+  ketten: {
+    translation: "řetězy",
+    example: "Neben dem Tor hingen drei Ketten.",
+    exampleTranslation: "Vedle brány visely tři řetězy.",
   },
   keuchte: {
     translation: "vydechl, supěl",
@@ -9397,10 +6396,31 @@ export const dictionary = {
     exampleTranslation:
       "Vavřinec prostrčil tenkou tlapu mezerou, zvedl západku a dítě vyšlo ven.",
   },
+  kinder: {
+    translation: "děti",
+    example:
+      "Die Kinder verdächtigten Rozarka, bis sie entdeckten, dass der Wind vom Nest eines Eichelhähers geweht hatte.",
+    exampleTranslation:
+      "Děti podezíraly Rozárku, dokud nezjistily, že vítr foukal od hnízda sojky.",
+  },
   kisten: {
     translation: "bedny",
     example: "Darin standen Kisten mit Obst, Fässer und einige Werkzeuge.",
     exampleTranslation: "Stály v ní bedny s ovocem, sudy a několik nástrojů.",
+  },
+  klar: {
+    translation: "jasně / čistě",
+    example:
+      "Bald war klar, dass sie zuerst den Steg zu den Dachsbauen verstärken, den Abfluss unter der Weide freimachen und drei durchnässte Vogelnester umsetzen mussten.",
+    exampleTranslation:
+      "Brzy bylo jasné, že nejdříve musí zpevnit lávku k jezevčím norám, uvolnit odtok pod vrbou a přestěhovat tři promoklá ptačí hnízda.",
+  },
+  klare: {
+    translation: "jasná",
+    example:
+      "Jeder erhielt eine klare Aufgabe, und die Arbeit begann ohne Verwirrung.",
+    exampleTranslation:
+      "Všichni dostali jasný úkol a práce se rozběhla bez zmatku.",
   },
   klarer: {
     translation: "jasnější",
@@ -9419,10 +6439,40 @@ export const dictionary = {
     example: "Er führt nach unten, aber für euch ist er zu klein.“",
     exampleTranslation: "Vede dolů, ale pro vás je příliš malá.“",
   },
+  kleine: {
+    translation: "malý",
+    example:
+      "Wenn kleine Tropfen an den Spinnennetzen hingen, erwartete sie einen kalten Morgen.",
+    exampleTranslation:
+      "Když se na pavučinách držely malé kapky, očekávala chladné ráno.",
+  },
+  kleinen: {
+    translation: "malý",
+    example:
+      "Sie hatten vier Zehen, einen kleinen Ballen und die richtige Größe.",
+    exampleTranslation: "Měly čtyři prsty, malý polštářek a správnou velikost.",
+  },
+  kleiner: {
+    translation: "malý",
+    example: "Zwischen den Wurzeln lag ein kleiner Splitter blauer Farbe.",
+    exampleTranslation: "Mezi kořeny ležela malá šupinka modré barvy.",
+  },
+  kleinere: {
+    translation: "menší",
+    example: "Vavrinec zeigte auf das kleinere Rad unter dem Felsvorsprung.",
+    exampleTranslation: "Vavřinec ukázal na menší kolo pod římsou.",
+  },
   kleineren: {
     translation: "menších",
     example: "Ryska blickte zum kleineren Rad.",
     exampleTranslation: "Ryška se podívala k menšímu kolu.",
+  },
+  kleines: {
+    translation: "malé",
+    example:
+      "Sie alle glaubten, dass der Verwalter Vavrinec, ein kleines Wiesel in einem langen braunen Mantel, das System bewachte.",
+    exampleTranslation:
+      "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
   },
   klemmte: {
     translation: "zaklínil se",
@@ -9466,6 +6516,18 @@ export const dictionary = {
     example: "Von rechts kam ein regelmäßiges metallisches Klopfen.",
     exampleTranslation: "Zprava se ozvalo pravidelné kovové klepání.",
   },
+  klopfte: {
+    translation: "bušit",
+    example:
+      "Ein Specht klopfte an eine alte Buche, Eichelhäher stritten um eine Eichel, und eine Maus raschelte im Gras.",
+    exampleTranslation:
+      "Datel klepal do starého buku, sojky se hádaly o žalud a v trávě šustila myš.",
+  },
+  klug: {
+    translation: "chytrý",
+    example: "„Füchse sind klug“, sagte der alte Hase Dupak.",
+    exampleTranslation: "„Lišky jsou chytré,“ řekl starý králík Dupák.",
+  },
   klugen: {
     translation: "chytrého",
     example:
@@ -9480,6 +6542,11 @@ export const dictionary = {
     exampleTranslation:
       "Nejraději by vykřikla, že chytrý zloděj by na sebe neukazoval.",
   },
+  kluges: {
+    translation: "moudrý",
+    example: "„Ein kluges Tier ist nicht eines, das sich niemals irrt.",
+    exampleTranslation: "„Chytrý není ten, kdo se nikdy nemýlí.",
+  },
   klugheit: {
     translation: "chytrost",
     example: "Klugheit sah nicht immer wie eine erstaunliche Idee aus.",
@@ -9489,6 +6556,11 @@ export const dictionary = {
     translation: "nejchytřejší",
     example: "Sie war kein Preis dafür, die Klügste zu sein.",
     exampleTranslation: "Nebyla cenou za to, že je nejchytřejší.",
+  },
+  knacken: {
+    translation: "prasknutí",
+    example: "Aus dem Tunnel kam ein langes Knacken.",
+    exampleTranslation: "Z tunelu se ozvalo dlouhé zapraskání.",
   },
   knarrte: {
     translation: "zavrzal",
@@ -9516,12 +6588,61 @@ export const dictionary = {
     exampleTranslation:
       "Vavřinec měl úzký obličej, pečlivě učesané vousy a modrý kabát se stříbrnými knoflíky.",
   },
+  kochten: {
+    translation: "vařily",
+    example:
+      "Eichhörnchen verteilten trockene Blätter als Decken, und Dachse kochten in einem Topf warme Kräutersuppe.",
+    exampleTranslation:
+      "Veverky rozdávaly suché listí na přikrývky a jezevci vařili v kotlíku teplou bylinkovou polévku.",
+  },
+  kommen: {
+    translation: "přijít",
+    example:
+      "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
+    exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
+  kommt: {
+    translation: "nepřijde",
+    example: "„Die Luft kommt von unterhalb des Baumes.“",
+    exampleTranslation: "„Vzduch přichází zpod stromu.“",
+  },
   komplizierten: {
     translation: "složitého",
     example:
       "Auf der anderen Seite standen zwei Eisenräder, die durch einen komplizierten Mechanismus verbunden waren.",
     exampleTranslation:
       "Na druhé straně stála dvě železná kola spojená složitým mechanismem.",
+  },
+  können: {
+    translation: "můžeme",
+    example: "„Heute können wir kaum daraus trinken.“",
+    exampleTranslation: "„Dnes se z ní sotva napijeme.“",
+  },
+  konnte: {
+    translation: "mohl",
+    example: "Vavrinec konnte seinen Mantel jederzeit zerrissen haben.",
+    exampleTranslation: "Vavřinec mohl svůj kabát roztrhnout kdykoli.",
+  },
+  könnte: {
+    translation: "mohl by",
+    example:
+      "„Gerade deshalb könnte sie die falschen Spuren absichtlich schlecht gemacht haben“, fügte die Elster Kriklavka hinzu.",
+    exampleTranslation:
+      "„Právě proto mohla udělat falešné stopy špatně,“ dodala straka Křiklavka.",
+  },
+  konnten: {
+    translation: "mohly",
+    example:
+      "Ohne den Hauptschlüssel konnten die alten Wasserräder nicht sicher bedient werden.",
+    exampleTranslation:
+      "Bez hlavního klíče nebylo možné bezpečně ovládat stará vodní kola.",
+  },
+  könnten: {
+    translation: "mohli",
+    example:
+      "Dann erklärte sie, dass die gefundenen Fuchsspuren gefälscht sein könnten.",
+    exampleTranslation:
+      "Potom vysvětlila, že nalezené liščí stopy mohou být falešné.",
   },
   kontrolle: {
     translation: "kontrola",
@@ -9541,6 +6662,11 @@ export const dictionary = {
     translation: "kontroloval",
     example: "Skokanek kontrollierte die tiefer gelegenen Wege.",
     exampleTranslation: "Skokánek kontroloval nízké cesty.",
+  },
+  kopf: {
+    translation: "hlava",
+    example: "Dann hob er den Kopf.",
+    exampleTranslation: "Potom zvedl hlavu.",
   },
   kopie: {
     translation: "kopie",
@@ -9567,6 +6693,20 @@ export const dictionary = {
     translation: "koše, košíky",
     example: "Der Igel Bodlik ordnete bereits kleine Körbe mit Pilzen.",
     exampleTranslation: "Ježek Bodlík už rovnal malé košíky s houbami.",
+  },
+  körper: {
+    translation: "tělo",
+    example:
+      "Ryska wickelte sich das andere Ende um den Körper und trat vorsichtig auf die beschädigte Brücke.",
+    exampleTranslation:
+      "Ryška si druhý konec omotala kolem těla a opatrně vstoupila na poškozený most.",
+  },
+  kraft: {
+    translation: "sílu",
+    example:
+      "Pidalka konnte es erreichen, hatte aber nicht genug Kraft, um seinen rostigen Griff zu drehen.",
+    exampleTranslation:
+      "Píďalka se k němu dokázala dostat, ale neměla sílu otočit jeho rezavým držadlem.",
   },
   kräftig: {
     translation: "silně",
@@ -9684,6 +6824,13 @@ export const dictionary = {
     example: "„Um dein Geständnis kümmern wir uns später.",
     exampleTranslation: "„Přiznání budeme řešit později.",
   },
+  kümmerte: {
+    translation: "starala",
+    example:
+      "Der südliche Obstgarten wurde wieder kräftig, weil sich der ganze Wald um die kranken Bäume kümmerte.",
+    exampleTranslation:
+      "Jižní sad znovu zesílil, protože se o nemocné stromy staral celý les.",
+  },
   kupferkassette: {
     translation: "měděná schránka",
     example: "Darunter lag eine Kupferkassette.",
@@ -9696,15 +6843,43 @@ export const dictionary = {
     exampleTranslation:
       "Podél stěn vedly měděné trubky a uprostřed stála tři velká kola.",
   },
+  kurz: {
+    translation: "krátce",
+    example: "Ryska erreichte die Lichtung kurz nach Sonnenaufgang.",
+    exampleTranslation: "Ryška dorazila na mýtinu krátce po východu slunce.",
+  },
+  kurze: {
+    translation: "krátké",
+    example:
+      "Die südlichen Obstgärten können das Wasser für kurze Zeit zurückhalten.",
+    exampleTranslation: "Jižní sady mohou vodu dočasně zadržet.",
+  },
   kurzem: {
     translation: "krátkým; nedávno",
     example: "Also hatte er den Mantel erst vor Kurzem repariert.",
     exampleTranslation: "Kabát tedy opravoval nedávno.",
   },
+  kurzen: {
+    translation: "krátký",
+    example: "Rozarka eröffnete das Fest mit einer kurzen Rede.",
+    exampleTranslation: "Rozárka zahájila svátek krátkou řečí.",
+  },
   kurzer: {
     translation: "krátký",
     example: "Aus seiner Achse ragte ein kurzer Holzstift.",
     exampleTranslation: "Z jeho osy trčel krátký dřevěný kolík.",
+  },
+  lächelte: {
+    translation: "usmál se",
+    example: "Ryska lächelte.",
+    exampleTranslation: "Ryška se usmála.",
+  },
+  lachen: {
+    translation: "smíchem",
+    example:
+      "Die Jungtiere lachten, doch Ryska warnte sie davor, über jemanden zu lachen, der eine Frage gestellt hatte.",
+    exampleTranslation:
+      "Mláďata se smála, ale Ryška je upozornila, aby se nesmála tomu, kdo položil otázku.",
   },
   lachten: {
     translation: "smáli se",
@@ -9712,6 +6887,24 @@ export const dictionary = {
       "Die Jungtiere lachten, doch Ryska warnte sie davor, über jemanden zu lachen, der eine Frage gestellt hatte.",
     exampleTranslation:
       "Mláďata se smála, ale Ryška je upozornila, aby se nesmála tomu, kdo položil otázku.",
+  },
+  lag: {
+    translation: "ležel / nacházel se",
+    example:
+      "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
+    exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
+  },
+  lagen: {
+    translation: "leželi",
+    example: "Kleine Späne aus Bienenwachs lagen auf dem Boden.",
+    exampleTranslation: "Na podlaze ležely malé hoblinky včelího vosku.",
+  },
+  lager: {
+    translation: "sklady",
+    example:
+      "Eine Spur aus Glitzer führte zwischen den Ständen weiter und endete am Lager für die Dekoration.",
+    exampleTranslation:
+      "Řada třpytek pokračovala mezi stánky a končila u skladu ozdob.",
   },
   landete: {
     translation: "dopadl, přistál",
@@ -9727,10 +6920,63 @@ export const dictionary = {
     exampleTranslation:
       "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
   },
+  lange: {
+    translation: "dlouho",
+    example: "Darauf lag der lange Eisenhebel.",
+    exampleTranslation: "Na něm byla položená dlouhá železná páka.",
+  },
+  langen: {
+    translation: "dlouhá",
+    example:
+      "Sie alle glaubten, dass der Verwalter Vavrinec, ein kleines Wiesel in einem langen braunen Mantel, das System bewachte.",
+    exampleTranslation:
+      "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
+  },
+  langer: {
+    translation: "dávnými",
+    example:
+      "Im hinteren Raum fanden sie eine leere Stelle, an der ein langer Eisenhebel gestanden hatte.",
+    exampleTranslation:
+      "V zadní místnosti našli prázdné místo po dlouhé železné páce.",
+  },
+  länger: {
+    translation: "rozhodnutí",
+    example: "Er war länger als noch vor einem Augenblick.",
+    exampleTranslation: "Byla delší než před chvílí.",
+  },
   langes: {
     translation: "dlouhé",
     example: "Aus dem Tunnel kam ein langes Knacken.",
     exampleTranslation: "Z tunelu se ozvalo dlouhé zapraskání.",
+  },
+  langsam: {
+    translation: "pomalu",
+    example:
+      "Das war noch kein Beweis, aber die einzelnen Teile der Geschichte begannen langsam zusammenzupassen.",
+    exampleTranslation:
+      "To ještě nebyl důkaz, ale jednotlivé části příběhu k sobě začínaly pomalu pasovat.",
+  },
+  langsamer: {
+    translation: "zpomalil",
+    example: "Der Silberbach floss langsamer als gewöhnlich.",
+    exampleTranslation: "Stříbrný potok tekl pomaleji než obvykle.",
+  },
+  lässt: {
+    translation: "nechává, dá se",
+    example: "Das kleine lässt den Druck in den alten östlichen Kanal ab.",
+    exampleTranslation: "Malé uvolňuje tlak do starého východního kanálu.",
+  },
+  laterne: {
+    translation: "lucernu",
+    example: "Ryska hängte sich eine kleine Laterne um den Hals.",
+    exampleTranslation: "Ryška si kolem krku zavěsila malou lucernu.",
+  },
+  laternen: {
+    translation: "lucerny",
+    example:
+      "Hbitka hängte rote Blätter an die Zweige, die Vögel flochten Kränze aus Gras, und Bodlik baute kleine Laternen aus Nussschalen.",
+    exampleTranslation:
+      "Hbitka zavěsila na větve červené listy, ptáci spletli věnce z trávy a Bodlík postavil malé lucerny ze skořápek ořechů.",
   },
   laufe: {
     translation: "běžím",
@@ -9738,6 +6984,13 @@ export const dictionary = {
       "Dort bewahrte sie Briefe, Karten und Chroniken auf, die sie im Laufe vieler Jahre in verlassenen Häusern der Menschen gefunden hatte.",
     exampleTranslation:
       "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
+  },
+  laufen: {
+    translation: "běžet",
+    example:
+      "Die Musik verstummte, und mehrere Tiere wollten sofort in den Wald laufen.",
+    exampleTranslation:
+      "Hudba utichla a několik zvířat se chtělo okamžitě rozběhnout do lesa.",
   },
   läuferin: {
     translation: "běžkyně",
@@ -9765,6 +7018,11 @@ export const dictionary = {
     exampleTranslation:
       "Žáci chodili po lese, naslouchali větru, porovnávali stopy a učili se pokládat tři otázky: Co opravdu vidím?",
   },
+  laut: {
+    translation: "hlasitě",
+    example: "Die Strömung unter ihm schlug laut gegen die Wände.",
+    exampleTranslation: "Proud pod ním hlasitě narážel do stěn.",
+  },
   läuten: {
     translation: "zvonění",
     example:
@@ -9772,16 +7030,58 @@ export const dictionary = {
     exampleTranslation:
       "Jedno zazvonění znamenalo klidnou vodu, dvě rychlý růst a tři bezprostřední nebezpečí.",
   },
+  läutete: {
+    translation: "zazvonil",
+    example: "Dann läutete Hbitka einmal die Glocke.",
+    exampleTranslation: "Potom Hbitka jednou zazvonila.",
+  },
+  leben: {
+    translation: "život",
+    example: "„Aber im Silberwald leben mehrere Wiesel.",
+    exampleTranslation: "„Ale ve Stříbrném lese žije více lasic.",
+  },
   lebenden: {
     translation: "žijících",
     example:
       "„Diese Abdrücke stammen nicht von einer lebenden Pfote“, sagte sie.",
     exampleTranslation: "„Tyto stopy nevytvořila živá tlapa,“ řekla.",
   },
+  leer: {
+    translation: "prázdná",
+    example: "Der Brunnen war bereits leer.",
+    exampleTranslation: "Kašna už byla prázdná.",
+  },
+  leere: {
+    translation: "prázdných",
+    example:
+      "Sie setzte sich auf einen niedrigen Ast und blickte ernst auf das leere Becken.",
+    exampleTranslation:
+      "Posadila se na nízkou větev a vážně pohlédla na prázdnou nádrž.",
+  },
+  leeren: {
+    translation: "prázdné",
+    example:
+      "Der Stein bewegte sich mit einem tiefen Donnern und fiel in den leeren Steinbruch.",
+    exampleTranslation:
+      "Kámen se s hlubokým rachotem pohnul a spadl do prázdného lomu.",
+  },
   leerer: {
     translation: "prázdný",
     example: "An der Wand hing ein leerer Eisenschrank.",
     exampleTranslation: "Na stěně visela prázdná železná skříňka.",
+  },
+  legte: {
+    translation: "položil",
+    example:
+      "Doch Ryska legte sich fast flach auf den Boden und untersuchte ihre Ränder.",
+    exampleTranslation:
+      "Ryška si však lehla téměř až k zemi a sledovala jejich okraje.",
+  },
+  legten: {
+    translation: "položili",
+    example:
+      "Auf die anderen Enden legten sie einen starken Baumstamm als Gewicht.",
+    exampleTranslation: "Na opačné konce položili silný kmen jako závaží.",
   },
   lehm: {
     translation: "jíl",
@@ -9790,11 +7090,49 @@ export const dictionary = {
     exampleTranslation:
       "Společně vyměnili poškozené kameny a spáry vyplnili jílem.",
   },
+  leicht: {
+    translation: "lehce",
+    example: "Beim zweiten berührte er ihn leicht.",
+    exampleTranslation: "Při druhém do ní lehce kleplo.",
+  },
+  leichter: {
+    translation: "snadnější",
+    example:
+      "„Wenn du uns früher davon erzählt hättest, wäre die Reparatur in der Nacht vielleicht leichter gewesen“, sagte Tonda zu Vavrinec.",
+    exampleTranslation:
+      "„Kdybys nám o tom řekl dřív, noční oprava mohla být snazší,“ řekl Tonda Vavřincovi.",
+  },
   leichtes: {
     translation: "lehké",
     example:
       "„Für den ersten Schritt brauchen wir etwas Leichtes“, erklärte sie.",
     exampleTranslation: "„První krok potřebuje něco lehkého,“ vysvětlila.",
+  },
+  leise: {
+    translation: "tiše",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
+  },
+  leisen: {
+    translation: "tichý",
+    example:
+      "Diesmal hatte er keinen versteckten Schlüssel in der Tasche, und jeder seiner Schritte wurde vom leisen Klirren der öffentlich gezählten Werkzeuge begleitet.",
+    exampleTranslation:
+      "Tentokrát neměl v kapse ukrytý klíč a každý jeho krok doprovázelo tiché cinkání veřejně spočítaných nástrojů.",
+  },
+  leises: {
+    translation: "tiché",
+    example: "Ein leises Klicken war zu hören.",
+    exampleTranslation: "Ozvalo se tiché cvaknutí.",
+  },
+  leitete: {
+    translation: "vedl, odváděl",
+    example:
+      "Das nördliche Rad leitete Wasser zum Brunnen, das westliche zu den Waldquellen und das südliche zu den Obstgärten unterhalb des Hügels.",
+    exampleTranslation:
+      "Severní kolo posílalo vodu ke kašně, západní k lesním studánkám a jižní k sadům pod kopcem.",
   },
   lernen: {
     translation: "učit se",
@@ -9802,6 +7140,13 @@ export const dictionary = {
       "Wir müssen lernen, niemanden nur wegen seines Aussehens oder seiner Tierart zu beschuldigen.“",
     exampleTranslation:
       "Musíme se naučit neobviňovat nikoho jen podle toho, jak vypadá nebo k jakému druhu patří.“",
+  },
+  lernten: {
+    translation: "naučili se",
+    example:
+      "Dadurch lernten Hasen, Eichhörnchen, Igel und Vögel das Wassersystem kennen.",
+    exampleTranslation:
+      "Díky tomu se vodní systém naučili znát zajíci, veverky, ježci i ptáci.",
   },
   lesen: {
     translation: "číst",
@@ -9825,12 +7170,31 @@ export const dictionary = {
     example: "„Der Mond leuchtet nicht mit seinem eigenen Licht“, sagte sie.",
     exampleTranslation: "„Měsíc nesvítí vlastním světlem,“ řekla.",
   },
+  leuchtete: {
+    translation: "zářil",
+    example: "Ryska leuchtete in die Öffnung mit dem Blatt.",
+    exampleTranslation: "Ryška posvítila do otvoru s listem.",
+  },
+  licht: {
+    translation: "světlo",
+    example:
+      "Licht schien durch die Bretter, und der Duft von Äpfeln drang hinein.",
+    exampleTranslation:
+      "Mezi prkny prosvítalo světlo a dovnitř proudila vůně jablek.",
+  },
   lichtstreifen: {
     translation: "proužek světla",
     example:
       "Der rechte stieg zu einer Stelle an, von der ein schwacher Lichtstreifen kam.",
     exampleTranslation:
       "Pravá stoupala k místu, odkud přicházel slabý proužek světla.",
+  },
+  lichtung: {
+    translation: "mýtina",
+    example:
+      "In der Mitte des Silberwaldes lag eine große Lichtung, die die Tiere den Waldplatz nannten.",
+    exampleTranslation:
+      "Uprostřed Stříbrného lesa se rozkládala velká mýtina, které zvířata říkala Lesní náměstí.",
   },
   lieber: {
     translation: "raději",
@@ -9846,10 +7210,27 @@ export const dictionary = {
     exampleTranslation:
       "Nejraději by vykřikla, že chytrý zloděj by na sebe neukazoval.",
   },
+  lief: {
+    translation: "běžel",
+    example: "Als sie den Hügel hinabgingen, lief Bodlik neben ihr.",
+    exampleTranslation: "Když sestupovali z kopce, Bodlík kráčel vedle ní.",
+  },
+  liegenden: {
+    translation: "ležící, položený",
+    example:
+      "Vögel flogen durch den Wald und warnten die Bewohner der tief liegenden Baue.",
+    exampleTranslation:
+      "Ptáci létali po lese a varovali obyvatele nízkých nor.",
+  },
   liegt: {
     translation: "leží",
     example: "„Vielleicht liegt ein Ast im Kanal“, schlug der Biber Tonda vor.",
     exampleTranslation: "„Možná je v kanálu větev,“ navrhl bobr Tonda.",
+  },
+  ließ: {
+    translation: "nechala",
+    example: "Das andere ließ überschüssigen Druck ab.",
+    exampleTranslation: "Druhé uvolňovalo přebytečný tlak.",
   },
   ließen: {
     translation: "nechali",
@@ -9858,12 +7239,29 @@ export const dictionary = {
     exampleTranslation:
       "„Jednu kopii nechali ve vodním domě a druhou schovali na bezpečném místě.“",
   },
+  linie: {
+    translation: "čára",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
+  linke: {
+    translation: "levá",
+    example: "Die rechte Spur war tiefer als die linke.",
+    exampleTranslation: "Pravá kolej byla hlubší než levá.",
+  },
   linken: {
     translation: "levém",
     example:
       "Sie bemerkte, dass unter der linken Ecke der Tür kalte Luft hervorströmte.",
     exampleTranslation:
       "Všimla si, že pod levým rohem dveří proudí chladný vzduch.",
+  },
+  links: {
+    translation: "vlevo",
+    example: "Links hörte sie Wasser.",
+    exampleTranslation: "Zleva slyšela vodu.",
   },
   liste: {
     translation: "seznam, soupis",
@@ -9931,6 +7329,17 @@ export const dictionary = {
     exampleTranslation:
       "Prasklá stěna byla zajištěná trámy, ale řešení z bouřkové noci mělo vydržet jen krátce.",
   },
+  lücke: {
+    translation: "mezera",
+    example:
+      "Das kleinere Rad stand unter dem Felsvorsprung hinter einer schmalen Lücke.",
+    exampleTranslation: "Menší kolo stálo pod římsou za úzkou mezerou.",
+  },
+  luft: {
+    translation: "vzduch",
+    example: "Ryska holte Luft.",
+    exampleTranslation: "Ryška se nadechla.",
+  },
   lüftungsöffnung: {
     translation: "větrací otvor",
     example: "„Der Tunnel muss eine Lüftungsöffnung haben“, sagte sie.",
@@ -9948,11 +7357,26 @@ export const dictionary = {
     example: "Und weil meine Lüge beinahe den Wald zerstört hätte.“",
     exampleTranslation: "A protože moje lež málem zničila les.“",
   },
+  machen: {
+    translation: "uděláme",
+    example: "„Machen wir aus den Vorbereitungen ein echtes Fest.",
+    exampleTranslation: "„Proměňme přípravy v opravdový svátek.",
+  },
+  machst: {
+    translation: "uděláš",
+    example: "„Was machst du hier?“",
+    exampleTranslation: "„Co tady děláš?“",
+  },
   macht: {
     translation: "dělá, moc",
     example:
       "„Wenn ein Tier einen Schritt macht, ist der vordere Teil der Spur tiefer.",
     exampleTranslation: "„Když zvíře vykročí, přední část stopy je hlubší.",
+  },
+  machte: {
+    translation: "udělal",
+    example: "Ich machte die falschen Spuren, um Zeit zu gewinnen.“",
+    exampleTranslation: "Udělal jsem falešné stopy, abych získal čas.“",
   },
   machten: {
     translation: "dělali",
@@ -9973,12 +7397,38 @@ export const dictionary = {
     example: "Das Dröhnen des Wassers verwandelte sich in mächtiges Donnern.",
     exampleTranslation: "Hukot vody se měnil v silné dunění.",
   },
+  mal: {
+    translation: "poprvé",
+    example: "Beim ersten Mal knarrte das Rad nur.",
+    exampleTranslation: "Poprvé kolo jen zavrzalo.",
+  },
+  man: {
+    translation: "člověk",
+    example:
+      "Früher hatte man mit dem Eimer Steine aus dem Brunnen geholt, doch nun hing er leer an der Wand.",
+    exampleTranslation:
+      "Vědro kdysi sloužilo k vybírání kamení ze studny, ale nyní viselo prázdné u stěny.",
+  },
+  manche: {
+    translation: "některé",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
+  },
   manchmal: {
     translation: "někdy",
     example:
       "Manchmal bedeutete sie nur, stehen zu bleiben, herauszufinden, was wirklich wichtig war, und in der richtigen Reihenfolge zu beginnen.",
     exampleTranslation:
       "Někdy znamenala pouze zastavit se, zjistit, co je skutečně důležité, a začít ve správném pořadí.",
+  },
+  mantel: {
+    translation: "plášť",
+    example:
+      "Sie alle glaubten, dass der Verwalter Vavrinec, ein kleines Wiesel in einem langen braunen Mantel, das System bewachte.",
+    exampleTranslation:
+      "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
   },
   marder: {
     translation: "kuna",
@@ -10016,6 +7466,11 @@ export const dictionary = {
     exampleTranslation:
       "„Promiň mi, že jsem použil tvé stopy jako masku pro vlastní strach.“",
   },
+  mauer: {
+    translation: "stěně",
+    example: "In Wirklichkeit war es eine Mauer zwischen mir und den anderen.“",
+    exampleTranslation: "Ve skutečnosti to byla zeď mezi mnou a ostatními.“",
+  },
   maulwurfsfamilie: {
     translation: "rodina krtků",
     example:
@@ -10042,12 +7497,29 @@ export const dictionary = {
     exampleTranslation:
       "Na druhé straně stála dvě železná kola spojená složitým mechanismem.",
   },
+  mehr: {
+    translation: "více",
+    example: "Sie brauchte mehr Beweise.",
+    exampleTranslation: "Potřebovala více důkazů.",
+  },
+  mehrere: {
+    translation: "několik",
+    example: "Mehrere Tiere nickten.",
+    exampleTranslation: "Několik zvířat přikývlo.",
+  },
   mehreren: {
     translation: "několika",
     example:
       "Der Boden war hart, aber an mehreren Stellen war noch Schlamm vom Regen des Vortages übrig.",
     exampleTranslation:
       "Půda byla tvrdá, ale na několika místech zůstalo po včerejším dešti bláto.",
+  },
+  mein: {
+    translation: "příteli",
+    example:
+      "„Weil das Tier, dem ich die Schuld geben wollte, mein Leben gerettet hat.",
+    exampleTranslation:
+      "„Protože zvíře, které jsem chtěl obvinit, mi zachránilo život.",
   },
   meine: {
     translation: "můj, moje",
@@ -10080,6 +7552,18 @@ export const dictionary = {
     example: "Hbitka lief durch die Baumkronen und meldete abgebrochene Äste.",
     exampleTranslation: "Hbitka oběhla koruny stromů a hlásila zlomené větve.",
   },
+  menge: {
+    translation: "dav",
+    example: "Trotzdem erhoben sich unzufriedene Stimmen aus der Menge.",
+    exampleTranslation: "Přesto se ozvaly nespokojené hlasy.",
+  },
+  menschen: {
+    translation: "lidé",
+    example:
+      "Dort bewahrte sie Briefe, Karten und Chroniken auf, die sie im Laufe vieler Jahre in verlassenen Häusern der Menschen gefunden hatte.",
+    exampleTranslation:
+      "Uchovávala tam dopisy, mapy a kroniky, které během mnoha let našla v opuštěných lidských domech.",
+  },
   merkte: {
     translation: "všiml si",
     example: "Ryska sagte nichts dazu, aber sie merkte sich diese Tat.",
@@ -10090,6 +7574,13 @@ export const dictionary = {
     translation: "mosazný klíč",
     example: "Das Wiesel legte einen Messingschlüssel auf den Tisch.",
     exampleTranslation: "Lasičák položil na stůl mosazný klíč.",
+  },
+  metall: {
+    translation: "kov",
+    example:
+      "Das Metall knarrte, aber der Mechanismus blieb in der offenen Stellung.",
+    exampleTranslation:
+      "Kov zaskřípal, mechanismus však zůstal v otevřené poloze.",
   },
   metallgegenstand: {
     translation: "kovový předmět",
@@ -10127,6 +7618,13 @@ export const dictionary = {
     example: "„Ich dachte, hier wäre kein Platz für mich.“",
     exampleTranslation: "„Myslel jsem, že tu pro mě místo není.“",
   },
+  minuten: {
+    translation: "minutách",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
   mir: {
     translation: "mi, mně",
     example: "„Hilfst du mir, diese Körbe in den Schatten zu tragen?“",
@@ -10141,6 +7639,13 @@ export const dictionary = {
     translation: "nedůvěřivě",
     example: "Andere sahen sie misstrauisch an.",
     exampleTranslation: "Jiná se na ni dívala s nedůvěrou.",
+  },
+  mit: {
+    translation: "s",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
   },
   miteinander: {
     translation: "spolu, navzájem",
@@ -10179,10 +7684,42 @@ export const dictionary = {
     example: "Gegen Mittag verschwand die letzte rote Beere von der Karte.",
     exampleTranslation: "Kolem poledne zmizela z mapy poslední červená bobule.",
   },
+  mitte: {
+    translation: "střed",
+    example:
+      "In der Mitte des Silberwaldes lag eine große Lichtung, die die Tiere den Waldplatz nannten.",
+    exampleTranslation:
+      "Uprostřed Stříbrného lesa se rozkládala velká mýtina, které zvířata říkala Lesní náměstí.",
+  },
   mitten: {
     translation: "uprostřed",
     example: "Mitten beim Abendessen kam eine erschrockene Häsin angelaufen.",
     exampleTranslation: "Uprostřed večeře přiběhla vyděšená zaječice.",
+  },
+  mitternacht: {
+    translation: "půlnocí",
+    example: "Ryska kehrte kurz vor Mitternacht vom Mondbrunnen zurück.",
+    exampleTranslation:
+      "Ryška se vrátila z Měsíční studny krátce před půlnocí.",
+  },
+  mittlere: {
+    translation: "prostřední",
+    example: "Das Rad kehrte endlich in seine mittlere Stellung zurück.",
+    exampleTranslation: "Kolo se konečně vrátilo do střední polohy.",
+  },
+  monat: {
+    translation: "měsíc",
+    example:
+      "Rozarka erhielt einen für den Waldrat, Tonda bekam den zweiten als Fachmann für Wasserbauten, und jeden Monat sollte ein anderer Bewohner des Tals den dritten bewachen.",
+    exampleTranslation:
+      "Jeden dostala Rozárka za lesní radu, druhý Tonda jako znalec vodních staveb a třetí měl každý měsíc hlídat jiný obyvatel údolí.",
+  },
+  mond: {
+    translation: "měsíc",
+    example:
+      "In seine Oberfläche waren drei Symbole gemeißelt: ein Tropfen, ein Blatt und ein Mond.",
+    exampleTranslation:
+      "Na jejím povrchu byly vytesané tři znaky: kapka, list a měsíc.",
   },
   mondbrunnen: {
     translation: "Měsíční studna",
@@ -10217,6 +7754,23 @@ export const dictionary = {
     example: "Unter dem Blatt lagen trockene Moosstücke.",
     exampleTranslation: "Pod listem ležely suché kousky mechu.",
   },
+  morgen: {
+    translation: "ráno",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  morgens: {
+    translation: "ráno",
+    example: "Eines Morgens brachte ein junger Fuchs einen seltsamen Abdruck.",
+    exampleTranslation: "Jednoho rána přineslo liščí mládě podivný otisk.",
+  },
+  müde: {
+    translation: "unavený",
+    example: "Sie alle standen durchnässt und müde im Schlamm.",
+    exampleTranslation: "Všichni stáli v blátě, promočení a unavení.",
+  },
   müdigkeit: {
     translation: "únava",
     example:
@@ -10246,10 +7800,53 @@ export const dictionary = {
     example: "„Noch zwei Tage“, murmelte er.",
     exampleTranslation: "„Ještě dva dny,“ zamumlal.",
   },
+  musik: {
+    translation: "hudba",
+    example: "Ein Fest besteht nicht nur aus Musik.",
+    exampleTranslation: "Oslava není jen hudba.",
+  },
   muss: {
     translation: "musí",
     example: "Jemand muss herausfinden, wie viel Wasser wir noch haben.“",
     exampleTranslation: "Někdo musí zjistit, kolik vody ještě máme.“",
+  },
+  müssen: {
+    translation: "nemusíme",
+    example: "„Wir müssen uns das Wasserhaus ansehen“, sagte sie.",
+    exampleTranslation: "„Musíme se podívat k vodnímu domu,“ řekla.",
+  },
+  musst: {
+    translation: "musíš",
+    example:
+      "„Du musst nicht allen beweisen, dass du arbeitest“, sagte Ryska zu ihm.",
+    exampleTranslation:
+      "„Nemusíš všem dokazovat, že pracuješ,“ řekla mu Ryška.",
+  },
+  musste: {
+    translation: "musel, musela",
+    example: "Bis dahin musste Ryska in Sichtweite der Wächter bleiben.",
+    exampleTranslation: "Do té doby měla Ryška zůstat na dohled strážců.",
+  },
+  mussten: {
+    translation: "musely",
+    example:
+      "Sie mussten noch das große Rad zurückdrehen und das kleinere Tor öffnen.",
+    exampleTranslation:
+      "Museli ještě vrátit velké kolo a uvolnit menší uzávěr.",
+  },
+  mut: {
+    translation: "odvaha",
+    example:
+      "Sie erinnerten sich an sie, weil sie Mut mit Besonnenheit, Beweise mit Freundlichkeit und Wahrheit mit Hilfsbereitschaft verband.",
+    exampleTranslation:
+      "Pamatovala si ji proto, že spojovala odvahu s rozvahou, důkazy s laskavostí a pravdu s ochotou pomoci.",
+  },
+  mutter: {
+    translation: "maminka",
+    example:
+      "„Ich wollte meiner Mutter einen Stern bringen“, flüsterte Jitrenka.",
+    exampleTranslation:
+      "„Chtěla jsem přinést mamince hvězdu,“ špitla Jitřenka.",
   },
   mütter: {
     translation: "matky",
@@ -10258,6 +7855,13 @@ export const dictionary = {
     exampleTranslation:
       "Matky přinesly mláďatům vodu v miskách a ptáci létali ke vzdáleným tůním.",
   },
+  nach: {
+    translation: "po / do",
+    example:
+      "Wenn die Ameisen den Hügel hinaufeilten, suchte sie am Himmel nach Gewitterwolken.",
+    exampleTranslation:
+      "Když mravenci spěchali do kopce, hledala na obloze bouřkové mraky.",
+  },
   nachdem: {
     translation: "poté co",
     example:
@@ -10265,10 +7869,42 @@ export const dictionary = {
     exampleTranslation:
       "Když odešel, Ryška opatrně vytáhla dřevěný odřezek pod plotem.",
   },
+  nachmittag: {
+    translation: "odpoledne",
+    example:
+      "Am Nachmittag kehrte Skokanek völlig aufgeregt vom Mondbrunnen zurück.",
+    exampleTranslation:
+      "Odpoledne se z Měsíční studny vrátil Skokánek celý rozrušený.",
+  },
+  nachricht: {
+    translation: "zpráva",
+    example: "Vielleicht konnte er auch ihre Nachricht weitertragen.",
+    exampleTranslation: "Možná mohl přenést i jejich zprávu.",
+  },
+  nachrichten: {
+    translation: "zprávy",
+    example:
+      "Vögel brachten Nachrichten zwischen dem Hügel und dem Waldplatz hin und her.",
+    exampleTranslation: "Ptáci nosili zprávy mezi kopcem a Lesním náměstím.",
+  },
   nachsehen: {
     translation: "podívat se, zkontrolovat",
     example: "Ich wollte nachsehen, aber ich hatte Angst.“",
     exampleTranslation: "Chtěla jsem se podívat, ale bála jsem se.“",
+  },
+  nächsten: {
+    translation: "příští / následující",
+    example:
+      "Sie beugte sich über den nächsten Abdruck und untersuchte ihn genau.",
+    exampleTranslation:
+      "Sklonila se k nejbližší stopě a pozorně si ji prohlédla.",
+  },
+  nacht: {
+    translation: "noc",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
   },
   nächte: {
     translation: "noci",
@@ -10285,12 +7921,43 @@ export const dictionary = {
     example: "Vavrinecs blauer Mantel hing an einem Nagel.",
     exampleTranslation: "Na hřebíku visel Vavřincův modrý kabát.",
   },
+  nahm: {
+    translation: "vzal",
+    example: "Ryska nahm zwei Körbe und stellte sie unter die Eiche.",
+    exampleTranslation: "Ryška vzala dva košíky a položila je pod dub.",
+  },
+  nahmen: {
+    translation: "vzali",
+    example: "Die Tiere nahmen ihren Vorschlag an.",
+    exampleTranslation: "Zvířata její návrh přijala.",
+  },
   nahrung: {
     translation: "potrava",
     example:
       "Ein Teil der Ernte sollte an die Tiere gehen, die wegen des Wassermangels Nahrung verloren hatten.",
     exampleTranslation:
       "Část úrody měla být rozdělena zvířatům, která kvůli nedostatku vody přišla o potravu.",
+  },
+  namens: {
+    translation: "jménem",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  nannten: {
+    translation: "říkali",
+    example:
+      "In der Mitte des Silberwaldes lag eine große Lichtung, die die Tiere den Waldplatz nannten.",
+    exampleTranslation:
+      "Uprostřed Stříbrného lesa se rozkládala velká mýtina, které zvířata říkala Lesní náměstí.",
+  },
+  nase: {
+    translation: "nosu",
+    example:
+      "Doch sie hatte ausgezeichnete Augen, eine empfindliche Nase und vor allem einen geduldigen Verstand.",
+    exampleTranslation:
+      "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
   },
   nass: {
     translation: "mokrý",
@@ -10304,11 +7971,22 @@ export const dictionary = {
     example: "Er roch nach Bienenwachs und ein wenig nach nassem Eisen.",
     exampleTranslation: "Voněla po včelím vosku a trochu po mokrém železe.",
   },
+  nassen: {
+    translation: "mokrým",
+    example: "Der Gang führte zwischen nassen Wänden abwärts.",
+    exampleTranslation: "Chodba klesala mezi mokrými stěnami.",
+  },
   nasser: {
     translation: "mokřejší, mokrý",
     example:
       "Einen Augenblick später kam sie mit einem Stück nasser Erde zurück.",
     exampleTranslation: "Za chvíli se vrátila s kouskem mokré hlíny.",
+  },
+  neben: {
+    translation: "vedle",
+    example:
+      "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
+    exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
   },
   nehmen: {
     translation: "vzít",
@@ -10336,6 +8014,24 @@ export const dictionary = {
     exampleTranslation:
       "„V Suchém údolí si letos udělala hnízda rodina křepelek.",
   },
+  neu: {
+    translation: "nový",
+    example:
+      "Ryska bemerkte, dass zwei Knöpfe an seinem blauen Mantel neu und glänzend waren.",
+    exampleTranslation:
+      "Ryška si všimla, že na jeho modrém kabátu jsou dva knoflíky nové a lesklé.",
+  },
+  neue: {
+    translation: "nový",
+    example:
+      "„Wir müssen herausfinden, wohin der neue Kanal führt“, entschied sie.",
+    exampleTranslation: "„Musíme zjistit, kam vede nový kanál,“ rozhodla.",
+  },
+  neuen: {
+    translation: "nového",
+    example: "Vavrinec kam zu dem neuen Kanal und drehte ein kleines Rad.",
+    exampleTranslation: "Vavřinec přišel k novému kanálu a otočil malým kolem.",
+  },
   neuer: {
     translation: "nový",
     example: "Ein neuer Knopf war mit einem anderen Faden angenäht.",
@@ -10348,10 +8044,35 @@ export const dictionary = {
     exampleTranslation:
       "Vavřinec mlčky očistil zvonek a vyrobil pro něj nový, silnější provaz.",
   },
+  neugier: {
+    translation: "zvědavost",
+    example: "Diesmal waren die Tiere nicht nur aus Neugier gekommen.",
+    exampleTranslation: "Tentokrát nepřišla zvířata jen ze zvědavosti.",
+  },
+  nicht: {
+    translation: "ne",
+    example: "Ein einziger Hinweis erzählt noch nicht die ganze Geschichte.",
+    exampleTranslation: "Jedna stopa ještě nevypráví celý příběh.",
+  },
+  nichts: {
+    translation: "nic",
+    example: "Ryska bemerkte es, sagte aber nichts.",
+    exampleTranslation: "Ryška si toho všimla, ale nic neřekla.",
+  },
+  nickte: {
+    translation: "přikývla",
+    example: "Rozarka nickte zustimmend.",
+    exampleTranslation: "Rozárka souhlasně přikývla.",
+  },
   nickten: {
     translation: "přikývli",
     example: "Mehrere Tiere nickten.",
     exampleTranslation: "Několik zvířat přikývlo.",
+  },
+  nie: {
+    translation: "nikdy",
+    example: "Die Tiere gingen fast nie dorthin.",
+    exampleTranslation: "Zvířata tam téměř nechodila.",
   },
   niedrigen: {
     translation: "nízkého",
@@ -10367,6 +8088,16 @@ export const dictionary = {
     exampleTranslation:
       "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
   },
+  niemals: {
+    translation: "nikdy",
+    example: "„Ein kluges Tier ist nicht eines, das sich niemals irrt.",
+    exampleTranslation: "„Chytrý není ten, kdo se nikdy nemýlí.",
+  },
+  niemand: {
+    translation: "nikdo",
+    example: "„Niemand“, antwortete Vavrinec zu schnell.",
+    exampleTranslation: "„Nikdo,“ odpověděl Vavřinec příliš rychle.",
+  },
   niemandem: {
     translation: "nikomu",
     example:
@@ -10381,6 +8112,13 @@ export const dictionary = {
     exampleTranslation:
       "Musíme se naučit neobviňovat nikoho jen podle toho, jak vypadá nebo k jakému druhu patří.“",
   },
+  noch: {
+    translation: "ještě",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
+  },
   norden: {
     translation: "sever",
     example:
@@ -10388,15 +8126,50 @@ export const dictionary = {
     exampleTranslation:
       "Následující ráno dorazila ke Stříbrnému lesu studená severní oblaka.",
   },
+  nördliche: {
+    translation: "severní",
+    example:
+      "Das nördliche Rad leitete Wasser zum Brunnen, das westliche zu den Waldquellen und das südliche zu den Obstgärten unterhalb des Hügels.",
+    exampleTranslation:
+      "Severní kolo posílalo vodu ke kašně, západní k lesním studánkám a jižní k sadům pod kopcem.",
+  },
+  nördlichen: {
+    translation: "severní",
+    example:
+      "Das Wasser floss wieder gleichmäßig zum nördlichen Brunnen, zu den westlichen Quellen und zum südlichen Obstgarten.",
+    exampleTranslation:
+      "Voda znovu proudila rovnoměrně k severní kašně, západním studánkám i jižnímu sadu.",
+  },
   normalen: {
     translation: "normálních",
     example: "Unter normalen Umständen hätten alle den Regen begrüßt.",
     exampleTranslation: "Za normálních okolností by déšť všichni vítali.",
   },
+  normalerweise: {
+    translation: "obvykle",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
   notizbuch: {
     translation: "sešit, zápisník",
     example: "Vavrinec brachte sein altes Notizbuch.",
     exampleTranslation: "Vavřinec přinesl svůj starý sešit.",
+  },
+  nun: {
+    translation: "nyní",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
+  nur: {
+    translation: "jen / pouze",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
   },
   nussschalen: {
     translation: "skořápky ořechů",
@@ -10418,15 +8191,47 @@ export const dictionary = {
     exampleTranslation:
       "Můžeš však každý den udělat jednu pravdivou a užitečnou věc.",
   },
+  ob: {
+    translation: "zda",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
+  },
+  oben: {
+    translation: "nahoru",
+    example:
+      "Als sie oben ankamen, fanden sie die schwere Holztür halb geöffnet.",
+    exampleTranslation:
+      "Když dorazili nahoru, našli těžké dřevěné dveře pootevřené.",
+  },
   obere: {
     translation: "horní",
     example: "„Oder jemand hat das obere Tor geschlossen“, antwortete Rozarka.",
     exampleTranslation: "„Nebo někdo zavřel horní bránu,“ odpověděla Rozárka.",
   },
+  oberen: {
+    translation: "horní",
+    example:
+      "Ein Felsstück fiel aus dem oberen Teil der Höhle und zerstörte einen Teil der Brücke.",
+    exampleTranslation:
+      "Z horní části jeskyně spadl kus skály a rozbil část mostku.",
+  },
+  oberfläche: {
+    translation: "hladinu",
+    example:
+      "In seine Oberfläche waren drei Symbole gemeißelt: ein Tropfen, ein Blatt und ein Mond.",
+    exampleTranslation:
+      "Na jejím povrchu byly vytesané tři znaky: kapka, list a měsíc.",
+  },
   obst: {
     translation: "ovoce",
     example: "Darin standen Kisten mit Obst, Fässer und einige Werkzeuge.",
     exampleTranslation: "Stály v ní bedny s ovocem, sudy a několik nástrojů.",
+  },
+  obstgarten: {
+    translation: "sad",
+    example: "„Er fuhr auf dem Weg zum südlichen Obstgarten.",
+    exampleTranslation: "„Jel po cestě k jižnímu sadu.",
   },
   obstgärten: {
     translation: "sady",
@@ -10440,6 +8245,11 @@ export const dictionary = {
     example: "Die Spuren führten bis zum hohen Zaun des südlichen Obstgartens.",
     exampleTranslation: "Stopy vedly až k vysokému plotu jižního sadu.",
   },
+  oder: {
+    translation: "nebo",
+    example: "„Oder jemand hat das obere Tor geschlossen“, antwortete Rozarka.",
+    exampleTranslation: "„Nebo někdo zavřel horní bránu,“ odpověděla Rozárka.",
+  },
   offen: {
     translation: "otevřený",
     example: "„Das Wasserhaus steht offen!“, rief er.",
@@ -10450,6 +8260,13 @@ export const dictionary = {
     example:
       "Vavrinec hatte offenbar entdeckt, dass dort etwas beschädigt war.",
     exampleTranslation: "Vavřinec zřejmě zjistil, že je tam něco poškozené.",
+  },
+  offene: {
+    translation: "otevřenými",
+    example:
+      "Der offene Kanal zum Steinbruch senkte den Wasserstand, aber der Regen brachte immer mehr Wasser in die Quelle.",
+    exampleTranslation:
+      "Otevřený kanál do lomu snižoval hladinu, ale déšť přiváděl do pramene stále více vody.",
   },
   offenen: {
     translation: "otevřeném",
@@ -10472,15 +8289,57 @@ export const dictionary = {
     exampleTranslation:
       "Každý týden zapisoval stav pramene na veřejnou tabuli.",
   },
+  öffnen: {
+    translation: "otevřít",
+    example:
+      "„Ohne den Schlüssel können wir die Tür nicht öffnen“, sagte Bodlik.",
+    exampleTranslation: "„Bez klíče dveře neotevřeme,“ řekl Bodlík.",
+  },
   öffnet: {
     translation: "otevírá",
     example: "„Wahrscheinlich öffnet er die Haupttür“, sagte Ryska.",
     exampleTranslation: "„Nejspíš otevře hlavní dveře,“ řekla Ryška.",
   },
+  öffnete: {
+    translation: "otevřel",
+    example: "Rozarka öffnete eine schwere Holztruhe.",
+    exampleTranslation: "Rozárka otevřela těžkou dřevěnou truhlu.",
+  },
+  öffneten: {
+    translation: "otevřeli",
+    example:
+      "Nach einigen Minuten öffneten sie die zweite Stufe und beobachteten die Druckanzeigen.",
+    exampleTranslation:
+      "Po několika minutách otevřeli druhý dílek a pozorovali značky tlaku.",
+  },
+  öffnung: {
+    translation: "otvor",
+    example: "Tonda steckte den Hebel in die stabilste Öffnung.",
+    exampleTranslation: "Tonda vložil páku do nejpevnějšího otvoru.",
+  },
   öffnungen: {
     translation: "otvory",
     example: "Ryska untersuchte die Öffnungen.",
     exampleTranslation: "Ryška si prohlédla otvory.",
+  },
+  oft: {
+    translation: "často",
+    example:
+      "„Die ursprünglichen Erbauer machten oft Kopien wichtiger Pläne“, sagte Rozarka.",
+    exampleTranslation:
+      "„Původní stavitelé si důležité plány často kopírovali,“ řekla Rozárka.",
+  },
+  ohne: {
+    translation: "aniž",
+    example:
+      "Ohne den Hauptschlüssel konnten die alten Wasserräder nicht sicher bedient werden.",
+    exampleTranslation:
+      "Bez hlavního klíče nebylo možné bezpečně ovládat stará vodní kola.",
+  },
+  ohren: {
+    translation: "ouška",
+    example: "Ryska spürte, wie ihre Ohren heiß wurden.",
+    exampleTranslation: "Ryška cítila, jak se jí zahřívají uši.",
   },
   öl: {
     translation: "olej",
@@ -10492,6 +8351,12 @@ export const dictionary = {
     translation: "nařídil, uspořádal",
     example: "Der Igel Bodlik ordnete bereits kleine Körbe mit Pilzen.",
     exampleTranslation: "Ježek Bodlík už rovnal malé košíky s houbami.",
+  },
+  ort: {
+    translation: "místo",
+    example: "Rozarka bat alle, den Ort nicht mehr zu betreten.",
+    exampleTranslation:
+      "Rozárka požádala všechny, aby na místo dál nevstupovali.",
   },
   orte: {
     translation: "místa",
@@ -10571,6 +8436,12 @@ export const dictionary = {
     example: "Dahinter wuchsen Reihen von Apfel-, Birnen- und Pflaumenbäumen.",
     exampleTranslation: "Za ním rostly řady jabloní, hrušní a švestek.",
   },
+  pfote: {
+    translation: "tlapka",
+    example:
+      "„Diese Abdrücke stammen nicht von einer lebenden Pfote“, sagte sie.",
+    exampleTranslation: "„Tyto stopy nevytvořila živá tlapa,“ řekla.",
+  },
   pfoten: {
     translation: "tlapy",
     example:
@@ -10589,6 +8460,13 @@ export const dictionary = {
     example: "An der ersten Pfütze fanden sie Wagenspuren.",
     exampleTranslation: "U první kaluže našli stopy vozíku.",
   },
+  pfützen: {
+    translation: "kalužemi",
+    example:
+      "Der Brunnen hörte auf zu rauschen, das kleine Mühlrad blieb stehen, und zwischen den Steinen blieben nur glänzende Pfützen zurück.",
+    exampleTranslation:
+      "Kašna přestala šumět, mlýnské kolečko se zastavilo a mezi kameny zůstaly jen lesklé loužičky.",
+  },
   pidalka: {
     translation: "Píďalka (jméno myšky)",
     example: "Nach der Sitzung kam eine junge Maus namens Pidalka zu Ryska.",
@@ -10598,6 +8476,11 @@ export const dictionary = {
     translation: "houbách",
     example: "Der Igel Bodlik ordnete bereits kleine Körbe mit Pilzen.",
     exampleTranslation: "Ježek Bodlík už rovnal malé košíky s houbami.",
+  },
+  plan: {
+    translation: "plán",
+    example: "Trotzdem hatte er seinen Plan fortgesetzt.",
+    exampleTranslation: "Přesto pokračoval ve svém plánu.",
   },
   pläne: {
     translation: "plány",
@@ -10613,11 +8496,29 @@ export const dictionary = {
     exampleTranslation:
       "Když do otvoru vložila suchý list, deska se lehce pohnula.",
   },
+  platz: {
+    translation: "místo, prostor",
+    example:
+      "Tiere aus den höher gelegenen Bauen boten Familien aus dem Tal Platz an.",
+    exampleTranslation: "Zvířata z vyšších nor nabídla místo rodinám z údolí.",
+  },
+  plötzlich: {
+    translation: "najednou",
+    example:
+      "Als sich der Gang plötzlich öffnete, blieb sie auf einem schmalen Felsvorsprung stehen.",
+    exampleTranslation:
+      "Když se chodba náhle otevřela, zastavila se na úzké kamenné římse.",
+  },
   predigt: {
     translation: "kázání",
     example:
       "„Du hast ihnen gerade mehr beigebracht als mit einer langen Predigt.“",
     exampleTranslation: "„Právě jsi je naučila víc než dlouhým kázáním.“",
+  },
+  preis: {
+    translation: "cenu",
+    example: "Sie war kein Preis dafür, die Klügste zu sein.",
+    exampleTranslation: "Nebyla cenou za to, že je nejchytřejší.",
   },
   privater: {
     translation: "soukromý",
@@ -10635,6 +8536,20 @@ export const dictionary = {
     translation: "problém",
     example: "Für jedes Problem legten sie einen Tannenzapfen auf die Karte.",
     exampleTranslation: "Ke každému problému položili na mapu šišku.",
+  },
+  prüfen: {
+    translation: "zkontrolovat",
+    example:
+      "Ein kluges Tier ist eines, das seine Idee prüfen und ändern kann.“",
+    exampleTranslation:
+      "Chytrý je ten, kdo svou myšlenku dokáže zkontrolovat a změnit.“",
+  },
+  prüfte: {
+    translation: "zkontroloval, vyzkoušel",
+    example:
+      "Ryska ging am Hauptkanal entlang und prüfte, ob irgendwo kleine Fische zurückgeblieben waren.",
+    exampleTranslation:
+      "Ryška procházela podél hlavního koryta a kontrolovala, zda někde nezůstaly malé rybky.",
   },
   prüfungen: {
     translation: "zkoušky",
@@ -10655,6 +8570,11 @@ export const dictionary = {
     exampleTranslation:
       "Jestli zůstala některá brána zavřená, potoky i studánky mohly během několika dnů vyschnout.",
   },
+  rad: {
+    translation: "kolo",
+    example: "Ein Rad hatte eine tiefere Spur hinterlassen als das andere.",
+    exampleTranslation: "Jedno kolo zanechávalo hlubší stopu než druhé.",
+  },
   räder: {
     translation: "kola",
     example:
@@ -10674,6 +8594,13 @@ export const dictionary = {
     example: "Aus seiner Achse ragte ein kurzer Holzstift.",
     exampleTranslation: "Z jeho osy trčel krátký dřevěný kolík.",
   },
+  rand: {
+    translation: "kraji",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
+  },
   ränder: {
     translation: "okraje",
     example:
@@ -10687,6 +8614,11 @@ export const dictionary = {
       "Ein Specht klopfte an eine alte Buche, Eichelhäher stritten um eine Eichel, und eine Maus raschelte im Gras.",
     exampleTranslation:
       "Datel klepal do starého buku, sojky se hádaly o žalud a v trávě šustila myš.",
+  },
+  rat: {
+    translation: "radu",
+    example: "„Gebt mir einen Tag“, bat sie den Rat.",
+    exampleTranslation: "„Dejte mi jeden den,“ požádala radu.",
   },
   rates: {
     translation: "rady",
@@ -10706,6 +8638,30 @@ export const dictionary = {
       "Rozarka berief für den Abend eine außerordentliche Ratssitzung ein.",
     exampleTranslation: "Rozárka svolala na večer mimořádnou radu.",
   },
+  raum: {
+    translation: "místnosti",
+    example:
+      "Im hinteren Raum fanden sie eine leere Stelle, an der ein langer Eisenhebel gestanden hatte.",
+    exampleTranslation:
+      "V zadní místnosti našli prázdné místo po dlouhé železné páce.",
+  },
+  rauschen: {
+    translation: "hukot, řev",
+    example:
+      "Der Brunnen hörte auf zu rauschen, das kleine Mühlrad blieb stehen, und zwischen den Steinen blieben nur glänzende Pfützen zurück.",
+    exampleTranslation:
+      "Kašna přestala šumět, mlýnské kolečko se zastavilo a mezi kameny zůstaly jen lesklé loužičky.",
+  },
+  rauschte: {
+    translation: "hučel, šuměl",
+    example: "Der Wind rauschte in den Baumkronen.",
+    exampleTranslation: "V korunách zašuměl vítr.",
+  },
+  rechte: {
+    translation: "pravá",
+    example: "Die rechte Spur war tiefer als die linke.",
+    exampleTranslation: "Pravá kolej byla hlubší než levá.",
+  },
   rechten: {
     translation: "pravém, pravé",
     example: "An seinem rechten Ärmel fehlte ein kleines Stück Stoff.",
@@ -10715,6 +8671,18 @@ export const dictionary = {
     translation: "pravé",
     example: "„Und sein rechtes Rad ist locker.“",
     exampleTranslation: "„A jeho pravé kolo se viklá.“",
+  },
+  rechts: {
+    translation: "vpravo",
+    example: "Von rechts kam ein regelmäßiges metallisches Klopfen.",
+    exampleTranslation: "Zprava se ozvalo pravidelné kovové klepání.",
+  },
+  rechtzeitig: {
+    translation: "včas",
+    example:
+      "Als ein trockener Sommer kam, verteilte der Rat das Wasser rechtzeitig und gerecht.",
+    exampleTranslation:
+      "Když přišlo suché léto, rada rozdělila vodu včas a spravedlivě.",
   },
   rede: {
     translation: "řeč, proslov",
@@ -10744,6 +8712,12 @@ export const dictionary = {
       "Die Regeln des Waldes verlangten, dass er den Schaden wiedergutmachte.",
     exampleTranslation: "Lesní pravidla požadovala, aby napravil škodu.",
   },
+  regen: {
+    translation: "déšť",
+    example:
+      "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
+    exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
   regentropfen: {
     translation: "dešťové kapky",
     example:
@@ -10768,6 +8742,13 @@ export const dictionary = {
     example: "„Aber Glaube allein reicht nicht aus.",
     exampleTranslation: "„Ale víra nestačí.",
   },
+  reichte: {
+    translation: "sahal, dosáhl",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
   reihe: {
     translation: "řada",
     example: "Der dritte Hinweis war eine Reihe nasser Kiesel.",
@@ -10789,12 +8770,64 @@ export const dictionary = {
     example: "Vavrinec bat darum, den verstopften Abfluss reinigen zu dürfen.",
     exampleTranslation: "Vavřinec požádal, aby směl vyčistit zanesený odtok.",
   },
+  reinigte: {
+    translation: "očistil",
+    example:
+      "Vavrinec reinigte schweigend die Glocke und fertigte für sie ein neues, stärkeres Seil an.",
+    exampleTranslation:
+      "Vavřinec mlčky očistil zvonek a vyrobil pro něj nový, silnější provaz.",
+  },
+  reise: {
+    translation: "cesta",
+    example: "Eine weitere Reise unter die Erde wartete auf sie.",
+    exampleTranslation: "Čekala je další cesta pod zem.",
+  },
+  reparatur: {
+    translation: "opravu",
+    example:
+      "Er musste die Werkzeuge zurückgeben, den Obstgarten für eine gemeinsame Kontrolle öffnen und bei der Reparatur des Mondbrunnens helfen.",
+    exampleTranslation:
+      "Musel vrátit nástroje, otevřít sad pro společnou kontrolu a pomoci opravit Měsíční studnu.",
+  },
   reparaturgruppe: {
     translation: "opravná skupina",
     example:
       "Zwei Tage später machte sich die Reparaturgruppe auf den Weg zum Mondbrunnen.",
     exampleTranslation:
       "O dva dny později se opravná skupina vydala do Měsíční studny.",
+  },
+  reparieren: {
+    translation: "opravil",
+    example: "„Wir müssen die Wand bald reparieren.",
+    exampleTranslation: "„Stěnu musíme brzy opravit.",
+  },
+  repariert: {
+    translation: "opravoval",
+    example: "Also hatte er den Mantel erst vor Kurzem repariert.",
+    exampleTranslation: "Kabát tedy opravoval nedávno.",
+  },
+  reparierten: {
+    translation: "opravili",
+    example:
+      "Skokanek lief mit den Eichhörnchen um die Wette, die Igel probierten Apfelkuchen, und das Licht der Laternen tanzte auf der Oberfläche des reparierten Brunnens.",
+    exampleTranslation:
+      "Skokánek závodil v běhu s veverkami, ježci ochutnávali jablečné koláče a na hladině opravené kašny tančila světla luceren.",
+  },
+  rest: {
+    translation: "zbytek",
+    example: "Den Rest zählen wir gemeinsam.“",
+    exampleTranslation: "Zbytek spočítáme společně.“",
+  },
+  retten: {
+    translation: "zachránit",
+    example: "„Ich wollte nur den Obstgarten retten“, gestand er.",
+    exampleTranslation: "„Chtěl jsem jen zachránit sad,“ přiznal.",
+  },
+  rettung: {
+    translation: "záchrana",
+    example:
+      "„Aber vielleicht verlieren wir die Zeit, die wir zur Rettung des Waldes brauchen.“",
+    exampleTranslation: "„Ale možná ztratíme čas potřebný k záchraně lesa.“",
   },
   richtete: {
     translation: "nasměroval, postavil",
@@ -10808,10 +8841,32 @@ export const dictionary = {
     exampleTranslation:
       "„Protože správná věc nepřestane být správná jen proto, že jsi mi ublížil.“",
   },
+  richtige: {
+    translation: "správným",
+    example:
+      "Sie hatten vier Zehen, einen kleinen Ballen und die richtige Größe.",
+    exampleTranslation: "Měly čtyři prsty, malý polštářek a správnou velikost.",
+  },
+  richtigen: {
+    translation: "správný",
+    example: "Sie schoben die Stützen an die richtigen Stellen.",
+    exampleTranslation: "Posunuli podpěry na správná místa.",
+  },
+  richtung: {
+    translation: "směr",
+    example:
+      "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
+    exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
   rieb: {
     translation: "promnul",
     example: "Skokanek rieb sich die Ohren.",
     exampleTranslation: "Skokánek si promnul uši.",
+  },
+  rief: {
+    translation: "volal, zavolal, vykřikl",
+    example: "„Guten Morgen, Ryska“, rief Bodlik.",
+    exampleTranslation: "„Dobré ráno, Ryško,“ zavolal Bodlík.",
   },
   riegel: {
     translation: "západka",
@@ -10856,10 +8911,35 @@ export const dictionary = {
     example: "In der Öffnung mit dem Tropfen befand sich eine kleine Rinne.",
     exampleTranslation: "V otvoru s kapkou byl malý žlábek.",
   },
+  riss: {
+    translation: "strhl",
+    example:
+      "Zwischen den Blöcken erschien ein dünner Riss, aus dem Wasser zu spritzen begann.",
+    exampleTranslation:
+      "Mezi bloky se objevila tenká prasklina a začala z ní stříkat voda.",
+  },
+  roch: {
+    translation: "ucítil",
+    example: "Sie roch an dem blauen Stoff.",
+    exampleTranslation: "Přičichla k modré látce.",
+  },
   rollen: {
     translation: "kutálet se",
     example: "„Jetzt kann er rollen“, rief sie.",
     exampleTranslation: "„Teď se může kutálet,“ zvolala.",
+  },
+  rostige: {
+    translation: "rezavé",
+    example: "Pidalka goss Öl aus Vavrinecs Tasche über das rostige Gelenk.",
+    exampleTranslation:
+      "Píďalka polila rezavý spoj olejem z Vavřincovy brašny.",
+  },
+  rostigen: {
+    translation: "rezavými",
+    example:
+      "Pidalka konnte es erreichen, hatte aber nicht genug Kraft, um seinen rostigen Griff zu drehen.",
+    exampleTranslation:
+      "Píďalka se k němu dokázala dostat, ale neměla sílu otočit jeho rezavým držadlem.",
   },
   rot: {
     translation: "červený",
@@ -10867,6 +8947,18 @@ export const dictionary = {
       "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
     exampleTranslation:
       "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  rote: {
+    translation: "červenou",
+    example:
+      "Rote Beeren markierten Orte, an denen jemand in Gefahr sein konnte.",
+    exampleTranslation:
+      "Červené bobule označovaly místa, kde mohlo být někdo v nebezpečí.",
+  },
+  rotes: {
+    translation: "červenou",
+    example: "„Es scheint, dass der Dieb rotes Fell hatte“, sagte er kühl.",
+    exampleTranslation: "„Zdá se, že zloděj měl rezavou srst,“ řekl chladně.",
   },
   rozarka: {
     translation: "Rozárka (jméno sovy)",
@@ -10885,11 +8977,34 @@ export const dictionary = {
     exampleTranslation:
       "Vavřinec jí ukradl dobré jméno a vystavil les nebezpečí.",
   },
+  rufen: {
+    translation: "volajícího",
+    example: "„Ich hätte zuerst suchen und erst danach rufen sollen.“",
+    exampleTranslation: "„Měl jsem nejdřív hledat a teprve potom křičet.“",
+  },
   ruhepause: {
     translation: "přestávka na odpočinek",
     example:
       "Auf der Lichtung blieb jedoch keine Zeit für eine lange Ruhepause.",
     exampleTranslation: "Na mýtině však nebyl čas na dlouhý odpočinek.",
+  },
+  ruhig: {
+    translation: "klidný",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
+  },
+  ruhigen: {
+    translation: "klidný",
+    example: "Es floss mit einer ruhigen, regelmäßigen Stimme.",
+    exampleTranslation: "Tekla klidným, pravidelným hlasem.",
+  },
+  ruhiges: {
+    translation: "tichou",
+    example:
+      "Ein Läuten bedeutete ruhiges Wasser, zwei bedeuteten einen schnellen Anstieg und drei unmittelbare Gefahr.",
+    exampleTranslation:
+      "Jedno zazvonění znamenalo klidnou vodu, dvě rychlý růst a tři bezprostřední nebezpečí.",
   },
   runde: {
     translation: "kulatá",
@@ -10913,6 +9028,11 @@ export const dictionary = {
     example: "Der linke Gang war steiler und unter ihren Pfoten rutschig.",
     exampleTranslation: "Levá chodba byla prudší a klouzala pod tlapkami.",
   },
+  rutschte: {
+    translation: "uklouzla",
+    example: "Ein Balken rutschte weg.",
+    exampleTranslation: "Jeden trám sklouzl.",
+  },
   ryska: {
     translation: "Ryška (jméno lišky)",
     example:
@@ -10926,6 +9046,13 @@ export const dictionary = {
       "„Stattdessen habe ich den ganzen Wald gefährdet und Ryskas guten Ruf beschädigt.“",
     exampleTranslation:
       "„Místo toho jsem ohrozil celý les a poškodil Ryščino jméno.“",
+  },
+  sache: {
+    translation: "věc, záležitost",
+    example:
+      "„Wenn jeder in eine andere Richtung läuft, reparieren wir vielleicht dieselbe Sache zweimal und vergessen etwas Wichtigeres“, erklärte sie.",
+    exampleTranslation:
+      "„Když se každý rozběhne jinam, můžeme dvakrát opravit stejnou věc a na důležitější zapomenout,“ vysvětlila.",
   },
   sag: {
     translation: "řekni",
@@ -10952,12 +9079,29 @@ export const dictionary = {
       "„Das sagt uns noch immer nicht, wer den Schlüssel genommen hat“, wandte der Wächter ein.",
     exampleTranslation: "„To nám stále neříká, kdo vzal klíč,“ namítl strážce.",
   },
+  sagte: {
+    translation: "řekl / řekla",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
+  },
   sagten: {
     translation: "řekli",
     example:
       "Sie sagten nicht, dass sie klug war, weil sie andere überlisten konnte.",
     exampleTranslation:
       "Neříkala, že byla chytrá proto, že dokázala ostatní přelstít.",
+  },
+  sah: {
+    translation: "viděl / díval se",
+    example: "Im Staub sah sie frische Spuren eines Wagens.",
+    exampleTranslation: "V prachu viděla čerstvé otisky vozíku.",
+  },
+  sahen: {
+    translation: "uviděli",
+    example: "Andere sahen sie misstrauisch an.",
+    exampleTranslation: "Jiná se na ni dívala s nedůvěrou.",
   },
   sammeln: {
     translation: "sbírat",
@@ -10973,6 +9117,17 @@ export const dictionary = {
     exampleTranslation:
       "„Pokud zavřel bezpečnostní uzávěr, voda se někde hromadí.",
   },
+  sammelten: {
+    translation: "shromáždil se",
+    example:
+      "Der Wind wurde stärker, und über dem Hügel sammelten sich dunkle Wolken.",
+    exampleTranslation: "Vítr zesílil a na kopci se hromadily tmavé mraky.",
+  },
+  sand: {
+    translation: "pískem",
+    example: "Der Kanal war mit einer Mischung aus Sand und Wurzeln verstopft.",
+    exampleTranslation: "Kanál byl ucpaný směsí písku a kořenů.",
+  },
   sank: {
     translation: "klesl",
     example: "Der Druck auf die gerissene Wand sank.",
@@ -10987,6 +9142,11 @@ export const dictionary = {
     translation: "sloup",
     example: "„Wir benutzen die Säule wie eine Umlenkrolle.",
     exampleTranslation: "„Použijeme sloup jako kladku.",
+  },
+  schacht: {
+    translation: "šachty",
+    example: "„Hier ist ein schmaler Schacht.",
+    exampleTranslation: "„Je tu úzká šachta.",
   },
   schaden: {
     translation: "škoda",
@@ -11061,10 +9221,22 @@ export const dictionary = {
     example: "„Es scheint, dass der Dieb rotes Fell hatte“, sagte er kühl.",
     exampleTranslation: "„Zdá se, že zloděj měl rezavou srst,“ řekl chladně.",
   },
+  schenkte: {
+    translation: "daroval / darovala",
+    example:
+      "Trotzdem nahm sie eine kleine silberne Glocke an, die der Rat ihr schenkte.",
+    exampleTranslation:
+      "Přesto přijala malou stříbrnou rolničku, kterou jí rada věnovala.",
+  },
   schicht: {
     translation: "vrstva",
     example: "Unter einer Schicht trockener Blätter fand er einen Eisenring.",
     exampleTranslation: "Pod vrstvou suchého listí našel železný kruh.",
+  },
+  schickte: {
+    translation: "poslal",
+    example: "Tonda schickte Hbitka zum Mondbrunnen.",
+    exampleTranslation: "Tonda poslal Hbitku k Měsíční studni.",
   },
   schiefen: {
     translation: "křivého",
@@ -11072,6 +9244,13 @@ export const dictionary = {
       "In der Mitte stand der blaue Wagen mit seinem schiefen rechten Rad.",
     exampleTranslation:
       "Uprostřed ležel modrý vozík s nakřivo postaveným pravým kolem.",
+  },
+  schien: {
+    translation: "zdála",
+    example:
+      "Licht schien durch die Bretter, und der Duft von Äpfeln drang hinein.",
+    exampleTranslation:
+      "Mezi prkny prosvítalo světlo a dovnitř proudila vůně jablek.",
   },
   schild: {
     translation: "cedule, štítek",
@@ -11097,6 +9276,13 @@ export const dictionary = {
     exampleTranslation:
       "Navrhuji uzavřít všechny cesty a prohledat liščí doupě.“",
   },
+  schläge: {
+    translation: "údery",
+    example:
+      "„Wenn ihr drei Schläge gegen den Stein hört, kehrt sofort zurück.“",
+    exampleTranslation:
+      "„Jestli uslyšíte tři údery do kamene, okamžitě se vraťte.“",
+  },
   schlägen: {
     translation: "úderech",
     example:
@@ -11115,6 +9301,12 @@ export const dictionary = {
     exampleTranslation:
       "„Kdybychom uzavřeli kanál příliš rychle, tlak by udeřil zpět.“",
   },
+  schlamm: {
+    translation: "blátě",
+    example:
+      "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
+    exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
+  },
   schlecht: {
     translation: "špatně, špatný",
     example:
@@ -11129,12 +9321,24 @@ export const dictionary = {
     exampleTranslation:
       "„Kdybychom uzavřeli kanál příliš rychle, tlak by udeřil zpět.“",
   },
+  schließlich: {
+    translation: "nakonec",
+    example:
+      "Schließlich entschied sie, dass Ryska bis zum folgenden Abend Zeit bekommen würde.",
+    exampleTranslation:
+      "Nakonec rozhodla, že Ryška dostane čas do příštího večera.",
+  },
   schlitten: {
     translation: "sáně",
     example:
       "Sie führte zu Bodlik, der den Korb auf einem kleinen Schlitten zog, weil Wespen ihn in der Sonne entdeckt hatten.",
     exampleTranslation:
       "Vedla k Bodlíkovi, který táhl košík na malých saních, protože ho na slunci objevily vosy.",
+  },
+  schloss: {
+    translation: "zámek",
+    example: "Das Schloss war nicht zerbrochen.",
+    exampleTranslation: "Zámek nebyl rozbitý.",
   },
   schlösser: {
     translation: "zámky",
@@ -11160,6 +9364,11 @@ export const dictionary = {
     exampleTranslation:
       "Chutnala stejně jako dřív, ale ona už věděla, kolik práce, pravidel a vzájemné důvěry se skrývá v každém jejím doušku.",
   },
+  schlug: {
+    translation: "bil, tloukl",
+    example: "„Vielleicht liegt ein Ast im Kanal“, schlug der Biber Tonda vor.",
+    exampleTranslation: "„Možná je v kanálu větev,“ navrhl bobr Tonda.",
+  },
   schlugen: {
     translation: "udeřili",
     example:
@@ -11177,6 +9386,11 @@ export const dictionary = {
     example: "Sie wollte keine voreiligen Schlüsse ziehen.",
     exampleTranslation: "Nechtěla dělat rychlé závěry.",
   },
+  schlüssel: {
+    translation: "klíč",
+    example: "„Als ich heute Morgen kam, war der Schlüssel weg.“",
+    exampleTranslation: "„Když jsem ráno přišel, klíč byl pryč.“",
+  },
   schlüsseln: {
     translation: "klíčům, klíči",
     example:
@@ -11190,6 +9404,31 @@ export const dictionary = {
       "„Aber es sagt uns, dass der Dieb nicht nur wegen eines kleinen Schlüssels gekommen ist.",
     exampleTranslation:
       "„Ale říká nám to, že zloděj nepřišel jen pro malý klíč.",
+  },
+  schmal: {
+    translation: "úzký",
+    example:
+      "Sie waren lang und schmal und sahen auffallend wie Fuchsspuren aus.",
+    exampleTranslation: "Byly dlouhé, úzké a nápadně připomínaly liščí stopy.",
+  },
+  schmale: {
+    translation: "úzký",
+    example:
+      "Ryska ging über Steine um das Haus herum und fand hinter einem Busch zwei schmale Wagenspuren.",
+    exampleTranslation:
+      "Ryška obešla dům po kamenech a našla za keřem dvě úzké koleje od vozíku.",
+  },
+  schmalen: {
+    translation: "úzké",
+    example:
+      "Ein Stück weiter war im Schlamm der Abdruck einer schmalen Pfote zu sehen.",
+    exampleTranslation: "O kus dál byla v blátě otištěná úzká tlapa.",
+  },
+  schmaler: {
+    translation: "úzký",
+    example:
+      "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
+    exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
   },
   schmales: {
     translation: "úzké",
@@ -11211,6 +9450,30 @@ export const dictionary = {
       "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
     exampleTranslation:
       "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  schnell: {
+    translation: "rychle",
+    example:
+      "Er atmete schnell und hielt ein kleines Metallschild in den Pfoten.",
+    exampleTranslation:
+      "Dýchal rychle a v tlapkách držel malou kovovou cedulku.",
+  },
+  schnelle: {
+    translation: "rychlé",
+    example: "In diesem Augenblick erklangen drei schnelle Glockentöne.",
+    exampleTranslation: "V té chvíli zazněla tři rychlá cinknutí.",
+  },
+  schnellen: {
+    translation: "rychlý",
+    example:
+      "Ein Läuten bedeutete ruhiges Wasser, zwei bedeuteten einen schnellen Anstieg und drei unmittelbare Gefahr.",
+    exampleTranslation:
+      "Jedno zazvonění znamenalo klidnou vodu, dvě rychlý růst a tři bezprostřední nebezpečí.",
+  },
+  schneller: {
+    translation: "rychleji",
+    example: "„Schon wieder ein schneller Schluss.",
+    exampleTranslation: "„Už zase rychlý závěr.",
   },
   schnellste: {
     translation: "nejrychlejší",
@@ -11239,16 +9502,59 @@ export const dictionary = {
     exampleTranslation:
       "Bláto mu pokrylo modrý kabát a z jeho upravených vousů kapala voda.",
   },
+  schob: {
+    translation: "odsunul",
+    example: "Hbitka brachte ein breites Ahornblatt und schob es hinein.",
+    exampleTranslation:
+      "Hbitka přinesla široký javorový list a zasunula ho dovnitř.",
+  },
+  schoben: {
+    translation: "zasunuli, tlačili",
+    example:
+      "Dann schoben Ryska und Bodlik ein loses Brett zur Seite und betraten die Kammer.",
+    exampleTranslation:
+      "Pak s Bodlíkem odsunuli uvolněné prkno a vstoupili do komory.",
+  },
+  schon: {
+    translation: "už",
+    example: "„Jemand hat sie gestohlen!“, rief er schon von Weitem.",
+    exampleTranslation: "„Někdo ho ukradl!“ volal už z dálky.",
+  },
+  schoss: {
+    translation: "spěchal, vyrazil",
+    example:
+      "Beim dritten Mal öffnete es sich, und ein Wasserstrom schoss in den östlichen Kanal.",
+    exampleTranslation:
+      "Potřetí se otevřelo a východním kanálem vyrazil proud.",
+  },
   schräg: {
     translation: "šikmo",
     example: "Tonda stellte sie schräg gegen die beschädigte Wand.",
     exampleTranslation: "Tonda je postavil šikmo proti poškozené stěně.",
+  },
+  schrank: {
+    translation: "skříň",
+    example:
+      "„Gestern Abend habe ich den Schrank abgeschlossen“, erklärte der Verwalter Vavrinec.",
+    exampleTranslation:
+      "„Včera večer jsem skříňku zamkl,“ prohlásil správce Vavřinec.",
   },
   schreibst: {
     translation: "píšeš",
     example: "„Warum schreibst du, dass du nicht sicher bist?“, fragte Hbitka.",
     exampleTranslation:
       "„Proč tam píšeš, že si nejsi jistý?“ zeptala se Hbitka.",
+  },
+  schritt: {
+    translation: "krok",
+    example:
+      "„Wenn ein Tier einen Schritt macht, ist der vordere Teil der Spur tiefer.",
+    exampleTranslation: "„Když zvíře vykročí, přední část stopy je hlubší.",
+  },
+  schritte: {
+    translation: "kroky",
+    example: "Auf der anderen Seite des Zaunes waren Schritte zu hören.",
+    exampleTranslation: "Z druhé strany plotu se ozvaly kroky.",
   },
   schritten: {
     translation: "krocích",
@@ -11263,6 +9569,13 @@ export const dictionary = {
     exampleTranslation:
       "„Protože zvíře, které jsem chtěl obvinit, mi zachránilo život.",
   },
+  schule: {
+    translation: "školou",
+    example:
+      "Inzwischen gründete Ryska unter der alten Eiche die Schule der offenen Augen.",
+    exampleTranslation:
+      "Ryška mezitím založila pod starým dubem Školu otevřených očí.",
+  },
   schüler: {
     translation: "žáci",
     example:
@@ -11274,6 +9587,13 @@ export const dictionary = {
     translation: "zatřásl",
     example: "Rozarka schüttelte den Kopf.",
     exampleTranslation: "Rozárka zavrtěla hlavou.",
+  },
+  schützen: {
+    translation: "ochránily",
+    example:
+      "„Zuerst schützen wir das Leben, dann das Wasser und den Weg zur Nahrung.",
+    exampleTranslation:
+      "„Nejdřív chráníme život, potom vodu a cestu k potravě.",
   },
   schwacher: {
     translation: "slabší",
@@ -11301,10 +9621,38 @@ export const dictionary = {
     exampleTranslation:
       "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
   },
+  schwarzen: {
+    translation: "černé",
+    example: "Der Eimer schwang über dem schwarzen Wasser.",
+    exampleTranslation: "Vědro se rozhoupalo nad černou vodou.",
+  },
+  schwarzes: {
+    translation: "černý",
+    example: "Unter ihm wirbelte schwarzes Wasser.",
+    exampleTranslation: "Pod ním se točila černá voda.",
+  },
   schweigend: {
     translation: "mlčky",
     example: "Einen Augenblick lang stand er schweigend da.",
     exampleTranslation: "Chvíli stál bez slova.",
+  },
+  schwer: {
+    translation: "těžké",
+    example: "„Der Wagen war schwer beladen“, sagte sie.",
+    exampleTranslation: "„Vozík byl těžce naložený,“ řekla.",
+  },
+  schwere: {
+    translation: "těžkou",
+    example:
+      "Als sie oben ankamen, fanden sie die schwere Holztür halb geöffnet.",
+    exampleTranslation:
+      "Když dorazili nahoru, našli těžké dřevěné dveře pootevřené.",
+  },
+  schweren: {
+    translation: "těžké",
+    example:
+      "„Und wie bringen wir den schweren Eimer zum Schwingen?“, fragte Bodlik.",
+    exampleTranslation: "„A jak rozhoupeme těžké vědro?“ zeptal se Bodlík.",
   },
   schwerpunkt: {
     translation: "těžiště",
@@ -11352,6 +9700,74 @@ export const dictionary = {
     example: "„Ich sehe den Schlüssel nicht“, antwortete Ryska.",
     exampleTranslation: "„Klíč nevidím,“ odpověděla Ryška.",
   },
+  sehen: {
+    translation: "vidět",
+    example: "Wir brauchen eine Wahrheit, die jeder sehen kann.“",
+    exampleTranslation: "Potřebujeme pravdu, kterou uvidí každý.“",
+  },
+  sehr: {
+    translation: "velmi",
+    example: "Einige Tiere vertrauten ihm wieder sehr, andere nur ein wenig.",
+    exampleTranslation:
+      "Některá zvířata mu znovu důvěřovala hodně, jiná jen trochu.",
+  },
+  seil: {
+    translation: "lano",
+    example:
+      "Er löste ein dünnes Seil von der Tasche und befestigte es an der Kette.",
+    exampleTranslation: "Odvázal z brašny tenké lano a připevnil ho k řetězu.",
+  },
+  seile: {
+    translation: "lana",
+    example: "Die Eichhörnchen brachten feste Seile.",
+    exampleTranslation: "Veverky přinesly pevná lana.",
+  },
+  sein: {
+    translation: "být / jeho",
+    example: "„Und sein rechtes Rad ist locker.“",
+    exampleTranslation: "„A jeho pravé kolo se viklá.“",
+  },
+  seine: {
+    translation: "jeho",
+    example: "Tonda hob seine breite Pfote.",
+    exampleTranslation: "Tonda zvedl širokou tlapu.",
+  },
+  seinem: {
+    translation: "jeho",
+    example: "An seinem rechten Ärmel fehlte ein kleines Stück Stoff.",
+    exampleTranslation: "Na pravém rukávu mu chyběl malý kus látky.",
+  },
+  seinen: {
+    translation: "jeho",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  seiner: {
+    translation: "jeho",
+    example: "Aus seiner Achse ragte ein kurzer Holzstift.",
+    exampleTranslation: "Z jeho osy trčel krátký dřevěný kolík.",
+  },
+  seines: {
+    translation: "jeho",
+    example:
+      "Wir müssen lernen, niemanden nur wegen seines Aussehens oder seiner Tierart zu beschuldigen.“",
+    exampleTranslation:
+      "Musíme se naučit neobviňovat nikoho jen podle toho, jak vypadá nebo k jakému druhu patří.“",
+  },
+  seit: {
+    translation: "od",
+    example:
+      "Der andere endete an einem alten Steinbruch, der seit Jahrzehnten verlassen war.",
+    exampleTranslation:
+      "Druhá končila u starého kamenolomu, který byl desítky let opuštěný.",
+  },
+  seite: {
+    translation: "strana",
+    example: "Auf der anderen Seite des Zaunes waren Schritte zu hören.",
+    exampleTranslation: "Z druhé strany plotu se ozvaly kroky.",
+  },
   seiten: {
     translation: "strany",
     example: "Von beiden Seiten spritzte Wasser.",
@@ -11383,6 +9799,18 @@ export const dictionary = {
     example: "Vavrinec gelangte über einen seitlichen Vorsprung zu den Balken.",
     exampleTranslation: "Vavřinec se dostal po bočním výstupku k trámům.",
   },
+  sekunden: {
+    translation: "vteřin",
+    example: "Vavrinec lag einige Sekunden regungslos da.",
+    exampleTranslation: "Vavřinec ležel několik vteřin bez pohybu.",
+  },
+  selbst: {
+    translation: "sama",
+    example:
+      "„In der vergangenen Nacht war jemand beim alten Wasserhaus“, sagte sie leise zu sich selbst.",
+    exampleTranslation:
+      "„Někdo byl v noci u starého vodního domu,“ řekla si tiše.",
+  },
   selbstverständlich: {
     translation: "samozřejmý",
     example:
@@ -11405,10 +9833,22 @@ export const dictionary = {
     example: "Ryska legte sich auf die Brücke, um ihren Schwerpunkt zu senken.",
     exampleTranslation: "Ryška si lehla na mostek, aby měla nižší těžiště.",
   },
+  senkte: {
+    translation: "snížil, sklonil",
+    example: "Vavrinec senkte den Kopf.",
+    exampleTranslation: "Vavřinec sklopil hlavu.",
+  },
   setz: {
     translation: "polož, usaď",
     example: "Setz dich.“",
     exampleTranslation: "Sedni si.“",
+  },
+  setzte: {
+    translation: "posadil se",
+    example:
+      "Sie setzte sich auf einen niedrigen Ast und blickte ernst auf das leere Becken.",
+    exampleTranslation:
+      "Posadila se na nízkou větev a vážně pohlédla na prázdnou nádrž.",
   },
   setzten: {
     translation: "položili, postavili",
@@ -11417,10 +9857,43 @@ export const dictionary = {
     exampleTranslation:
       "Když se setmělo, zvířata usedla k dlouhému stolu z prken.",
   },
+  sich: {
+    translation: "se / si",
+    example: "Ryska beugte sich über den Bach.",
+    exampleTranslation: "Ryška se sklonila k potoku.",
+  },
+  sicher: {
+    translation: "bezpečně / bezpečný",
+    example:
+      "Ohne den Hauptschlüssel konnten die alten Wasserräder nicht sicher bedient werden.",
+    exampleTranslation:
+      "Bez hlavního klíče nebylo možné bezpečně ovládat stará vodní kola.",
+  },
+  sichere: {
+    translation: "bezpečné",
+    example:
+      "Und das erste sichere Öffnen zeigte, dass Vorsicht die Arbeit nicht verzögern muss.",
+    exampleTranslation:
+      "A první bezpečné otevření ukázalo, že opatrnost nemusí práci zdržovat.",
+  },
+  sicheren: {
+    translation: "bezpečný",
+    example:
+      "„Eine Kopie ließen sie im Wasserhaus, die andere versteckten sie an einem sicheren Ort.“",
+    exampleTranslation:
+      "„Jednu kopii nechali ve vodním domě a druhou schovali na bezpečném místě.“",
+  },
   sicherheitstor: {
     translation: "bezpečnostní uzávěr",
     example: "Neben dem Brunnen war ein altes Sicherheitstor eingezeichnet.",
     exampleTranslation: "U studny byl zakreslený starý bezpečnostní uzávěr.",
+  },
+  sicherte: {
+    translation: "zajistil",
+    example:
+      "Ryska legte zwei Bretter über das Wasser, und Bodlik sicherte sie mit Steinen.",
+    exampleTranslation:
+      "Ryška položila přes vodu dvě prkna a Bodlík je zajistil kameny.",
   },
   sicherung: {
     translation: "pojistka",
@@ -11445,6 +9918,13 @@ export const dictionary = {
     translation: "dohled, na dohled",
     example: "Bis dahin musste Ryska in Sichtweite der Wächter bleiben.",
     exampleTranslation: "Do té doby měla Ryška zůstat na dohled strážců.",
+  },
+  sie: {
+    translation: "ona / oni / je",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
   },
   sieben: {
     translation: "sedm",
@@ -11479,6 +9959,27 @@ export const dictionary = {
     exampleTranslation:
       "Třetí ukazovala jeskyně pod Stříbrným kopcem, ale chyběly na ní vodní kanály.",
   },
+  silberne: {
+    translation: "stříbrné",
+    example:
+      "Trotzdem nahm sie eine kleine silberne Glocke an, die der Rat ihr schenkte.",
+    exampleTranslation:
+      "Přesto přijala malou stříbrnou rolničku, kterou jí rada věnovala.",
+  },
+  silbernen: {
+    translation: "stříbrný",
+    example:
+      "Vavrinec hatte ein schmales Gesicht, sorgfältig gekämmte Schnurrhaare und einen blauen Mantel mit silbernen Knöpfen.",
+    exampleTranslation:
+      "Vavřinec měl úzký obličej, pečlivě učesané vousy a modrý kabát se stříbrnými knoflíky.",
+  },
+  silbernes: {
+    translation: "stříbrné",
+    example:
+      "Das Wasser lief wie ein schmales silbernes Band durch den Hauptkanal.",
+    exampleTranslation:
+      "Voda proběhla hlavním kanálem jako úzká stříbrná stuha.",
+  },
   silberquelle: {
     translation: "Stříbrný pramen",
     example: "Das Wasserhaus stand hoch über dem Wald an der Silberquelle.",
@@ -11496,6 +9997,11 @@ export const dictionary = {
     exampleTranslation:
       "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
   },
+  sind: {
+    translation: "jsou",
+    example: "Und alle Abdrücke sind vollkommen gleich.",
+    exampleTranslation: "A všechny otisky jsou úplně stejné.",
+  },
   sinkt: {
     translation: "klesá",
     example: "„Wir müssen sie abstützen, bis der Druck sinkt.“",
@@ -11512,6 +10018,25 @@ export const dictionary = {
       "In diesem Augenblick kam der Hase Skokanek den Hügel hinuntergerannt.",
     exampleTranslation: "V tu chvíli přiběhl z kopce zajíc Skokánek.",
   },
+  so: {
+    translation: "jako",
+    example:
+      "Sie stellte den Spiegel so ein, dass ein Strahl der Laterne in die dritte Öffnung fiel.",
+    exampleTranslation:
+      "Nastavila zrcadlo tak, aby paprsek lucerny dopadl do třetího otvoru.",
+  },
+  sofort: {
+    translation: "okamžitě",
+    example:
+      "„Wenn ihr drei Schläge gegen den Stein hört, kehrt sofort zurück.“",
+    exampleTranslation:
+      "„Jestli uslyšíte tři údery do kamene, okamžitě se vraťte.“",
+  },
+  sogar: {
+    translation: "dokonce",
+    example: "„Vielleicht gibt es sogar ein Gewitter.“",
+    exampleTranslation: "„Možná i bouřka.“",
+  },
   soll: {
     translation: "má",
     example:
@@ -11523,6 +10048,45 @@ export const dictionary = {
     translation: "mají, měli by",
     example: "„Sie zeigen, wann sie benutzt werden sollen.“",
     exampleTranslation: "„Ukazují, kdy se mají použít.“",
+  },
+  sollte: {
+    translation: "měla",
+    example: "In drei Tagen sollte das Fest der ersten Äpfel stattfinden.",
+    exampleTranslation: "Za tři dny se měl konat Svátek prvních jablek.",
+  },
+  sollten: {
+    translation: "měli, měli by",
+    example: "„Wir sollten keine Zeit verlieren.",
+    exampleTranslation: "„Neměli bychom ztrácet čas.",
+  },
+  sommer: {
+    translation: "létě",
+    example: "Die Tiere hatten sich den ganzen Sommer darauf gefreut.",
+    exampleTranslation: "Zvířata se na něj těšila celé léto.",
+  },
+  sondern: {
+    translation: "ale spíše",
+    example:
+      "Er war kein gewöhnlicher Brunnen, sondern eine riesige runde Höhle.",
+    exampleTranslation:
+      "Nebyla to obyčejná studna, ale obrovská kruhová jeskyně.",
+  },
+  sonne: {
+    translation: "slunci",
+    example: "„Er spiegelt das Licht der Sonne.“",
+    exampleTranslation: "„Odráží světlo slunce.“",
+  },
+  sonnenaufgang: {
+    translation: "svítáním",
+    example: "Ryska erreichte die Lichtung kurz nach Sonnenaufgang.",
+    exampleTranslation: "Ryška dorazila na mýtinu krátce po východu slunce.",
+  },
+  sonnenuntergang: {
+    translation: "slunce",
+    example:
+      "„Bis morgen bei Sonnenuntergang werde ich herausfinden, wohin die echten Spuren führen.",
+    exampleTranslation:
+      "„Do zítřejšího západu slunce zjistím, kam vedou skutečné stopy.",
   },
   sonst: {
     translation: "jinak",
@@ -11561,6 +10125,12 @@ export const dictionary = {
     translation: "napnuli",
     example: "Bodlik und Pidalka spannten den Riemen hinter ihr.",
     exampleTranslation: "Bodlík a Píďalka napjali popruh za ní.",
+  },
+  später: {
+    translation: "později",
+    example:
+      "Einen Augenblick später kam sie mit einem Stück nasser Erde zurück.",
+    exampleTranslation: "Za chvíli se vrátila s kouskem mokré hlíny.",
   },
   specht: {
     translation: "datel",
@@ -11618,6 +10188,25 @@ export const dictionary = {
     example: "Zwischen den Wurzeln lag ein kleiner Splitter blauer Farbe.",
     exampleTranslation: "Mezi kořeny ležela malá šupinka modré barvy.",
   },
+  sprach: {
+    translation: "mluvila",
+    example: "Zum ersten Mal sprach er offen über ihre Krankheit.",
+    exampleTranslation: "Poprvé o jejich chorobě mluvil otevřeně.",
+  },
+  sprang: {
+    translation: "skočil",
+    example:
+      "Die Eisenstange sprang zwischen den Steinen hervor, glitt am Rand entlang und landete auf dem Felsvorsprung.",
+    exampleTranslation:
+      "Železná tyč vyskočila z kamenů, sklouzla po okraji a dopadla na římsu.",
+  },
+  sprangen: {
+    translation: "skočil",
+    example:
+      "Die Jungtiere sprangen fröhlich um den Brunnen, und die Vögel benetzten ihre Flügel.",
+    exampleTranslation:
+      "Mláďata radostně poskakovala kolem kašny a ptáci si smáčeli křídla.",
+  },
   spritzen: {
     translation: "stříkat",
     example:
@@ -11625,11 +10214,34 @@ export const dictionary = {
     exampleTranslation:
       "Mezi bloky se objevila tenká prasklina a začala z ní stříkat voda.",
   },
+  spritzte: {
+    translation: "stříkal, rozstříkl se",
+    example:
+      "Der Riss in der Wand wurde breiter, und das Wasser spritzte bis zu ihren Pfoten.",
+    exampleTranslation:
+      "Prasklina ve stěně se rozšířila a voda vystříkla až k jejich tlapkám.",
+  },
   sprung: {
     translation: "skok",
     example:
       "Der Hebel war zu weit entfernt, um ihn mit einem Sprung zu erreichen.",
     exampleTranslation: "Páka ležela příliš daleko pro skok.",
+  },
+  spur: {
+    translation: "stopa",
+    example: "Ein Rad hatte eine tiefere Spur hinterlassen als das andere.",
+    exampleTranslation: "Jedno kolo zanechávalo hlubší stopu než druhé.",
+  },
+  spuren: {
+    translation: "stop",
+    example: "Im Staub sah sie frische Spuren eines Wagens.",
+    exampleTranslation: "V prachu viděla čerstvé otisky vozíku.",
+  },
+  spürte: {
+    translation: "cítil",
+    example:
+      "Trotzdem spürte sie, dass dieser Morgen nicht gewöhnlich werden würde.",
+    exampleTranslation: "Přesto cítila, že dnešní ráno nebude obyčejné.",
   },
   stabilste: {
     translation: "nejpevnější",
@@ -11641,6 +10253,20 @@ export const dictionary = {
     example:
       "„Diese Abdrücke stammen nicht von einer lebenden Pfote“, sagte sie.",
     exampleTranslation: "„Tyto stopy nevytvořila živá tlapa,“ řekla.",
+  },
+  stand: {
+    translation: "stál",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
+  },
+  standen: {
+    translation: "stáli",
+    example:
+      "An den Wänden verliefen Kupferrohre, und in der Mitte standen drei große Räder.",
+    exampleTranslation:
+      "Podél stěn vedly měděné trubky a uprostřed stála tři velká kola.",
   },
   ständen: {
     translation: "stály by",
@@ -11655,6 +10281,30 @@ export const dictionary = {
       "Wenn schnell eine große Menge Wasser in die Quelle floss, würde die gerissene Wand dem Druck nicht standhalten.",
     exampleTranslation:
       "Kdyby do pramene rychle přiteklo mnoho vody, prasklá stěna by tlak nevydržela.",
+  },
+  stark: {
+    translation: "silně",
+    example:
+      "Und wenn der Druck zu stark steigt, kann unter dem Hügel etwas zerbrechen.“",
+    exampleTranslation:
+      "A jestli tlak příliš vzroste, může se pod kopcem něco zlomit.“",
+  },
+  starken: {
+    translation: "silného",
+    example:
+      "Er verbreiterte den alten Holzrahmen daneben und kroch mit einem starken Seil in den Tunnel.",
+    exampleTranslation:
+      "Rozšířil starý dřevěný rám vedle nich a prolezl tunelem se silným lanem.",
+  },
+  starker: {
+    translation: "silný",
+    example: "„Am Abend kommt starker Regen“, warnte sie.",
+    exampleTranslation: "„Večer přijde silný déšť,“ varovala.",
+  },
+  stärker: {
+    translation: "silnější",
+    example: "Der Wasserstrom wurde stärker.",
+    exampleTranslation: "Proud vody zesílil.",
   },
   stärkeres: {
     translation: "silnější",
@@ -11687,6 +10337,13 @@ export const dictionary = {
     exampleTranslation:
       "Na okraji mýtiny vytvořila sedm zastavení a u každého zanechala jinou stopu.",
   },
+  statt: {
+    translation: "místo",
+    example:
+      "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
+    exampleTranslation:
+      "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
+  },
   stattdessen: {
     translation: "místo toho",
     example: "Stattdessen wartete sie, bis die Stimmen verstummten.",
@@ -11697,15 +10354,41 @@ export const dictionary = {
     example: "In drei Tagen sollte das Fest der ersten Äpfel stattfinden.",
     exampleTranslation: "Za tři dny se měl konat Svátek prvních jablek.",
   },
+  staub: {
+    translation: "prach",
+    example: "Im Staub sah sie frische Spuren eines Wagens.",
+    exampleTranslation: "V prachu viděla čerstvé otisky vozíku.",
+  },
   steckt: {
     translation: "vězí, je zasunutý",
     example: "Aber das kleine Zahnrad steckt fest.“",
     exampleTranslation: "Jenže malý převod se zasekl.“",
   },
+  steckte: {
+    translation: "vložil",
+    example:
+      "Er steckte den Hauptschlüssel in das Schloss und befestigte den langen Hebel.",
+    exampleTranslation:
+      "Zasunul hlavní klíč do zámku a připevnil dlouhou páku.",
+  },
   steckten: {
     translation: "zasunuli",
     example: "Rozarka, Tonda und Bodlik steckten sie in die Schlösser.",
     exampleTranslation: "Rozárka, Tonda a Bodlík je zasunuli do zámků.",
+  },
+  steg: {
+    translation: "lávka, můstek",
+    example:
+      "Bald war klar, dass sie zuerst den Steg zu den Dachsbauen verstärken, den Abfluss unter der Weide freimachen und drei durchnässte Vogelnester umsetzen mussten.",
+    exampleTranslation:
+      "Brzy bylo jasné, že nejdříve musí zpevnit lávku k jezevčím norám, uvolnit odtok pod vrbou a přestěhovat tři promoklá ptačí hnízda.",
+  },
+  stehen: {
+    translation: "stát",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
   },
   steht: {
     translation: "stojí",
@@ -11724,15 +10407,57 @@ export const dictionary = {
     exampleTranslation:
       "Jeden ze tří výstražných zvonků, které v noci varovaly před rostoucím tlakem, zmizel.",
   },
+  steigt: {
+    translation: "stoupá",
+    example:
+      "Und wenn der Druck zu stark steigt, kann unter dem Hügel etwas zerbrechen.“",
+    exampleTranslation:
+      "A jestli tlak příliš vzroste, může se pod kopcem něco zlomit.“",
+  },
+  steil: {
+    translation: "strmě",
+    example:
+      "Der Weg zum Wasserhaus führte zwischen hohen Tannen hindurch und stieg dann steil einen felsigen Hang hinauf.",
+    exampleTranslation:
+      "Cesta k vodnímu domu vedla mezi vysokými jedlemi a potom prudce stoupala po kamenitém svahu.",
+  },
   steiler: {
     translation: "prudší",
     example: "Der linke Gang war steiler und unter ihren Pfoten rutschig.",
     exampleTranslation: "Levá chodba byla prudší a klouzala pod tlapkami.",
   },
+  stein: {
+    translation: "kámen",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
   steinblöcke: {
     translation: "kamenné bloky",
     example: "Tonda untersuchte die Steinblöcke.",
     exampleTranslation: "Tonda prohlédl kamenné bloky.",
+  },
+  steinbruch: {
+    translation: "lomu",
+    example:
+      "Der andere endete an einem alten Steinbruch, der seit Jahrzehnten verlassen war.",
+    exampleTranslation:
+      "Druhá končila u starého kamenolomu, který byl desítky let opuštěný.",
+  },
+  steine: {
+    translation: "kameny",
+    example:
+      "Ryska ging über Steine um das Haus herum und fand hinter einem Busch zwei schmale Wagenspuren.",
+    exampleTranslation:
+      "Ryška obešla dům po kamenech a našla za keřem dvě úzké koleje od vozíku.",
+  },
+  steinen: {
+    translation: "kameny",
+    example:
+      "Der Eisenhebel glitt ihm aus den Pfoten und blieb zwischen zwei Steinen hängen.",
+    exampleTranslation:
+      "Železná páka mu vyklouzla z tlap a zůstala viset mezi dvěma kameny.",
   },
   steinerne: {
     translation: "kamenná",
@@ -11797,6 +10522,30 @@ export const dictionary = {
     exampleTranslation:
       "Aby mohla nová kamenná výztuha ztvrdnout, museli na jednu hodinu zastavit vodu do všech menších koryt.",
   },
+  steinwand: {
+    translation: "kamenná stěna",
+    example: "Gleichzeitig kam ein Schlag aus der Steinwand.",
+    exampleTranslation: "Současně se z kamenné stěny ozvala rána.",
+  },
+  stelle: {
+    translation: "místě",
+    example:
+      "Ryska blickte zu der Stelle, an der der Weg den Hügel hinauf begann.",
+    exampleTranslation:
+      "Ryška se podívala k místu, kde začínala cesta na kopec.",
+  },
+  stellen: {
+    translation: "místa",
+    example:
+      "Der Boden war hart, aber an mehreren Stellen war noch Schlamm vom Regen des Vortages übrig.",
+    exampleTranslation:
+      "Půda byla tvrdá, ale na několika místech zůstalo po včerejším dešti bláto.",
+  },
+  stellte: {
+    translation: "postavil",
+    example: "Ryska nahm zwei Körbe und stellte sie unter die Eiche.",
+    exampleTranslation: "Ryška vzala dva košíky a položila je pod dub.",
+  },
   stellung: {
     translation: "poloha",
     example:
@@ -11815,10 +10564,55 @@ export const dictionary = {
     exampleTranslation:
       "„Ale razítko mohl použít kdokoli, kdo se do sadu dostal.“",
   },
+  stern: {
+    translation: "hvězdu",
+    example:
+      "„Ich wollte meiner Mutter einen Stern bringen“, flüsterte Jitrenka.",
+    exampleTranslation:
+      "„Chtěla jsem přinést mamince hvězdu,“ špitla Jitřenka.",
+  },
   steuerte: {
     translation: "ovládal",
     example: "Jedes steuerte einen anderen Teil des Wassersystems.",
     exampleTranslation: "Každé ovládalo jinou část vodního systému.",
+  },
+  stieg: {
+    translation: "stoupal, nastoupil; sesedl",
+    example:
+      "Der Weg zum Wasserhaus führte zwischen hohen Tannen hindurch und stieg dann steil einen felsigen Hang hinauf.",
+    exampleTranslation:
+      "Cesta k vodnímu domu vedla mezi vysokými jedlemi a potom prudce stoupala po kamenitém svahu.",
+  },
+  stift: {
+    translation: "čep, kolík",
+    example: "Der Stift drehte sich langsam und spannte das Seil.",
+    exampleTranslation: "Kolík se pomalu otočil a napnul lano.",
+  },
+  still: {
+    translation: "tichý / tiše",
+    example: "Auf der Lichtung wurde es still.",
+    exampleTranslation: "Na mýtině nastalo ticho.",
+  },
+  stimme: {
+    translation: "hlase",
+    example: "Kurz darauf hörten sie ihre gedämpfte Stimme.",
+    exampleTranslation: "Za chvíli se ozval její tlumený hlas.",
+  },
+  stimmen: {
+    translation: "hlasy",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
+  },
+  stimmte: {
+    translation: "souhlasil",
+    example: "„Jemand hat einen Holzstempel benutzt“, stimmte er zu.",
+    exampleTranslation: "„Někdo použil dřevěné razítko,“ souhlasil.",
+  },
+  stirn: {
+    translation: "čelo",
+    example: "Tonda runzelte die Stirn.",
+    exampleTranslation: "Tonda se zamračil.",
   },
   stoff: {
     translation: "látka",
@@ -11830,6 +10624,11 @@ export const dictionary = {
     example:
       "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
     exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
+  },
+  stoffstreifen: {
+    translation: "proužek látky",
+    example: "Ryska erinnerte sich an den blauen Stoffstreifen.",
+    exampleTranslation: "Ryška si vzpomněla na modrý proužek látky.",
   },
   strafe: {
     translation: "trest",
@@ -11856,6 +10655,21 @@ export const dictionary = {
     exampleTranslation:
       "Datel klepal do starého buku, sojky se hádaly o žalud a v trávě šustila myš.",
   },
+  strömte: {
+    translation: "spěchal, vyrazil",
+    example: "Aus der Öffnung unter dem Mond strömte kalte Luft.",
+    exampleTranslation: "Z otvoru pod měsícem proudil studený vzduch.",
+  },
+  strömung: {
+    translation: "proud",
+    example: "Die Strömung unter ihm schlug laut gegen die Wände.",
+    exampleTranslation: "Proud pod ním hlasitě narážel do stěn.",
+  },
+  stück: {
+    translation: "kus",
+    example: "An seinem rechten Ärmel fehlte ein kleines Stück Stoff.",
+    exampleTranslation: "Na pravém rukávu mu chyběl malý kus látky.",
+  },
   stücke: {
     translation: "kusy",
     example: "Neben dem Kanal lagen Stücke aus hellem Holz.",
@@ -11868,10 +10682,34 @@ export const dictionary = {
     exampleTranslation:
       "Když tři klíče poprvé současně cvakly v novém zámku, hlavní kolo se otevřelo jen o jeden vyznačený dílek.",
   },
+  stunde: {
+    translation: "hodina",
+    example:
+      "Nach einer Stunde hatten sie eine Seitenöffnung freigelegt, die groß genug für eine Füchsin und einen Igel war.",
+    exampleTranslation:
+      "Po hodině odkryli boční otvor dost velký pro lišku a ježka.",
+  },
+  stunden: {
+    translation: "hodiny",
+    example: "Bis zum Gewitter blieben vielleicht zehn Stunden.",
+    exampleTranslation: "Do bouřky zbývalo možná deset hodin.",
+  },
   stützen: {
     translation: "podpěry, podpírat",
     example: "Sie schoben die Stützen an die richtigen Stellen.",
     exampleTranslation: "Posunuli podpěry na správná místa.",
+  },
+  stützte: {
+    translation: "podepřel, zpevnil",
+    example:
+      "Ryska stützte sich mit den Vorderpfoten dagegen, Vavrinec drückte von der anderen Seite, und Bodlik hielt den Hebel fest, damit er nicht heraussprang.",
+    exampleTranslation:
+      "Ryška se opřela předními tlapami, Vavřinec zatlačil z druhé strany a Bodlík držel páku, aby nevyskočila.",
+  },
+  suchen: {
+    translation: "hledal",
+    example: "„Ich hätte zuerst suchen und erst danach rufen sollen.“",
+    exampleTranslation: "„Měl jsem nejdřív hledat a teprve potom křičet.“",
   },
   sucht: {
     translation: "hledá",
@@ -11879,6 +10717,25 @@ export const dictionary = {
       "Sie hinterlässt kleine Hinweise und wartet auf jemanden, der aufmerksam nach ihnen sucht.",
     exampleTranslation:
       "Zanechává malé stopy a čeká na někoho, kdo je bude pozorně hledat.",
+  },
+  suchte: {
+    translation: "hledala",
+    example:
+      "Wenn die Ameisen den Hügel hinaufeilten, suchte sie am Himmel nach Gewitterwolken.",
+    exampleTranslation:
+      "Když mravenci spěchali do kopce, hledala na obloze bouřkové mraky.",
+  },
+  suchten: {
+    translation: "hledali",
+    example: "Diesmal suchten sie jedoch keinen Dieb.",
+    exampleTranslation: "Tentokrát však neměli hledat zloděje.",
+  },
+  südliche: {
+    translation: "jižní",
+    example:
+      "Das nördliche Rad leitete Wasser zum Brunnen, das westliche zu den Waldquellen und das südliche zu den Obstgärten unterhalb des Hügels.",
+    exampleTranslation:
+      "Severní kolo posílalo vodu ke kašně, západní k lesním studánkám a jižní k sadům pod kopcem.",
   },
   südlichen: {
     translation: "jižním, jižní",
@@ -11940,6 +10797,42 @@ export const dictionary = {
     exampleTranslation:
       "Na svůj stánek pověsil tabulku s počtem sklizených košů.",
   },
+  tag: {
+    translation: "den",
+    example: "„Gebt mir einen Tag“, bat sie den Rat.",
+    exampleTranslation: "„Dejte mi jeden den,“ požádala radu.",
+  },
+  tage: {
+    translation: "dny",
+    example:
+      "Wenn eines der Tore geschlossen blieb, konnten die Bäche und Quellen innerhalb weniger Tage austrocknen.",
+    exampleTranslation:
+      "Jestli zůstala některá brána zavřená, potoky i studánky mohly během několika dnů vyschnout.",
+  },
+  tagen: {
+    translation: "dnech",
+    example: "In drei Tagen sollte das Fest der ersten Äpfel stattfinden.",
+    exampleTranslation: "Za tři dny se měl konat Svátek prvních jablek.",
+  },
+  tages: {
+    translation: "někdy",
+    example: "Eines Tages werden diese kleinen Taten eine neue Spur bilden.“",
+    exampleTranslation: "Z těchto malých činů jednou vznikne nová stopa.“",
+  },
+  tal: {
+    translation: "údolí",
+    example:
+      "Darin befanden sich alte Räder und steinerne Kanäle, die das Wasser im ganzen Tal verteilten.",
+    exampleTranslation:
+      "Uvnitř se nacházela stará kola a kamenné kanály, které rozváděly vodu do celého údolí.",
+  },
+  tals: {
+    translation: "údolí",
+    example:
+      "Sie war das älteste Mitglied des Waldrates und kannte viele Geschichten über die früheren Bewohner des Tals.",
+    exampleTranslation:
+      "Byla nejstarší členkou lesní rady a znala mnoho příběhů o dávných obyvatelích údolí.",
+  },
   tannen: {
     translation: "jedle",
     example:
@@ -11951,6 +10844,26 @@ export const dictionary = {
     translation: "šišky",
     example: "Für jedes Problem legten sie einen Tannenzapfen auf die Karte.",
     exampleTranslation: "Ke každému problému položili na mapu šišku.",
+  },
+  tanzte: {
+    translation: "tančila",
+    example:
+      "Skokanek lief mit den Eichhörnchen um die Wette, die Igel probierten Apfelkuchen, und das Licht der Laternen tanzte auf der Oberfläche des reparierten Brunnens.",
+    exampleTranslation:
+      "Skokánek závodil v běhu s veverkami, ježci ochutnávali jablečné koláče a na hladině opravené kašny tančila světla luceren.",
+  },
+  tasche: {
+    translation: "taška / kapsa",
+    example:
+      "Ryska versteckte den Stempel in ihrer Tasche und nahm einen abgerissenen blauen Knopf von Vavrinecs Mantel.",
+    exampleTranslation:
+      "Ryška schovala razítko do brašny a vzala z Vavřincova kabátu utržený modrý knoflík.",
+  },
+  tat: {
+    translation: "skutek",
+    example: "Ryska sagte nichts dazu, aber sie merkte sich diese Tat.",
+    exampleTranslation:
+      "Ryška nic nekomentovala, ale tento čin si zapamatovala.",
   },
   taten: {
     translation: "činy",
@@ -11978,12 +10891,24 @@ export const dictionary = {
     exampleTranslation:
       "Spolu se Skokánkem je přenesla v misce do hlubokého rybníčku.",
   },
+  teil: {
+    translation: "část",
+    example: "Jedes steuerte einen anderen Teil des Wassersystems.",
+    exampleTranslation: "Každé ovládalo jinou část vodního systému.",
+  },
   teilchen: {
     translation: "částečka",
     example:
       "Sie dankte Vavrinec, und Ryska hob das letzte glitzernde Teilchen vom Boden auf.",
     exampleTranslation:
       "Vavřincovi poděkovala a Ryška zvedla ze země poslední třpytivou částečku.",
+  },
+  teile: {
+    translation: "části",
+    example:
+      "Das war noch kein Beweis, aber die einzelnen Teile der Geschichte begannen langsam zusammenzupassen.",
+    exampleTranslation:
+      "To ještě nebyl důkaz, ale jednotlivé části příběhu k sobě začínaly pomalu pasovat.",
   },
   teilen: {
     translation: "rozdělit, sdílet",
@@ -11992,10 +10917,51 @@ export const dictionary = {
     exampleTranslation:
       "Dopoledne opravíme kanály a večer se podělíme o jídlo.",
   },
+  teilte: {
+    translation: "rozdělil",
+    example: "Der Tunnel teilte sich in zwei Wege.",
+    exampleTranslation: "Tunel se rozdělil na dvě cesty.",
+  },
+  teilten: {
+    translation: "podělil se",
+    example: "Danach teilten alle die Äpfel.",
+    exampleTranslation: "O jablka se pak rozdělili všichni.",
+  },
+  tief: {
+    translation: "hluboko",
+    example:
+      "Der südliche Kanal führte jedoch tief unter den Hügel und an einem Ort vorbei, der als Mondbrunnen bezeichnet wurde.",
+    exampleTranslation:
+      "Jižní kanál však vedl hluboko pod kopcem kolem místa označeného jako Měsíční studna.",
+  },
+  tiefe: {
+    translation: "hloubka",
+    example: "Wenn das tiefe Summen stärker wurde, traten alle zurück.",
+    exampleTranslation: "Když hluboké hučení zesílilo, všichni ustoupili.",
+  },
+  tiefen: {
+    translation: "hluboký",
+    example:
+      "Am Rand des tiefen Silberwaldes stand ein niedriger, mit Moos bedeckter Felsen.",
+    exampleTranslation:
+      "Na okraji hlubokého Stříbrného lesa stála nízká skála porostlá mechem.",
+  },
+  tiefer: {
+    translation: "hlubší, níže",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
+  },
   tiefere: {
     translation: "hlubší",
     example: "Ein Rad hatte eine tiefere Spur hinterlassen als das andere.",
     exampleTranslation: "Jedno kolo zanechávalo hlubší stopu než druhé.",
+  },
+  tiefes: {
+    translation: "hluboká",
+    example: "Der linke führte nach unten, und aus ihm kam ein tiefes Dröhnen.",
+    exampleTranslation: "Levá vedla dolů a ozýval se z ní hluboký hukot.",
   },
   tiefland: {
     translation: "nížina",
@@ -12016,10 +10982,26 @@ export const dictionary = {
     exampleTranslation:
       "Musíme se naučit neobviňovat nikoho jen podle toho, jak vypadá nebo k jakému druhu patří.“",
   },
+  tiere: {
+    translation: "zvířata",
+    example: "Die Tiere gingen fast nie dorthin.",
+    exampleTranslation: "Zvířata tam téměř nechodila.",
+  },
+  tieren: {
+    translation: "zvířatům / zvířaty",
+    example: "Dann wiederholte Vavrinec die ganze Geschichte vor allen Tieren.",
+    exampleTranslation:
+      "Vavřinec potom celý příběh zopakoval před všemi zvířaty.",
+  },
   tisch: {
     translation: "stůl",
     example: "Auf einem Tisch war die gestohlene Karte ausgebreitet.",
     exampleTranslation: "Na stole byla rozložená ukradená mapa.",
+  },
+  tochter: {
+    translation: "dcera",
+    example: "Sie konnte ihre jüngste Tochter Jitrenka nicht finden.",
+    exampleTranslation: "Nemohla najít svou nejmladší dceru Jitřenku.",
   },
   ton: {
     translation: "tón, zvuk",
@@ -12047,6 +11029,24 @@ export const dictionary = {
     exampleTranslation:
       "Veverky rozdávaly suché listí na přikrývky a jezevci vařili v kotlíku teplou bylinkovou polévku.",
   },
+  tor: {
+    translation: "brána",
+    example: "„Oder jemand hat das obere Tor geschlossen“, antwortete Rozarka.",
+    exampleTranslation: "„Nebo někdo zavřel horní bránu,“ odpověděla Rozárka.",
+  },
+  tore: {
+    translation: "vrata",
+    example:
+      "Wenn eines der Tore geschlossen blieb, konnten die Bäche und Quellen innerhalb weniger Tage austrocknen.",
+    exampleTranslation:
+      "Jestli zůstala některá brána zavřená, potoky i studánky mohly během několika dnů vyschnout.",
+  },
+  traf: {
+    translation: "udeřil",
+    example:
+      "Der Eimer änderte plötzlich die Richtung und traf den Hebel in der Mitte.",
+    exampleTranslation: "Vědro prudce změnilo směr a zasáhlo páku uprostřed.",
+  },
   trafen: {
     translation: "zasáhli, potkali",
     example:
@@ -12054,10 +11054,32 @@ export const dictionary = {
     exampleTranslation:
       "První kapky dopadly na listí právě ve chvíli, kdy se brána otevřela.",
   },
+  tragen: {
+    translation: "nést, vozit",
+    example: "„Hilfst du mir, diese Körbe in den Schatten zu tragen?“",
+    exampleTranslation: "„Pomůžeš mi odnést tyto košíky do stínu?“",
+  },
+  trank: {
+    translation: "pil",
+    example: "Ryska trank etwas sauberes Wasser.",
+    exampleTranslation: "Ryška se napila čisté vody.",
+  },
+  trat: {
+    translation: "vstoupil / vykročil",
+    example: "Vavrinec trat vor die Versammlung.",
+    exampleTranslation: "Vavřinec vystoupil před shromáždění.",
+  },
   traten: {
     translation: "vstoupili",
     example: "Wenn das tiefe Summen stärker wurde, traten alle zurück.",
     exampleTranslation: "Když hluboké hučení zesílilo, všichni ustoupili.",
+  },
+  treffen: {
+    translation: "zasáhnout, narazit",
+    example:
+      "„Wenn wir den Eimer zum Schwingen bringen, kann er den Hebel treffen“, erklärte sie.",
+    exampleTranslation:
+      "„Když rozhoupeme vědro, může narazit do páky,“ vysvětlila.",
   },
   tricks: {
     translation: "triky, lsti",
@@ -12068,6 +11090,11 @@ export const dictionary = {
     translation: "pít",
     example: "„Heute können wir kaum daraus trinken.“",
     exampleTranslation: "„Dnes se z ní sotva napijeme.“",
+  },
+  trockene: {
+    translation: "suché",
+    example: "„In das alte Trockene Tal.“",
+    exampleTranslation: "„Do starého Suchého údolí.“",
   },
   trockenen: {
     translation: "suchém, suché",
@@ -12102,6 +11129,13 @@ export const dictionary = {
     exampleTranslation:
       "Zatímco tráva v lese začínala schnout, půda v sadu byla tmavá a mokrá.",
   },
+  tropfen: {
+    translation: "kapající",
+    example:
+      "Wenn kleine Tropfen an den Spinnennetzen hingen, erwartete sie einen kalten Morgen.",
+    exampleTranslation:
+      "Když se na pavučinách držely malé kapky, očekávala chladné ráno.",
+  },
   tropfte: {
     translation: "kapala",
     example:
@@ -12109,10 +11143,27 @@ export const dictionary = {
     exampleTranslation:
       "Bláto mu pokrylo modrý kabát a z jeho upravených vousů kapala voda.",
   },
+  trotzdem: {
+    translation: "přesto",
+    example: "Trotzdem bemerkte Ryska drei seltsame Dinge.",
+    exampleTranslation: "Ryška si přesto všimla tří zvláštních věcí.",
+  },
   trüben: {
     translation: "kalném",
     example: "Tonda suchte mit einem langen Ast in dem trüben Tümpel.",
     exampleTranslation: "Tonda hrábl do kalné tůňky dlouhou větví.",
+  },
+  trug: {
+    translation: "nesl",
+    example:
+      "Bodlik trug kleine Steine fort, und Ryska suchte eine feste Stelle für den Einstieg.",
+    exampleTranslation:
+      "Bodlík odnášel kamínky a Ryška hledala pevné místo pro vstup.",
+  },
+  trugen: {
+    translation: "nosili",
+    example: "Die Igel und Mäuse trugen die kleineren Stücke fort.",
+    exampleTranslation: "Ježci a myši odnášeli menší kusy.",
   },
   tümpel: {
     translation: "tůň",
@@ -12131,12 +11182,28 @@ export const dictionary = {
     example: "„Wenn Tonda hier wäre, wüsste er, was zu tun ist“, sagte Bodlik.",
     exampleTranslation: "„Kdyby tu byl Tonda, věděl by co dělat,“ řekl Bodlík.",
   },
+  tunnel: {
+    translation: "tunel",
+    example: "„Der Tunnel muss eine Lüftungsöffnung haben“, sagte sie.",
+    exampleTranslation: "„Tunel musí mít větrací otvor,“ řekla.",
+  },
   tunneln: {
     translation: "tunelech",
     example:
       "Die anderen folgten ihr, doch das Wasser in den Tunneln stieg schnell.",
     exampleTranslation:
       "Ostatní ji následovali, ale voda v tunelech rychle stoupala.",
+  },
+  tür: {
+    translation: "dveří",
+    example:
+      "„Die Tür ist beschädigt, und der Hauptschlüssel ist verschwunden.“",
+    exampleTranslation: "„Dveře jsou poškozené a hlavní klíč zmizel.“",
+  },
+  über: {
+    translation: "nad / přes / o",
+    example: "Ryska beugte sich über den Bach.",
+    exampleTranslation: "Ryška se sklonila k potoku.",
   },
   übereinanderliegenden: {
     translation: "překrývajících se",
@@ -12178,6 +11245,18 @@ export const dictionary = {
     exampleTranslation:
       "Neříkala, že byla chytrá proto, že dokázala ostatní přelstít.",
   },
+  überqueren: {
+    translation: "přejít",
+    example:
+      "Wenn sie ein Seil daran entlangführten, konnten sie die Balken herüberziehen, ohne die Brücke zu überqueren.",
+    exampleTranslation:
+      "Kdyby po něm poslali lano, mohli trámy přetáhnout bez přecházení mostu.",
+  },
+  überrascht: {
+    translation: "překvapeně",
+    example: "Die Wächter sahen einander überrascht an.",
+    exampleTranslation: "Strážci se na sebe překvapeně podívali.",
+  },
   überschüssigen: {
     translation: "přebytečný",
     example: "Das andere ließ überschüssigen Druck ab.",
@@ -12194,12 +11273,33 @@ export const dictionary = {
     example: "Auf den ersten Blick wirkten die Abdrücke überzeugend.",
     exampleTranslation: "Otisky vypadaly na první pohled přesvědčivě.",
   },
+  übrig: {
+    translation: "zůstal",
+    example:
+      "Der Boden war hart, aber an mehreren Stellen war noch Schlamm vom Regen des Vortages übrig.",
+    exampleTranslation:
+      "Půda byla tvrdá, ale na několika místech zůstalo po včerejším dešti bláto.",
+  },
   übrigen: {
     translation: "ostatní, zbývající",
     example:
       "Er gestand, dass er sich um den südlichen Obstgarten gesorgt hatte, weil eine Krankheit einige Bäume befallen hatte und die übrigen mehr Wasser brauchten.",
     exampleTranslation:
       "Přiznal, že se bál o jižní sad, protože část stromů napadla choroba a zbylé potřebovaly více vody.",
+  },
+  ufer: {
+    translation: "břeh",
+    example:
+      "Bodlik zählte die beschädigten Vorräte, und Tonda untersuchte die Brücken und Ufer.",
+    exampleTranslation:
+      "Bodlík počítal poškozené zásoby a Tonda prohlížel mosty a břehy.",
+  },
+  um: {
+    translation: "aby / kolem",
+    example:
+      "Ein Specht klopfte an eine alte Buche, Eichelhäher stritten um eine Eichel, und eine Maus raschelte im Gras.",
+    exampleTranslation:
+      "Datel klepal do starého buku, sojky se hádaly o žalud a v trávě šustila myš.",
   },
   umarmte: {
     translation: "objal",
@@ -12259,6 +11359,13 @@ export const dictionary = {
     example: "Sie war voller Schlamm, aber unbeschädigt.",
     exampleTranslation: "Byl plný bláta, ale nepoškozený.",
   },
+  und: {
+    translation: "a",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
   undichten: {
     translation: "netěsných",
     example: "Sie waren aus einem undichten Eimer gefallen.",
@@ -12308,6 +11415,11 @@ export const dictionary = {
     exampleTranslation:
       "Jedno zazvonění znamenalo klidnou vodu, dvě rychlý růst a tři bezprostřední nebezpečí.",
   },
+  uns: {
+    translation: "nás",
+    example: "„Wir müssen uns das Wasserhaus ansehen“, sagte sie.",
+    exampleTranslation: "„Musíme se podívat k vodnímu domu,“ řekla.",
+  },
   unser: {
     translation: "náš",
     example:
@@ -12322,15 +11434,41 @@ export const dictionary = {
     exampleTranslation:
       "Přesto bylo důležité nedovolit, aby jeden skutečný podvod proměnil každou další nejistotu v nové obvinění.",
   },
+  unten: {
+    translation: "pod",
+    example: "Er führt nach unten, aber für euch ist er zu klein.“",
+    exampleTranslation: "Vede dolů, ale pro vás je příliš malá.“",
+  },
+  unter: {
+    translation: "pod",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
   untere: {
     translation: "dolní",
     example: "Der obere Teil war breiter als der untere.",
     exampleTranslation: "Horní část byla širší než dolní.",
   },
+  unteren: {
+    translation: "nižší",
+    example:
+      "Pidalka schob schnell mehrere glatte Kiesel unter seinen unteren Rand.",
+    exampleTranslation:
+      "Píďalka rychle zasunula pod spodní okraj několik hladkých oblázků.",
+  },
   unteres: {
     translation: "dolní",
     example: "Ihr unteres Ende war an einem Eiseneimer befestigt.",
     exampleTranslation: "Jeho dolní konec byl připevněný k železnému vědru.",
+  },
+  unterhalb: {
+    translation: "pod",
+    example:
+      "Das nördliche Rad leitete Wasser zum Brunnen, das westliche zu den Waldquellen und das südliche zu den Obstgärten unterhalb des Hügels.",
+    exampleTranslation:
+      "Severní kolo posílalo vodu ke kašně, západní k lesním studánkám a jižní k sadům pod kopcem.",
   },
   unterirdischen: {
     translation: "podzemních",
@@ -12395,12 +11533,31 @@ export const dictionary = {
     example: "Das Wasser floss ruhig, und alle konnten die Veränderung sehen.",
     exampleTranslation: "Voda tekla klidně a změnu viděli všichni.",
   },
+  verband: {
+    translation: "zabalil / obvázal",
+    example:
+      "Sie erinnerten sich an sie, weil sie Mut mit Besonnenheit, Beweise mit Freundlichkeit und Wahrheit mit Hilfsbereitschaft verband.",
+    exampleTranslation:
+      "Pamatovala si ji proto, že spojovala odvahu s rozvahou, důkazy s laskavostí a pravdu s ochotou pomoci.",
+  },
+  verbergen: {
+    translation: "skrývat",
+    example: "Niemand musste etwas verbergen.",
+    exampleTranslation: "Nikdo nemusel nic skrývat.",
+  },
   verbinden: {
     translation: "spojit",
     example:
       "Das fünfte Rätsel wurde durch den Geruch gelöst, das sechste durch gespiegeltes Licht, und beim siebten mussten sie alles verbinden, was sie bei den vorherigen gelernt hatten.",
     exampleTranslation:
       "Pátá hádanka se řešila podle vůně, šestá podle odrazu světla a sedmá vyžadovala spojit poznatky ze všech předchozích.",
+  },
+  verborgen: {
+    translation: "ukrytý / skrytý",
+    example:
+      "Es schmeckte wie früher, doch nun wusste sie, wie viel Arbeit, wie viele Regeln und wie viel gegenseitiges Vertrauen in jedem Schluck verborgen waren.",
+    exampleTranslation:
+      "Chutnala stejně jako dřív, ale ona už věděla, kolik práce, pravidel a vzájemné důvěry se skrývá v každém jejím doušku.",
   },
   verboten: {
     translation: "zakázáno, zakázaný",
@@ -12413,6 +11570,13 @@ export const dictionary = {
       "Er verbreiterte den alten Holzrahmen daneben und kroch mit einem starken Seil in den Tunnel.",
     exampleTranslation:
       "Rozšířil starý dřevěný rám vedle nich a prolezl tunelem se silným lanem.",
+  },
+  verbunden: {
+    translation: "spojovala",
+    example:
+      "Neben dem Mondbrunnen waren zwei Räder eingezeichnet, die durch einen Hebel verbunden waren.",
+    exampleTranslation:
+      "Vedle Měsíční studny byla nakreslená dvě kola spojená pákou.",
   },
   verdächtigten: {
     translation: "podezřívali",
@@ -12453,6 +11617,13 @@ export const dictionary = {
     translation: "odpuštění",
     example: "Es war weder eine grausame Antwort noch eine einfache Vergebung.",
     exampleTranslation: "Nebyla to krutá odpověď ani snadné odpuštění.",
+  },
+  vergessen: {
+    translation: "zapomenutý",
+    example:
+      "„Wenn jeder in eine andere Richtung läuft, reparieren wir vielleicht dieselbe Sache zweimal und vergessen etwas Wichtigeres“, erklärte sie.",
+    exampleTranslation:
+      "„Když se každý rozběhne jinam, můžeme dvakrát opravit stejnou věc a na důležitější zapomenout,“ vysvětlila.",
   },
   vergib: {
     translation: "odpusť",
@@ -12501,6 +11672,13 @@ export const dictionary = {
       "Die Regeln des Waldes verlangten, dass er den Schaden wiedergutmachte.",
     exampleTranslation: "Lesní pravidla požadovala, aby napravil škodu.",
   },
+  verlassen: {
+    translation: "opustit",
+    example:
+      "Der andere endete an einem alten Steinbruch, der seit Jahrzehnten verlassen war.",
+    exampleTranslation:
+      "Druhá končila u starého kamenolomu, který byl desítky let opuštěný.",
+  },
   verlassenen: {
     translation: "opuštěných",
     example:
@@ -12512,6 +11690,11 @@ export const dictionary = {
     translation: "vede, probíhá",
     example: "„Drinnen verläuft ein neuer Kanal“, sagte sie.",
     exampleTranslation: "„Uvnitř vede nový kanál,“ řekla.",
+  },
+  verletzt: {
+    translation: "zraněný",
+    example: "Vavrinec zitterte, war aber nicht verletzt.",
+    exampleTranslation: "Vavřinec se třásl, ale nebyl zraněný.",
   },
   verlief: {
     translation: "vedl, probíhal",
@@ -12537,6 +11720,16 @@ export const dictionary = {
     translation: "ztratit",
     example: "„Wir sollten keine Zeit verlieren.",
     exampleTranslation: "„Neměli bychom ztrácet čas.",
+  },
+  verlor: {
+    translation: "ztratil",
+    example: "Vavrinec verlor das Gleichgewicht.",
+    exampleTranslation: "Vavřinec ztratil rovnováhu.",
+  },
+  verloren: {
+    translation: "ztracený / ztratila",
+    example: "Die Arbeit eines ganzen Jahres wäre verloren.“",
+    exampleTranslation: "Celý rok práce bude ztracený.“",
   },
   verlust: {
     translation: "ztráta",
@@ -12579,6 +11772,13 @@ export const dictionary = {
     example: "Der Eingang könnte verschüttet sein.“",
     exampleTranslation: "Vchod může být zavalený.“",
   },
+  verschwand: {
+    translation: "zmizela",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
+  },
   verschwinden: {
     translation: "zmizet",
     example: "„Ein Vorteil kann schnell verschwinden“, antwortete Ryska.",
@@ -12590,10 +11790,35 @@ export const dictionary = {
       "„Deshalb verschwindet das Wasser aus dem Wald“, erklärte der Biber.",
     exampleTranslation: "„Proto voda mizí z lesa,“ vysvětlil bobr.",
   },
+  verschwunden: {
+    translation: "zmizela",
+    example:
+      "„Die Tür ist beschädigt, und der Hauptschlüssel ist verschwunden.“",
+    exampleTranslation: "„Dveře jsou poškozené a hlavní klíč zmizel.“",
+  },
   verschwundene: {
     translation: "zmizelý",
     example: "Der verschwundene Schlüssel",
     exampleTranslation: "Ztracený klíč",
+  },
+  versperrte: {
+    translation: "blokovala",
+    example: "Ein letzter großer Stein versperrte die Mündung des Kanals.",
+    exampleTranslation: "Poslední velký kámen blokoval ústí kanálu.",
+  },
+  versprachen: {
+    translation: "slíbili",
+    example:
+      "Tonda schlug eine bessere Entwässerung des Bodens vor, und mehrere Vögel versprachen, schädliche Insekten von den Bäumen zu sammeln.",
+    exampleTranslation:
+      "Tonda navrhl lepší odvodnění půdy a několik ptáků slíbilo, že ze stromů posbírají škodlivý hmyz.",
+  },
+  verstand: {
+    translation: "pochopil",
+    example:
+      "Doch sie hatte ausgezeichnete Augen, eine empfindliche Nase und vor allem einen geduldigen Verstand.",
+    exampleTranslation:
+      "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
   },
   verstärken: {
     translation: "zpevnit, posílit",
@@ -12604,6 +11829,11 @@ export const dictionary = {
     translation: "schoval, skrytý",
     example: "Ryska versteckte den blauen Streifen unter einem Stein.",
     exampleTranslation: "Ryška schovala modrý proužek pod kámen.",
+  },
+  versteckten: {
+    translation: "skrytý",
+    example: "Die Freunde versteckten sich unter einem Brombeerbusch.",
+    exampleTranslation: "Přátelé se schovali pod ostružinový keř.",
   },
   verstehe: {
     translation: "rozumím",
@@ -12656,6 +11886,13 @@ export const dictionary = {
     example: "„Oder die Füchsin versucht, ihre eigenen Spuren wegzuerklären.“",
     exampleTranslation: "„Nebo se liška snaží vysvětlit vlastní stopy.“",
   },
+  versuchte: {
+    translation: "zkusil",
+    example:
+      "Vavrinec hielt sich mit einer Pfote am Steinrand fest und versuchte, mit der anderen Ryska zu erreichen.",
+    exampleTranslation:
+      "Vavřinec se jednou tlapou držel kamenného okraje a druhou se snažil dosáhnout k Ryšce.",
+  },
   verteilen: {
     translation: "rozdělit",
     example:
@@ -12693,6 +11930,12 @@ export const dictionary = {
     example: "Ryska bemerkte flache Vertiefungen im Boden.",
     exampleTranslation: "Ryška si všimla mělkých prohlubní v podlaze.",
   },
+  vertrauen: {
+    translation: "důvěry",
+    example:
+      "„Vertrauen bleibt länger, aber es dauert auch länger, es wiederherzustellen.“",
+    exampleTranslation: "„Důvěra zůstává déle, ale také se déle opravuje.“",
+  },
   vertrauten: {
     translation: "důvěřovali",
     example: "Einige Tiere vertrauten ihm wieder sehr, andere nur ein wenig.",
@@ -12713,6 +11956,11 @@ export const dictionary = {
     exampleTranslation:
       "Všechna věřila, že systém hlídá správce Vavřinec, malý lasičák s dlouhým hnědým kabátem.",
   },
+  verwandelte: {
+    translation: "proměnil se",
+    example: "Das Dröhnen des Wassers verwandelte sich in mächtiges Donnern.",
+    exampleTranslation: "Hukot vody se měnil v silné dunění.",
+  },
   verwirrung: {
     translation: "zmatek",
     example:
@@ -12727,6 +11975,18 @@ export const dictionary = {
     exampleTranslation:
       "A první bezpečné otevření ukázalo, že opatrnost nemusí práci zdržovat.",
   },
+  viel: {
+    translation: "příliš",
+    example: "Jemand muss herausfinden, wie viel Wasser wir noch haben.“",
+    exampleTranslation: "Někdo musí zjistit, kolik vody ještě máme.“",
+  },
+  viele: {
+    translation: "mnoho",
+    example:
+      "Sie war das älteste Mitglied des Waldrates und kannte viele Geschichten über die früheren Bewohner des Tals.",
+    exampleTranslation:
+      "Byla nejstarší členkou lesní rady a znala mnoho příběhů o dávných obyvatelích údolí.",
+  },
   vieler: {
     translation: "mnohých",
     example:
@@ -12739,12 +11999,24 @@ export const dictionary = {
     example: "„Vielleicht liegt ein Ast im Kanal“, schlug der Biber Tonda vor.",
     exampleTranslation: "„Možná je v kanálu větev,“ navrhl bobr Tonda.",
   },
+  vier: {
+    translation: "čtyři",
+    example:
+      "Sie hatten vier Zehen, einen kleinen Ballen und die richtige Größe.",
+    exampleTranslation: "Měly čtyři prsty, malý polštářek a správnou velikost.",
+  },
   vierten: {
     translation: "čtvrtého",
     example:
       "An der vierten Stelle hörten alle ein Kratzen hinter einem Baumstumpf, doch sie fanden nur einen Ast, den eine Schnur im Wind bewegte.",
     exampleTranslation:
       "U čtvrtého místa všichni slyšeli škrábání za pařezem, ale našli jen větev, kterou pohyboval provázek ve větru.",
+  },
+  vögel: {
+    translation: "ptáci",
+    example:
+      "An den Stimmen der Vögel erkannte sie, ob es in der Umgebung ruhig war.",
+    exampleTranslation: "Podle hlasu ptáků poznala, zda je v okolí klid.",
   },
   vogelnester: {
     translation: "ptačí hnízda",
@@ -12772,6 +12044,20 @@ export const dictionary = {
     exampleTranslation:
       "U jižního sadu zahlédla Vavřince, jak nese plný džbán k nejmladší jabloni.",
   },
+  voller: {
+    translation: "plnou",
+    example:
+      "Ihr Fell war nass, ihre Pfoten waren voller Schlamm, und vor Müdigkeit fielen ihr die Augen zu.",
+    exampleTranslation:
+      "Měla mokrou srst, bláto na tlapách a únavou se jí zavíraly oči.",
+  },
+  völlig: {
+    translation: "úplně",
+    example:
+      "Am Nachmittag kehrte Skokanek völlig aufgeregt vom Mondbrunnen zurück.",
+    exampleTranslation:
+      "Odpoledne se z Měsíční studny vrátil Skokánek celý rozrušený.",
+  },
   vollkommen: {
     translation: "úplně, dokonale",
     example: "Und alle Abdrücke sind vollkommen gleich.",
@@ -12782,10 +12068,35 @@ export const dictionary = {
     example: "Das südliche Rad war jedoch vollständig geöffnet.",
     exampleTranslation: "Jižní kolo však bylo otevřené naplno.",
   },
+  vom: {
+    translation: "od / z (von dem)",
+    example: "Sie führten vom Fenster in Richtung Wald.",
+    exampleTranslation: "Vedly od okna směrem k lesu.",
+  },
+  von: {
+    translation: "od / z / o",
+    example:
+      "„Diese Abdrücke stammen nicht von einer lebenden Pfote“, sagte sie.",
+    exampleTranslation: "„Tyto stopy nevytvořila živá tlapa,“ řekla.",
+  },
+  vor: {
+    translation: "před",
+    example:
+      "Doch sie hatte ausgezeichnete Augen, eine empfindliche Nase und vor allem einen geduldigen Verstand.",
+    exampleTranslation:
+      "Měla však výborné oči, citlivý nos a hlavně trpělivou mysl.",
+  },
   voraus: {
     translation: "napřed, předem",
     example: "Pidalka ging voraus, Bodlik folgte ihr.",
     exampleTranslation: "Píďalka šla první a Bodlík za ní.",
+  },
+  vorbei: {
+    translation: "kolem",
+    example:
+      "Der Weg zum südlichen Obstgarten führte an einem Kiefernwald vorbei und dann zwischen den Wiesen bergab.",
+    exampleTranslation:
+      "Cesta k jižnímu sadu vedla kolem borového lesa a potom klesala mezi loukami.",
   },
   vorbeigelaufen: {
     translation: "proběhl kolem",
@@ -12832,6 +12143,11 @@ export const dictionary = {
     example: "Ohne die richtige Vorgehensweise kann es herunterfallen.“",
     exampleTranslation: "Bez správného postupu může spadnout.“",
   },
+  vorher: {
+    translation: "předtím",
+    example: "Rozarka gab die genaue Zeit vorher bekannt.",
+    exampleTranslation: "Rozárka oznámila přesný čas předem.",
+  },
   vorherigen: {
     translation: "předchozího",
     example:
@@ -12877,6 +12193,13 @@ export const dictionary = {
       "Und das erste sichere Öffnen zeigte, dass Vorsicht die Arbeit nicht verzögern muss.",
     exampleTranslation:
       "A první bezpečné otevření ukázalo, že opatrnost nemusí práci zdržovat.",
+  },
+  vorsichtig: {
+    translation: "opatrně",
+    example:
+      "Jemand hatte einen dünnen Metallgegenstand hineingesteckt und es vorsichtig geöffnet.",
+    exampleTranslation:
+      "Někdo do něj zasunul tenký kovový předmět a opatrně ho otevřel.",
   },
   vorsprung: {
     translation: "výstupek, římsa",
@@ -12926,12 +12249,22 @@ export const dictionary = {
     exampleTranslation:
       "„V Suchém údolí si letos udělala hnízda rodina křepelek.",
   },
+  wächter: {
+    translation: "strážný",
+    example: "Die Wächter begannen, die Umgebung abzusuchen.",
+    exampleTranslation: "Strážci začali prohledávat okolí.",
+  },
   wächtern: {
     translation: "strážcům",
     example:
       "Ryska ging mit Rozarka, Bodlik, Tonda und zwei Wächtern des Waldrates.",
     exampleTranslation:
       "Ryška šla s Rozárkou, Bodlíkem, Tondou a dvěma strážci lesní rady.",
+  },
+  wagen: {
+    translation: "vůz",
+    example: "„Der Wagen war schwer beladen“, sagte sie.",
+    exampleTranslation: "„Vozík byl těžce naložený,“ řekla.",
   },
   wagens: {
     translation: "vozíku",
@@ -12944,6 +12277,11 @@ export const dictionary = {
       "Ryska ging über Steine um das Haus herum und fand hinter einem Busch zwei schmale Wagenspuren.",
     exampleTranslation:
       "Ryška obešla dům po kamenech a našla za keřem dvě úzké koleje od vozíku.",
+  },
+  während: {
+    translation: "zatímco",
+    example: "Vavrinec hatte während der Ratssitzung dreimal gehustet.",
+    exampleTranslation: "Vavřinec během rady třikrát zakašlal.",
   },
   wahrhaftig: {
     translation: "pravdivě",
@@ -12960,6 +12298,25 @@ export const dictionary = {
     translation: "pravda",
     example: "Wir brauchen eine Wahrheit, die jeder sehen kann.“",
     exampleTranslation: "Potřebujeme pravdu, kterou uvidí každý.“",
+  },
+  wahrscheinlich: {
+    translation: "pravděpodobně",
+    example: "„Wahrscheinlich öffnet er die Haupttür“, sagte Ryska.",
+    exampleTranslation: "„Nejspíš otevře hlavní dveře,“ řekla Ryška.",
+  },
+  wald: {
+    translation: "les",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
+  },
+  waldes: {
+    translation: "lesa",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
   },
   waldplatz: {
     translation: "Lesní náměstí",
@@ -12996,10 +12353,22 @@ export const dictionary = {
     exampleTranslation:
       "Na jedné mapě byly zakreslené lesní cesty, na jiné staré hranice polí.",
   },
+  wand: {
+    translation: "stěně",
+    example: "An der Wand hing ein leerer Eisenschrank.",
+    exampleTranslation: "Na stěně visela prázdná železná skříňka.",
+  },
   wände: {
     translation: "stěny",
     example: "Die Strömung unter ihm schlug laut gegen die Wände.",
     exampleTranslation: "Proud pod ním hlasitě narážel do stěn.",
+  },
+  wänden: {
+    translation: "stěnami",
+    example:
+      "An den Wänden verliefen Kupferrohre, und in der Mitte standen drei große Räder.",
+    exampleTranslation:
+      "Podél stěn vedly měděné trubky a uprostřed stála tři velká kola.",
   },
   wandte: {
     translation: "namítl, obrátil se",
@@ -13012,10 +12381,23 @@ export const dictionary = {
     example: "„Sie zeigen, wann sie benutzt werden sollen.“",
     exampleTranslation: "„Ukazují, kdy se mají použít.“",
   },
+  war: {
+    translation: "byl / byla",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
   wäre: {
     translation: "byl by",
     example: "Die Arbeit eines ganzen Jahres wäre verloren.“",
     exampleTranslation: "Celý rok práce bude ztracený.“",
+  },
+  waren: {
+    translation: "byli / byly",
+    example:
+      "Sie waren lang und schmal und sahen auffallend wie Fuchsspuren aus.",
+    exampleTranslation: "Byly dlouhé, úzké a nápadně připomínaly liščí stopy.",
   },
   warme: {
     translation: "teplá",
@@ -13024,12 +12406,24 @@ export const dictionary = {
     exampleTranslation:
       "Veverky rozdávaly suché listí na přikrývky a jezevci vařili v kotlíku teplou bylinkovou polévku.",
   },
+  warnen: {
+    translation: "varovat",
+    example:
+      "Sie sollte daran erinnern, dass Ryska in der Gefahr die anderen warnen und ihnen zugleich zuhören konnte.",
+    exampleTranslation:
+      "Měla připomínat, že v nebezpečí dokázala varovat ostatní a zároveň jim naslouchat.",
+  },
   warnglocken: {
     translation: "výstražné zvonky",
     example:
       "Eine der drei Warnglocken, die in der Nacht vor dem steigenden Druck gewarnt hatten, war verschwunden.",
     exampleTranslation:
       "Jeden ze tří výstražných zvonků, které v noci varovaly před rostoucím tlakem, zmizel.",
+  },
+  warnte: {
+    translation: "varovala",
+    example: "„Vielleicht haben wir nur noch wenige Minuten“, warnte Vavrinec.",
+    exampleTranslation: "„Máme možná jen pár minut,“ varoval Vavřinec.",
   },
   warnten: {
     translation: "varovali",
@@ -13038,10 +12432,22 @@ export const dictionary = {
     exampleTranslation:
       "Ptáci létali po lese a varovali obyvatele nízkých nor.",
   },
+  warnung: {
+    translation: "varování",
+    example:
+      "Ryska erinnerte sich an die drei Schläge, die der Biber als Warnung benutzen sollte.",
+    exampleTranslation:
+      "Ryška si vzpomněla na tři údery, které měl bobr použít jako varování.",
+  },
   warte: {
     translation: "čekám",
     example: "„Ich warte draußen“, sagte der Biber.",
     exampleTranslation: "„Počkám venku,“ řekl bobr.",
+  },
+  warten: {
+    translation: "čekat",
+    example: "Ryska bat sie, einen Augenblick zu warten.",
+    exampleTranslation: "Ryška ji požádala o chvíli strpení.",
   },
   wartet: {
     translation: "čeká",
@@ -13049,6 +12455,18 @@ export const dictionary = {
       "Sie hinterlässt kleine Hinweise und wartet auf jemanden, der aufmerksam nach ihnen sucht.",
     exampleTranslation:
       "Zanechává malé stopy a čeká na někoho, kdo je bude pozorně hledat.",
+  },
+  wartete: {
+    translation: "čekal",
+    example: "Stattdessen wartete sie, bis die Stimmen verstummten.",
+    exampleTranslation: "Místo toho však počkala, až hlasy utichnou.",
+  },
+  warteten: {
+    translation: "čekali",
+    example:
+      "Sie warteten, bis sich das Wasser beruhigt hatte, und drehten es ein zweites Mal.",
+    exampleTranslation:
+      "Počkali, dokud se voda neuklidnila, a otočili podruhé.",
   },
   wartungstunnel: {
     translation: "servisní tunel",
@@ -13059,6 +12477,18 @@ export const dictionary = {
     translation: "proč",
     example: "„Und warum Vavrinec die alte Karte brauchte.“",
     exampleTranslation: "„A proč Vavřinec potřeboval starou mapu.“",
+  },
+  was: {
+    translation: "co",
+    example: "„Was machst du hier?“",
+    exampleTranslation: "„Co tady děláš?“",
+  },
+  wasser: {
+    translation: "voda",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
   },
   wasserbauten: {
     translation: "vodní stavby",
@@ -13113,6 +12543,11 @@ export const dictionary = {
     example: "„Ich verstehe doch nichts von Wasserrädern.“",
     exampleTranslation: "„Vždyť vodním kolům nerozumím.“",
   },
+  wassers: {
+    translation: "vody",
+    example: "Die Karte zeigte drei Hauptwege des Wassers.",
+    exampleTranslation: "Mapa ukazovala tři hlavní cesty vody.",
+  },
   wasserstand: {
     translation: "hladina vody",
     example:
@@ -13154,6 +12589,26 @@ export const dictionary = {
     exampleTranslation:
       "Ryšku probudilo tiché ťukání dešťových kapek ze spodních větví.",
   },
+  weder: {
+    translation: "ani",
+    example:
+      "Sie war weder das stärkste Tier im Wald noch die schnellste Läuferin.",
+    exampleTranslation:
+      "Nebyla nejsilnějším zvířetem v lese ani nejrychlejším běžcem.",
+  },
+  weg: {
+    translation: "cesta",
+    example:
+      "Ein schmaler Streifen blauen Stoffes lag im Schlamm neben dem Weg.",
+    exampleTranslation: "V blátě u cesty ležel úzký proužek modré látky.",
+  },
+  wege: {
+    translation: "cesty",
+    example:
+      "Ich schlage vor, alle Wege zu sperren und den Fuchsbau zu durchsuchen.“",
+    exampleTranslation:
+      "Navrhuji uzavřít všechny cesty a prohledat liščí doupě.“",
+  },
   wegen: {
     translation: "kvůli",
     example:
@@ -13190,20 +12645,85 @@ export const dictionary = {
     exampleTranslation:
       "„Protože správná věc nepřestane být správná jen proto, že jsi mi ublížil.“",
   },
+  weichen: {
+    translation: "měkkými / hebkými",
+    example:
+      "Hinter dem Haus entdeckten sie mehrere Pfotenabdrücke im weichen Boden.",
+    exampleTranslation: "Za domem objevili v měkké půdě několik otisků tlap.",
+  },
+  weide: {
+    translation: "pastviny",
+    example:
+      "Bei der alten Weide fand sie eine Hasenfamilie, die einen überfluteten Graben nicht überqueren konnte.",
+    exampleTranslation:
+      "U staré vrby našla králičí rodinu, která nemohla přejít rozvodněný příkop.",
+  },
+  weil: {
+    translation: "protože",
+    example:
+      "„Weil das Richtige nicht aufhört, richtig zu sein, nur weil du mir wehgetan hast.“",
+    exampleTranslation:
+      "„Protože správná věc nepřestane být správná jen proto, že jsi mi ublížil.“",
+  },
+  weile: {
+    translation: "chvíli",
+    example: "Eine Weile geschah nichts.",
+    exampleTranslation: "Chvíli se nic nedělo.",
+  },
   weise: {
     translation: "způsob, moudrý",
     example: "Auf dieselbe Weise holten sie den zweiten und den dritten.",
     exampleTranslation: "Stejným způsobem získali druhý a třetí.",
+  },
+  weiß: {
+    translation: "bílý",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  weißen: {
+    translation: "bílé",
+    example:
+      "Nach fünfzig Minuten kehrte Pidalka mit einem weißen Kreidezeichen auf der Pfote vom Mondbrunnen zurück.",
+    exampleTranslation:
+      "Po padesáti minutách se z Měsíční studny vrátila Píďalka s bílou křídovou značkou na tlapce.",
   },
   weißt: {
     translation: "víš",
     example: "„Woher weißt du davon?“",
     exampleTranslation: "„Jak o něm víš?“",
   },
+  weit: {
+    translation: "daleko",
+    example:
+      "Die Mütter brachten ihren Jungen Wasser in Schalen, und die Vögel flogen zu weit entfernten Tümpeln.",
+    exampleTranslation:
+      "Matky přinesly mláďatům vodu v miskách a ptáci létali ke vzdáleným tůním.",
+  },
   weitem: {
     translation: "dálky",
     example: "„Jemand hat sie gestohlen!“, rief er schon von Weitem.",
     exampleTranslation: "„Někdo ho ukradl!“ volal už z dálky.",
+  },
+  weiter: {
+    translation: "dál",
+    example:
+      "Ein Stück weiter war im Schlamm der Abdruck einer schmalen Pfote zu sehen.",
+    exampleTranslation: "O kus dál byla v blátě otištěná úzká tlapa.",
+  },
+  weitere: {
+    translation: "další",
+    example:
+      "Ryska hoffte, dass es noch eine weitere Karte des Wassersystems gab.",
+    exampleTranslation:
+      "Ryška doufala, že existuje ještě jedna mapa vodního systému.",
+  },
+  weiteren: {
+    translation: "další",
+    example:
+      "Ryska zeigte mit weiteren Schlägen, dass sie ein Seil und Kraft brauchten.",
+    exampleTranslation: "Ryška klepáním naznačila, že potřebují lano a sílu.",
   },
   weiterer: {
     translation: "další",
@@ -13234,6 +12754,11 @@ export const dictionary = {
       "„Die Vernunft erinnert uns daran, dass wir nicht allein auf der Welt sind.“",
     exampleTranslation: "„Rozum nám připomíná, že nejsme na světě sami.“",
   },
+  wenig: {
+    translation: "málo",
+    example: "Er roch nach Bienenwachs und ein wenig nach nassem Eisen.",
+    exampleTranslation: "Voněla po včelím vosku a trochu po mokrém železe.",
+  },
   wenige: {
     translation: "několik, málo",
     example: "Der Hebel bewegte sich nur um wenige Fingerbreiten.",
@@ -13253,6 +12778,18 @@ export const dictionary = {
     exampleTranslation:
       "„Potřebuji dokázat sám sobě, že dokážu napravit alespoň část škody.“",
   },
+  wenn: {
+    translation: "když, pokud",
+    example:
+      "Wenn kleine Tropfen an den Spinnennetzen hingen, erwartete sie einen kalten Morgen.",
+    exampleTranslation:
+      "Když se na pavučinách držely malé kapky, očekávala chladné ráno.",
+  },
+  wer: {
+    translation: "kdo",
+    example: "„Wer hatte noch Zugang zu dem Haus?“, fragte Rozarka.",
+    exampleTranslation: "„Kdo další měl přístup do domu?“ zeptala se Rozárka.",
+  },
   werde: {
     translation: "budu",
     example:
@@ -13260,10 +12797,21 @@ export const dictionary = {
     exampleTranslation:
       "„Do zítřejšího západu slunce zjistím, kam vedou skutečné stopy.",
   },
+  werden: {
+    translation: "budou",
+    example:
+      "Trotzdem spürte sie, dass dieser Morgen nicht gewöhnlich werden würde.",
+    exampleTranslation: "Přesto cítila, že dnešní ráno nebude obyčejné.",
+  },
   werdenden: {
     translation: "stávající se, tmavnoucí",
     example: "Ryska blickte zum dunkler werdenden Himmel.",
     exampleTranslation: "Ryška se podívala na tmavnoucí oblohu.",
+  },
+  werkzeuge: {
+    translation: "nářadí",
+    example: "Darin standen Kisten mit Obst, Fässer und einige Werkzeuge.",
+    exampleTranslation: "Stály v ní bedny s ovocem, sudy a několik nástrojů.",
   },
   werkzeugschuppen: {
     translation: "sklad nástrojů",
@@ -13304,12 +12852,31 @@ export const dictionary = {
       "Ryska wusste jedoch, dass sie nur den ersten Teil des Wettlaufs gewonnen hatten.",
     exampleTranslation: "Ryška však věděla, že vyhráli jen první část závodu.",
   },
+  wichtig: {
+    translation: "důležité",
+    example:
+      "Manchmal bedeutete sie nur, stehen zu bleiben, herauszufinden, was wirklich wichtig war, und in der richtigen Reihenfolge zu beginnen.",
+    exampleTranslation:
+      "Někdy znamenala pouze zastavit se, zjistit, co je skutečně důležité, a začít ve správném pořadí.",
+  },
+  wichtiger: {
+    translation: "důležitější",
+    example:
+      "„Die ursprünglichen Erbauer machten oft Kopien wichtiger Pläne“, sagte Rozarka.",
+    exampleTranslation:
+      "„Původní stavitelé si důležité plány často kopírovali,“ řekla Rozárka.",
+  },
   wichtigeres: {
     translation: "důležitější věc",
     example:
       "„Wenn jeder in eine andere Richtung läuft, reparieren wir vielleicht dieselbe Sache zweimal und vergessen etwas Wichtigeres“, erklärte sie.",
     exampleTranslation:
       "„Když se každý rozběhne jinam, můžeme dvakrát opravit stejnou věc a na důležitější zapomenout,“ vysvětlila.",
+  },
+  wichtigste: {
+    translation: "hlavní",
+    example: "„Das ist vielleicht der wichtigste Teil.“",
+    exampleTranslation: "„To je možná ta nejdůležitější část.“",
   },
   wichtigsten: {
     translation: "nejdůležitější",
@@ -13323,6 +12890,18 @@ export const dictionary = {
       "Ryska wickelte sich das andere Ende um den Körper und trat vorsichtig auf die beschädigte Brücke.",
     exampleTranslation:
       "Ryška si druhý konec omotala kolem těla a opatrně vstoupila na poškozený most.",
+  },
+  wie: {
+    translation: "jako / jak",
+    example:
+      "Ihr Fell war rot wie Herbstlaub, und ihre Schwanzspitze war weiß wie der erste Schnee.",
+    exampleTranslation:
+      "Její srst byla rezavá jako podzimní listí a konec ocasu měla bílý jako první sníh.",
+  },
+  wieder: {
+    translation: "znovu",
+    example: "Die rechte Spur war wieder tiefer.",
+    exampleTranslation: "Pravá kolej byla znovu hlubší.",
   },
   wiedergutmachen: {
     translation: "napravit škodu",
@@ -13370,11 +12949,22 @@ export const dictionary = {
     exampleTranslation:
       "Cesta k jižnímu sadu vedla kolem borového lesa a potom klesala mezi loukami.",
   },
+  wind: {
+    translation: "vítr",
+    example:
+      "Der Wind wurde stärker, und über dem Hügel sammelten sich dunkle Wolken.",
+    exampleTranslation: "Vítr zesílil a na kopci se hromadily tmavé mraky.",
+  },
   windes: {
     translation: "větru",
     example:
       "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
     exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
+  wir: {
+    translation: "my",
+    example: "„Heute können wir kaum daraus trinken.“",
+    exampleTranslation: "„Dnes se z ní sotva napijeme.“",
   },
   wirbelnde: {
     translation: "vířící",
@@ -13385,6 +12975,18 @@ export const dictionary = {
     translation: "vířil",
     example: "Unter ihm wirbelte schwarzes Wasser.",
     exampleTranslation: "Pod ním se točila černá voda.",
+  },
+  wird: {
+    translation: "je",
+    example: "Dann wird das Wasser die ganze Nacht in den Obstgarten fließen.“",
+    exampleTranslation: "Potom bude voda proudit do sadu celou noc.“",
+  },
+  wirklich: {
+    translation: "opravdu",
+    example:
+      "Manchmal bedeutete sie nur, stehen zu bleiben, herauszufinden, was wirklich wichtig war, und in der richtigen Reihenfolge zu beginnen.",
+    exampleTranslation:
+      "Někdy znamenala pouze zastavit se, zjistit, co je skutečně důležité, a začít ve správném pořadí.",
   },
   wirklichkeit: {
     translation: "skutečnost",
@@ -13406,11 +13008,37 @@ export const dictionary = {
     example: "Was wisst ihr wirklich?“",
     exampleTranslation: "Co skutečně víte?“",
   },
+  wo: {
+    translation: "kde",
+    example: "Zwei Wächter sollten jedoch immer wissen, wo sie sich befand.",
+    exampleTranslation: "Dva strážci však budou vědět, kde se pohybuje.",
+  },
+  woche: {
+    translation: "týden",
+    example:
+      "Einmal in der Woche durfte jedes Tier kommen und die Aufzeichnungen ansehen.",
+    exampleTranslation:
+      "Jednou týdně mohlo kterékoli zvíře přijít a záznamy si prohlédnout.",
+  },
   woher: {
     translation: "odkud",
     example:
       "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
     exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
+  wohin: {
+    translation: "kam",
+    example:
+      "„Bis morgen bei Sonnenuntergang werde ich herausfinden, wohin die echten Spuren führen.",
+    exampleTranslation:
+      "„Do zítřejšího západu slunce zjistím, kam vedou skutečné stopy.",
+  },
+  wolken: {
+    translation: "mraky",
+    example:
+      "Am nächsten Morgen erreichten kalte Wolken aus dem Norden den Silberwald.",
+    exampleTranslation:
+      "Následující ráno dorazila ke Stříbrnému lesu studená severní oblaka.",
   },
   wollen: {
     translation: "chtít",
@@ -13418,6 +13046,31 @@ export const dictionary = {
       "Manchmal ist Vorsicht der schnellste Weg zu einem Ziel, das wir ohne einen weiteren Unfall erreichen wollen.",
     exampleTranslation:
       "Někdy je právě opatrnost nejrychlejší cestou k cíli, ke kterému chceme dojít bez další nehody.",
+  },
+  wollte: {
+    translation: "chtěl, chtěla",
+    example: "Sie wollte keine voreiligen Schlüsse ziehen.",
+    exampleTranslation: "Nechtěla dělat rychlé závěry.",
+  },
+  wollten: {
+    translation: "chtěli",
+    example:
+      "Sie wollten hören, was mit dem Wasser geschehen war, und entscheiden, was mit Vavrinec geschehen sollte.",
+    exampleTranslation:
+      "Chtěla slyšet, co se stalo s vodou, a rozhodnout, co bude s Vavřincem.",
+  },
+  worden: {
+    translation: "byla",
+    example:
+      "Das nördliche Rad war fast bis in die geschlossene Stellung gedreht worden.",
+    exampleTranslation: "Severní kolo bylo otočené téměř do zavřené polohy.",
+  },
+  wuchs: {
+    translation: "vyrostl",
+    example:
+      "Dort wuchs eine mächtige Eiche, und unter ihren Zweigen fanden Beratungen, Feste und Frühlingsmärkte statt.",
+    exampleTranslation:
+      "Rostl tam mohutný dub, pod jehož větvemi se konaly porady, oslavy i jarní trhy.",
   },
   wuchsen: {
     translation: "rostly",
@@ -13429,10 +13082,50 @@ export const dictionary = {
     example: "„Ich?“, wunderte er sich.",
     exampleTranslation: "„Já?“ podivil se.",
   },
+  wurde: {
+    translation: "stal se / byl",
+    example: "Auf der Lichtung wurde es still.",
+    exampleTranslation: "Na mýtině nastalo ticho.",
+  },
+  würde: {
+    translation: "by, chtěl by",
+    example:
+      "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
+    exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
+  wurden: {
+    translation: "byli, byly",
+    example: "Ryska spürte, wie ihre Ohren heiß wurden.",
+    exampleTranslation: "Ryška cítila, jak se jí zahřívají uši.",
+  },
+  würden: {
+    translation: "by, byli by",
+    example:
+      "„Echte Spuren würden sowohl vom Haus weg als auch zum Haus hin führen.",
+    exampleTranslation: "„Skutečné stopy by vedly od domu i k domu.",
+  },
   wurzel: {
     translation: "kořen",
     example: "Es sah aus wie drei Tropfen unter der Wurzel eines Baumes.",
     exampleTranslation: "Vypadala jako tři kapky pod kořenem stromu.",
+  },
+  wurzeln: {
+    translation: "kořeny",
+    example:
+      "Unter seinen Wurzeln hatte eine junge Füchsin namens Ryska ihren Bau.",
+    exampleTranslation:
+      "Pod jejími kořeny měla své doupě mladá liška jménem Ryška.",
+  },
+  wusste: {
+    translation: "věděl",
+    example:
+      "An der Richtung des Windes wusste sie, woher der Regen kommen würde.",
+    exampleTranslation: "Podle směru větru věděla, odkud přijde déšť.",
+  },
+  wüsste: {
+    translation: "věděl",
+    example: "„Wenn Tonda hier wäre, wüsste er, was zu tun ist“, sagte Bodlik.",
+    exampleTranslation: "„Kdyby tu byl Tonda, věděl by co dělat,“ řekl Bodlík.",
   },
   wusstest: {
     translation: "věděl jsi",
@@ -13486,6 +13179,11 @@ export const dictionary = {
       "Ryska bemerkte einen kleinen Stein zwischen den Zähnen des Zahnrades.",
     exampleTranslation: "Ryška si všimla malého kamínku mezi zuby převodu.",
   },
+  zaun: {
+    translation: "plot",
+    example: "Die Spuren führten bis zum hohen Zaun des südlichen Obstgartens.",
+    exampleTranslation: "Stopy vedly až k vysokému plotu jižního sadu.",
+  },
   zaunes: {
     translation: "plotu",
     example: "Auf der anderen Seite des Zaunes waren Schritte zu hören.",
@@ -13502,6 +13200,16 @@ export const dictionary = {
       "Sie hatten vier Zehen, einen kleinen Ballen und die richtige Größe.",
     exampleTranslation: "Měly čtyři prsty, malý polštářek a správnou velikost.",
   },
+  zehn: {
+    translation: "deset",
+    example: "Bis zum Gewitter blieben vielleicht zehn Stunden.",
+    exampleTranslation: "Do bouřky zbývalo možná deset hodin.",
+  },
+  zeichen: {
+    translation: "znamení, značka",
+    example: "Ryska bemerkte ein kleines Zeichen in der Ecke der Höhlenkarte.",
+    exampleTranslation: "Ryška si všimla malé značky v rohu mapy jeskyní.",
+  },
   zeichnete: {
     translation: "nakreslil",
     example:
@@ -13509,12 +13217,31 @@ export const dictionary = {
     exampleTranslation:
       "Na velký kus březové kůry nakreslila jednoduchou mapu lesa.",
   },
+  zeigen: {
+    translation: "ukázat",
+    example:
+      "Am liebsten hätte sie gerufen, dass ein kluger Dieb nicht auf sich selbst zeigen würde.",
+    exampleTranslation:
+      "Nejraději by vykřikla, že chytrý zloděj by na sebe neukazoval.",
+  },
+  zeigte: {
+    translation: "ukázal",
+    example:
+      "Eine Karte zeigte Waldwege, eine andere die alten Grenzen der Felder.",
+    exampleTranslation:
+      "Na jedné mapě byly zakreslené lesní cesty, na jiné staré hranice polí.",
+  },
   zeigten: {
     translation: "ukazovaly",
     example:
       "Blaue Zeichen zeigten die Wassermenge in der Quelle, grüne den Zustand der Obstgärten und Felder und rote jeden Schaden.",
     exampleTranslation:
       "Modré značky ukazovaly množství vody v prameni, zelené stav sadů a polí a červené každé poškození.",
+  },
+  zeit: {
+    translation: "čas",
+    example: "„Wir sollten keine Zeit verlieren.",
+    exampleTranslation: "„Neměli bychom ztrácet čas.",
   },
   zeitpunkt: {
     translation: "okamžik, časový bod",
@@ -13529,6 +13256,11 @@ export const dictionary = {
       "Und wenn der Druck zu stark steigt, kann unter dem Hügel etwas zerbrechen.“",
     exampleTranslation:
       "A jestli tlak příliš vzroste, může se pod kopcem něco zlomit.“",
+  },
+  zerbrochen: {
+    translation: "zlomený",
+    example: "Das Schloss war nicht zerbrochen.",
+    exampleTranslation: "Zámek nebyl rozbitý.",
   },
   zerkratzt: {
     translation: "poškrábaný",
@@ -13566,10 +13298,35 @@ export const dictionary = {
     exampleTranslation:
       "Část jablek ze sadu měla nahradit zásoby zničené suchem.",
   },
+  ziehen: {
+    translation: "táhnout",
+    example: "Sie wollte keine voreiligen Schlüsse ziehen.",
+    exampleTranslation: "Nechtěla dělat rychlé závěry.",
+  },
+  ziel: {
+    translation: "cíl",
+    example:
+      "Manchmal ist Vorsicht der schnellste Weg zu einem Ziel, das wir ohne einen weiteren Unfall erreichen wollen.",
+    exampleTranslation:
+      "Někdy je právě opatrnost nejrychlejší cestou k cíli, ke kterému chceme dojít bez další nehody.",
+  },
   zitterte: {
     translation: "třásl se",
     example: "Vavrinec zitterte, war aber nicht verletzt.",
     exampleTranslation: "Vavřinec se třásl, ale nebyl zraněný.",
+  },
+  zog: {
+    translation: "vytáhl",
+    example:
+      "Nachdem er gegangen war, zog Ryska vorsichtig das Holzstück unter dem Zaun hervor.",
+    exampleTranslation:
+      "Když odešel, Ryška opatrně vytáhla dřevěný odřezek pod plotem.",
+  },
+  zogen: {
+    translation: "táhl, vytáhl",
+    example: "Als sie gemeinsam daran zogen, hob sich eine kleine Steinplatte.",
+    exampleTranslation:
+      "Když za něj společně zatáhli, zvedla se malá kamenná deska.",
   },
   zögerte: {
     translation: "zaváhal",
@@ -13585,6 +13342,20 @@ export const dictionary = {
     translation: "hněvivě, rozzlobený",
     example: "Tief unter der Erde donnerte das Wasser nicht mehr zornig.",
     exampleTranslation: "Hluboko pod zemí už voda neduněla hněvivě.",
+  },
+  zu: {
+    translation: "k / do / příliš",
+    example:
+      "Jeden Morgen blieb Ryska vor ihrem Bau stehen und hörte einige Minuten lang einfach nur zu.",
+    exampleTranslation:
+      "Ryška se každé ráno zastavila před doupětem a několik minut jen poslouchala.",
+  },
+  zuerst: {
+    translation: "nejprve",
+    example:
+      "Wenn etwas verschwand, dachten manche Bewohner des Waldes immer zuerst an einen Fuchs.",
+    exampleTranslation:
+      "Když něco zmizelo, někteří obyvatelé lesa si vždy jako první vzpomněli na lišku.",
   },
   zufall: {
     translation: "náhoda",
@@ -13617,10 +13388,33 @@ export const dictionary = {
     exampleTranslation:
       "Měla připomínat, že v nebezpečí dokázala varovat ostatní a zároveň jim naslouchat.",
   },
+  zuhören: {
+    translation: "naslouchání",
+    example:
+      "Sie sollte daran erinnern, dass Ryska in der Gefahr die anderen warnen und ihnen zugleich zuhören konnte.",
+    exampleTranslation:
+      "Měla připomínat, že v nebezpečí dokázala varovat ostatní a zároveň jim naslouchat.",
+  },
   zuletzt: {
     translation: "nakonec",
     example: "Die Dekoration kommt zuletzt“, antwortete Ryska.",
     exampleTranslation: "Ozdoby jsou až nakonec,“ odpověděla Ryška.",
+  },
+  zum: {
+    translation: "k / ke (zu dem)",
+    example: "Dann blickte sie zum Brunnen.",
+    exampleTranslation: "Potom se podívala ke kašně.",
+  },
+  zur: {
+    translation: "k / ke (zu der)",
+    example: "Sie kehrten zur Lichtung zurück.",
+    exampleTranslation: "Vrátily se na mýtinu.",
+  },
+  zurück: {
+    translation: "zpět",
+    example:
+      "Einen Augenblick später kam sie mit einem Stück nasser Erde zurück.",
+    exampleTranslation: "Za chvíli se vrátila s kouskem mokré hlíny.",
   },
   zurückdrehen: {
     translation: "otočit zpět",
@@ -13640,6 +13434,12 @@ export const dictionary = {
       "Ryska ging am Hauptkanal entlang und prüfte, ob irgendwo kleine Fische zurückgeblieben waren.",
     exampleTranslation:
       "Ryška procházela podél hlavního koryta a kontrolovala, zda někde nezůstaly malé rybky.",
+  },
+  zurückgehen: {
+    translation: "jít zpět, ustoupit",
+    example: "„Wir können zurückgehen und dem Rat alles zeigen“, sagte Bodlik.",
+    exampleTranslation:
+      "„Můžeme se vrátit a všechno ukázat radě,“ řekl Bodlík.",
   },
   zurückgekehrt: {
     translation: "vrátil se",
@@ -13688,10 +13488,22 @@ export const dictionary = {
     exampleTranslation:
       "Modré značky ukazovaly množství vody v prameni, zelené stav sadů a polí a červené každé poškození.",
   },
+  zustimmend: {
+    translation: "souhlasně",
+    example: "Rozarka nickte zustimmend.",
+    exampleTranslation: "Rozárka souhlasně přikývla.",
+  },
   zutritt: {
     translation: "vstup",
     example: "Auf einem Schild stand: PRIVATER OBSTGARTEN – ZUTRITT VERBOTEN.",
     exampleTranslation: "Na ceduli stálo: SOUKROMÝ SAD – VSTUP ZAKÁZÁN.",
+  },
+  zuvor: {
+    translation: "předtím",
+    example:
+      "Auf dem Tisch lag der Hauptschlüssel, den Vavrinec zuvor allein getragen hatte.",
+    exampleTranslation:
+      "Na stole ležel hlavní klíč, který předtím nosil Vavřinec sám.",
   },
   zuzulassen: {
     translation: "dovolit",
@@ -13710,6 +13522,13 @@ export const dictionary = {
     example:
       "Diese beginnen unter dem Fenster und enden nach zwanzig Schritten.",
     exampleTranslation: "Tyto začínají pod oknem a končí po dvaceti krocích.",
+  },
+  zwei: {
+    translation: "dva",
+    example:
+      "An einem Stein reichte das Wasser normalerweise bis zu einer dunklen Linie, doch nun stand es zwei Finger tiefer.",
+    exampleTranslation:
+      "Na jednom kameni bývala voda až po tmavou čáru, ale nyní byla o dva prsty níže.",
   },
   zweifeln: {
     translation: "pochybovat",
@@ -13747,6 +13566,13 @@ export const dictionary = {
     example: "Darin befand sich eine zweite Karte der Wasserkanäle.",
     exampleTranslation: "Uvnitř byla druhá mapa vodních kanálů.",
   },
+  zweiten: {
+    translation: "druhé",
+    example:
+      "Dann beugte er sich über die Karte und murmelte: „Ich muss nur noch den zweiten Zufluss öffnen.",
+    exampleTranslation:
+      "Potom se sklonil nad mapu a zamumlal: „Ještě otevřít druhý přívod.",
+  },
   zweites: {
     translation: "druhé",
     example:
@@ -13754,4 +13580,11 @@ export const dictionary = {
     exampleTranslation:
       "Počkali, dokud se voda neuklidnila, a otočili podruhé.",
   },
+  zwischen: {
+    translation: "mezi",
+    example: "Das Eichhörnchen Hbitka hängte bunte Bänder zwischen die Zweige.",
+    exampleTranslation: "Veverka Hbitka věšela mezi větve barevné stužky.",
+  },
 };
+
+export default dictionary;

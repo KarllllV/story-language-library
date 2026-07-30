@@ -1,15 +1,7 @@
 import { NextResponse } from "next/server";
-import { dictionary as englishFoxDictionary } from "../../../data/dictionaryAJfox";
-import { dictionary as englishHorseDictionary } from "../../../data/dictionaryAJhorse";
-import { dictionary as englishRabbitDictionary } from "../../../data/dictionaryAJrabbit";
-import { dictionary as czechFoxDictionary } from "../../../data/dictionaryczfox";
-import { dictionary as czechHorseDictionary } from "../../../data/dictionaryczhorse";
-import { dictionary as czechRabbitDictionary } from "../../../data/dictionaryczrabbit";
-import { dictionary as germanFoxDictionary } from "../../../data/dictionarydefox";
-import { dictionary as germanHorseDictionary } from "../../../data/dictionarydehorse";
-import { dictionary as germanRabbitDictionary } from "../../../data/dictionaryderabbit";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 const PAIR_COUNT = 8;
 
@@ -34,35 +26,50 @@ const languageConfig = {
     targetLocale: "cs",
     sourceLabel: "Anglicky",
     targetLabel: "Česky",
-    dictionaries: {
-      rabbit: englishRabbitDictionary,
-      horse: englishHorseDictionary,
-      fox: englishFoxDictionary,
-    },
   },
   de: {
     sourceLocale: "de",
     targetLocale: "cs",
     sourceLabel: "Německy",
     targetLabel: "Česky",
-    dictionaries: {
-      rabbit: germanRabbitDictionary,
-      horse: germanHorseDictionary,
-      fox: germanFoxDictionary,
-    },
   },
   cs: {
     sourceLocale: "cs",
     targetLocale: "ru",
     sourceLabel: "Česky",
     targetLabel: "Rusky",
-    dictionaries: {
-      rabbit: czechRabbitDictionary,
-      horse: czechHorseDictionary,
-      fox: czechFoxDictionary,
-    },
   },
 };
+
+/*
+ * Slovník se načte až ve chvíli, kdy si uživatel vybere konkrétní
+ * kombinaci jazyka a příběhu. API proto při startu nenačítá všech
+ * devět velkých slovníků najednou.
+ */
+const dictionaryLoaders = {
+  en: {
+    rabbit: () => import("../../../data/dictionaryAJrabbit"),
+    horse: () => import("../../../data/dictionaryAJhorse"),
+    fox: () => import("../../../data/dictionaryAJfox"),
+  },
+  de: {
+    rabbit: () => import("../../../data/dictionaryderabbit"),
+    horse: () => import("../../../data/dictionarydehorse"),
+    fox: () => import("../../../data/dictionarydefox"),
+  },
+  cs: {
+    rabbit: () => import("../../../data/dictionaryczrabbit"),
+    horse: () => import("../../../data/dictionaryczhorse"),
+    fox: () => import("../../../data/dictionaryczfox"),
+  },
+};
+
+/*
+ * Hotový seznam slov zůstane uložený po dobu života dané instance
+ * serveru. Opakovaná hra se stejným příběhem už slovník znovu
+ * nezpracovává.
+ */
+const wordPoolCache = new Map();
 
 function shuffle(items) {
   const shuffled = [...items];
@@ -134,17 +141,42 @@ function createWordPool(dictionary, sourceLocale, targetLocale) {
   return wordPool;
 }
 
-const wordPools = Object.fromEntries(
-  Object.entries(languageConfig).map(([language, config]) => [
-    language,
-    Object.fromEntries(
-      Object.entries(config.dictionaries).map(([story, dictionary]) => [
-        story,
-        createWordPool(dictionary, config.sourceLocale, config.targetLocale),
-      ]),
-    ),
-  ]),
-);
+async function getWordPool(language, story) {
+  const cacheKey = `${language}:${story}`;
+
+  if (wordPoolCache.has(cacheKey)) {
+    return wordPoolCache.get(cacheKey);
+  }
+
+  const loader = dictionaryLoaders[language]?.[story];
+  const selectedLanguage = languageConfig[language];
+
+  if (!loader || !selectedLanguage) {
+    return null;
+  }
+
+  const poolPromise = loader()
+    .then((module) => {
+      const dictionary = module.dictionary ?? module.default;
+
+      if (!dictionary || typeof dictionary !== "object") {
+        throw new Error("Vybraný slovník nemá platný export.");
+      }
+
+      return createWordPool(
+        dictionary,
+        selectedLanguage.sourceLocale,
+        selectedLanguage.targetLocale,
+      );
+    })
+    .catch((error) => {
+      wordPoolCache.delete(cacheKey);
+      throw error;
+    });
+
+  wordPoolCache.set(cacheKey, poolPromise);
+  return poolPromise;
+}
 
 export async function GET(request) {
   const parameters = new URL(request.url).searchParams;
@@ -153,6 +185,7 @@ export async function GET(request) {
 
   const selectedLanguage = languageConfig[language];
   const selectedStory = storyConfig[story];
+  const dictionaryLoader = dictionaryLoaders[language]?.[story];
 
   if (!selectedLanguage) {
     return NextResponse.json(
@@ -163,7 +196,7 @@ export async function GET(request) {
     );
   }
 
-  if (!selectedStory || !selectedLanguage.dictionaries[story]) {
+  if (!selectedStory || !dictionaryLoader) {
     return NextResponse.json(
       {
         error: "Tento příběh zatím není v pexesu připravený.",
@@ -172,40 +205,51 @@ export async function GET(request) {
     );
   }
 
-  const selectedPool = wordPools[language][story];
+  try {
+    const selectedPool = await getWordPool(language, story);
 
-  if (selectedPool.length < PAIR_COUNT) {
+    if (!selectedPool || selectedPool.length < PAIR_COUNT) {
+      return NextResponse.json(
+        {
+          error: "Vybraný příběh neobsahuje dost vhodných slov pro pexeso.",
+        },
+        { status: 500 },
+      );
+    }
+
+    const selectedWords = shuffle(selectedPool).slice(0, PAIR_COUNT);
+
+    const pairs = selectedWords.map((item, index) => ({
+      id: `${language}-${story}-${index + 1}`,
+      word: item.word,
+      translation: item.translation,
+    }));
+
     return NextResponse.json(
       {
-        error: "Vybraný příběh neobsahuje dost vhodných slov pro pexeso.",
+        language,
+        story,
+        storyLabel: selectedStory.label,
+        storyTitle: selectedStory.title,
+        sourceLabel: selectedLanguage.sourceLabel,
+        targetLabel: selectedLanguage.targetLabel,
+        pairCount: pairs.length,
+        pairs,
+      },
+      {
+        headers: {
+          "Cache-Control": "no-store, max-age=0",
+        },
+      },
+    );
+  } catch (error) {
+    console.error("Pexeso API error:", error);
+
+    return NextResponse.json(
+      {
+        error: "Pexeso se nepodařilo načíst. Zkuste to prosím znovu.",
       },
       { status: 500 },
     );
   }
-
-  const selectedWords = shuffle(selectedPool).slice(0, PAIR_COUNT);
-
-  const pairs = selectedWords.map((item, index) => ({
-    id: `${language}-${story}-${index + 1}`,
-    word: item.word,
-    translation: item.translation,
-  }));
-
-  return NextResponse.json(
-    {
-      language,
-      story,
-      storyLabel: selectedStory.label,
-      storyTitle: selectedStory.title,
-      sourceLabel: selectedLanguage.sourceLabel,
-      targetLabel: selectedLanguage.targetLabel,
-      pairCount: pairs.length,
-      pairs,
-    },
-    {
-      headers: {
-        "Cache-Control": "no-store, max-age=0",
-      },
-    },
-  );
 }
