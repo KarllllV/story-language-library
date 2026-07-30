@@ -8,6 +8,9 @@ const VOCABULARY_KEY = "storyLanguageVocabulary";
 const PRONUNCIATION_KEY = "pronunciationStats";
 const COMPLETED_STORIES_KEY = "completedStories";
 const CONVERSATION_STATS_KEY = "conversationStats";
+const PEXESO_STATS_KEY = "pexesoStats";
+const QUIZ_STATS_KEY = "quizStats";
+const CROSSWORD_STATS_KEY = "crosswordStats";
 
 const LANGUAGE_LABELS = {
   en: {
@@ -21,6 +24,24 @@ const LANGUAGE_LABELS = {
   cs: {
     label: "Čeština",
     flag: "🇨🇿",
+  },
+};
+
+const PEXESO_STORY_LABELS = {
+  rabbit: {
+    title: "Oliver a tajemný les",
+    label: "Králík",
+    icon: "🐰",
+  },
+  horse: {
+    title: "Statečný kůň",
+    label: "Kůň",
+    icon: "🐴",
+  },
+  fox: {
+    title: "Chytrá liška a tajemství Stříbrného pramene",
+    label: "Liška",
+    icon: "🦊",
   },
 };
 
@@ -140,6 +161,7 @@ function normalizeVocabularyItem(item) {
   }
 
   return {
+    ...item,
     language: ["en", "de", "cs"].includes(item.language) ? item.language : "en",
     learned: Boolean(item.learned),
     reviewCount: Number(item.reviewCount || 0),
@@ -176,6 +198,327 @@ function readConversationStats() {
     messages: Number(parsed.messages || 0),
     corrections: Number(parsed.corrections || 0),
   };
+}
+
+function normalizePexesoSummary(summary) {
+  const gamesCompleted = Math.max(0, Number(summary?.gamesCompleted || 0));
+  const totalMoves = Math.max(0, Number(summary?.totalMoves || 0));
+  const totalScore = Math.max(0, Number(summary?.totalScore || 0));
+  const bestMoves = Number(summary?.bestMoves);
+
+  return {
+    gamesCompleted,
+    totalMoves,
+    totalScore,
+    bestMoves: Number.isFinite(bestMoves) && bestMoves > 0 ? bestMoves : null,
+    lastPlayedAt: summary?.lastPlayedAt || null,
+  };
+}
+
+function normalizePexesoResult(result) {
+  if (!result || typeof result !== "object") {
+    return null;
+  }
+
+  const moves = Number(result.moves);
+  const pairCount = Number(result.pairCount);
+  const score = Number(result.score);
+
+  if (
+    !["en", "de", "cs"].includes(result.language) ||
+    !Object.hasOwn(PEXESO_STORY_LABELS, result.story) ||
+    !Number.isFinite(moves) ||
+    moves <= 0
+  ) {
+    return null;
+  }
+
+  return {
+    id:
+      result.id ||
+      `${result.language}-${result.story}-${result.playedAt || moves}`,
+    language: result.language,
+    story: result.story,
+    moves,
+    pairCount: Number.isFinite(pairCount) && pairCount > 0 ? pairCount : 8,
+    score:
+      Number.isFinite(score) && score >= 0
+        ? Math.min(100, Math.round(score))
+        : calculatePexesoScore(moves, pairCount || 8),
+    playedAt: result.playedAt || null,
+  };
+}
+
+function readPexesoStats() {
+  const parsed = safelyParse(localStorage.getItem(PEXESO_STATS_KEY), {});
+  const summary = normalizePexesoSummary(parsed);
+
+  return {
+    ...summary,
+    byLanguage: Object.fromEntries(
+      Object.keys(LANGUAGE_LABELS).map((language) => [
+        language,
+        normalizePexesoSummary(parsed?.byLanguage?.[language]),
+      ]),
+    ),
+    byStory: Object.fromEntries(
+      Object.keys(PEXESO_STORY_LABELS).map((story) => [
+        story,
+        normalizePexesoSummary(parsed?.byStory?.[story]),
+      ]),
+    ),
+    history: (Array.isArray(parsed?.history) ? parsed.history : [])
+      .map(normalizePexesoResult)
+      .filter(Boolean)
+      .slice(0, 50),
+  };
+}
+
+function calculatePexesoScore(moves, pairCount = 8) {
+  if (!Number.isFinite(moves) || moves <= 0 || pairCount <= 0) {
+    return 0;
+  }
+
+  return Math.max(0, Math.min(100, Math.round((pairCount / moves) * 100)));
+}
+
+function getPexesoRating(score) {
+  if (score >= 90) {
+    return "Vynikající";
+  }
+
+  if (score >= 75) {
+    return "Skvělé";
+  }
+
+  if (score >= 55) {
+    return "Dobré";
+  }
+
+  if (score >= 35) {
+    return "Pěkný trénink";
+  }
+
+  return "Procvičujte dál";
+}
+
+function normalizeQuizSummary(summary) {
+  const gamesCompleted = Math.max(0, Number(summary?.gamesCompleted || 0));
+  const totalCorrect = Math.max(0, Number(summary?.totalCorrect || 0));
+  const totalQuestions = Math.max(0, Number(summary?.totalQuestions || 0));
+  const totalPercentage = Math.max(0, Number(summary?.totalPercentage || 0));
+  const bestPercentage = Number(summary?.bestPercentage);
+
+  return {
+    gamesCompleted,
+    totalCorrect,
+    totalQuestions,
+    totalPercentage,
+    bestPercentage:
+      Number.isFinite(bestPercentage) && bestPercentage >= 0
+        ? Math.min(100, bestPercentage)
+        : null,
+    lastPlayedAt: summary?.lastPlayedAt || null,
+  };
+}
+
+function normalizeQuizResult(result) {
+  if (!result || typeof result !== "object") {
+    return null;
+  }
+
+  const correctAnswers = Number(result.correctAnswers);
+  const questionCount = Number(result.questionCount);
+  const percentage = Number(result.percentage);
+
+  if (
+    !["en", "de", "cs"].includes(result.language) ||
+    !Object.hasOwn(PEXESO_STORY_LABELS, result.story) ||
+    !Number.isFinite(correctAnswers) ||
+    !Number.isFinite(questionCount) ||
+    questionCount <= 0
+  ) {
+    return null;
+  }
+
+  const normalizedCorrectAnswers = Math.max(
+    0,
+    Math.min(questionCount, correctAnswers),
+  );
+  const calculatedPercentage = Math.round(
+    (normalizedCorrectAnswers / questionCount) * 100,
+  );
+
+  return {
+    id:
+      result.id ||
+      `${result.language}-${result.story}-${result.playedAt || questionCount}`,
+    language: result.language,
+    story: result.story,
+    correctAnswers: normalizedCorrectAnswers,
+    questionCount,
+    percentage:
+      Number.isFinite(percentage) && percentage >= 0
+        ? Math.min(100, Math.round(percentage))
+        : calculatedPercentage,
+    playedAt: result.playedAt || null,
+  };
+}
+
+function readQuizStats() {
+  const parsed = safelyParse(localStorage.getItem(QUIZ_STATS_KEY), {});
+  const summary = normalizeQuizSummary(parsed);
+
+  return {
+    ...summary,
+    byLanguage: Object.fromEntries(
+      Object.keys(LANGUAGE_LABELS).map((language) => [
+        language,
+        normalizeQuizSummary(parsed?.byLanguage?.[language]),
+      ]),
+    ),
+    byStory: Object.fromEntries(
+      Object.keys(PEXESO_STORY_LABELS).map((story) => [
+        story,
+        normalizeQuizSummary(parsed?.byStory?.[story]),
+      ]),
+    ),
+    history: (Array.isArray(parsed?.history) ? parsed.history : [])
+      .map(normalizeQuizResult)
+      .filter(Boolean)
+      .slice(0, 50),
+  };
+}
+
+function getQuizRating(percentage) {
+  if (percentage === 100) {
+    return "Bezchybný výkon";
+  }
+
+  if (percentage >= 80) {
+    return "Výborné";
+  }
+
+  if (percentage >= 60) {
+    return "Velmi dobré";
+  }
+
+  if (percentage >= 40) {
+    return "Dobrý základ";
+  }
+
+  return "Zkuste to znovu";
+}
+
+function normalizeCrosswordSummary(summary) {
+  const gamesCompleted = Math.max(0, Number(summary?.gamesCompleted || 0));
+  const totalWords = Math.max(0, Number(summary?.totalWords || 0));
+  const totalScore = Math.max(0, Number(summary?.totalScore || 0));
+  const totalHints = Math.max(0, Number(summary?.totalHints || 0));
+  const totalTimeSeconds = Math.max(0, Number(summary?.totalTimeSeconds || 0));
+  const bestScore = Number(summary?.bestScore);
+
+  return {
+    gamesCompleted,
+    totalWords,
+    totalScore,
+    totalHints,
+    totalTimeSeconds,
+    bestScore:
+      Number.isFinite(bestScore) && bestScore >= 0
+        ? Math.min(100, bestScore)
+        : null,
+    lastPlayedAt: summary?.lastPlayedAt || null,
+  };
+}
+
+function normalizeCrosswordResult(result) {
+  if (!result || typeof result !== "object") {
+    return null;
+  }
+
+  const wordCount = Number(result.wordCount);
+  const score = Number(result.score);
+  const hintsUsed = Math.max(0, Number(result.hintsUsed || 0));
+  const failedChecks = Math.max(0, Number(result.failedChecks || 0));
+  const timeSeconds = Math.max(0, Number(result.timeSeconds || 0));
+
+  if (
+    !["en", "de", "cs"].includes(result.language) ||
+    !Object.hasOwn(PEXESO_STORY_LABELS, result.story) ||
+    !Number.isFinite(wordCount) ||
+    wordCount <= 0 ||
+    !Number.isFinite(score)
+  ) {
+    return null;
+  }
+
+  return {
+    id:
+      result.id ||
+      `${result.language}-${result.story}-${result.playedAt || wordCount}`,
+    language: result.language,
+    story: result.story,
+    wordCount,
+    score: Math.max(0, Math.min(100, Math.round(score))),
+    hintsUsed,
+    failedChecks,
+    timeSeconds,
+    playedAt: result.playedAt || null,
+  };
+}
+
+function readCrosswordStats() {
+  const parsed = safelyParse(localStorage.getItem(CROSSWORD_STATS_KEY), {});
+  const summary = normalizeCrosswordSummary(parsed);
+
+  return {
+    ...summary,
+    byLanguage: Object.fromEntries(
+      Object.keys(LANGUAGE_LABELS).map((language) => [
+        language,
+        normalizeCrosswordSummary(parsed?.byLanguage?.[language]),
+      ]),
+    ),
+    byStory: Object.fromEntries(
+      Object.keys(PEXESO_STORY_LABELS).map((story) => [
+        story,
+        normalizeCrosswordSummary(parsed?.byStory?.[story]),
+      ]),
+    ),
+    history: (Array.isArray(parsed?.history) ? parsed.history : [])
+      .map(normalizeCrosswordResult)
+      .filter(Boolean)
+      .slice(0, 50),
+  };
+}
+
+function getCrosswordRating(score) {
+  if (score >= 95) {
+    return "Mistr křížovky";
+  }
+
+  if (score >= 80) {
+    return "Výborný výsledek";
+  }
+
+  if (score >= 60) {
+    return "Velmi dobrý výsledek";
+  }
+
+  if (score >= 40) {
+    return "Dobrý trénink";
+  }
+
+  return "Procvičujte dál";
+}
+
+function formatDuration(totalSeconds) {
+  const safeSeconds = Math.max(0, Math.round(Number(totalSeconds || 0)));
+  const minutes = Math.floor(safeSeconds / 60);
+  const seconds = safeSeconds % 60;
+
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
 }
 
 function readCompletedStories() {
@@ -327,6 +670,39 @@ export default function ProgressPage() {
       messages: 0,
       corrections: 0,
     },
+    pexeso: {
+      gamesCompleted: 0,
+      totalMoves: 0,
+      totalScore: 0,
+      bestMoves: null,
+      lastPlayedAt: null,
+      byLanguage: {},
+      byStory: {},
+      history: [],
+    },
+    quiz: {
+      gamesCompleted: 0,
+      totalCorrect: 0,
+      totalQuestions: 0,
+      totalPercentage: 0,
+      bestPercentage: null,
+      lastPlayedAt: null,
+      byLanguage: {},
+      byStory: {},
+      history: [],
+    },
+    crossword: {
+      gamesCompleted: 0,
+      totalWords: 0,
+      totalScore: 0,
+      totalHints: 0,
+      totalTimeSeconds: 0,
+      bestScore: null,
+      lastPlayedAt: null,
+      byLanguage: {},
+      byStory: {},
+      history: [],
+    },
   });
 
   const [message, setMessage] = useState("");
@@ -338,6 +714,9 @@ export default function ProgressPage() {
       stories: readStoryProgress(),
       completedStories: readCompletedStories(),
       conversation: readConversationStats(),
+      pexeso: readPexesoStats(),
+      quiz: readQuizStats(),
+      crossword: readCrosswordStats(),
     });
   }, []);
 
@@ -350,11 +729,20 @@ export default function ProgressPage() {
 
     window.addEventListener("storage", handleStorageChange);
     window.addEventListener("vocabulary-updated", handleStorageChange);
+    window.addEventListener("pexeso-stats-updated", handleStorageChange);
+    window.addEventListener("quiz-stats-updated", handleStorageChange);
+    window.addEventListener("crossword-stats-updated", handleStorageChange);
     window.addEventListener("focus", handleStorageChange);
 
     return () => {
       window.removeEventListener("storage", handleStorageChange);
       window.removeEventListener("vocabulary-updated", handleStorageChange);
+      window.removeEventListener("pexeso-stats-updated", handleStorageChange);
+      window.removeEventListener("quiz-stats-updated", handleStorageChange);
+      window.removeEventListener(
+        "crossword-stats-updated",
+        handleStorageChange,
+      );
       window.removeEventListener("focus", handleStorageChange);
     };
   }, [loadProgress]);
@@ -389,6 +777,131 @@ export default function ProgressPage() {
       },
     );
 
+    function createPexesoBreakdown(keys, source) {
+      return keys.map((key) => {
+        const item = normalizePexesoSummary(source?.[key]);
+        const averageMoves =
+          item.gamesCompleted > 0
+            ? Math.round((item.totalMoves / item.gamesCompleted) * 10) / 10
+            : 0;
+        const averageScore =
+          item.gamesCompleted > 0
+            ? Math.round(item.totalScore / item.gamesCompleted)
+            : 0;
+
+        return {
+          key,
+          ...item,
+          averageMoves,
+          averageScore,
+        };
+      });
+    }
+
+    function createQuizBreakdown(keys, source) {
+      return keys.map((key) => {
+        const item = normalizeQuizSummary(source?.[key]);
+        const averagePercentage =
+          item.gamesCompleted > 0
+            ? Math.round(item.totalPercentage / item.gamesCompleted)
+            : 0;
+        const accuracy =
+          item.totalQuestions > 0
+            ? Math.round((item.totalCorrect / item.totalQuestions) * 100)
+            : 0;
+
+        return {
+          key,
+          ...item,
+          averagePercentage,
+          accuracy,
+        };
+      });
+    }
+
+    function createCrosswordBreakdown(keys, source) {
+      return keys.map((key) => {
+        const item = normalizeCrosswordSummary(source?.[key]);
+        const averageScore =
+          item.gamesCompleted > 0
+            ? Math.round(item.totalScore / item.gamesCompleted)
+            : 0;
+        const averageHints =
+          item.gamesCompleted > 0
+            ? Math.round((item.totalHints / item.gamesCompleted) * 10) / 10
+            : 0;
+        const averageTimeSeconds =
+          item.gamesCompleted > 0
+            ? Math.round(item.totalTimeSeconds / item.gamesCompleted)
+            : 0;
+
+        return {
+          key,
+          ...item,
+          averageScore,
+          averageHints,
+          averageTimeSeconds,
+        };
+      });
+    }
+
+    const pexesoGames = data.pexeso.gamesCompleted;
+    const pexesoAverageMoves =
+      pexesoGames > 0
+        ? Math.round((data.pexeso.totalMoves / pexesoGames) * 10) / 10
+        : 0;
+    const pexesoAverageScore =
+      pexesoGames > 0 ? Math.round(data.pexeso.totalScore / pexesoGames) : 0;
+    const pexesoBestScore = data.pexeso.bestMoves
+      ? calculatePexesoScore(data.pexeso.bestMoves)
+      : 0;
+    const pexesoByLanguage = createPexesoBreakdown(
+      Object.keys(LANGUAGE_LABELS),
+      data.pexeso.byLanguage,
+    );
+    const pexesoByStory = createPexesoBreakdown(
+      Object.keys(PEXESO_STORY_LABELS),
+      data.pexeso.byStory,
+    );
+    const quizGames = data.quiz.gamesCompleted;
+    const quizAveragePercentage =
+      quizGames > 0 ? Math.round(data.quiz.totalPercentage / quizGames) : 0;
+    const quizAccuracy =
+      data.quiz.totalQuestions > 0
+        ? Math.round((data.quiz.totalCorrect / data.quiz.totalQuestions) * 100)
+        : 0;
+    const quizBestPercentage = data.quiz.bestPercentage ?? 0;
+    const quizByLanguage = createQuizBreakdown(
+      Object.keys(LANGUAGE_LABELS),
+      data.quiz.byLanguage,
+    );
+    const quizByStory = createQuizBreakdown(
+      Object.keys(PEXESO_STORY_LABELS),
+      data.quiz.byStory,
+    );
+    const crosswordGames = data.crossword.gamesCompleted;
+    const crosswordAverageScore =
+      crosswordGames > 0
+        ? Math.round(data.crossword.totalScore / crosswordGames)
+        : 0;
+    const crosswordBestScore = data.crossword.bestScore ?? 0;
+    const crosswordAverageHints =
+      crosswordGames > 0
+        ? Math.round((data.crossword.totalHints / crosswordGames) * 10) / 10
+        : 0;
+    const crosswordAverageTimeSeconds =
+      crosswordGames > 0
+        ? Math.round(data.crossword.totalTimeSeconds / crosswordGames)
+        : 0;
+    const crosswordByLanguage = createCrosswordBreakdown(
+      Object.keys(LANGUAGE_LABELS),
+      data.crossword.byLanguage,
+    );
+    const crosswordByStory = createCrosswordBreakdown(
+      Object.keys(PEXESO_STORY_LABELS),
+      data.crossword.byStory,
+    );
+
     const vocabularyPoints = Math.min(
       35,
       learnedWords * 3 + reviewedWords * 0.5,
@@ -409,13 +922,43 @@ export default function ProgressPage() {
       data.conversation.messages * 0.4 + data.conversation.corrections * 0.5,
     );
 
+    const pexesoPoints =
+      pexesoGames > 0
+        ? Math.min(
+            20,
+            Math.min(12, pexesoGames * 2) +
+              Math.min(8, pexesoAverageScore * 0.08),
+          )
+        : 0;
+
+    const quizPoints =
+      quizGames > 0
+        ? Math.min(
+            20,
+            Math.min(12, quizGames * 2) +
+              Math.min(8, quizAveragePercentage * 0.08),
+          )
+        : 0;
+
+    const crosswordPoints =
+      crosswordGames > 0
+        ? Math.min(
+            20,
+            Math.min(12, crosswordGames * 2) +
+              Math.min(8, crosswordAverageScore * 0.08),
+          )
+        : 0;
+
     const score = Math.min(
       100,
       Math.round(
         vocabularyPoints +
           pronunciationPoints +
           storyPoints +
-          conversationPoints,
+          conversationPoints +
+          pexesoPoints +
+          quizPoints +
+          crosswordPoints,
       ),
     );
 
@@ -425,6 +968,28 @@ export default function ProgressPage() {
       learningWords: totalWords - learnedWords,
       reviewedWords,
       vocabularyByLanguage,
+      pexesoGames,
+      pexesoAverageMoves,
+      pexesoAverageScore,
+      pexesoBestScore,
+      pexesoByLanguage,
+      pexesoByStory,
+      pexesoPoints: Math.round(pexesoPoints),
+      quizGames,
+      quizAveragePercentage,
+      quizAccuracy,
+      quizBestPercentage,
+      quizByLanguage,
+      quizByStory,
+      quizPoints: Math.round(quizPoints),
+      crosswordGames,
+      crosswordAverageScore,
+      crosswordBestScore,
+      crosswordAverageHints,
+      crosswordAverageTimeSeconds,
+      crosswordByLanguage,
+      crosswordByStory,
+      crosswordPoints: Math.round(crosswordPoints),
       score,
       level: getLevel(score),
     };
@@ -480,6 +1045,60 @@ export default function ProgressPage() {
         description: "Odeslali jste 10 odpovědí v konverzaci.",
         unlocked: data.conversation.messages >= 10,
       },
+      {
+        icon: "🧩",
+        title: "První dokončené pexeso",
+        description: "Dokončili jste svoji první hru pexesa.",
+        unlocked: statistics.pexesoGames >= 1,
+      },
+      {
+        icon: "🎯",
+        title: "Pravidelný hráč",
+        description: "Dokončili jste alespoň 10 her pexesa.",
+        unlocked: statistics.pexesoGames >= 10,
+      },
+      {
+        icon: "🧠",
+        title: "Mistr pexesa",
+        description: "V jedné hře jste získali hodnocení alespoň 80 %.",
+        unlocked: statistics.pexesoBestScore >= 80,
+      },
+      {
+        icon: "❓",
+        title: "První dokončený kvíz",
+        description: "Dokončili jste svůj první jazykový kvíz.",
+        unlocked: statistics.quizGames >= 1,
+      },
+      {
+        icon: "📚",
+        title: "Kvízový maraton",
+        description: "Dokončili jste alespoň 10 jazykových kvízů.",
+        unlocked: statistics.quizGames >= 10,
+      },
+      {
+        icon: "💯",
+        title: "Bezchybný kvíz",
+        description: "V jednom kvízu jste odpověděli správně na vše.",
+        unlocked: statistics.quizBestPercentage === 100,
+      },
+      {
+        icon: "✏️",
+        title: "První křížovka",
+        description: "Vyřešili jste svoji první jazykovou křížovku.",
+        unlocked: statistics.crosswordGames >= 1,
+      },
+      {
+        icon: "🧭",
+        title: "Křížem krážem",
+        description: "Vyřešili jste alespoň 10 jazykových křížovek.",
+        unlocked: statistics.crosswordGames >= 10,
+      },
+      {
+        icon: "🏅",
+        title: "Mistr křížovky",
+        description: "V jedné křížovce jste získali alespoň 95 %.",
+        unlocked: statistics.crosswordBestScore >= 95,
+      },
     ],
     [data, statistics],
   );
@@ -509,6 +1128,9 @@ export default function ProgressPage() {
     localStorage.removeItem(PRONUNCIATION_KEY);
     localStorage.removeItem(COMPLETED_STORIES_KEY);
     localStorage.removeItem(CONVERSATION_STATS_KEY);
+    localStorage.removeItem(PEXESO_STATS_KEY);
+    localStorage.removeItem(QUIZ_STATS_KEY);
+    localStorage.removeItem(CROSSWORD_STATS_KEY);
 
     const progressKeys = [];
 
@@ -553,8 +1175,8 @@ export default function ProgressPage() {
           <h1>Můj pokrok</h1>
 
           <p>
-            Sledujte slovíčka, výslovnost, rozečtené příběhy a další studijní
-            aktivity uložené v tomto prohlížeči.
+            Sledujte slovíčka, výslovnost, příběhy, pexeso, kvízy, křížovky a
+            další studijní aktivity uložené v tomto prohlížeči.
           </p>
         </header>
 
@@ -584,7 +1206,8 @@ export default function ProgressPage() {
             <p>
               Do další úrovně potřebujete dosáhnout
               {` ${statistics.level.next} %`}. Největší pokrok získáte
-              procvičováním slovíček, výslovnosti a dokončováním příběhů.
+              procvičováním slovíček, výslovnosti, pexesa, kvízů, křížovek a
+              dokončováním příběhů.
             </p>
 
             <div className="progressHeroBar">
@@ -632,6 +1255,44 @@ export default function ProgressPage() {
             <span>💬</span>
             <strong>{data.conversation.messages}</strong>
             <p>Odpovědí v konverzaci</p>
+          </article>
+
+          <article>
+            <span>🧩</span>
+            <strong>{statistics.pexesoGames}</strong>
+            <p>Dokončených pexes</p>
+          </article>
+
+          <article>
+            <span>🎯</span>
+            <strong>
+              {data.pexeso.bestMoves ? `${data.pexeso.bestMoves}` : "—"}
+            </strong>
+            <p>Nejlepší počet pokusů</p>
+          </article>
+
+          <article>
+            <span>❓</span>
+            <strong>{statistics.quizGames}</strong>
+            <p>Dokončených kvízů</p>
+          </article>
+
+          <article>
+            <span>💯</span>
+            <strong>{statistics.quizBestPercentage} %</strong>
+            <p>Nejlepší výsledek kvízu</p>
+          </article>
+
+          <article>
+            <span>✏️</span>
+            <strong>{statistics.crosswordGames}</strong>
+            <p>Vyřešených křížovek</p>
+          </article>
+
+          <article>
+            <span>🏅</span>
+            <strong>{statistics.crosswordBestScore} %</strong>
+            <p>Nejlepší křížovka</p>
           </article>
         </section>
 
@@ -714,6 +1375,466 @@ export default function ProgressPage() {
             </div>
           </section>
         </div>
+
+        <section className="progressPanel progressPexesoPanel">
+          <div className="progressPanelHeading">
+            <div>
+              <h2>🧩 Výsledky pexesa</h2>
+              <p>Souhrn dokončených her podle jazyků a jednotlivých příběhů.</p>
+            </div>
+
+            <Link href="/pexeso">Hrát pexeso →</Link>
+          </div>
+
+          {statistics.pexesoGames === 0 ? (
+            <div className="progressEmptyState">
+              <span>🧩</span>
+              <h3>Zatím nemáte dokončené žádné pexeso</h3>
+              <p>Dokončete první hru a výsledek se sem automaticky uloží.</p>
+            </div>
+          ) : (
+            <>
+              <div className="progressPexesoSummary">
+                <article>
+                  <span>🎮</span>
+                  <strong>{statistics.pexesoGames}</strong>
+                  <p>Dokončených her</p>
+                </article>
+
+                <article>
+                  <span>🏆</span>
+                  <strong>{data.pexeso.bestMoves}</strong>
+                  <p>Nejlepší počet pokusů</p>
+                </article>
+
+                <article>
+                  <span>📊</span>
+                  <strong>
+                    {statistics.pexesoAverageMoves.toLocaleString("cs-CZ")}
+                  </strong>
+                  <p>Průměrný počet pokusů</p>
+                </article>
+
+                <article>
+                  <span>⭐</span>
+                  <strong>{statistics.pexesoAverageScore} %</strong>
+                  <p>Průměrné hodnocení</p>
+                </article>
+              </div>
+
+              <div className="progressPexesoBreakdown">
+                <section>
+                  <h3>Podle jazykové verze</h3>
+
+                  <div className="progressLanguageList">
+                    {statistics.pexesoByLanguage.map((item) => (
+                      <article key={item.key}>
+                        <div className="progressLanguageTop">
+                          <span>
+                            {LANGUAGE_LABELS[item.key].flag}{" "}
+                            {LANGUAGE_LABELS[item.key].label}
+                          </span>
+
+                          <strong>{item.gamesCompleted} her</strong>
+                        </div>
+
+                        <div className="progressSmallBar">
+                          <span
+                            style={{
+                              width: `${item.averageScore}%`,
+                            }}
+                          />
+                        </div>
+
+                        <small>
+                          Průměrné hodnocení {item.averageScore} % · průměr{" "}
+                          {item.averageMoves.toLocaleString("cs-CZ")} pokusů
+                        </small>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Podle příběhu</h3>
+
+                  <div className="progressLanguageList">
+                    {statistics.pexesoByStory.map((item) => (
+                      <article key={item.key}>
+                        <div className="progressLanguageTop">
+                          <span>
+                            {PEXESO_STORY_LABELS[item.key].icon}{" "}
+                            {PEXESO_STORY_LABELS[item.key].label}
+                          </span>
+
+                          <strong>{item.gamesCompleted} her</strong>
+                        </div>
+
+                        <div className="progressSmallBar">
+                          <span
+                            style={{
+                              width: `${item.averageScore}%`,
+                            }}
+                          />
+                        </div>
+
+                        <small>
+                          Průměrné hodnocení {item.averageScore} % · průměr{" "}
+                          {item.averageMoves.toLocaleString("cs-CZ")} pokusů
+                        </small>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              </div>
+
+              <div className="progressPexesoHistory">
+                <h3>Poslední výsledky</h3>
+
+                <div className="progressPexesoHistoryList">
+                  {data.pexeso.history.slice(0, 6).map((game) => (
+                    <article key={game.id}>
+                      <div className="progressStoryIcon">
+                        {PEXESO_STORY_LABELS[game.story].icon}
+                      </div>
+
+                      <div className="progressStoryContent">
+                        <h3>{PEXESO_STORY_LABELS[game.story].title}</h3>
+                        <p>
+                          {LANGUAGE_LABELS[game.language].flag}{" "}
+                          {LANGUAGE_LABELS[game.language].label} · {game.moves}{" "}
+                          pokusů
+                        </p>
+                        <small>{formatDate(game.playedAt)}</small>
+                      </div>
+
+                      <div className="progressPexesoResult">
+                        <strong>{game.score} %</strong>
+                        <span>{getPexesoRating(game.score)}</span>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+
+              <p className="progressPexesoNote">
+                Hodnocení vychází z počtu pokusů. Osm správných dvojic v osmi
+                pokusech znamená 100 %. Pexeso nyní přidává do celkového pokroku{" "}
+                {statistics.pexesoPoints} z maximálně 20 bodů.
+              </p>
+            </>
+          )}
+        </section>
+
+        <section className="progressPanel progressPexesoPanel">
+          <div className="progressPanelHeading">
+            <div>
+              <h2>❓ Výsledky kvízů</h2>
+              <p>
+                Souhrn správných odpovědí podle jazyků a jednotlivých příběhů.
+              </p>
+            </div>
+
+            <Link href="/kviz">Spustit kvíz →</Link>
+          </div>
+
+          {statistics.quizGames === 0 ? (
+            <div className="progressEmptyState">
+              <span>❓</span>
+              <h3>Zatím nemáte dokončený žádný kvíz</h3>
+              <p>Dokončete první kvíz a výsledek se sem automaticky uloží.</p>
+            </div>
+          ) : (
+            <>
+              <div className="progressPexesoSummary">
+                <article>
+                  <span>🎮</span>
+                  <strong>{statistics.quizGames}</strong>
+                  <p>Dokončených kvízů</p>
+                </article>
+
+                <article>
+                  <span>🏆</span>
+                  <strong>{statistics.quizBestPercentage} %</strong>
+                  <p>Nejlepší výsledek</p>
+                </article>
+
+                <article>
+                  <span>✅</span>
+                  <strong>
+                    {data.quiz.totalCorrect} / {data.quiz.totalQuestions}
+                  </strong>
+                  <p>Celkem správných odpovědí</p>
+                </article>
+
+                <article>
+                  <span>📊</span>
+                  <strong>{statistics.quizAccuracy} %</strong>
+                  <p>Celková úspěšnost</p>
+                </article>
+              </div>
+
+              <div className="progressPexesoBreakdown">
+                <section>
+                  <h3>Podle jazykové verze</h3>
+
+                  <div className="progressLanguageList">
+                    {statistics.quizByLanguage.map((item) => (
+                      <article key={item.key}>
+                        <div className="progressLanguageTop">
+                          <span>
+                            {LANGUAGE_LABELS[item.key].flag}{" "}
+                            {LANGUAGE_LABELS[item.key].label}
+                          </span>
+
+                          <strong>{item.gamesCompleted} kvízů</strong>
+                        </div>
+
+                        <div className="progressSmallBar">
+                          <span
+                            style={{
+                              width: `${item.averagePercentage}%`,
+                            }}
+                          />
+                        </div>
+
+                        <small>
+                          Průměrné hodnocení {item.averagePercentage} % ·
+                          úspěšnost {item.accuracy} %
+                        </small>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Podle příběhu</h3>
+
+                  <div className="progressLanguageList">
+                    {statistics.quizByStory.map((item) => (
+                      <article key={item.key}>
+                        <div className="progressLanguageTop">
+                          <span>
+                            {PEXESO_STORY_LABELS[item.key].icon}{" "}
+                            {PEXESO_STORY_LABELS[item.key].label}
+                          </span>
+
+                          <strong>{item.gamesCompleted} kvízů</strong>
+                        </div>
+
+                        <div className="progressSmallBar">
+                          <span
+                            style={{
+                              width: `${item.averagePercentage}%`,
+                            }}
+                          />
+                        </div>
+
+                        <small>
+                          Průměrné hodnocení {item.averagePercentage} % ·
+                          úspěšnost {item.accuracy} %
+                        </small>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              </div>
+
+              <div className="progressPexesoHistory">
+                <h3>Poslední výsledky</h3>
+
+                <div className="progressPexesoHistoryList">
+                  {data.quiz.history.slice(0, 6).map((game) => (
+                    <article key={game.id}>
+                      <div className="progressStoryIcon">
+                        {PEXESO_STORY_LABELS[game.story].icon}
+                      </div>
+
+                      <div className="progressStoryContent">
+                        <h3>{PEXESO_STORY_LABELS[game.story].title}</h3>
+                        <p>
+                          {LANGUAGE_LABELS[game.language].flag}{" "}
+                          {LANGUAGE_LABELS[game.language].label} ·{" "}
+                          {game.correctAnswers} z {game.questionCount} správně
+                        </p>
+                        <small>{formatDate(game.playedAt)}</small>
+                      </div>
+
+                      <div className="progressPexesoResult">
+                        <strong>{game.percentage} %</strong>
+                        <span>{getQuizRating(game.percentage)}</span>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+
+              <p className="progressPexesoNote">
+                Kvízy nyní přidávají do celkového pokroku{" "}
+                {statistics.quizPoints} z maximálně 20 bodů. Hodnocení vychází z
+                podílu správných odpovědí.
+              </p>
+            </>
+          )}
+        </section>
+
+        <section className="progressPanel progressPexesoPanel">
+          <div className="progressPanelHeading">
+            <div>
+              <h2>✏️ Výsledky křížovek</h2>
+              <p>
+                Souhrn vyřešených křížovek podle jazyků a jednotlivých příběhů.
+              </p>
+            </div>
+
+            <Link href="/krizovka">Luštit křížovku →</Link>
+          </div>
+
+          {statistics.crosswordGames === 0 ? (
+            <div className="progressEmptyState">
+              <span>✏️</span>
+              <h3>Zatím nemáte vyřešenou žádnou křížovku</h3>
+              <p>
+                Dokončete první křížovku a výsledek se sem automaticky uloží.
+              </p>
+            </div>
+          ) : (
+            <>
+              <div className="progressPexesoSummary">
+                <article>
+                  <span>🎮</span>
+                  <strong>{statistics.crosswordGames}</strong>
+                  <p>Vyřešených křížovek</p>
+                </article>
+
+                <article>
+                  <span>🏅</span>
+                  <strong>{statistics.crosswordBestScore} %</strong>
+                  <p>Nejlepší výsledek</p>
+                </article>
+
+                <article>
+                  <span>✏️</span>
+                  <strong>{data.crossword.totalWords}</strong>
+                  <p>Celkem doplněných slov</p>
+                </article>
+
+                <article>
+                  <span>⏱️</span>
+                  <strong>
+                    {formatDuration(statistics.crosswordAverageTimeSeconds)}
+                  </strong>
+                  <p>Průměrný čas</p>
+                </article>
+              </div>
+
+              <div className="progressPexesoBreakdown">
+                <section>
+                  <h3>Podle jazykové verze</h3>
+
+                  <div className="progressLanguageList">
+                    {statistics.crosswordByLanguage.map((item) => (
+                      <article key={item.key}>
+                        <div className="progressLanguageTop">
+                          <span>
+                            {LANGUAGE_LABELS[item.key].flag}{" "}
+                            {LANGUAGE_LABELS[item.key].label}
+                          </span>
+
+                          <strong>{item.gamesCompleted} her</strong>
+                        </div>
+
+                        <div className="progressSmallBar">
+                          <span
+                            style={{
+                              width: `${item.averageScore}%`,
+                            }}
+                          />
+                        </div>
+
+                        <small>
+                          Průměrné hodnocení {item.averageScore} % · nápovědy{" "}
+                          {item.averageHints.toLocaleString("cs-CZ")} · čas{" "}
+                          {formatDuration(item.averageTimeSeconds)}
+                        </small>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Podle příběhu</h3>
+
+                  <div className="progressLanguageList">
+                    {statistics.crosswordByStory.map((item) => (
+                      <article key={item.key}>
+                        <div className="progressLanguageTop">
+                          <span>
+                            {PEXESO_STORY_LABELS[item.key].icon}{" "}
+                            {PEXESO_STORY_LABELS[item.key].label}
+                          </span>
+
+                          <strong>{item.gamesCompleted} her</strong>
+                        </div>
+
+                        <div className="progressSmallBar">
+                          <span
+                            style={{
+                              width: `${item.averageScore}%`,
+                            }}
+                          />
+                        </div>
+
+                        <small>
+                          Průměrné hodnocení {item.averageScore} % · nápovědy{" "}
+                          {item.averageHints.toLocaleString("cs-CZ")} · čas{" "}
+                          {formatDuration(item.averageTimeSeconds)}
+                        </small>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              </div>
+
+              <div className="progressPexesoHistory">
+                <h3>Poslední výsledky</h3>
+
+                <div className="progressPexesoHistoryList">
+                  {data.crossword.history.slice(0, 6).map((game) => (
+                    <article key={game.id}>
+                      <div className="progressStoryIcon">
+                        {PEXESO_STORY_LABELS[game.story].icon}
+                      </div>
+
+                      <div className="progressStoryContent">
+                        <h3>{PEXESO_STORY_LABELS[game.story].title}</h3>
+                        <p>
+                          {LANGUAGE_LABELS[game.language].flag}{" "}
+                          {LANGUAGE_LABELS[game.language].label} ·{" "}
+                          {game.wordCount} slov · {game.hintsUsed} nápověd ·{" "}
+                          {formatDuration(game.timeSeconds)}
+                        </p>
+                        <small>{formatDate(game.playedAt)}</small>
+                      </div>
+
+                      <div className="progressPexesoResult">
+                        <strong>{game.score} %</strong>
+                        <span>{getCrosswordRating(game.score)}</span>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+
+              <p className="progressPexesoNote">
+                Výsledek začíná na 100 %. Každá použitá nápověda odečte 5 bodů a
+                každá neúspěšná kontrola 3 body. Křížovky nyní přidávají do
+                celkového pokroku {statistics.crosswordPoints} z maximálně 20
+                bodů.
+              </p>
+            </>
+          )}
+        </section>
 
         <section className="progressPanel progressStoriesPanel">
           <div className="progressPanelHeading">

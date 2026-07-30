@@ -26,6 +26,30 @@ const menu = [
     color: "#9333ea",
   },
   {
+    icon: "❓",
+    title: "Jazykový kvíz",
+    text: "Vyberte si jazyk a příběh a otestujte překlady i doplňování slov do vět.",
+    link: "/kviz",
+    button: "Spustit kvíz",
+    color: "#7c3aed",
+  },
+  {
+    icon: "✏️",
+    title: "Jazyková křížovka",
+    text: "Doplňujte slova podle překladů a procvičujte slovní zásobu ze svého oblíbeného příběhu.",
+    link: "/krizovka",
+    button: "Luštit křížovku",
+    color: "#d97706",
+  },
+  {
+    icon: "🧠",
+    title: "Jazykové pexeso",
+    text: "Hledejte správné dvojice slov a překladů a procvičujte si slovní zásobu zábavnou formou.",
+    link: "/pexeso",
+    button: "Spustit pexeso",
+    color: "#db2777",
+  },
+  {
     icon: "📝",
     title: "Moje slovíčka",
     text: "Ukládejte si nová slovíčka z příběhů i konverzací a opakujte je.",
@@ -54,7 +78,6 @@ const menu = [
 export default function MainMenu() {
   return (
     <section className="menuSection">
-
       <h2>Co na stránce najdete</h2>
 
       <p className="menuText">
@@ -62,15 +85,9 @@ export default function MainMenu() {
       </p>
 
       <div className="menuGrid">
-
         {menu.map((item) => (
-
           <div className="menuCard" key={item.title}>
-
-            <div
-              className="menuIcon"
-              style={{ color: item.color }}
-            >
+            <div className="menuIcon" style={{ color: item.color }}>
               {item.icon}
             </div>
 
@@ -85,13 +102,9 @@ export default function MainMenu() {
             >
               {item.button}
             </Link>
-
           </div>
-
         ))}
-
       </div>
-
     </section>
   );
 }

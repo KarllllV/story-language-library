@@ -204,12 +204,12 @@ export default function CookiesPage() {
               slovíčka, pokrok a vlastní nastavení aplikace.
             </p>
             <p style={{ ...textStyle, marginBottom: 0 }}>
-              Pokud potřebujete pomoc, napište na{" "}
+              Pokud potřebujete pomoc, napište do{" "}
               <a
                 href="mailto:horinek.karel@gmail.com"
                 style={{ color: "#15803d", fontWeight: "700" }}
               >
-                horinek.karel@gmail.com
+                přiloženého formuláře na hlavní stránce
               </a>
               .
             </p>
