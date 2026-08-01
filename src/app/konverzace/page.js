@@ -1205,59 +1205,6 @@ export default function ConversationPage() {
     }
   }
 
-  async function requestMicrophonePermission() {
-    if (
-      typeof navigator === "undefined" ||
-      !navigator.mediaDevices?.getUserMedia
-    ) {
-      return true;
-    }
-
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        audio: true,
-      });
-
-      stream.getTracks().forEach((track) => track.stop());
-      return true;
-    } catch (error) {
-      if (
-        error?.name === "NotAllowedError" ||
-        error?.name === "PermissionDeniedError"
-      ) {
-        setErrorMessage(
-          "Mikrofon není povolen. V nastavení prohlížeče povolte této stránce přístup k mikrofonu a zkuste to znovu."
-        );
-        return false;
-      }
-
-      if (
-        error?.name === "NotFoundError" ||
-        error?.name === "DevicesNotFoundError"
-      ) {
-        setErrorMessage(
-          "Telefon nebo počítač nenašel dostupný mikrofon."
-        );
-        return false;
-      }
-
-      if (
-        error?.name === "NotReadableError" ||
-        error?.name === "TrackStartError"
-      ) {
-        setErrorMessage(
-          "Mikrofon právě používá jiná aplikace. Zavřete hovor, diktafon nebo jinou aplikaci využívající mikrofon a zkuste to znovu."
-        );
-        return false;
-      }
-
-      setErrorMessage(
-        "Mikrofon se nepodařilo zpřístupnit. Zkontrolujte jeho oprávnění a zkuste to znovu."
-      );
-      return false;
-    }
-  }
-
   function createSpeechRecognition(sessionId, isRetry = false) {
     const SpeechRecognition =
       window.SpeechRecognition ||
@@ -1376,7 +1323,7 @@ export default function ConversationPage() {
 
       if (error === "service-not-allowed") {
         setErrorMessage(
-          "Mikrofon je povolený, ale telefon nebo prohlížeč zablokoval službu hlasového rozpoznávání. Aktualizujte prohlížeč a hlasové služby zařízení, restartujte telefon nebo zkuste Microsoft Edge. Odpověď můžete také napsat."
+          "Mikrofon je povolený, ale zařízení zablokovalo službu hlasového rozpoznávání. Aktualizujte prohlížeč, aplikaci Google a službu Speech Recognition & Synthesis, potom telefon restartujte. Pokud problém zůstane, zařízení tuto webovou hlasovou službu pravděpodobně nepodporuje."
         );
         return;
       }
@@ -1486,7 +1433,7 @@ export default function ConversationPage() {
     }
   }
 
-  async function startListening() {
+  function startListening() {
     if (isThinking || isListening) {
       return;
     }
@@ -1503,25 +1450,17 @@ export default function ConversationPage() {
     const sessionId = recognitionSessionRef.current + 1;
     recognitionSessionRef.current = sessionId;
 
-    const microphoneAllowed =
-      await requestMicrophonePermission();
-
-    if (
-      !microphoneAllowed ||
-      recognitionSessionRef.current !== sessionId
-    ) {
-      return;
-    }
-
-    // Krátká prodleva pomáhá hlavně na telefonech, kde se
-    // mikrofon po kontrole oprávnění neuvolní okamžitě.
+    // Mikrofon otevírá přímo SpeechRecognition.
+    // Tím se zabrání konfliktu, který může vzniknout na některých
+    // telefonech Samsung a dalších Android zařízeních, pokud se
+    // mikrofon nejprve otevře přes getUserMedia.
     window.setTimeout(() => {
       if (recognitionSessionRef.current !== sessionId) {
         return;
       }
 
       createSpeechRecognition(sessionId);
-    }, 250);
+    }, 180);
   }
 
   function stopListening() {
