@@ -891,6 +891,8 @@ export default function ConversationPage() {
   const [isListening, setIsListening] = useState(false);
   const [liveTranscript, setLiveTranscript] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [speechStatus, setSpeechStatus] = useState("");
+  const [speechErrorCode, setSpeechErrorCode] = useState("");
   const [isThinking, setIsThinking] = useState(false);
   const [dailyAiLimit, setDailyAiLimit] = useState(30);
   const [remainingAiAnswers, setRemainingAiAnswers] =
@@ -1234,7 +1236,7 @@ export default function ConversationPage() {
     recognition.lang =
       recognitionCodes[recognitionLanguageIndex];
     recognition.continuous = false;
-    recognition.interimResults = true;
+    recognition.interimResults = false;
     recognition.maxAlternatives = 1;
 
     recognition.onstart = () => {
@@ -1243,7 +1245,24 @@ export default function ConversationPage() {
       }
 
       setErrorMessage("");
+      setSpeechErrorCode("");
+      setSpeechStatus("Mikrofon je spuštěný. Mluvte nyní.");
       setIsListening(true);
+    };
+
+    recognition.onaudiostart = () => {
+      if (recognitionSessionRef.current !== sessionId) return;
+      setSpeechStatus("Mikrofon přijímá zvuk.");
+    };
+
+    recognition.onspeechstart = () => {
+      if (recognitionSessionRef.current !== sessionId) return;
+      setSpeechStatus("Rozpoznávám vaši řeč…");
+    };
+
+    recognition.onspeechend = () => {
+      if (recognitionSessionRef.current !== sessionId) return;
+      setSpeechStatus("Řeč byla zachycena. Čekám na výsledek…");
     };
 
     recognition.onresult = (event) => {
@@ -1290,6 +1309,8 @@ export default function ConversationPage() {
       setIsListening(false);
 
       const error = event.error || "unknown";
+      setSpeechErrorCode(error);
+      setSpeechStatus("");
 
       if (
         error === "aborted" &&
@@ -1323,7 +1344,7 @@ export default function ConversationPage() {
 
       if (error === "service-not-allowed") {
         setErrorMessage(
-          "Mikrofon je povolený, ale zařízení zablokovalo službu hlasového rozpoznávání. Aktualizujte prohlížeč, aplikaci Google a službu Speech Recognition & Synthesis, potom telefon restartujte. Pokud problém zůstane, zařízení tuto webovou hlasovou službu pravděpodobně nepodporuje."
+          "Mikrofon je povolený, ale prohlížeč nebo systém zablokoval webovou službu hlasového rozpoznávání. Tuto systémovou chybu aplikace nemůže sama obejít. Aktualizujte Chrome, aplikaci Google a Speech Recognition & Synthesis a telefon restartujte."
         );
         return;
       }
@@ -1439,6 +1460,8 @@ export default function ConversationPage() {
     }
 
     setErrorMessage("");
+    setSpeechErrorCode("");
+    setSpeechStatus("Připravuji mikrofon…");
     setLiveTranscript("");
     recognitionRetryRef.current = 0;
     recognitionLanguageIndexRef.current = 0;
@@ -1690,7 +1713,29 @@ export default function ConversationPage() {
 
           {errorMessage && (
             <div className="conversationError">
-              ⚠️ {errorMessage}
+              <strong>⚠️ {errorMessage}</strong>
+              {speechErrorCode && (
+                <div style={{ marginTop: "8px", fontSize: "0.82rem" }}>
+                  Technický kód chyby: <code>{speechErrorCode}</code>
+                </div>
+              )}
+            </div>
+          )}
+
+          {speechStatus && !errorMessage && (
+            <div
+              style={{
+                margin: "0 20px 14px",
+                padding: "10px 14px",
+                borderRadius: "12px",
+                background: "#eff6ff",
+                border: "1px solid #bfdbfe",
+                color: "#1e3a8a",
+                fontWeight: "700",
+                textAlign: "center",
+              }}
+            >
+              🎙️ {speechStatus}
             </div>
           )}
 
