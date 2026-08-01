@@ -52,7 +52,7 @@ const languages = {
     recognitionCode: "de-DE",
     speechCode: "de-DE",
     welcome:
-      "Hallo! Ich heiße Anna. Wir sprechen Deutsch, und ich korrigiere wichtige Fehler freundlich. Wie geht es dir heute?",
+      "Hallo! Ich bin Anna, deine virtuelle Sprachpartnerin. Wir sprechen gemeinsam Deutsch, und wenn du einen Fehler machst, helfe ich dir freundlich weiter. Wie geht es dir heute?",
     topics: [
       "Wie es dir geht",
       "Vorstellung",
@@ -899,6 +899,9 @@ export default function ConversationPage() {
     useState(false);
 
   const recognitionRef = useRef(null);
+  const recognitionSessionRef = useRef(0);
+  const recognitionRetryRef = useRef(0);
+  const submittedTranscriptRef = useRef(false);
   const messagesEndRef = useRef(null);
 
   const currentLanguage = languages[selectedLanguage];
@@ -909,6 +912,29 @@ export default function ConversationPage() {
       block: "end",
     });
   }, [messages, liveTranscript]);
+
+  useEffect(() => {
+    return () => {
+      recognitionSessionRef.current += 1;
+
+      const recognition = recognitionRef.current;
+      recognitionRef.current = null;
+
+      if (recognition) {
+        try {
+          recognition.onstart = null;
+          recognition.onresult = null;
+          recognition.onerror = null;
+          recognition.onend = null;
+          recognition.abort();
+        } catch {
+          // Rozpoznávání už mohlo být ukončeno prohlížečem.
+        }
+      }
+
+      window.speechSynthesis?.cancel();
+    };
+  }, []);
 
   useEffect(() => {
     let isActive = true;
@@ -1146,29 +1172,100 @@ export default function ConversationPage() {
     }
   }
 
-  function startListening() {
-    if (isThinking) {
+  function releaseRecognition({ abort = false } = {}) {
+    const recognition = recognitionRef.current;
+    recognitionRef.current = null;
+
+    if (!recognition) {
       return;
     }
 
-    setErrorMessage("");
-    setLiveTranscript("");
+    try {
+      recognition.onstart = null;
+      recognition.onresult = null;
+      recognition.onerror = null;
+      recognition.onend = null;
 
+      if (abort) {
+        recognition.abort();
+      } else {
+        recognition.stop();
+      }
+    } catch {
+      // Instance už mohla být ukončena samotným prohlížečem.
+    }
+  }
+
+  async function requestMicrophonePermission() {
+    if (
+      typeof navigator === "undefined" ||
+      !navigator.mediaDevices?.getUserMedia
+    ) {
+      return true;
+    }
+
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: true,
+      });
+
+      stream.getTracks().forEach((track) => track.stop());
+      return true;
+    } catch (error) {
+      if (
+        error?.name === "NotAllowedError" ||
+        error?.name === "PermissionDeniedError"
+      ) {
+        setErrorMessage(
+          "Mikrofon není povolen. V nastavení prohlížeče povolte této stránce přístup k mikrofonu a zkuste to znovu."
+        );
+        return false;
+      }
+
+      if (
+        error?.name === "NotFoundError" ||
+        error?.name === "DevicesNotFoundError"
+      ) {
+        setErrorMessage(
+          "Telefon nebo počítač nenašel dostupný mikrofon."
+        );
+        return false;
+      }
+
+      if (
+        error?.name === "NotReadableError" ||
+        error?.name === "TrackStartError"
+      ) {
+        setErrorMessage(
+          "Mikrofon právě používá jiná aplikace. Zavřete hovor, diktafon nebo jinou aplikaci využívající mikrofon a zkuste to znovu."
+        );
+        return false;
+      }
+
+      setErrorMessage(
+        "Mikrofon se nepodařilo zpřístupnit. Zkontrolujte jeho oprávnění a zkuste to znovu."
+      );
+      return false;
+    }
+  }
+
+  function createSpeechRecognition(sessionId, isRetry = false) {
     const SpeechRecognition =
       window.SpeechRecognition ||
       window.webkitSpeechRecognition;
 
     if (!SpeechRecognition) {
       setErrorMessage(
-        "Rozpoznávání řeči není v tomto prohlížeči podporováno. Použijte Google Chrome nebo Microsoft Edge."
+        "Tento prohlížeč nepodporuje hlasové rozpoznávání. Odpověď můžete napsat do pole níže nebo použít aktuální Google Chrome či Microsoft Edge."
       );
       return;
     }
 
-    window.speechSynthesis?.cancel();
+    releaseRecognition({ abort: true });
 
     const recognition = new SpeechRecognition();
     recognitionRef.current = recognition;
+    submittedTranscriptRef.current = false;
 
     recognition.lang = currentLanguage.recognitionCode;
     recognition.continuous = false;
@@ -1176,10 +1273,19 @@ export default function ConversationPage() {
     recognition.maxAlternatives = 1;
 
     recognition.onstart = () => {
+      if (recognitionSessionRef.current !== sessionId) {
+        return;
+      }
+
+      setErrorMessage("");
       setIsListening(true);
     };
 
     recognition.onresult = (event) => {
+      if (recognitionSessionRef.current !== sessionId) {
+        return;
+      }
+
       let interimText = "";
       let finalText = "";
 
@@ -1188,7 +1294,8 @@ export default function ConversationPage() {
         index < event.results.length;
         index += 1
       ) {
-        const transcript = event.results[index][0].transcript;
+        const transcript =
+          event.results[index]?.[0]?.transcript || "";
 
         if (event.results[index].isFinal) {
           finalText += transcript;
@@ -1197,45 +1304,175 @@ export default function ConversationPage() {
         }
       }
 
-      setLiveTranscript(finalText || interimText);
+      const visibleTranscript = finalText || interimText;
+      setLiveTranscript(visibleTranscript);
 
-      if (finalText.trim()) {
-        addUserMessage(finalText);
+      if (
+        finalText.trim() &&
+        !submittedTranscriptRef.current
+      ) {
+        submittedTranscriptRef.current = true;
         setLiveTranscript("");
+        addUserMessage(finalText.trim());
       }
     };
 
     recognition.onerror = (event) => {
+      if (recognitionSessionRef.current !== sessionId) {
+        return;
+      }
+
       setIsListening(false);
 
-      if (event.error === "not-allowed") {
+      const error = event.error || "unknown";
+
+      if (
+        error === "aborted" &&
+        !isRetry &&
+        recognitionRetryRef.current < 1
+      ) {
+        recognitionRetryRef.current += 1;
+        recognitionRef.current = null;
+
         setErrorMessage(
-          "Prohlížeč nemá povolený přístup k mikrofonu. Povolte mikrofon v adresním řádku."
+          "Mikrofon byl při prvním spuštění přerušen. Zkouším jej automaticky spustit znovu…"
+        );
+
+        window.setTimeout(() => {
+          if (recognitionSessionRef.current !== sessionId) {
+            return;
+          }
+
+          createSpeechRecognition(sessionId, true);
+        }, 650);
+
+        return;
+      }
+
+      if (
+        error === "not-allowed" ||
+        error === "service-not-allowed"
+      ) {
+        setErrorMessage(
+          "Mikrofon nebo hlasové rozpoznávání není povoleno. Povolte mikrofon pro tuto stránku v nastavení prohlížeče."
         );
         return;
       }
 
-      if (event.error === "no-speech") {
+      if (error === "no-speech") {
         setErrorMessage(
-          "Nebyla rozpoznána žádná řeč. Zkuste mluvit hlasitěji a blíže k mikrofonu."
+          "Nebyla rozpoznána žádná řeč. Po stisknutí tlačítka počkejte na text „Poslouchám“ a potom mluvte hlasitě a zřetelně."
+        );
+        return;
+      }
+
+      if (error === "audio-capture") {
+        setErrorMessage(
+          "Mikrofon není dostupný nebo jej používá jiná aplikace. Zavřete ostatní aplikace využívající mikrofon a zkuste to znovu."
+        );
+        return;
+      }
+
+      if (error === "network") {
+        setErrorMessage(
+          "Hlasové rozpoznávání potřebuje stabilní internetové připojení. Zkontrolujte připojení a zkuste to znovu."
+        );
+        return;
+      }
+
+      if (error === "aborted") {
+        setErrorMessage(
+          "Hlasové rozpoznávání bylo telefonem přerušeno. Zkuste tlačítko znovu, případně odpověď napište do pole níže."
         );
         return;
       }
 
       setErrorMessage(
-        `Rozpoznávání řeči se nepodařilo spustit: ${event.error}`
+        "Hlasové rozpoznávání se nepodařilo spustit. Zkuste tlačítko znovu nebo odpověď napište."
       );
     };
 
     recognition.onend = () => {
+      if (recognitionSessionRef.current !== sessionId) {
+        return;
+      }
+
+      if (recognitionRef.current === recognition) {
+        recognitionRef.current = null;
+      }
+
       setIsListening(false);
     };
 
-    recognition.start();
+    try {
+      recognition.start();
+    } catch (error) {
+      recognitionRef.current = null;
+      setIsListening(false);
+
+      if (
+        error?.name === "InvalidStateError" &&
+        !isRetry
+      ) {
+        window.setTimeout(() => {
+          if (recognitionSessionRef.current !== sessionId) {
+            return;
+          }
+
+          createSpeechRecognition(sessionId, true);
+        }, 650);
+
+        return;
+      }
+
+      setErrorMessage(
+        "Mikrofon se nepodařilo spustit. Počkejte chvíli a zkuste tlačítko znovu."
+      );
+    }
+  }
+
+  async function startListening() {
+    if (isThinking || isListening) {
+      return;
+    }
+
+    setErrorMessage("");
+    setLiveTranscript("");
+    recognitionRetryRef.current = 0;
+    submittedTranscriptRef.current = false;
+
+    window.speechSynthesis?.cancel();
+    releaseRecognition({ abort: true });
+
+    const sessionId = recognitionSessionRef.current + 1;
+    recognitionSessionRef.current = sessionId;
+
+    const microphoneAllowed =
+      await requestMicrophonePermission();
+
+    if (
+      !microphoneAllowed ||
+      recognitionSessionRef.current !== sessionId
+    ) {
+      return;
+    }
+
+    // Krátká prodleva pomáhá hlavně na telefonech, kde se
+    // mikrofon po kontrole oprávnění neuvolní okamžitě.
+    window.setTimeout(() => {
+      if (recognitionSessionRef.current !== sessionId) {
+        return;
+      }
+
+      createSpeechRecognition(sessionId);
+    }, 250);
   }
 
   function stopListening() {
-    recognitionRef.current?.stop();
+    recognitionSessionRef.current += 1;
+    recognitionRetryRef.current = 0;
+    releaseRecognition();
+    setLiveTranscript("");
     setIsListening(false);
   }
 
@@ -1249,7 +1486,9 @@ export default function ConversationPage() {
     setLiveTranscript("");
     setErrorMessage("");
 
-    recognitionRef.current?.stop();
+    recognitionSessionRef.current += 1;
+    recognitionRetryRef.current = 0;
+    releaseRecognition({ abort: true });
     window.speechSynthesis?.cancel();
 
     setMessages([
@@ -1262,7 +1501,9 @@ export default function ConversationPage() {
   }
 
   function resetConversation() {
-    recognitionRef.current?.stop();
+    recognitionSessionRef.current += 1;
+    recognitionRetryRef.current = 0;
+    releaseRecognition({ abort: true });
     window.speechSynthesis?.cancel();
 
     setConversationStep(0);
