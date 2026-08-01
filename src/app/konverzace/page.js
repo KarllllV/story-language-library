@@ -7,7 +7,7 @@ const languages = {
   cs: {
     label: "Čeština",
     flag: "🇨🇿",
-    recognitionCode: "cs-CZ",
+    recognitionCodes: ["cs-CZ", "cs"],
     speechCode: "cs-CZ",
     welcome:
       "Dobrý den! Jmenuji se Anna. Budeme spolu mluvit česky a já vás při chybě jemně opravím. Jak se dnes máte?",
@@ -28,7 +28,7 @@ const languages = {
   en: {
     label: "Angličtina",
     flag: "🇬🇧",
-    recognitionCode: "en-US",
+    recognitionCodes: ["en-US", "en-GB", "en"],
     speechCode: "en-US",
     welcome:
       "Hello! My name is Anna. We will speak English, and I will gently correct important mistakes. How are you today?",
@@ -49,7 +49,7 @@ const languages = {
   de: {
     label: "Němčina",
     flag: "🇩🇪",
-    recognitionCode: "de-DE",
+    recognitionCodes: ["de-DE", "de-AT", "de-CH", "de"],
     speechCode: "de-DE",
     welcome:
       "Hallo! Ich bin Anna, deine virtuelle Sprachpartnerin. Wir sprechen gemeinsam Deutsch, und wenn du einen Fehler machst, helfe ich dir freundlich weiter. Wie geht es dir heute?",
@@ -901,6 +901,7 @@ export default function ConversationPage() {
   const recognitionRef = useRef(null);
   const recognitionSessionRef = useRef(0);
   const recognitionRetryRef = useRef(0);
+  const recognitionLanguageIndexRef = useRef(0);
   const submittedTranscriptRef = useRef(false);
   const messagesEndRef = useRef(null);
 
@@ -995,9 +996,17 @@ export default function ConversationPage() {
       .slice(0, 2)
       .toLowerCase();
 
-    const matchingVoice = voices.find((voice) =>
-      voice.lang.toLowerCase().startsWith(languagePrefix)
+    const exactVoice = voices.find(
+      (voice) =>
+        voice.lang.toLowerCase() ===
+        currentLanguage.speechCode.toLowerCase()
     );
+
+    const matchingVoice =
+      exactVoice ||
+      voices.find((voice) =>
+        voice.lang.toLowerCase().startsWith(languagePrefix)
+      );
 
     if (matchingVoice) {
       utterance.voice = matchingVoice;
@@ -1267,7 +1276,16 @@ export default function ConversationPage() {
     recognitionRef.current = recognition;
     submittedTranscriptRef.current = false;
 
-    recognition.lang = currentLanguage.recognitionCode;
+    const recognitionCodes =
+      currentLanguage.recognitionCodes || ["en-US"];
+
+    const recognitionLanguageIndex = Math.min(
+      recognitionLanguageIndexRef.current,
+      recognitionCodes.length - 1
+    );
+
+    recognition.lang =
+      recognitionCodes[recognitionLanguageIndex];
     recognition.continuous = false;
     recognition.interimResults = true;
     recognition.maxAlternatives = 1;
@@ -1349,12 +1367,49 @@ export default function ConversationPage() {
         return;
       }
 
-      if (
-        error === "not-allowed" ||
-        error === "service-not-allowed"
-      ) {
+      if (error === "not-allowed") {
         setErrorMessage(
-          "Mikrofon nebo hlasové rozpoznávání není povoleno. Povolte mikrofon pro tuto stránku v nastavení prohlížeče."
+          "Přístup k mikrofonu není povolen. Povolte mikrofon pro tuto stránku v nastavení prohlížeče a stránku znovu načtěte."
+        );
+        return;
+      }
+
+      if (error === "service-not-allowed") {
+        setErrorMessage(
+          "Mikrofon je povolený, ale telefon nebo prohlížeč zablokoval službu hlasového rozpoznávání. Aktualizujte prohlížeč a hlasové služby zařízení, restartujte telefon nebo zkuste Microsoft Edge. Odpověď můžete také napsat."
+        );
+        return;
+      }
+
+      if (error === "language-not-supported") {
+        const recognitionCodes =
+          currentLanguage.recognitionCodes || [];
+
+        const hasAnotherLanguageCode =
+          recognitionLanguageIndexRef.current <
+          recognitionCodes.length - 1;
+
+        if (hasAnotherLanguageCode) {
+          recognitionLanguageIndexRef.current += 1;
+          recognitionRef.current = null;
+
+          setErrorMessage(
+            "Tento jazykový profil není v zařízení dostupný. Zkouším automaticky jinou kompatibilní variantu jazyka…"
+          );
+
+          window.setTimeout(() => {
+            if (recognitionSessionRef.current !== sessionId) {
+              return;
+            }
+
+            createSpeechRecognition(sessionId, true);
+          }, 650);
+
+          return;
+        }
+
+        setErrorMessage(
+          "Zařízení nepodporuje hlasové rozpoznávání zvoleného jazyka. Aktualizujte hlasové služby telefonu nebo odpověď napište do textového pole."
         );
         return;
       }
@@ -1388,7 +1443,7 @@ export default function ConversationPage() {
       }
 
       setErrorMessage(
-        "Hlasové rozpoznávání se nepodařilo spustit. Zkuste tlačítko znovu nebo odpověď napište."
+        `Hlasové rozpoznávání se nepodařilo spustit (${error}). Zkuste tlačítko znovu, jiný prohlížeč nebo odpověď napište.`
       );
     };
 
@@ -1439,6 +1494,7 @@ export default function ConversationPage() {
     setErrorMessage("");
     setLiveTranscript("");
     recognitionRetryRef.current = 0;
+    recognitionLanguageIndexRef.current = 0;
     submittedTranscriptRef.current = false;
 
     window.speechSynthesis?.cancel();
@@ -1471,6 +1527,7 @@ export default function ConversationPage() {
   function stopListening() {
     recognitionSessionRef.current += 1;
     recognitionRetryRef.current = 0;
+    recognitionLanguageIndexRef.current = 0;
     releaseRecognition();
     setLiveTranscript("");
     setIsListening(false);
@@ -1488,6 +1545,7 @@ export default function ConversationPage() {
 
     recognitionSessionRef.current += 1;
     recognitionRetryRef.current = 0;
+    recognitionLanguageIndexRef.current = 0;
     releaseRecognition({ abort: true });
     window.speechSynthesis?.cancel();
 
@@ -1503,6 +1561,7 @@ export default function ConversationPage() {
   function resetConversation() {
     recognitionSessionRef.current += 1;
     recognitionRetryRef.current = 0;
+    recognitionLanguageIndexRef.current = 0;
     releaseRecognition({ abort: true });
     window.speechSynthesis?.cancel();
 
@@ -1752,6 +1811,17 @@ export default function ConversationPage() {
               {isListening
                 ? "Poslouchám… Mluvte nyní."
                 : "Můžete mluvit do mikrofonu nebo odpověď napsat."}
+            </p>
+
+            <p
+              style={{
+                marginTop: "6px",
+                fontSize: "0.86rem",
+                opacity: 0.78,
+              }}
+            >
+              Jazyk telefonu může být libovolný. Rozpoznávání se
+              řídí jazykem zvoleným nahoře v aplikaci.
             </p>
 
             <form
